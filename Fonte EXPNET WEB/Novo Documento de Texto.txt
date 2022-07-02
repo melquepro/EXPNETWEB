@@ -1,0 +1,3 @@
+'<div class=botoes-grid">'+
+'<i class="blue fas fa-check-double"></i>'+
+'</div>';

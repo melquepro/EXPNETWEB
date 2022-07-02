@@ -1,0 +1,39 @@
+unit Frame.Funcionario;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIFrame, uniSplitter, uniPanel, uniGUIBaseClasses,
+  uniBasicGrid, uniDBGrid, uniScrollBox, uniButton;
+
+type
+  TFrameFuncionario = class(TUniFrame)
+    UniPanel1: TUniPanel;
+    UniContainerPanel1: TUniContainerPanel;
+    UniSplitter1: TUniSplitter;
+    UniDBGrid1: TUniDBGrid;
+    UniSplitter2: TUniSplitter;
+    UniScrollBox1: TUniScrollBox;
+    UniContainerPanel3: TUniContainerPanel;
+    btnCancelar: TUniButton;
+    BtnSalvar: TUniButton;
+    UniContainerPanel2: TUniContainerPanel;
+    btnNovo: TUniButton;
+    UniSplitter4: TUniSplitter;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+
+uses ServerModule;
+
+
+
+end.

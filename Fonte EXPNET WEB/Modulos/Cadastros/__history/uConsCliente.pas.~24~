@@ -1,0 +1,122 @@
+unit uConsCliente;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIForm, uniGUIFrame, Frame.ConsCliente, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  uniBitBtn, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, uniToolBar,
+  uniBasicGrid, uniDBGrid, uniSplitter, uniMultiItem, uniComboBox,
+  uniDBComboBox, uniDateTimePicker, uniDBDateTimePicker, uniMemo, uniDBMemo,
+  uniEdit, uniDBEdit, uniLabel, uniScrollBox, uniPageControl, uniButton,
+  uniPanel, uniGUIBaseClasses, ACBrIBGE, ACBrBase, ACBrSocket, ACBrCEP;
+
+type
+  TfrmConsCliente = class(TUniForm)
+    FrameConsCliente: TFrameConsCliente;
+    procedure btnCancelarClick(Sender: TObject);
+    procedure BtnEditaClick(Sender: TObject);
+    procedure btnNovoClick(Sender: TObject);
+    procedure FrameConsClienteReady(Sender: TObject);
+    procedure FrameConsClientebtNovoClick(Sender: TObject);
+    procedure FrameConsClienteBtnEditaClick(Sender: TObject);
+    procedure FrameConsClienteUniButton2Click(Sender: TObject);
+    procedure FrameConsClienteUniButton1Click(Sender: TObject);
+    procedure FrameConsClientebtnCancelarClick(Sender: TObject);
+    procedure FrameConsClientebtnSalvarClick(Sender: TObject);
+    procedure FrameConsClientebtnNovoClick(Sender: TObject);
+
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+
+
+
+  end;
+
+function frmConsCliente: TfrmConsCliente;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  MainModule, uniGUIApplication, ServerModule;
+
+function frmConsCliente: TfrmConsCliente;
+begin
+  Result := TfrmConsCliente(UniMainModule.GetFormInstance(TfrmConsCliente));
+end;
+
+
+
+procedure TfrmConsCliente.btnCancelarClick(Sender: TObject);
+begin
+uniDM.qryCliente.close;
+uniDM.qryEndAdicionais.close;
+FrameConsCliente.CadHideDetalhe;
+end;
+
+procedure TfrmConsCliente.BtnEditaClick(Sender: TObject);
+begin
+uniDM.qryCliente.Append;
+ FrameConsCliente.CadShowDetalhe;
+end;
+
+procedure TfrmConsCliente.btnNovoClick(Sender: TObject);
+begin
+uniDM.qryCliente.Append;
+end;
+
+procedure TfrmConsCliente.FrameConsClientebtnCancelarClick(Sender: TObject);
+begin
+  FrameConsCliente.btnCancelarClick(Sender);
+
+end;
+
+procedure TfrmConsCliente.FrameConsClienteBtnEditaClick(Sender: TObject);
+begin
+  FrameConsCliente.BtnEditaClick(Sender);
+
+end;
+
+procedure TfrmConsCliente.FrameConsClientebtnNovoClick(Sender: TObject);
+begin
+  FrameConsCliente.btnNovoClick(Sender);
+
+end;
+
+procedure TfrmConsCliente.FrameConsClientebtNovoClick(Sender: TObject);
+begin
+  FrameConsCliente.btNovoClick(Sender);
+
+end;
+
+procedure TfrmConsCliente.FrameConsClientebtnSalvarClick(Sender: TObject);
+begin
+  FrameConsCliente.btnSalvarClick(Sender);
+
+end;
+
+procedure TfrmConsCliente.FrameConsClienteReady(Sender: TObject);
+begin
+  FrameConsCliente.UniFrameReady(Sender);
+end;
+
+procedure TfrmConsCliente.FrameConsClienteUniButton1Click(Sender: TObject);
+begin
+  FrameConsCliente.UniButton1Click(Sender);
+
+end;
+
+procedure TfrmConsCliente.FrameConsClienteUniButton2Click(Sender: TObject);
+begin
+  FrameConsCliente.UniButton2Click(Sender);
+
+end;
+end.

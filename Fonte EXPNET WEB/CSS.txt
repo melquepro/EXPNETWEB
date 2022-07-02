@@ -1,0 +1,136 @@
+._treemenu .x-treelist-row-over{
+  background-color: #252F38;/*Cor Clara*/
+}
+
+/*UniTreeMenu - Inicio*/
+/* Aqui ira determina a COR DE Fundo do menu */
+.x-treelist-nav
+  {
+    background-color: #406386 !important;/* #32404e;  moccasin; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background-image: url( 'https://gepimagens.ergonsistemas.com.br/Backgroud_620x1080.png');
+    /*background-image: url( 'files/Backgroud_Menu/Backgroud_4.png' );*/    
+    background-position: 0px 50% !important;
+
+    padding: 0 0 0 0;
+    overflow: auto !important;
+    scrollbar-width: thin;  /*estilo do scrool para o mozilla */
+    scrollbar-color: #778088 #d6d9db; /*estilo do scrool para o mozilla */
+}
+
+.x-treelist-nav .x-treelist-item-text
+{
+/*menu lado Esquerdo*/
+  color: #FFFFFF;       /*cor da letra do menu*/
+  margin-left: 3px;  /*27 espaçamento da esquerda para direita dos Itens do menu*/
+  margin-right: 3px; /*espaçamento da esquerda para direita dos Grupos do menu*/
+  font-size: 14px;    /*tamanho das letras*/
+  font-weight: bold;
+  line-height: 30px;  /*altura da linha do menu*/
+}
+
+ .x-treelist-nav .x-treelist-item-icon:before,
+ .x-treelist-nav .x-treelist-item-tool:before,
+ .x-treelist-nav .x-treelist-item-expander
+{
+  line-height: 20px; /* 44 é o padrao */
+  color: White;
+} 
+
+
+/*Menu Selecionado*/
+/*Modelo 1*/
+/*.x-treelist-nav .x-treelist-item-selected > .x-treelist-row::before
+{
+  background-color: #63809c !important;
+} */
+/*Modelo 2*/
+.x-treelist-nav .x-treelist-item-selected > .x-treelist-row
+{
+  background-color: #63809c !important;
+}
+
+/*Passa o mouse*/
+.x-treelist-nav .x-treelist-row-over{
+    background-color: #63809c !important;
+}
+
+.x-treelist-nav::-webkit-scrollbar
+{
+  width: 7px;
+  height:7px;
+  background:#d6d9db;
+}
+
+.x-treelist-nav::-webkit-scrollbar-track
+{
+  background: rgba(0,0,0,0.1);
+}
+
+.x-treelist-nav::-webkit-scrollbar-thumb
+{
+  border-radius: 7px; 
+  height:7px; 
+  background:#778088;
+}
+/* UniTreeMenu - Fim */
+
+
+/*Cores  do TAB*/
+ .x-tab-panel-inner {
+border: 1px solid ##406386;
+border-top:none;
+}
+
+.x-tab-panel-sheet {
+border-left: 2px solid ##406386;
+}
+
+.x-tab-panel-header, .x-tab-panel-footer {
+background-color: ##406386;
+border-color:##406386;
+ overflow:hidden;
+ zoom:1;
+}
+
+
+/*Cor da Tab Ativa*/
+.x-tab.x-tab-active.x-tab-default-top {
+    background-image: none;
+    background-color: #5a738c;
+}
+
+/*Cor da Tab ativa quando perde o foco*/
+.x-tab.x-tab-active.x-tab-default-top {
+    background-image: none;
+    background-color: ##55A5D7;
+}
+
+
+/*Cor da Tab Desativada*/
+.x-tab.x-tab-disabled.x-tab-default-top, .x-tab.x-tab-disabled.x-tab-default-left, .x-tab.x-tab-disabled.x-tab-default-right {
+    background-image: none;
+    background-color: #8399af;  
+    }    
+
+/*cor do botão da tab quando foco em tab ativa*/ 
+.x-keyboard-mode .x-tab-focus.x-tab-over.x-tab-default {
+    border-color: #5a738c;
+    background-color: #5a738c;
+}
+
+/*Cor do botão da tab quando recebe o foco*/
+.x-keyboard-mode .x-tab-focus.x-tab-active.x-tab-default {
+    border-color: #5a738c;
+    background-color: #5a738c;
+}
+
+._treemenu .x-treelist-row-over{
+  background-color: #252F38; /*Cor Clara*/
+/*}*/
+
+/*Opções do Hold Overlay*/
+#holdon-overlay {
+  opacity: .7 !important;
+}      

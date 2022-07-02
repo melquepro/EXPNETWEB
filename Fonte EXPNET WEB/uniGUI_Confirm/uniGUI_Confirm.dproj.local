@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/04/09 13:00:04.511,=G:\Temp\uniGUI_Confirm\ServerModule.pas</Transaction>
+    <Transaction>2020/04/09 13:00:04.539,=G:\Temp\uniGUI_Confirm\MainModule.pas</Transaction>
+    <Transaction>2020/04/09 13:00:04.660,=G:\Temp\uniGUI_Confirm\Main.pas</Transaction>
+    <Transaction>2020/04/09 13:02:20.992,=G:\Temp\uniGUI_Confirm\Uses\Confirm.pas</Transaction>
+  </Transactions>
+</BorlandProject>

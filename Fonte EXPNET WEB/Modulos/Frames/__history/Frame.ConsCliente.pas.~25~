@@ -1,0 +1,328 @@
+unit Frame.ConsCliente;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIFrame, uniGUIBaseClasses, uniLabel, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  Data.DB, ACBrIBGE, ACBrBase, ACBrSocket, ACBrCEP, uniBitBtn,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, uniToolBar, uniBasicGrid,
+  uniDBGrid, uniSplitter, uniMultiItem, uniComboBox, uniDBComboBox,
+  uniDateTimePicker, uniDBDateTimePicker, uniMemo, uniDBMemo, uniEdit,
+  uniDBEdit, uniScrollBox, uniPageControl, uniButton, uniPanel;
+
+type
+  TFrameConsCliente = class(TUniFrame)
+    pnCads: TUniPanel;
+    UniContainerPanel4: TUniContainerPanel;
+    btnNovo: TUniButton;
+    UniPageControl1: TUniPageControl;
+    UniTabSheet1: TUniTabSheet;
+    UniScrollBox1: TUniScrollBox;
+    UniLabel2: TUniLabel;
+    UniLabel3: TUniLabel;
+    UniLabel4: TUniLabel;
+    UniLabel1: TUniLabel;
+    UniLabel6: TUniLabel;
+    UniLabel7: TUniLabel;
+    UniLabel8: TUniLabel;
+    UniLabel9: TUniLabel;
+    UniLabel10: TUniLabel;
+    UniLabel11: TUniLabel;
+    UniLabel12: TUniLabel;
+    edtCodCli: TUniDBEdit;
+    EdtRazao: TUniDBEdit;
+    EdtCPFCNPJ: TUniDBEdit;
+    EdtRGEI: TUniDBEdit;
+    EdtEmail: TUniDBEdit;
+    EdtFone: TUniDBEdit;
+    EdtCelular: TUniDBEdit;
+    mObs: TUniDBMemo;
+    edtDataCad: TUniDBDateTimePicker;
+    cbTipo: TUniDBComboBox;
+    cbStatus: TUniDBComboBox;
+    UniTabSheet2: TUniTabSheet;
+    UniLabel13: TUniLabel;
+    UniLabel14: TUniLabel;
+    UniLabel15: TUniLabel;
+    UniLabel16: TUniLabel;
+    UniLabel17: TUniLabel;
+    UniLabel18: TUniLabel;
+    UniLabel19: TUniLabel;
+    EdtCEP: TUniDBEdit;
+    EdtEnd: TUniDBEdit;
+    Edtbairro: TUniDBEdit;
+    EdtCidade: TUniDBEdit;
+    EdtEstado: TUniDBEdit;
+    EdtComp: TUniDBEdit;
+    mmRef: TUniDBMemo;
+    UniSplitter2: TUniSplitter;
+    UniButton1: TUniButton;
+    UniButton2: TUniButton;
+    pnEnd: TUniPanel;
+    UniDBGrid2: TUniDBGrid;
+    UniSplitter4: TUniSplitter;
+    tbEndereco: TUniToolBar;
+    conEnd: TUniContainerPanel;
+    UniDBEdit9: TUniDBEdit;
+    UniDBEdit10: TUniDBEdit;
+    UniDBEdit11: TUniDBEdit;
+    UniDBEdit12: TUniDBEdit;
+    UniDBEdit13: TUniDBEdit;
+    UniDBEdit14: TUniDBEdit;
+    UniDBMemo2: TUniDBMemo;
+    UniLabel23: TUniLabel;
+    UniLabel24: TUniLabel;
+    UniLabel25: TUniLabel;
+    UniLabel26: TUniLabel;
+    UniLabel28: TUniLabel;
+    UniLabel29: TUniLabel;
+    UniLabel27: TUniLabel;
+    UniTabSheet3: TUniTabSheet;
+    UniLabel20: TUniLabel;
+    UniLabel21: TUniLabel;
+    UniLabel22: TUniLabel;
+    EdtCondBloco: TUniDBEdit;
+    EdtCondApar: TUniDBEdit;
+    UniContainerPanel2: TUniContainerPanel;
+    btnSalvar: TUniButton;
+    btnCancelar: TUniButton;
+    UniSplitter3: TUniSplitter;
+    UniContainerPanel1: TUniContainerPanel;
+    btNovo: TUniBitBtn;
+    BtnEdita: TUniBitBtn;
+    UniContainerPanel3: TUniContainerPanel;
+    UniSplitter1: TUniSplitter;
+    dbGridListCliente: TUniDBGrid;
+    ACBrCEP1: TACBrCEP;
+    ACBrIBGE1: TACBrIBGE;
+    dsConsCliente: TDataSource;
+    edtCondNome: TUniDBEdit;
+    qryConsCliente: TFDQuery;
+    procedure UniFrameReady(Sender: TObject);
+    procedure btNovoClick(Sender: TObject);
+    procedure btnNovoClick(Sender: TObject);
+    procedure UniButton2Click(Sender: TObject);
+    procedure UniButton1Click(Sender: TObject);
+    procedure btnCancelarClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure BtnEditaClick(Sender: TObject);
+    procedure qryConsClienteativoGetText(Sender: TField; var Text: string;
+      DisplayText: Boolean);
+    procedure dbGridListClienteDblClick(Sender: TObject);
+    procedure ACBrCEP1BuscaEfetuada(Sender: TObject);
+    procedure UniFrameCreate(Sender: TObject);
+    procedure UniDBEdit10KeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure EdtCEPKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure UniDBGrid2DblClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+
+    procedure CadShowDetalhe;
+    procedure CadHideDetalhe;
+
+  end;
+
+  var
+  NovoEnd : String;
+
+implementation
+
+{$R *.dfm}
+
+uses uConsCliente, ServerModule;
+
+procedure TFrameConsCliente.CadShowDetalhe;
+begin
+    if pnCads.Collapsible then
+UniSession.AddJS('Ext.onReady(function () {' + pnCads.JSName + '.expand()});');
+end;
+
+procedure TFrameConsCliente.EdtCEPKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+if key = VK_RETURN then
+try
+    ACBrCEP1.BuscarPorCEP(edtCEP.Text);
+  except
+     On E : Exception do
+     begin
+        ShowMessage(E.Message);
+     end ;
+  end ;
+end;
+
+procedure TFrameConsCliente.CadHideDetalhe;
+begin
+    if pnCads.Collapsible then
+UniSession.AddJS('Ext.onReady(function () {' + pnCads.JSName + '.collapse()});');
+end;
+
+
+procedure TFrameConsCliente.qryConsClienteativoGetText(Sender: TField;
+  var Text: string; DisplayText: Boolean);
+begin
+if cbStatus.ItemIndex = 0 then
+
+Text := '<div class=botoes-grid">'+
+'<i class="fas fa-ban fa-stack-10x"></i>'+  // tag bloqueado
+'</div>';
+if cbStatus.ItemIndex = 1 then
+text := '<button class="btn btn-rounded btn-danger btn-sm">Bloqueado<i class="fas fas fa-ban pl-1"></i></button>'
+end;
+
+procedure TFrameConsCliente.UniButton1Click(Sender: TObject);
+begin
+if NovoEnd = 'S' then
+uniDM.qryEndAdicionaiscod_cli.Value := StrToInt(edtCodCli.Text);
+uniDM.qryEndAdicionais.Post;
+tbEndereco.Visible := false;
+uniDM.qryCliente.Open();
+
+end;
+
+procedure TFrameConsCliente.UniButton2Click(Sender: TObject);
+begin
+NovoEnd := 'S';
+
+uniDM.qryEndAdicionais.Append;
+tbEndereco.Visible := true;
+end;
+
+procedure TFrameConsCliente.UniDBEdit10KeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+if key = VK_RETURN then
+try
+    ACBrCEP1.BuscarPorCEP(UniDBEdit10.Text);
+  except
+     On E : Exception do
+     begin
+        ShowMessage(E.Message);
+     end ;
+  end ;
+end;
+
+procedure TFrameConsCliente.dbGridListClienteDblClick(Sender: TObject);
+begin
+CadShowDetalhe;
+uniDM.qryCliente.open;
+uniDM.qryEndAdicionais.open;
+tbEndereco.Visible := false;
+end;
+
+procedure TFrameConsCliente.UniDBGrid2DblClick(Sender: TObject);
+begin
+CadShowDetalhe;
+uniDM.qryCliente.open;
+uniDM.qryEndAdicionais.open;
+tbEndereco.Visible := true;
+end;
+
+procedure TFrameConsCliente.UniFrameCreate(Sender: TObject);
+begin
+if qryConsCliente.Active then
+qryConsCliente.Open();
+if uniDM.qryCliente.Active then
+uniDM.qryCliente.Open();
+if uniDM.qryEndAdicionais.Active then
+uniDM.qryEndAdicionais.Open();
+
+end;
+
+procedure TFrameConsCliente.UniFrameReady(Sender: TObject);
+begin
+CadHideDetalhe;
+end;
+
+procedure TFrameConsCliente.ACBrCEP1BuscaEfetuada(Sender: TObject);
+var
+  I : Integer ;
+begin
+  if ACBrCEP1.Enderecos.Count < 1 then
+     ShowMessage( 'Nenhum Endereço encontrado' )
+  else
+   begin
+     //Memo1.Lines.Add( IntToStr(ACBrCEP1.Enderecos.Count) + ' Endereço(s) encontrado(s)');
+     //Memo1.Lines.Add('');
+
+     For I := 0 to ACBrCEP1.Enderecos.Count-1 do
+     begin
+       with ACBrCEP1.Enderecos[I] do
+       begin
+          EdtCEP.Text    := CEP;
+          EdtEnd.Text    := Tipo_Logradouro+ ' ' +Logradouro;
+          EdtComp.Text   := Complemento;
+          Edtbairro.Text := Bairro;
+          EdtCidade.Text := Municipio;
+          EdtEstado.Text := UF;
+
+
+
+          uniDBEdit10.Text    := CEP;
+          UniDBEdit13.Text    := Tipo_Logradouro+ ' ' +Logradouro;
+          UniDBEdit12.Text   := Complemento;
+          UniDBEdit9.Text := Bairro;
+          UniDBEdit11.Text := Municipio;
+          UniDBEdit14.Text := UF;
+
+
+
+
+          //EdtCidade('Municipio: '+Municipio + ' - IBGE: '+IBGE_Municipio);
+          //Memo1.Lines.Add('UF: '+UF + ' - IBGE: '+IBGE_UF);
+         // Memo1.Lines.Add( StringOfChar('-',20) );
+       end ;
+     end ;
+   end ;
+
+end;
+
+procedure TFrameConsCliente.btnCancelarClick(Sender: TObject);
+begin
+uniDM.qryCliente.Cancel;
+uniDM.qryEndAdicionais.Cancel;
+CadHideDetalhe;
+end;
+
+procedure TFrameConsCliente.BtnEditaClick(Sender: TObject);
+begin
+dbGridListCliente.Options := dbGridListCliente.Options + [dgCheckSelect, dgRowSelect, dgMultiSelect];
+  {
+  dbGridListCliente.JSInterface.JSCall('getSelectionModel().deselectAll', []);
+  dbGridListCliente.JSInterface.JSCall('getSelectionModel().setSelectionMode', ['MULTI']);
+   }
+
+//uniDM.qryCliente.Edit;
+ CadShowDetalhe;
+end;
+
+procedure TFrameConsCliente.btnNovoClick(Sender: TObject);
+begin
+uniDM.qryCliente.Append;
+tbEndereco.Visible := false;
+end;
+
+procedure TFrameConsCliente.btNovoClick(Sender: TObject);
+begin
+uniDM.qryCliente.Append;
+tbEndereco.Visible := false;
+CadShowDetalhe;
+end;
+
+procedure TFrameConsCliente.btnSalvarClick(Sender: TObject);
+begin
+uniDM.qryCliente.Post;
+CadHideDetalhe;
+end;
+
+
+
+
+end.

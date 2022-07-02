@@ -1,0 +1,12 @@
+object frmConsFornecedor: TfrmConsFornecedor
+  Left = 0
+  Top = 0
+  ClientHeight = 608
+  ClientWidth = 1092
+  Caption = 'Lista de Fornecedores'
+  BorderStyle = bsNoneSizeable
+  OldCreateOrder = False
+  MonitoredKeys.Keys = <>
+  PixelsPerInch = 96
+  TextHeight = 13
+end

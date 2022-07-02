@@ -1,0 +1,602 @@
+object frmCadCliente: TfrmCadCliente
+  Left = 0
+  Top = 0
+  VertScrollBar.Smooth = True
+  VertScrollBar.Style = ssFlat
+  VertScrollBar.Tracking = True
+  ClientHeight = 850
+  ClientWidth = 865
+  Caption = ''
+  Color = clWhite
+  BorderStyle = bsNone
+  OldCreateOrder = True
+  BorderIcons = []
+  NavigateKeys.Enabled = True
+  MonitoredKeys.Enabled = True
+  MonitoredKeys.KeyEnableAll = True
+  MonitoredKeys.Keys = <>
+  ClientEvents.UniEvents.Strings = (
+    
+      'window.beforeInit=function window.beforeInit(sender, config)'#13#10'{'#13 +
+      #10#13#10'   config.baseCls="modal-dialog";'#13#10'   config.cls="modal-conte' +
+      'nt modal-xl";'#13#10'   config.scrollbar = true; '#13#10' '#13#10'}               ' +
+      '                                   ')
+  PixelsPerInch = 96
+  TextHeight = 13
+  object UniContainerPanel1: TUniContainerPanel
+    Left = 0
+    Top = 0
+    Width = 865
+    Height = 57
+    Hint = ''
+    ParentColor = False
+    Color = clWhite
+    Align = alTop
+    TabOrder = 0
+    ExplicitWidth = 781
+    DesignSize = (
+      865
+      57)
+    object UniLabel5: TUniLabel
+      Left = 12
+      Top = 10
+      Width = 242
+      Height = 33
+      Hint = ''
+      Margins.Top = 30
+      Alignment = taCenter
+      Caption = 'Cadastrar  Cliente'
+      ParentFont = False
+      Font.Color = clGray
+      Font.Height = -27
+      Font.Style = [fsBold]
+      ParentColor = False
+      Color = 8750469
+      TabOrder = 1
+    end
+    object lbClose: TUniLabel
+      Left = 796
+      Top = 17
+      Width = 54
+      Height = 13
+      Hint = ''
+      TextConversion = txtHTML
+      AutoSize = False
+      Caption = 
+        '<button type="button" class="close" aria-label="Close"><span ari' +
+        'a-hidden="true">&times;</span>'
+      Anchors = [akRight]
+      TabOrder = 2
+      OnClick = lbCloseClick
+    end
+  end
+  object UniScrollBox1: TUniScrollBox
+    Left = 0
+    Top = 61
+    Width = 865
+    Height = 742
+    Hint = ''
+    Align = alClient
+    Color = clWhite
+    TabOrder = 1
+    ExplicitHeight = 706
+    ScrollHeight = 569
+    ScrollWidth = 761
+    object UniDBEdit1: TUniDBEdit
+      Left = 23
+      Top = 45
+      Width = 738
+      Height = 22
+      Hint = ''
+      DataField = 'nome'
+      DataSource = DataSource1
+      TabOrder = 0
+    end
+    object UniDBEdit2: TUniDBEdit
+      Left = 23
+      Top = 101
+      Width = 738
+      Height = 22
+      Hint = ''
+      DataField = 'email'
+      DataSource = DataSource1
+      TabOrder = 1
+    end
+    object UniLabel2: TUniLabel
+      Left = 23
+      Top = 82
+      Width = 28
+      Height = 13
+      Hint = ''
+      Caption = 'E-mail'
+      TabOrder = 2
+    end
+    object UniDBEdit3: TUniDBEdit
+      Left = 23
+      Top = 155
+      Width = 378
+      Height = 22
+      Hint = ''
+      InputRTL = True
+      DataField = 'email'
+      DataSource = DataSource1
+      TabOrder = 3
+      InputType = 'text'
+    end
+    object UniLabel3: TUniLabel
+      Left = 23
+      Top = 136
+      Width = 25
+      Height = 13
+      Hint = ''
+      Caption = 'Login'
+      TabOrder = 4
+    end
+    object UniLabel4: TUniLabel
+      Left = 407
+      Top = 136
+      Width = 30
+      Height = 13
+      Hint = ''
+      Caption = 'Senha'
+      TabOrder = 5
+    end
+    object UniDBEdit4: TUniDBEdit
+      Left = 407
+      Top = 155
+      Width = 354
+      Height = 22
+      Hint = ''
+      DataField = 'email'
+      DataSource = DataSource1
+      TabOrder = 6
+    end
+    object UniDBRadioGroup1: TUniDBRadioGroup
+      Left = 18
+      Top = 208
+      Width = 258
+      Height = 49
+      Hint = ''
+      ParentShowHint = False
+      InputRTL = False
+      DataSource = DataSource1
+      Caption = ''
+      TabOrder = 7
+      ParentColor = False
+      Color = clWhite
+      ClientEvents.UniEvents.Strings = (
+        
+          'beforeInit=function beforeInit(sender, config)'#13#10'{'#13#10'  config.base' +
+          'Cls = "form-check";'#13#10'  config.Cls = "form-check form-check-input' +
+          '";'#13#10'}')
+      Items.Strings = (
+        'Pessoa Fis'#237'ca'
+        'Pessoa Jur'#237'dica')
+      Columns = 2
+      Values.Strings = (
+        'Pessoa Fis'#237'ca'
+        'Pessoa Jur'#237'dica')
+    end
+    object UniLabel1: TUniLabel
+      Left = 23
+      Top = 19
+      Width = 27
+      Height = 13
+      Hint = ''
+      Caption = 'Nome'
+      TabOrder = 8
+    end
+    object UniLabel6: TUniLabel
+      Left = 23
+      Top = 194
+      Width = 72
+      Height = 13
+      Hint = ''
+      Caption = 'Tipo de Pessoa'
+      TabOrder = 9
+    end
+    object UniDBEdit5: TUniDBEdit
+      Left = 23
+      Top = 321
+      Width = 465
+      Height = 22
+      Hint = ''
+      TabOrder = 10
+    end
+    object UniLabel7: TUniLabel
+      Left = 23
+      Top = 298
+      Width = 19
+      Height = 13
+      Hint = ''
+      Caption = 'CEP'
+      TabOrder = 11
+    end
+    object UniLabel8: TUniLabel
+      Left = 23
+      Top = 360
+      Width = 55
+      Height = 13
+      Hint = ''
+      Caption = 'Lagradouro'
+      TabOrder = 12
+    end
+    object UniDBEdit6: TUniDBEdit
+      Left = 23
+      Top = 379
+      Width = 338
+      Height = 22
+      Hint = ''
+      TabOrder = 13
+    end
+    object UniDBEdit7: TUniDBEdit
+      Left = 367
+      Top = 379
+      Width = 121
+      Height = 22
+      Hint = ''
+      TabOrder = 14
+    end
+    object UniDBEdit8: TUniDBEdit
+      Left = 23
+      Top = 435
+      Width = 338
+      Height = 22
+      Hint = ''
+      TabOrder = 15
+    end
+    object UniDBEdit9: TUniDBEdit
+      Left = 23
+      Top = 491
+      Width = 249
+      Height = 22
+      Hint = ''
+      TabOrder = 16
+    end
+    object UniDBEdit10: TUniDBEdit
+      Left = 278
+      Top = 491
+      Width = 210
+      Height = 22
+      Hint = ''
+      TabOrder = 17
+    end
+    object UniDBEdit11: TUniDBEdit
+      Left = 23
+      Top = 547
+      Width = 465
+      Height = 22
+      Hint = ''
+      TabOrder = 18
+    end
+    object UniDBEdit12: TUniDBEdit
+      Left = 552
+      Top = 416
+      Width = 121
+      Height = 51
+      Hint = ''
+      TabOrder = 19
+    end
+    object UniLabel9: TUniLabel
+      Left = 367
+      Top = 360
+      Width = 37
+      Height = 13
+      Hint = ''
+      Caption = 'N'#250'mero'
+      TabOrder = 20
+    end
+    object UniLabel10: TUniLabel
+      Left = 23
+      Top = 416
+      Width = 28
+      Height = 13
+      Hint = ''
+      Caption = 'Bairro'
+      TabOrder = 21
+    end
+    object UniLabel11: TUniLabel
+      Left = 23
+      Top = 472
+      Width = 33
+      Height = 13
+      Hint = ''
+      Caption = 'Cidade'
+      TabOrder = 22
+    end
+    object UniLabel12: TUniLabel
+      Left = 278
+      Top = 472
+      Width = 33
+      Height = 13
+      Hint = ''
+      Caption = 'Estado'
+      TabOrder = 23
+    end
+    object UniLabel13: TUniLabel
+      Left = 23
+      Top = 528
+      Width = 65
+      Height = 13
+      Hint = ''
+      Caption = 'Complemento'
+      TabOrder = 24
+    end
+  end
+  object UniSplitter1: TUniSplitter
+    Left = 0
+    Top = 803
+    Width = 865
+    Height = 3
+    Cursor = crVSplit
+    Hint = ''
+    Enabled = False
+    Align = alBottom
+    ParentColor = False
+    Color = 15395562
+    ExplicitTop = 767
+    ExplicitWidth = 781
+  end
+  object UniSplitter2: TUniSplitter
+    Left = 0
+    Top = 57
+    Width = 865
+    Height = 4
+    Cursor = crVSplit
+    Hint = ''
+    Enabled = False
+    Align = alTop
+    ParentColor = False
+    Color = 15395562
+    ExplicitWidth = 781
+  end
+  object UniContainerPanel2: TUniContainerPanel
+    Left = 0
+    Top = 806
+    Width = 865
+    Height = 44
+    Hint = ''
+    ParentColor = False
+    Color = clWhite
+    Align = alBottom
+    TabOrder = 4
+    ExplicitTop = 770
+    ExplicitWidth = 781
+    DesignSize = (
+      865
+      44)
+    object UniButton2: TUniButton
+      Left = 618
+      Top = 5
+      Width = 108
+      Height = 30
+      Hint = ''
+      Caption = '<i class="fas fa-times-circle"></i>  Cancelar'
+      Anchors = [akRight]
+      TabOrder = 1
+      ClientEvents.UniEvents.Strings = (
+        
+          'beforeInit=function beforeInit(sender, config)'#13#10'{'#13#10'    config.ba' +
+          'seCls="btn";'#13#10'    config.cls="btn-danger btn-sm";'#13#10'}')
+      OnClick = UniButton2Click
+      ExplicitLeft = 534
+    end
+    object UniButton3: TUniButton
+      Left = 739
+      Top = 5
+      Width = 118
+      Height = 30
+      Hint = ''
+      Caption = '<i class="fas fa-plus-circle"></i>   Cadastrar'
+      Anchors = [akRight]
+      TabOrder = 2
+      ClientEvents.UniEvents.Strings = (
+        
+          'beforeInit=function beforeInit(sender, config)'#13#10'{'#13#10'    config.ba' +
+          'seCls="btn";'#13#10'    config.cls="btn-success btn-sm";'#13#10'}')
+      ExplicitLeft = 655
+    end
+  end
+  object FDQuery1: TFDQuery
+    Connection = UniMainModule.FDConnection1
+    SQL.Strings = (
+      'SELECT * FROM CLIENTES')
+    Left = 344
+    Top = 248
+    object FDQuery1id: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object FDQuery1codigo: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'codigo'
+      Origin = 'codigo'
+      Size = 16
+    end
+    object FDQuery1empresa: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'empresa'
+      Origin = 'empresa'
+      Size = 11
+    end
+    object FDQuery1nome: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'nome'
+      Origin = 'nome'
+      Size = 160
+    end
+    object FDQuery1login: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'login'
+      Origin = 'login'
+      Size = 60
+    end
+    object FDQuery1senha: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'senha'
+      Origin = 'senha'
+      Size = 60
+    end
+    object FDQuery1cpf: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'cpf'
+      Origin = 'cpf'
+      Size = 60
+    end
+    object FDQuery1rg: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'rg'
+      Origin = 'rg'
+      Size = 60
+    end
+    object FDQuery1tel: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'tel'
+      Origin = 'tel'
+      Size = 60
+    end
+    object FDQuery1cel: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'cel'
+      Origin = 'cel'
+      Size = 60
+    end
+    object FDQuery1email: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'email'
+      Origin = 'email'
+      Size = 255
+    end
+    object FDQuery1pai: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'pai'
+      Origin = 'pai'
+      Size = 60
+    end
+    object FDQuery1mae: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'mae'
+      Origin = 'mae'
+      Size = 60
+    end
+    object FDQuery1nascimento: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'nascimento'
+      Origin = 'nascimento'
+      Size = 60
+    end
+    object FDQuery1estadocivil: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'estadocivil'
+      Origin = 'estadocivil'
+      Size = 60
+    end
+    object FDQuery1naturalidade: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'naturalidade'
+      Origin = 'naturalidade'
+      Size = 100
+    end
+    object FDQuery1dataentrada: TDateField
+      AutoGenerateValue = arDefault
+      FieldName = 'dataentrada'
+      Origin = 'dataentrada'
+    end
+    object FDQuery1vctocontrato: TDateField
+      AutoGenerateValue = arDefault
+      FieldName = 'vctocontrato'
+      Origin = 'vctocontrato'
+    end
+    object FDQuery1endereco: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'endereco'
+      Origin = 'endereco'
+      Size = 160
+    end
+    object FDQuery1numero: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'numero'
+      Origin = 'numero'
+      Size = 11
+    end
+    object FDQuery1referencia: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'referencia'
+      Origin = 'referencia'
+      Size = 200
+    end
+    object FDQuery1complemento: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'complemento'
+      Origin = 'complemento'
+      Size = 60
+    end
+    object FDQuery1bairro: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'bairro'
+      Origin = 'bairro'
+      Size = 60
+    end
+    object FDQuery1cidade: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'cidade'
+      Origin = 'cidade'
+      Size = 60
+    end
+    object FDQuery1estado: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'estado'
+      Origin = 'estado'
+      Size = 60
+    end
+    object FDQuery1cep: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'cep'
+      Origin = 'cep'
+      Size = 36
+    end
+    object FDQuery1nf: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'nf'
+      Origin = 'nf'
+      Size = 2
+    end
+    object FDQuery1cfop: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'cfop'
+      Origin = 'cfop'
+      Size = 10
+    end
+    object FDQuery1tipoassinante: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'tipoassinante'
+      Origin = 'tipoassinante'
+      Size = 2
+    end
+    object FDQuery1tipoutilizacao: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'tipoutilizacao'
+      Origin = 'tipoutilizacao'
+      Size = 2
+    end
+    object FDQuery1grupo: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'grupo'
+      Origin = 'grupo'
+      Size = 60
+    end
+    object FDQuery1status: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'status'
+      Origin = '`status`'
+      Size = 2
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 136
+    Top = 640
+  end
+end

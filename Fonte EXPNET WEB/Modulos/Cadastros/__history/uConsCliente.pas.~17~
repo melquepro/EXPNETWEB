@@ -1,0 +1,187 @@
+unit uConsCliente;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIForm, uniGUIFrame, Frame.ConsCliente, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  uniBitBtn, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, uniToolBar,
+  uniBasicGrid, uniDBGrid, uniSplitter, uniMultiItem, uniComboBox,
+  uniDBComboBox, uniDateTimePicker, uniDBDateTimePicker, uniMemo, uniDBMemo,
+  uniEdit, uniDBEdit, uniLabel, uniScrollBox, uniPageControl, uniButton,
+  uniPanel, uniGUIBaseClasses, ACBrIBGE, ACBrBase, ACBrSocket, ACBrCEP;
+
+type
+  TfrmConsCliente = class(TUniForm)
+    FrameConsCliente: TFrameConsCliente;
+    procedure UniFormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btnCancelarClick(Sender: TObject);
+    procedure BtnEditaClick(Sender: TObject);
+    procedure btnNovoClick(Sender: TObject);
+    procedure FrameConsClienteACBrCEP1BuscaEfetuada(Sender: TObject);
+    procedure FrameConsClienteqryConsClienteativoGetText(Sender: TField;
+      var Text: string; DisplayText: Boolean);
+    procedure FrameConsClienteUniButton1Click(Sender: TObject);
+    procedure FrameConsClienteUniButton2Click(Sender: TObject);
+    procedure FrameConsClienteUniDBGrid1DblClick(Sender: TObject);
+    procedure FrameConsClienteReady(Sender: TObject);
+    procedure FrameConsClientebtNovoClick(Sender: TObject);
+    procedure FrameConsClienteBtnEditaClick(Sender: TObject);
+    procedure FrameConsClientebtnNovoClick(Sender: TObject);
+    procedure FrameConsClientebtnCancelarClick(Sender: TObject);
+    procedure FrameConsClientebtnSalvarClick(Sender: TObject);
+
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+
+
+
+  end;
+
+function frmConsCliente: TfrmConsCliente;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  MainModule, uniGUIApplication, ServerModule;
+
+function frmConsCliente: TfrmConsCliente;
+begin
+  Result := TfrmConsCliente(UniMainModule.GetFormInstance(TfrmConsCliente));
+end;
+
+
+
+procedure TfrmConsCliente.btnCancelarClick(Sender: TObject);
+begin
+uniDM.qryCliente.close;
+uniDM.qryEndAdicionais.close;
+FrameConsCliente.CadHideDetalhe;
+end;
+
+procedure TfrmConsCliente.BtnEditaClick(Sender: TObject);
+begin
+uniDM.qryCliente.Append;
+ FrameConsCliente.CadShowDetalhe;
+end;
+
+procedure TfrmConsCliente.btnNovoClick(Sender: TObject);
+begin
+uniDM.qryCliente.Append;
+end;
+
+procedure TfrmConsCliente.FrameConsClienteACBrCEP1BuscaEfetuada(
+  Sender: TObject);
+var
+  I : Integer ;
+begin
+  if FrameConsCliente.ACBrCEP1.Enderecos.Count < 1 then
+     ShowMessage( 'Nenhum Endereço encontrado' )
+  else
+   begin
+     //Memo1.Lines.Add( IntToStr(ACBrCEP1.Enderecos.Count) + ' Endereço(s) encontrado(s)');
+     //Memo1.Lines.Add('');
+
+     For I := 0 to FrameConsCliente.ACBrCEP1.Enderecos.Count-1 do
+     begin
+       with FrameConsCliente.ACBrCEP1.Enderecos[I] do
+       begin
+          FrameConsCliente.EdtCEP.Text    := CEP;
+          FrameConsCliente.EdtEnd.Text    := Tipo_Logradouro+ ' ' +Logradouro;
+          FrameConsCliente.EdtComp.Text   := Complemento;
+          FrameConsCliente.Edtbairro.Text := Bairro;
+          //EdtCidade('Municipio: '+Municipio + ' - IBGE: '+IBGE_Municipio);
+          FrameConsCliente.EdtCidade.Text := Municipio;
+          FrameConsCliente.EdtEstado.Text := UF;
+          //Memo1.Lines.Add('UF: '+UF + ' - IBGE: '+IBGE_UF);
+         // Memo1.Lines.Add( StringOfChar('-',20) );
+       end ;
+     end ;
+   end ;
+end;
+
+procedure TfrmConsCliente.FrameConsClientebtnCancelarClick(Sender: TObject);
+begin
+  uniDM.qryCliente.Cancel;
+uniDM.qryEndAdicionais.Cancel;
+end;
+
+procedure TfrmConsCliente.FrameConsClienteBtnEditaClick(Sender: TObject);
+begin
+ uniDM.qryCliente.Edit;
+FrameConsCliente.CadShowDetalhe;
+end;
+
+procedure TfrmConsCliente.FrameConsClientebtnNovoClick(Sender: TObject);
+begin
+uniDM.qryCliente.Append;
+end;
+
+procedure TfrmConsCliente.FrameConsClientebtNovoClick(Sender: TObject);
+begin
+uniDM.qryCliente.Append;
+FrameConsCliente.CadShowDetalhe;
+end;
+
+procedure TfrmConsCliente.FrameConsClientebtnSalvarClick(Sender: TObject);
+begin
+uniDM.qryCliente.Post;
+end;
+
+procedure TfrmConsCliente.FrameConsClienteqryConsClienteativoGetText(
+  Sender: TField; var Text: string; DisplayText: Boolean);
+begin
+if FrameConsCliente.cbStatus.ItemIndex = 0 then
+
+Text := '<div class=botoes-grid">'+
+'<i class="fas fa-ban fa-stack-10x"></i>'+  // tag bloqueado
+'</div>';
+if FrameConsCliente.cbStatus.ItemIndex = 1 then
+text := '<button class="btn btn-rounded btn-danger btn-sm">Bloqueado<i class="fas fas fa-ban pl-1"></i></button>'
+end;
+
+procedure TfrmConsCliente.FrameConsClienteReady(Sender: TObject);
+begin
+  FrameConsCliente.UniFrameReady(Sender);
+end;
+
+procedure TfrmConsCliente.FrameConsClienteUniButton1Click(Sender: TObject);
+begin
+uniDM.qryEndAdicionais.Post;
+FrameConsCliente.tbEndereco.Visible := false;
+end;
+
+procedure TfrmConsCliente.FrameConsClienteUniButton2Click(Sender: TObject);
+begin
+uniDM.qryEndAdicionais.Append;
+FrameConsCliente.tbEndereco.Visible := true;
+end;
+
+procedure TfrmConsCliente.FrameConsClienteUniDBGrid1DblClick(Sender: TObject);
+begin
+  FrameConsCliente.CadShowDetalhe;
+uniDM.qryCliente.open;
+uniDM.qryEndAdicionais.open;
+end;
+
+procedure TfrmConsCliente.UniFormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+if uniDM.qryCliente.State in [dsInsert, dsEdit] then
+    begin
+          //MessageBox(0,'É necessário salvar ou cancelar as alterações de sair','Atenção',64);
+uniDM.qryCliente.Cancel;
+uniDM.qryEndAdicionais.Cancel;
+
+    end;
+end;
+
+end.

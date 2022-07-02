@@ -1,0 +1,33 @@
+menu left
+.x-treelist-nav .x-treelist-item-text
+{ color White;       cor da letra do menu
+  margin-left 27px;  27 espaçamento da esquerda para direita dos Itens do menu
+  margin-right 15px; espaçamento da esquerda para direita dos Grupos do menu
+  font-size 16px;    tamanho das letras
+  line-height 30px;  altura da linha do menu
+}
+
+ .x-treelist-nav .x-treelist-item-iconbefore,
+ .x-treelist-nav .x-treelist-item-toolbefore,
+ .x-treelist-nav .x-treelist-item-expander
+{ line-height 30px;  color White;} 
+
+Menu Expandidos
+.x-treelist-nav .x-treelist-item-expanded { background-color #324f67 !important;}
+
+Menu Selecionado
+.x-treelist-nav .x-treelist-item-selected  .x-treelist-rowbefore { background-color #008ae6 !important;}
+
+Passa o mouse
+.x-treelist-nav .x-treelist-row-over{background-color #808080 !important;}
+
+.x-treelist-nav-webkit-scrollbar { width 7px;  height7px;  background#d6d9db;}
+
+.x-treelist-nav-webkit-scrollbar-track {background rgba(0,0,0,0.1);}
+
+.x-treelist-nav-webkit-scrollbar-thumb {border-radius 7px;height7px;background#778088;}
+
+
+ UniTreeMenu - end 
+
+

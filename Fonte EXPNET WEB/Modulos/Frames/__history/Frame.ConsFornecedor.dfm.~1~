@@ -1,0 +1,9 @@
+object FrameConsFornecedor: TFrameConsFornecedor
+  Left = 0
+  Top = 0
+  Width = 979
+  Height = 578
+  Align = alClient
+  Anchors = [akLeft, akTop, akRight, akBottom]
+  TabOrder = 0
+end

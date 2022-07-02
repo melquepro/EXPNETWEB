@@ -1,0 +1,78 @@
+unit Frame.ConsFornecedor;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIFrame, uniEdit, uniDBEdit, uniLabel, uniScrollBox,
+  uniPageControl, ACBrIBGE, ACBrBase, ACBrSocket, ACBrCEP, uniBasicGrid,
+  uniDBGrid, uniBitBtn, uniSplitter, uniButton, uniPanel, uniGUIBaseClasses;
+
+type
+  TFrameConsFornecedor = class(TUniFrame)
+    pnCads: TUniPanel;
+    UniContainerPanel4: TUniContainerPanel;
+    btnNovo: TUniButton;
+    UniContainerPanel2: TUniContainerPanel;
+    btnSalvar: TUniButton;
+    btnCancelar: TUniButton;
+    UniSplitter3: TUniSplitter;
+    UniContainerPanel1: TUniContainerPanel;
+    btNovo: TUniBitBtn;
+    BtnEdita: TUniBitBtn;
+    UniContainerPanel3: TUniContainerPanel;
+    UniSplitter1: TUniSplitter;
+    dbGridListCliente: TUniDBGrid;
+    ACBrCEP1: TACBrCEP;
+    ACBrIBGE1: TACBrIBGE;
+    UniPageControl1: TUniPageControl;
+    UniTabSheet1: TUniTabSheet;
+    UniScrollBox1: TUniScrollBox;
+    UniLabel2: TUniLabel;
+    UniLabel3: TUniLabel;
+    UniLabel1: TUniLabel;
+    UniLabel6: TUniLabel;
+    UniLabel9: TUniLabel;
+    UniLabel10: TUniLabel;
+    UniLabel11: TUniLabel;
+    UniLabel12: TUniLabel;
+    edtCodCli: TUniDBEdit;
+    EdtRazao: TUniDBEdit;
+    EdtCPFCNPJ: TUniDBEdit;
+    EdtRGEI: TUniDBEdit;
+    EdtEmail: TUniDBEdit;
+    EdtFone: TUniDBEdit;
+    EdtCelular: TUniDBEdit;
+    UniTabSheet2: TUniTabSheet;
+    UniLabel13: TUniLabel;
+    UniLabel14: TUniLabel;
+    UniLabel15: TUniLabel;
+    UniLabel16: TUniLabel;
+    UniLabel17: TUniLabel;
+    UniLabel18: TUniLabel;
+    EdtCEP: TUniDBEdit;
+    EdtEnd: TUniDBEdit;
+    Edtbairro: TUniDBEdit;
+    EdtCidade: TUniDBEdit;
+    EdtEstado: TUniDBEdit;
+    EdtComp: TUniDBEdit;
+    UniSplitter2: TUniSplitter;
+    UniDBEdit1: TUniDBEdit;
+    UniDBEdit2: TUniDBEdit;
+    UniLabel4: TUniLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+
+uses ServerModule;
+
+
+
+end.

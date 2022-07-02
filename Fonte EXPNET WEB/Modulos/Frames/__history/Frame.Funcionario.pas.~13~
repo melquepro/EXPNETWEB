@@ -1,0 +1,82 @@
+unit Frame.Funcionario;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIFrame, uniSplitter, uniPanel, uniGUIBaseClasses,
+  uniBasicGrid, uniDBGrid, uniScrollBox, uniButton, uniDateTimePicker,
+  uniDBDateTimePicker, uniEdit, uniDBEdit, uniLabel, uniPageControl,
+  uniRadioGroup, uniDBRadioGroup, uniMultiItem, uniComboBox, uniDBComboBox;
+
+type
+  TFrameFuncionario = class(TUniFrame)
+    UniPanel1: TUniPanel;
+    UniContainerPanel1: TUniContainerPanel;
+    UniSplitter1: TUniSplitter;
+    UniDBGrid1: TUniDBGrid;
+    UniSplitter2: TUniSplitter;
+    UniScrollBox1: TUniScrollBox;
+    UniContainerPanel3: TUniContainerPanel;
+    UniContainerPanel2: TUniContainerPanel;
+    btnNovo: TUniButton;
+    UniSplitter3: TUniSplitter;
+    UniPageControl1: TUniPageControl;
+    UniTabSheet1: TUniTabSheet;
+    UniTabSheet2: TUniTabSheet;
+    UniLabel2: TUniLabel;
+    UniLabel3: TUniLabel;
+    UniLabel1: TUniLabel;
+    UniLabel6: TUniLabel;
+    UniLabel9: TUniLabel;
+    UniLabel10: TUniLabel;
+    UniLabel11: TUniLabel;
+    UniLabel12: TUniLabel;
+    UniLabel4: TUniLabel;
+    EdtCelular: TUniDBEdit;
+    EdtFone: TUniDBEdit;
+    EdtEmail: TUniDBEdit;
+    EdtRGEI: TUniDBEdit;
+    EdtCPFCNPJ: TUniDBEdit;
+    EdtRazao: TUniDBEdit;
+    edtCodCli: TUniDBEdit;
+    EdtCEP: TUniDBEdit;
+    EdtEnd: TUniDBEdit;
+    Edtbairro: TUniDBEdit;
+    EdtCidade: TUniDBEdit;
+    EdtComp: TUniDBEdit;
+    EdtEstado: TUniDBEdit;
+    UniLabel17: TUniLabel;
+    UniLabel18: TUniLabel;
+    UniLabel16: TUniLabel;
+    UniLabel15: TUniLabel;
+    UniLabel14: TUniLabel;
+    UniLabel13: TUniLabel;
+    UniLabel5: TUniLabel;
+    UniLabel7: TUniLabel;
+    UniDBDateTimePicker1: TUniDBDateTimePicker;
+    UniDBDateTimePicker2: TUniDBDateTimePicker;
+    btnCancelar: TUniButton;
+    BtnSalvar: TUniButton;
+    UniDBFormattedNumberEdit1: TUniDBFormattedNumberEdit;
+    UniDBFormattedNumberEdit2: TUniDBFormattedNumberEdit;
+    UniDBComboBox1: TUniDBComboBox;
+    UniLabel8: TUniLabel;
+    UniLabel19: TUniLabel;
+    UniDBComboBox2: TUniDBComboBox;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+
+uses ServerModule;
+
+
+
+end.

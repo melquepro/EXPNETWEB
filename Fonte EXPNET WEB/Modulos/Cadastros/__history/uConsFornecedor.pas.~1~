@@ -1,0 +1,32 @@
+unit uConsFornecedor;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIForm;
+
+type
+  TfrmConsFornecedor = class(TUniForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+function frmConsFornecedor: TfrmConsFornecedor;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  MainModule, uniGUIApplication;
+
+function frmConsFornecedor: TfrmConsFornecedor;
+begin
+  Result := TfrmConsFornecedor(UniMainModule.GetFormInstance(TfrmConsFornecedor));
+end;
+
+end.

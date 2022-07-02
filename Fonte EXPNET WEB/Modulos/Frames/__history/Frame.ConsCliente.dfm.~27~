@@ -1,0 +1,939 @@
+object FrameConsCliente: TFrameConsCliente
+  Left = 0
+  Top = 0
+  Width = 1096
+  Height = 675
+  OnCreate = UniFrameCreate
+  OnReady = UniFrameReady
+  TabOrder = 0
+  object pnCads: TUniPanel
+    Left = 526
+    Top = 33
+    Width = 570
+    Height = 642
+    Hint = ''
+    Margins.Left = 5
+    Margins.Top = 0
+    Margins.Right = 4
+    Margins.Bottom = 0
+    Align = alRight
+    TabOrder = 0
+    ClientEvents.Enabled = False
+    ScreenMask.Opacity = 0.200000002980232200
+    Floating = True
+    BorderStyle = ubsNone
+    TitleVisible = True
+    Title = 'Detalhes'
+    Background.Fit = True
+    Caption = ''
+    Collapsible = True
+    CollapseDirection = cdLeft
+    ImageIndex = 4
+    ParentAlignmentControl = False
+    Layout = 'hbox'
+    LayoutConfig.Split = True
+    object UniContainerPanel4: TUniContainerPanel
+      Left = 0
+      Top = 0
+      Width = 570
+      Height = 33
+      Hint = ''
+      ParentColor = False
+      Align = alTop
+      TabOrder = 1
+      object btnNovo: TUniButton
+        Left = 11
+        Top = 4
+        Width = 75
+        Height = 25
+        Hint = ''
+        Caption = 'Novo'
+        TabOrder = 1
+        ImageIndex = 5
+        OnClick = btnNovoClick
+      end
+    end
+    object UniPageControl1: TUniPageControl
+      Left = 2
+      Top = 33
+      Width = 568
+      Height = 573
+      Hint = ''
+      ActivePage = UniTabSheet3
+      Align = alClient
+      TabOrder = 2
+      object UniTabSheet1: TUniTabSheet
+        Hint = ''
+        Caption = 'Dados Pessoais'
+        object UniScrollBox1: TUniScrollBox
+          Left = 0
+          Top = 0
+          Width = 560
+          Height = 545
+          Hint = ''
+          Align = alClient
+          TabOrder = 0
+          ScrollHeight = 369
+          ScrollWidth = 541
+          object UniLabel2: TUniLabel
+            Left = 36
+            Top = 44
+            Width = 37
+            Height = 13
+            Hint = ''
+            Caption = 'C'#243'digo:'
+            TabOrder = 0
+          end
+          object UniLabel3: TUniLabel
+            Left = 9
+            Top = 103
+            Width = 64
+            Height = 13
+            Hint = ''
+            Caption = 'Raz'#227'o Social:'
+            TabOrder = 1
+          end
+          object UniLabel4: TUniLabel
+            Left = 13
+            Top = 73
+            Width = 60
+            Height = 13
+            Hint = ''
+            Caption = 'Tipo Cliente:'
+            TabOrder = 2
+          end
+          object UniLabel1: TUniLabel
+            Left = 21
+            Top = 136
+            Width = 52
+            Height = 13
+            Hint = ''
+            Caption = 'CPF/CNPJ:'
+            TabOrder = 3
+          end
+          object UniLabel6: TUniLabel
+            Left = 41
+            Top = 166
+            Width = 32
+            Height = 13
+            Hint = ''
+            Caption = 'RG/IE:'
+            TabOrder = 4
+          end
+          object UniLabel7: TUniLabel
+            Left = 331
+            Top = 73
+            Width = 45
+            Height = 13
+            Hint = ''
+            Caption = 'Situa'#231#227'o:'
+            TabOrder = 5
+          end
+          object UniLabel8: TUniLabel
+            Left = 302
+            Top = 44
+            Width = 74
+            Height = 13
+            Hint = ''
+            Caption = 'Data Cadastro:'
+            TabOrder = 6
+          end
+          object UniLabel9: TUniLabel
+            Left = 41
+            Top = 194
+            Width = 32
+            Height = 13
+            Hint = ''
+            Caption = 'E-mail:'
+            TabOrder = 7
+          end
+          object UniLabel10: TUniLabel
+            Left = 27
+            Top = 221
+            Width = 46
+            Height = 13
+            Hint = ''
+            Caption = 'Telefone:'
+            TabOrder = 8
+          end
+          object UniLabel11: TUniLabel
+            Left = 36
+            Top = 250
+            Width = 37
+            Height = 13
+            Hint = ''
+            Caption = 'Celular:'
+            TabOrder = 9
+          end
+          object UniLabel12: TUniLabel
+            Left = 6
+            Top = 280
+            Width = 67
+            Height = 13
+            Hint = ''
+            Caption = 'Observa'#231#245'es:'
+            TabOrder = 10
+          end
+          object edtCodCli: TUniDBEdit
+            Left = 95
+            Top = 39
+            Width = 192
+            Height = 22
+            Hint = ''
+            Enabled = False
+            DataField = 'cod_cli'
+            DataSource = uniDM.dsCliente
+            TabOrder = 11
+          end
+          object EdtRazao: TUniDBEdit
+            Left = 95
+            Top = 98
+            Width = 446
+            Height = 22
+            Hint = ''
+            DataField = 'razao_social'
+            DataSource = uniDM.dsCliente
+            TabOrder = 12
+          end
+          object EdtCPFCNPJ: TUniDBEdit
+            Left = 95
+            Top = 131
+            Width = 446
+            Height = 22
+            Hint = ''
+            DataField = 'cpf_cnpj'
+            DataSource = uniDM.dsCliente
+            TabOrder = 13
+          end
+          object EdtRGEI: TUniDBEdit
+            Left = 95
+            Top = 160
+            Width = 446
+            Height = 22
+            Hint = ''
+            DataField = 'rg_ie'
+            DataSource = uniDM.dsCliente
+            TabOrder = 14
+          end
+          object EdtEmail: TUniDBEdit
+            Left = 95
+            Top = 189
+            Width = 446
+            Height = 22
+            Hint = ''
+            DataField = 'email'
+            DataSource = uniDM.dsCliente
+            TabOrder = 15
+          end
+          object EdtFone: TUniDBEdit
+            Left = 95
+            Top = 217
+            Width = 446
+            Height = 23
+            Hint = ''
+            DataField = 'fone'
+            DataSource = uniDM.dsCliente
+            TabOrder = 16
+          end
+          object EdtCelular: TUniDBEdit
+            Left = 95
+            Top = 246
+            Width = 446
+            Height = 22
+            Hint = ''
+            DataField = 'celular'
+            DataSource = uniDM.dsCliente
+            TabOrder = 17
+          end
+          object mObs: TUniDBMemo
+            Left = 96
+            Top = 280
+            Width = 445
+            Height = 89
+            Hint = ''
+            DataField = 'observacao'
+            DataSource = uniDM.dsCliente
+            TabOrder = 18
+          end
+          object edtDataCad: TUniDBDateTimePicker
+            Left = 390
+            Top = 37
+            Width = 151
+            Height = 24
+            Hint = ''
+            DataField = 'data_cad'
+            DataSource = uniDM.dsCliente
+            DateTime = 44090.000000000000000000
+            TabOrder = 19
+            UseSystemFormats = True
+          end
+          object cbTipo: TUniDBComboBox
+            Left = 95
+            Top = 68
+            Width = 194
+            Hint = ''
+            DataField = 'tipo_cliente'
+            DataSource = uniDM.dsCliente
+            Items.Strings = (
+              'Pessoa Fis'#237'ca'
+              'Pessoa Juridica')
+            TabOrder = 20
+            IconItems = <>
+          end
+          object cbStatus: TUniDBComboBox
+            Left = 390
+            Top = 68
+            Width = 151
+            Hint = ''
+            DataField = 'ativo'
+            DataSource = uniDM.dsCliente
+            Items.Strings = (
+              'ATIVO'
+              'DESATIVADO'
+              'CANCELADO')
+            TabOrder = 21
+            IconItems = <>
+          end
+        end
+      end
+      object UniTabSheet2: TUniTabSheet
+        Hint = ''
+        Caption = 'Endere'#231'o'
+        object UniLabel13: TUniLabel
+          Left = 60
+          Top = 23
+          Width = 23
+          Height = 13
+          Hint = ''
+          Caption = 'CEP:'
+          TabOrder = 0
+        end
+        object UniLabel14: TUniLabel
+          Left = 34
+          Top = 60
+          Width = 49
+          Height = 13
+          Hint = ''
+          Caption = 'Endere'#231'o:'
+          TabOrder = 1
+        end
+        object UniLabel15: TUniLabel
+          Left = 51
+          Top = 86
+          Width = 32
+          Height = 13
+          Hint = ''
+          Caption = 'Bairro:'
+          TabOrder = 2
+        end
+        object UniLabel16: TUniLabel
+          Left = 46
+          Top = 116
+          Width = 37
+          Height = 13
+          Hint = ''
+          Caption = 'Cidade:'
+          TabOrder = 3
+        end
+        object UniLabel17: TUniLabel
+          Left = 349
+          Top = 114
+          Width = 37
+          Height = 13
+          Hint = ''
+          Caption = 'Estado:'
+          TabOrder = 4
+        end
+        object UniLabel18: TUniLabel
+          Left = 13
+          Top = 145
+          Width = 69
+          Height = 13
+          Hint = ''
+          Caption = 'Complemento:'
+          TabOrder = 5
+        end
+        object UniLabel19: TUniLabel
+          Left = 26
+          Top = 171
+          Width = 56
+          Height = 13
+          Hint = ''
+          Caption = 'Refer'#234'ncia:'
+          TabOrder = 6
+        end
+        object EdtCEP: TUniDBEdit
+          Left = 97
+          Top = 19
+          Width = 445
+          Height = 22
+          Hint = ''
+          DataField = 'cep'
+          DataSource = uniDM.dsCliente
+          TabOrder = 7
+          OnKeyDown = EdtCEPKeyDown
+        end
+        object EdtEnd: TUniDBEdit
+          Left = 97
+          Top = 55
+          Width = 445
+          Height = 22
+          Hint = ''
+          DataField = 'endereco'
+          DataSource = uniDM.dsCliente
+          TabOrder = 8
+        end
+        object Edtbairro: TUniDBEdit
+          Left = 97
+          Top = 83
+          Width = 445
+          Height = 22
+          Hint = ''
+          DataField = 'bairro'
+          DataSource = uniDM.dsCliente
+          TabOrder = 9
+        end
+        object EdtCidade: TUniDBEdit
+          Left = 96
+          Top = 112
+          Width = 233
+          Height = 22
+          Hint = ''
+          DataField = 'cidade'
+          DataSource = uniDM.dsCliente
+          TabOrder = 10
+        end
+        object EdtEstado: TUniDBEdit
+          Left = 395
+          Top = 109
+          Width = 147
+          Height = 22
+          Hint = ''
+          DataField = 'estado'
+          TabOrder = 11
+        end
+        object EdtComp: TUniDBEdit
+          Left = 96
+          Top = 140
+          Width = 446
+          Height = 22
+          Hint = ''
+          DataField = 'complemento'
+          DataSource = uniDM.dsCliente
+          TabOrder = 12
+        end
+        object mmRef: TUniDBMemo
+          Left = 96
+          Top = 170
+          Width = 446
+          Height = 89
+          Hint = ''
+          DataField = 'referencia'
+          DataSource = uniDM.dsCliente
+          TabOrder = 13
+        end
+        object UniSplitter2: TUniSplitter
+          Left = 0
+          Top = 352
+          Width = 560
+          Height = 3
+          Cursor = crVSplit
+          Hint = ''
+          Align = alBottom
+          ParentColor = False
+          Color = clHighlight
+        end
+        object UniButton1: TUniButton
+          Left = 464
+          Top = 283
+          Width = 75
+          Height = 25
+          Hint = ''
+          Caption = 'Adicionar'
+          TabOrder = 15
+          OnClick = UniButton1Click
+        end
+        object UniButton2: TUniButton
+          Left = 383
+          Top = 283
+          Width = 75
+          Height = 25
+          Hint = ''
+          Caption = 'Novo'
+          TabOrder = 16
+          OnClick = UniButton2Click
+        end
+        object pnEnd: TUniPanel
+          Left = 0
+          Top = 318
+          Width = 560
+          Height = 34
+          Hint = ''
+          Align = alBottom
+          ParentFont = False
+          Font.Color = 15890957
+          TabOrder = 17
+          Alignment = taLeftJustify
+          Caption = '  Endere'#231'o Adicionais'
+        end
+        object UniDBGrid2: TUniDBGrid
+          Left = 0
+          Top = 355
+          Width = 560
+          Height = 190
+          Hint = ''
+          DataSource = uniDM.dsEndAdicionais
+          Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgRowSelect, dgAutoRefreshRow]
+          LoadMask.Message = 'Loading data...'
+          Align = alBottom
+          TabOrder = 18
+          Columns = <
+            item
+              FieldName = 'end_cep'
+              Title.Caption = 'CEP'
+              Width = 80
+            end
+            item
+              FieldName = 'end_logradouro'
+              Title.Caption = ' Endere'#231'o'
+              Width = 200
+            end
+            item
+              FieldName = 'end_bairro'
+              Title.Caption = 'Bairro'
+              Width = 100
+            end
+            item
+              FieldName = 'end_cidade'
+              Title.Caption = 'Cidade'
+              Width = 132
+            end
+            item
+              FieldName = 'end_estado'
+              Title.Caption = ' Estado'
+              Width = 40
+            end>
+        end
+        object UniSplitter4: TUniSplitter
+          Left = 0
+          Top = 315
+          Width = 560
+          Height = 3
+          Cursor = crVSplit
+          Hint = ''
+          Align = alBottom
+          ParentColor = False
+          Color = clHighlight
+        end
+        object tbEndereco: TUniToolBar
+          Left = 0
+          Top = 0
+          Width = 560
+          Height = 275
+          Hint = ''
+          Visible = False
+          TabOrder = 20
+          ParentColor = False
+          Color = clBtnFace
+          object conEnd: TUniContainerPanel
+            Left = 0
+            Top = 0
+            Width = 560
+            Height = 275
+            Hint = ''
+            ParentColor = False
+            Align = alTop
+            TabOrder = 1
+            object UniDBEdit9: TUniDBEdit
+              Left = 105
+              Top = 91
+              Width = 445
+              Height = 22
+              Hint = ''
+              DataField = 'end_bairro'
+              DataSource = uniDM.dsEndAdicionais
+              TabOrder = 1
+            end
+            object UniDBEdit10: TUniDBEdit
+              Left = 105
+              Top = 27
+              Width = 445
+              Height = 22
+              Hint = ''
+              DataField = 'end_cep'
+              DataSource = uniDM.dsEndAdicionais
+              TabOrder = 2
+              OnKeyDown = UniDBEdit10KeyDown
+            end
+            object UniDBEdit11: TUniDBEdit
+              Left = 105
+              Top = 119
+              Width = 233
+              Height = 22
+              Hint = ''
+              DataField = 'end_cidade'
+              DataSource = uniDM.dsEndAdicionais
+              TabOrder = 3
+            end
+            object UniDBEdit12: TUniDBEdit
+              Left = 105
+              Top = 148
+              Width = 445
+              Height = 22
+              Hint = ''
+              DataField = 'end_complemento'
+              DataSource = uniDM.dsEndAdicionais
+              TabOrder = 4
+            end
+            object UniDBEdit13: TUniDBEdit
+              Left = 105
+              Top = 63
+              Width = 445
+              Height = 22
+              Hint = ''
+              DataField = 'end_logradouro'
+              DataSource = uniDM.dsEndAdicionais
+              TabOrder = 5
+            end
+            object UniDBEdit14: TUniDBEdit
+              Left = 403
+              Top = 117
+              Width = 147
+              Height = 22
+              Hint = ''
+              DataField = 'end_estado'
+              DataSource = uniDM.dsEndAdicionais
+              TabOrder = 6
+            end
+            object UniDBMemo2: TUniDBMemo
+              Left = 105
+              Top = 178
+              Width = 445
+              Height = 89
+              Hint = ''
+              DataField = 'end_referencia'
+              DataSource = uniDM.dsEndAdicionais
+              TabOrder = 7
+            end
+            object UniLabel23: TUniLabel
+              Left = 68
+              Top = 31
+              Width = 23
+              Height = 13
+              Hint = ''
+              Caption = 'CEP:'
+              TabOrder = 8
+            end
+            object UniLabel24: TUniLabel
+              Left = 42
+              Top = 68
+              Width = 49
+              Height = 13
+              Hint = ''
+              Caption = 'Endere'#231'o:'
+              TabOrder = 9
+            end
+            object UniLabel25: TUniLabel
+              Left = 59
+              Top = 94
+              Width = 32
+              Height = 13
+              Hint = ''
+              Caption = 'Bairro:'
+              TabOrder = 10
+            end
+            object UniLabel26: TUniLabel
+              Left = 54
+              Top = 124
+              Width = 37
+              Height = 13
+              Hint = ''
+              Caption = 'Cidade:'
+              TabOrder = 11
+            end
+            object UniLabel28: TUniLabel
+              Left = 21
+              Top = 153
+              Width = 69
+              Height = 13
+              Hint = ''
+              Caption = 'Complemento:'
+              TabOrder = 12
+            end
+            object UniLabel29: TUniLabel
+              Left = 34
+              Top = 179
+              Width = 56
+              Height = 13
+              Hint = ''
+              Caption = 'Refer'#234'ncia:'
+              TabOrder = 13
+            end
+            object UniLabel27: TUniLabel
+              Left = 357
+              Top = 122
+              Width = 37
+              Height = 13
+              Hint = ''
+              Caption = 'Estado:'
+              TabOrder = 14
+            end
+          end
+        end
+      end
+      object UniTabSheet3: TUniTabSheet
+        Hint = ''
+        Caption = 'Condom'#237'nio'
+        object UniLabel20: TUniLabel
+          Left = 32
+          Top = 27
+          Width = 59
+          Height = 13
+          Hint = ''
+          Caption = 'Condom'#237'nio:'
+          TabOrder = 0
+        end
+        object UniLabel21: TUniLabel
+          Left = 30
+          Top = 58
+          Width = 61
+          Height = 13
+          Hint = ''
+          Caption = 'Cond. Bloco:'
+          TabOrder = 1
+        end
+        object UniLabel22: TUniLabel
+          Left = 24
+          Top = 86
+          Width = 67
+          Height = 13
+          Hint = ''
+          Caption = 'Apartamento:'
+          TabOrder = 2
+        end
+        object EdtCondBloco: TUniDBEdit
+          Left = 105
+          Top = 50
+          Width = 452
+          Height = 22
+          Hint = ''
+          DataField = 'cond_bloco'
+          DataSource = uniDM.dsCliente
+          TabOrder = 3
+        end
+        object EdtCondApar: TUniDBEdit
+          Left = 105
+          Top = 78
+          Width = 452
+          Height = 22
+          Hint = ''
+          DataField = 'cond_apartamento'
+          DataSource = uniDM.dsCliente
+          TabOrder = 4
+        end
+        object edtCondNome: TUniDBEdit
+          Left = 105
+          Top = 22
+          Width = 452
+          Height = 22
+          Hint = ''
+          DataField = 'cond_nome'
+          DataSource = uniDM.dsCliente
+          TabOrder = 5
+        end
+      end
+    end
+    object UniContainerPanel2: TUniContainerPanel
+      Left = 0
+      Top = 606
+      Width = 570
+      Height = 36
+      Hint = ''
+      ParentColor = False
+      Align = alBottom
+      ParentAlignmentControl = False
+      TabOrder = 3
+      object btnSalvar: TUniButton
+        Left = 480
+        Top = 2
+        Width = 75
+        Height = 25
+        Hint = ''
+        Caption = 'Salvar'
+        TabOrder = 1
+        ImageIndex = 7
+        OnClick = btnSalvarClick
+      end
+      object btnCancelar: TUniButton
+        Left = 399
+        Top = 3
+        Width = 75
+        Height = 25
+        Hint = ''
+        Caption = 'Cancelar'
+        TabOrder = 2
+        ImageIndex = 6
+        OnClick = btnCancelarClick
+      end
+    end
+    object UniSplitter3: TUniSplitter
+      Left = 0
+      Top = 33
+      Width = 2
+      Height = 573
+      Hint = ''
+      Align = alLeft
+      ParentColor = False
+      Color = clHighlight
+    end
+  end
+  object UniContainerPanel1: TUniContainerPanel
+    Left = 0
+    Top = 0
+    Width = 1096
+    Height = 33
+    Hint = ''
+    ParentColor = False
+    Align = alTop
+    TabOrder = 1
+    object btNovo: TUniBitBtn
+      Left = 13
+      Top = 5
+      Width = 75
+      Height = 25
+      Hint = ''
+      Caption = 'Novo'
+      TabOrder = 1
+      ImageIndex = 5
+      OnClick = btNovoClick
+    end
+    object BtnEdita: TUniBitBtn
+      Left = 94
+      Top = 4
+      Width = 75
+      Height = 25
+      Hint = ''
+      Caption = 'Editar'
+      TabOrder = 2
+      ImageIndex = 8
+      OnClick = BtnEditaClick
+    end
+  end
+  object UniContainerPanel3: TUniContainerPanel
+    Left = 0
+    Top = 33
+    Width = 526
+    Height = 642
+    Hint = ''
+    ParentColor = False
+    Align = alClient
+    TabOrder = 2
+    AlwaysOnTopPriority = 1
+    object UniSplitter1: TUniSplitter
+      Left = 0
+      Top = 624
+      Width = 526
+      Height = 18
+      Cursor = crVSplit
+      Hint = ''
+      Align = alBottom
+      ParentColor = False
+      Color = clBtnFace
+    end
+    object dbGridListCliente: TUniDBGrid
+      Left = 0
+      Top = 0
+      Width = 526
+      Height = 624
+      Hint = ''
+      DataSource = uniDM.dsCliente
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgRowSelect, dgCheckSelect, dgConfirmDelete, dgMultiSelect, dgFilterClearButton, dgAutoRefreshRow]
+      ReadOnly = True
+      LoadMask.Message = 'Loading...'
+      Align = alClient
+      TabOrder = 2
+      OnDblClick = dbGridListClienteDblClick
+      Columns = <
+        item
+          FieldName = 'cod_cli'
+          Title.Caption = 'Cod. Cliente'
+          Width = 100
+          ReadOnly = True
+        end
+        item
+          FieldName = 'ativo'
+          Title.Caption = 'Status'
+          Width = 80
+        end
+        item
+          FieldName = 'cpf_cnpj'
+          Title.Caption = 'CPF/CNPJ'
+          Width = 150
+        end
+        item
+          FieldName = 'rg_ie'
+          Title.Caption = 'RG/IE'
+          Width = 120
+        end
+        item
+          FieldName = 'razao_social'
+          Title.Caption = 'Raz'#227'o Social'
+          Width = 300
+        end
+        item
+          FieldName = 'endereco'
+          Title.Caption = 'Endere'#231'o'
+          Width = 280
+        end
+        item
+          FieldName = 'bairro'
+          Title.Caption = 'Bairro'
+          Width = 180
+        end
+        item
+          FieldName = 'cidade'
+          Title.Caption = 'Cidade'
+          Width = 180
+        end
+        item
+          FieldName = 'estado'
+          Title.Caption = 'UF'
+          Width = 100
+        end
+        item
+          FieldName = 'cep'
+          Title.Caption = 'CEP'
+          Width = 140
+        end>
+    end
+  end
+  object ACBrCEP1: TACBrCEP
+    ProxyPort = '8080'
+    ParseText = True
+    WebService = wsViaCep
+    PesquisarIBGE = True
+    OnBuscaEfetuada = ACBrCEP1BuscaEfetuada
+    Left = 528
+    Top = 496
+  end
+  object ACBrIBGE1: TACBrIBGE
+    ProxyPort = '8080'
+    CacheArquivo = 'ACBrIBGE.txt'
+    Left = 440
+    Top = 512
+  end
+  object dsConsCliente: TDataSource
+    DataSet = qryConsCliente
+    Left = 280
+    Top = 248
+  end
+  object qryConsCliente: TFDQuery
+    Connection = uniDM.Conexao
+    Transaction = uniDM.Transaction
+    UpdateTransaction = uniDM.Transaction
+    SQL.Strings = (
+      'select * from cliente order by cod_cli')
+    Left = 280
+    Top = 201
+  end
+end

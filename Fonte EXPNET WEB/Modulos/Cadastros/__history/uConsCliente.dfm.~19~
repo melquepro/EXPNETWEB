@@ -1,0 +1,120 @@
+object frmConsCliente: TfrmConsCliente
+  Left = 0
+  Top = 0
+  ClientHeight = 725
+  ClientWidth = 1038
+  Caption = 'Lista de Clientes'
+  OldCreateOrder = False
+  OnClose = UniFormClose
+  MonitoredKeys.Keys = <>
+  PixelsPerInch = 96
+  TextHeight = 13
+  inline FrameConsCliente: TFrameConsCliente
+    Left = 0
+    Top = 0
+    Width = 1038
+    Height = 725
+    OnReady = FrameConsClienteReady
+    Align = alClient
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    TabOrder = 0
+    Background.Picture.Data = {00}
+    ExplicitWidth = 1038
+    ExplicitHeight = 725
+    inherited pnCads: TUniPanel
+      Left = 468
+      Height = 692
+      inherited UniContainerPanel4: TUniContainerPanel
+        inherited btnNovo: TUniButton
+          OnClick = FrameConsClientebtnNovoClick
+        end
+      end
+      inherited UniPageControl1: TUniPageControl
+        Height = 623
+        ActivePage = FrameConsCliente.UniTabSheet1
+        ExplicitHeight = 623
+        inherited UniTabSheet1: TUniTabSheet
+          ExplicitHeight = 595
+          inherited UniScrollBox1: TUniScrollBox
+            Height = 595
+            ScrollHeight = 369
+            ScrollWidth = 541
+          end
+        end
+        inherited UniTabSheet2: TUniTabSheet
+          inherited UniSplitter2: TUniSplitter
+            Top = 351
+          end
+          inherited UniButton1: TUniButton
+            OnClick = FrameConsClienteUniButton1Click
+          end
+          inherited UniButton2: TUniButton
+            OnClick = FrameConsClienteUniButton2Click
+          end
+          inherited pnEnd: TUniPanel
+            Top = 320
+          end
+          inherited UniDBGrid2: TUniDBGrid
+            Top = 354
+          end
+          inherited UniSplitter4: TUniSplitter
+            Top = 317
+          end
+        end
+        inherited UniTabSheet3: TUniTabSheet
+          inherited UniDBEdit2: TUniDBEdit
+            DataField = 'cond_bloco'
+          end
+          inherited UniDBEdit3: TUniDBEdit
+            DataField = 'cond_apartamento'
+          end
+          inherited UniDBEdit1: TUniDBEdit
+            DataField = 'cond_nome'
+          end
+        end
+      end
+      inherited UniContainerPanel2: TUniContainerPanel
+        Top = 656
+        inherited btnSalvar: TUniButton
+          OnClick = FrameConsClientebtnSalvarClick
+        end
+        inherited btnCancelar: TUniButton
+          OnClick = FrameConsClientebtnCancelarClick
+        end
+      end
+      inherited UniSplitter3: TUniSplitter
+        Height = 623
+      end
+    end
+    inherited UniContainerPanel1: TUniContainerPanel
+      Width = 1038
+      inherited btNovo: TUniBitBtn
+        OnClick = FrameConsClientebtNovoClick
+      end
+      inherited BtnEdita: TUniBitBtn
+        OnClick = FrameConsClienteBtnEditaClick
+      end
+    end
+    inherited UniContainerPanel3: TUniContainerPanel
+      Width = 468
+      Height = 692
+      inherited UniSplitter1: TUniSplitter
+        Top = 674
+        Width = 468
+      end
+      inherited UniDBGrid1: TUniDBGrid
+        Width = 468
+        Height = 674
+        OnDblClick = FrameConsClienteUniDBGrid1DblClick
+      end
+    end
+    inherited qryConsCliente: TFDQuery
+      inherited qryConsClienteativo: TStringField
+        OnGetText = FrameConsClienteqryConsClienteativoGetText
+      end
+    end
+    inherited ACBrCEP1: TACBrCEP
+      OnBuscaEfetuada = FrameConsClienteACBrCEP1BuscaEfetuada
+    end
+  end
+end
