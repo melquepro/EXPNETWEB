@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2020/11/07 00:15:54.000.242,=C:\Users\Melque\Desktop\Unigui LInux\MainModule.pas</Transaction>
     <Transaction>2020/11/07 00:15:54.000.198,=C:\Users\Melque\Desktop\Unigui LInux\ServerModule.pas</Transaction>
+    <Transaction>2020/11/07 00:15:54.000.242,=C:\Users\Melque\Desktop\Unigui LInux\MainModule.pas</Transaction>
     <Transaction>2020/11/07 00:15:55.000.962,=C:\Users\Melque\Desktop\Unigui LInux\Main.pas</Transaction>
-    <Transaction>2020/11/25 10:09:26.000.240,=C:\Users\Melque\Desktop\Unigui LInux\Modulos\Frames\Frame.Cliente.pas</Transaction>
+    <Transaction>2020/11/25 10:09:26.000.356,=C:\Users\Melque\Desktop\Unigui LInux\Modulos\Frames\Frame.Fornecedor.pas</Transaction>
     <Transaction>2020/11/25 10:09:26.000.496,=C:\Users\Melque\Desktop\Unigui LInux\Modulos\Frames\Frame.Funcionario.pas</Transaction>
     <Transaction>2020/11/25 10:09:26.000.573,=C:\Users\Melque\Desktop\Unigui LInux\Modulos\Frames\Frame.Servidor.pas</Transaction>
-    <Transaction>2020/11/25 10:09:26.000.356,=C:\Users\Melque\Desktop\Unigui LInux\Modulos\Frames\Frame.Fornecedor.pas</Transaction>
-    <Transaction>2020/11/25 10:37:23.000.822,C:\Users\Melque\Desktop\Unigui LInux\EXPNET.dproj=C:\Users\Melque\Desktop\Unigui LInux\Linux.dproj</Transaction>
-    <Transaction>2021/02/23 23:48:46.000.306,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.ListCliente.pas=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Cliente.pas</Transaction>
-    <Transaction>2021/02/23 23:48:46.000.306,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.ListCliente.dfm=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Cliente.dfm</Transaction>
+    <Transaction>2020/11/25 10:09:26.000.240,=C:\Users\Melque\Desktop\Unigui LInux\Modulos\Frames\Frame.Cliente.pas</Transaction>
+    <Transaction>2020/11/25 10:37:23.000.822,C:\Users\Melque\Desktop\Unigui LInux\Linux.dproj=C:\Users\Melque\Desktop\Unigui LInux\EXPNET.dproj</Transaction>
+    <Transaction>2021/02/23 23:48:46.000.306,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Cliente.dfm=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.ListCliente.dfm</Transaction>
+    <Transaction>2021/02/23 23:48:46.000.306,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Cliente.pas=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.ListCliente.pas</Transaction>
     <Transaction>2021/02/23 23:49:52.000.116,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Servidor.pas=</Transaction>
     <Transaction>2021/02/23 23:50:14.000.785,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Funcionario.pas=</Transaction>
     <Transaction>2021/02/23 23:50:21.000.489,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Fornecedor.pas=</Transaction>
     <Transaction>2021/02/23 23:52:45.000.023,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.ListCliente.pas=</Transaction>
     <Transaction>2021/02/23 23:53:14.000.420,=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.ListCliente.pas</Transaction>
     <Transaction>2021/02/23 23:57:38.000.100,=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Cliente.pas</Transaction>
-    <Transaction>2021/02/24 00:00:20.000.100,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.ListForn.pas=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Cliente.pas</Transaction>
-    <Transaction>2021/02/24 00:00:20.000.100,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.ListForn.dfm=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Cliente.dfm</Transaction>
+    <Transaction>2021/02/24 00:00:20.000.100,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Cliente.dfm=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.ListForn.dfm</Transaction>
+    <Transaction>2021/02/24 00:00:20.000.100,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.Cliente.pas=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Frames\Frame.ListForn.pas</Transaction>
     <Transaction>2021/02/24 01:30:16.000.557,=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Unit1.pas</Transaction>
-    <Transaction>2021/02/24 01:35:13.000.908,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\uCadClientes.dfm=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Unit1.dfm</Transaction>
-    <Transaction>2021/02/24 01:35:13.000.908,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\uCadClientes.pas=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Unit1.pas</Transaction>
-    <Transaction>2021/02/24 06:01:46.000.175,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\uCadClientes.pas=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\LayoutCadastro.pas</Transaction>
-    <Transaction>2021/02/24 06:01:46.000.175,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\uCadClientes.dfm=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\LayoutCadastro.dfm</Transaction>
+    <Transaction>2021/02/24 01:35:13.000.908,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Unit1.dfm=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\uCadClientes.dfm</Transaction>
+    <Transaction>2021/02/24 01:35:13.000.908,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Unit1.pas=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\uCadClientes.pas</Transaction>
+    <Transaction>2021/02/24 06:01:46.000.175,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\LayoutCadastro.pas=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\uCadClientes.pas</Transaction>
+    <Transaction>2021/02/24 06:01:46.000.175,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\LayoutCadastro.dfm=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\uCadClientes.dfm</Transaction>
     <Transaction>2021/02/24 06:01:52.000.599,G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\LayoutCadastro.pas=</Transaction>
     <Transaction>2021/02/24 06:02:00.000.038,=G:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET\Modulos\Cadastros\uCadClientes.pas</Transaction>
   </Transactions>

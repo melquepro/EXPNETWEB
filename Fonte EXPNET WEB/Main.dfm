@@ -15,10 +15,10 @@ object MainForm: TMainForm
       'window.beforeInit=function window.beforeInit(sender, config)'#13#10'{'#13 +
       #10'    config.baseCls="modal-dialog";'#13#10'    config.cls="modal-conte' +
       'nt modal-xl";'#13#10'}')
+  ScreenMask.ShowMessage = False
   LayoutConfig.IgnorePosition = False
   Images = NativMenu
-  PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 15
   object UniScrollBox1: TUniScrollBox
     Left = 0
     Top = 0
@@ -27,55 +27,27 @@ object MainForm: TMainForm
     Hint = ''
     Align = alClient
     TabOrder = 0
-    ScrollHeight = 81
-    ScrollWidth = 255
-    object UniPanel1: TUniPanel
-      Left = 0
-      Top = 81
-      Width = 255
-      Height = 781
-      Hint = ''
-      Constraints.MaxWidth = 300
-      Align = alLeft
-      TabOrder = 0
-      ScreenMask.Target = Owner
-      TitleAlign = taCenter
-      Title = '<b>Menu</b>'
-      Caption = 'UniPanel1'
-      Collapsible = True
-      CollapseDirection = cdLeft
-      ParentAlignmentControl = False
-      object UniTreeMenu1: TUniTreeMenu
-        Left = 1
-        Top = 1
-        Width = 259
-        Height = 779
-        Hint = ''
-        Items.FontData = {0100000000}
-        ScreenMask.Enabled = True
-        ScreenMask.Message = 'Aguarde!'
-        ScreenMask.Target = Owner
-        ScreenMask.Opacity = 1.000000000000000000
-        Images = NativMenu
-        SourceMenu = uMenuTree
-        ExpanderOnly = False
-      end
-    end
+    ScrollHeight = 38
+    ScrollWidth = 514
     object UniContainerPanel2: TUniContainerPanel
-      Left = 255
-      Top = 81
-      Width = 783
-      Height = 781
+      Left = 259
+      Top = 38
+      Width = 779
+      Height = 824
       Hint = ''
       ParentColor = False
       Color = clWhite
       Align = alClient
-      TabOrder = 1
+      TabOrder = 0
+      ExplicitLeft = 255
+      ExplicitTop = 81
+      ExplicitWidth = 783
+      ExplicitHeight = 781
       object UniPageControl1: TUniPageControl
         Left = 0
         Top = 0
-        Width = 783
-        Height = 781
+        Width = 779
+        Height = 824
         Hint = ''
         Images = NativMenu
         TabBarVisible = False
@@ -84,18 +56,40 @@ object MainForm: TMainForm
         Align = alClient
         TabOrder = 1
         OnChange = UniPageControl1Change
+        ExplicitWidth = 783
+        ExplicitHeight = 781
       end
     end
     object UniContainerPanel1: TUniContainerPanel
       Left = 0
       Top = 0
       Width = 1038
-      Height = 81
+      Height = 38
       Hint = ''
       ParentColor = False
-      Color = clWhite
+      Color = 10167388
       Align = alTop
-      TabOrder = 2
+      TabOrder = 1
+    end
+    object UniTreeMenu1: TUniTreeMenu
+      Left = 0
+      Top = 38
+      Width = 259
+      Height = 824
+      Hint = ''
+      Items.FontData = {0100000000}
+      ScreenMask.Enabled = True
+      ScreenMask.Message = 'Aguarde!'
+      ScreenMask.Target = Owner
+      ScreenMask.Opacity = 1.000000000000000000
+      Images = NativMenu
+      SourceMenu = uMenuTree
+      Animation = False
+      SingleExpand = True
+      ExpanderOnly = False
+      ExplicitLeft = 1
+      ExplicitTop = 1
+      ExplicitHeight = 822
     end
   end
   object imgListAdapMenu: TUniImageListAdapter
