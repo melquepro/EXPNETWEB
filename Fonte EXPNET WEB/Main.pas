@@ -11,57 +11,35 @@ uses
   Vcl.Imaging.pngimage, uniImage, uniTreeMenu, System.Actions, Vcl.ActnList,
    Vcl.ActnMan, Vcl.PlatformDefaultStyleActnCtrls, uniHTMLFrame,
   uniSyntaxEditorBase, uniSyntaxEditor, uniButton, uniEdit, Vcl.StdCtrls,
-  uniScrollBox;
+  uniScrollBox, Vcl.Imaging.jpeg, Frame.Modulo.EXPNET;
 
 type
   TMainForm = class(TUniForm)
-    imgListAdapMenu: TUniImageListAdapter;
-    NativMenu: TUniNativeImageList;
     uMenuTree: TUniMenuItems;
     Estoque1: TUniMenuItem;
-    Produtos1: TUniMenuItem;
-    Gruposdeprodutos1: TUniMenuItem;
-    Unidadedemedidas1: TUniMenuItem;
-    Fabricante1: TUniMenuItem;
-    Controledesada1: TUniMenuItem;
-    EntradaSimples1: TUniMenuItem;
-    Saidasimples1: TUniMenuItem;
-    Financeiro1: TUniMenuItem;
-    Contasapagar1: TUniMenuItem;
-    Contasareceber1: TUniMenuItem;
-    FluxodeCaixa1: TUniMenuItem;
-    Controledecaixa1: TUniMenuItem;
-    tulos1: TUniMenuItem;
-    Receberpagamento1: TUniMenuItem;
-    Chamadosaberto1: TUniMenuItem;
-    Chamadosfechados1: TUniMenuItem;
     Servidor1: TUniMenuItem;
-    Servidores1: TUniMenuItem;
-    Planos1: TUniMenuItem;
-    Pool1: TUniMenuItem;
     UniContainerPanel1: TUniContainerPanel;
     UniContainerPanel2: TUniContainerPanel;
     UniPageControl1: TUniPageControl;
     UniSweetAlert1: TUniSweetAlert;
-    UniTreeMenu1: TUniTreeMenu;
     UniScrollBox1: TUniScrollBox;
     Clientes1: TUniMenuItem;
-    odos1: TUniMenuItem;
-    Autenticao1: TUniMenuItem;
-    Contratos1: TUniMenuItem;
-    PrCadastro1: TUniMenuItem;
-    procedure Fornecedores2Click(Sender: TObject);
+    UniContainerPanel3: TUniContainerPanel;
+    UniContainerPanel4: TUniContainerPanel;
+    UniContainerPanel5: TUniContainerPanel;
+    UniTreeMenu1: TUniTreeMenu;
+    UniNativeImageList1: TUniNativeImageList;
+    UniImage1: TUniImage;
+    UniFrame11: TUniFrame1;
     procedure Funcionarios2Click(Sender: TObject);
-    procedure Servidores1Click(Sender: TObject);
     procedure UniPageControl1Change(Sender: TObject);
 
    procedure NovaAba(nomeFormFrame: TFrame; descFormFrame: string; Fechar: Boolean);
    procedure TabSheetClose(Sender: TObject; var AllowClose: Boolean);
-    procedure odos1Click(Sender: TObject);
   private
     { Private declarations }
 
-
+    // NovaAba(TFrame(TFrameListCliente),'CLIENTES',True);
 
   public
     { Public declarations }
@@ -80,11 +58,6 @@ uses
   uniGUIVars, uniGUIApplication,MainModule, Frame.ListCliente, Frame.ListForn;
 
 
-
-procedure TMainForm.Fornecedores2Click(Sender: TObject);
-begin
-NovaAba(TFrame(TFrameListForn),'FORNECEDOORES',True);
-end;
 
 procedure TMainForm.Funcionarios2Click(Sender: TObject);
 begin
@@ -119,17 +92,6 @@ begin
         end;
       Refresh;
       UniPageControl1.ActivePage := TabSheet;
-end;
-
-
-procedure TMainForm.odos1Click(Sender: TObject);
-begin
-NovaAba(TFrame(TFrameListCliente),'CLIENTES',True);
-end;
-
-procedure TMainForm.Servidores1Click(Sender: TObject);
-begin
-//NovaAba(TFrame(TFrameServidor),'Lista de Servidores',True);
 end;
 
 

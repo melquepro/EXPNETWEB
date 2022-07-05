@@ -37,48 +37,11 @@ type
     UniButton1: TUniButton;
     UniMenuButton1: TUniMenuButton;
     UniComboBox1: TUniComboBox;
-    DataSource1: TDataSource;
-    qryListCliente: TFDQuery;
-    qryListClienteid: TFDAutoIncField;
-    qryListClientecodigo: TStringField;
-    qryListClienteempresa: TStringField;
-    qryListClientenome: TStringField;
-    qryListClientelogin: TStringField;
-    qryListClientesenha: TStringField;
-    qryListClientecpf: TStringField;
-    qryListClienterg: TStringField;
-    qryListClientetel: TStringField;
-    qryListClientecel: TStringField;
-    qryListClienteemail: TStringField;
-    qryListClientepai: TStringField;
-    qryListClientemae: TStringField;
-    qryListClientenascimento: TStringField;
-    qryListClienteestadocivil: TStringField;
-    qryListClientenaturalidade: TStringField;
-    qryListClientedataentrada: TDateField;
-    qryListClientevctocontrato: TDateField;
-    qryListClienteendereco: TStringField;
-    qryListClientenumero: TStringField;
-    qryListClientereferencia: TStringField;
-    qryListClientecomplemento: TStringField;
-    qryListClientebairro: TStringField;
-    qryListClientecidade: TStringField;
-    qryListClienteestado: TStringField;
-    qryListClientecep: TStringField;
-    qryListClientenf: TStringField;
-    qryListClientecfop: TStringField;
-    qryListClientetipoassinante: TStringField;
-    qryListClientetipoutilizacao: TStringField;
-    qryListClientegrupo: TStringField;
-    qryListClientestatus: TStringField;
-    qryListClienteacao: TStringField;
     UniContainerPanel3: TUniContainerPanel;
-    UniContainerPanel5: TUniContainerPanel;
     ActionList1: TActionList;
     Action1: TAction;
     ControlAction1: TControlAction;
     UniButton2: TUniButton;
-    UniContainerPanel6: TUniContainerPanel;
     procedure qryListClientestatusGetText(Sender: TField; var Text: string;
       DisplayText: Boolean);
     procedure qryListClienteacaoGetText(Sender: TField; var Text: string;
@@ -160,12 +123,12 @@ begin
   FDMemTable1.AppendRecord([2, '<i class="fas fa-meh fa-4x" style=color:orange></i>']);
   FDMemTable1.AppendRecord([3, '<i class="fas fa-smile fa-4x" style=color:green></i>']);
   }
-if qryListCliente.FieldByName('status').AsString = 'S' then //for rows
+{if qryListCliente.FieldByName('status').AsString = 'S' then //for rows
 begin
   Text :=  '<span class="badge bg-success">ATIVO</span>';
   end
   else
-   Text :=  '<span class="badge rounded-pill bg-danger">DESATIVADO</span>';
+   Text :=  '<span class="badge rounded-pill bg-danger">DESATIVADO</span>';  }
 end;
 procedure TFrameListCliente.UniButton2Click(Sender: TObject);
 begin

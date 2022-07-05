@@ -22,14 +22,14 @@ object UniServerModule: TUniServerModule
   CustomCSS.Strings = (
     '/*menu left*/'
     '.x-treelist-nav .x-treelist-item-text'
-    '{ color: #595959;       /*cor da letra do menu*/'
+    '{ color: #286090;       /*cor da letra do menu*/'
     
       '  margin-left: 27px;  /*27 espa'#231'amento da esquerda para direita ' +
       'dos Itens do menu*/'
     
-      '  margin-right: 15px; /*espa'#231'amento da esquerda para direita dos' +
+      '  margin-right: 20px; /*espa'#231'amento da esquerda para direita dos' +
       ' Grupos do menu*/'
-    '  font-size: 16px;    /*tamanho das letras*/'
+    '  font-size: 17px;    /*tamanho das letras*/'
     '  line-height: 30px;  /*altura da linha do menu*/'
     '}'
     ''
@@ -54,32 +54,56 @@ object UniServerModule: TUniServerModule
     ' .x-treelist-nav .x-treelist-item-expander'
     '{ line-height: 30px;  color: #595959;} '
     ''
-    '/*Menu Expandidos*/'
-    
-      '.x-treelist-nav .x-treelist-item-expanded { background-color: Wh' +
-      'ite !important;}'
     ''
+    ''
+    ''
+    '/*Menu Expandidos*/'
+    '.x-treelist-nav .x-treelist-item-expanded {'
+    ' background-color: White !important;'
+    ' }'
+    ''
+    ''
+    '.x-treelist-item-expander::after {'
+    '   display: none !important; /* Desativar seta do TreeMenu*/'
+    '}'
     '/*Menu Selecionado*/'
     
       '.x-treelist-nav .x-treelist-item-selected > .x-treelist-row::bef' +
-      'ore { background-color: #F1F1F1 !important;}'
+      'ore {'
+    ' background-color: #778088 !important;'
+    ' }'
     ''
     '/*Passa o mouse*/'
-    
-      '.x-treelist-nav .x-treelist-row-over{background-color: #F5F4F4 !' +
-      'important;}'
+    '.x-treelist-row-over, '
+    '.x-treelist-nav .x-treelist-item-selected > .x-treelist-row{'
+    '  background-color: #F5F4F4 !important;'
+    '  }'
+    '/*Passa o mouse 2*/'
+    '.x-treelist-item-text:hover, '
+    '.x-treelist-nav .x-treelist-item-text:active '
+    '.x-treelist-nav .x-treelist-item-selected > .x-treelist-row{'
+    'color: #535557 !important;  /*<= use a cor desejada aqui */'
     ''
-    
-      '.x-treelist-nav::-webkit-scrollbar { width: 7px;  height:7px;  b' +
-      'ackground:#d6d9db;}'
+    '  '
+    '  }'
+    '/*Op'#231#245'es do Hold Overlay*/'
+    '#holdon-overlay {'
+    '  opacity: .7 !important;'
+    '}      '
     ''
-    
-      '.x-treelist-nav::-webkit-scrollbar-track {background: RGB(205,20' +
-      '5,205);}'
+    '.x-treelist-nav::-webkit-scrollbar {'
+    ' width: 7px;  height:7px;  background:#302f2e;'
+    ' }'
     ''
-    
-      '.x-treelist-nav::-webkit-scrollbar-thumb {border-radius: 7px;hei' +
-      'ght:7px;background:#778088;}'
+    '.x-treelist-nav::-webkit-scrollbar-track {'
+    'background: RGB(205,205,205);'
+    '}'
+    ''
+    '.x-treelist-nav::-webkit-scrollbar-thumb {'
+    'border-radius: 7px;'
+    'height:7px;'
+    'background:#778088;'
+    '}'
     ''
     ''
     '.x-treelist-nav'
@@ -88,7 +112,7 @@ object UniServerModule: TUniServerModule
     'overflow-x:hidden;'
     '}'
     '.x-treelist::-webkit-scrollbar{'
-    'width : 12px;'
+    'width : 7px;'
     '}'
     '.x-treelist::-webkit-scrollbar-thumb{'
     '-webkit-border-radius: 10px;'
@@ -101,6 +125,12 @@ object UniServerModule: TUniServerModule
     ''
     '/* UniTreeMenu - end */'
     ''
+    '.circulo, .circulo img {'
+    '  /*vertical-align: middle;*'
+    '  width: 50px !important;'
+    '  height: 50px !important;*/'
+    '  border-radius: 50% !important;'
+    '}'#65279
     '')
   ServerLimits.MaxConnections = 1000
   ServerLimits.SessionRestrict = srOnePerIP
@@ -112,7 +142,7 @@ object UniServerModule: TUniServerModule
   SSL.SSLOptions.Mode = sslmUnassigned
   SSL.SSLOptions.VerifyMode = []
   SSL.SSLOptions.VerifyDepth = 0
-  Options = [soShowLicenseInfo, soAutoPlatformSwitch, soWipeShadowSessions, soLogSessionCreate, soLogSessionTerminate, soDontCompressDownloads]
+  Options = [soAutoPlatformSwitch, soWipeShadowSessions, soLogSessionCreate, soLogSessionTerminate, soDontCompressDownloads]
   ConnectionFailureRecovery.Enabled = False
   ConnectionFailureRecovery.ErrorMessage = 'Connection Error'
   ConnectionFailureRecovery.RetryMessage = 'Retrying...'

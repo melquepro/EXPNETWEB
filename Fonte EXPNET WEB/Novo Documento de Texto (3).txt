@@ -1,0 +1,51 @@
+*TreeMenu*/
+.VerticalTreeMenu .x-treelist-nav {
+  background-color: #000000 !important;
+  padding-top: 10px !important;
+}
+.VerticalTreeMenu .x-treelist-nav .x-treelist-item-text {
+  color: var(--gray5) !important;
+  font-family: var(--FontDefault) !important;
+  font-size: 0.813rem !important;
+  line-height: 2.2rem;
+  font-weight: 400;
+}
+.VerticalTreeMenu .x-treelist-nav .x-treelist-item-expander {
+  color: var(--gray5) !important;
+  font-size: 0.875rem;
+  line-height: 2rem;
+}
+.VerticalTreeMenu .x-treelist-nav .x-treelist-item-icon, .VerticalTreeMenu .x-treelist-nav .x-treelist-item-tool {
+  color: var(--gray5) !important;
+}
+.VerticalTreeMenu .x-treelist-nav .x-treelist-row-over:before,
+.VerticalTreeMenu .x-treelist-nav .x-treelist-item-selected > .x-treelist-row:before{
+  width:0px;
+}
+.VerticalTreeMenu .x-treelist-nav .x-treelist-row {
+ padding-top:1px;
+}
+.VerticalTreeMenu .x-treelist-nav .x-treelist-item-icon:before, .x-treelist-nav .x-treelist-item-tool:before, .x-treelist-nav .x-treelist-item-expander {
+  line-height: 2.2rem !important;
+}
+
+.VerticalTreeMenu .x-treelist-item-expanded > * > * > .x-treelist-item-expander:after {
+  content: '\f078';
+  font: 0.875rem 'Font Awesome 5 Free';
+}
+.VerticalTreeMenu .x-treelist-item-expander:after {
+  content: '\f054';
+  font: 0.875rem 'Font Awesome 5 Free';
+}
+.VerticalTreeMenu .x-treelist-row-over  {
+ /*background-color: transparent!important;*/
+}
+.VerticalTreeMenu .x-treelist-nav .x-treelist-item-selected > .x-treelist-row {
+  background-color: transparent !important;
+}
+.VerticalTreeMenu .x-treelist-row-over > * > .x-treelist-item-text {
+  color: #ffffff !important;
+}
+.VerticalTreeMenu .x-treelist-nav .x-treelist-item-selected > .x-treelist-row .x-treelist-item-text  {
+  color:#ffffff !important;  
+}

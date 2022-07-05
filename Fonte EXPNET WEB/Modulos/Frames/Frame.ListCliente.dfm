@@ -23,14 +23,15 @@ object FrameListCliente: TFrameListCliente
     TabOrder = 1
     LayoutConfig.Width = '100%'
     object UniLabel5: TUniLabel
-      Left = 8
-      Top = 2
-      Width = 135
-      Height = 33
+      Left = 0
+      Top = 0
+      Width = 120
+      Height = 37
       Hint = ''
       Margins.Top = 30
       Alignment = taCenter
       Caption = 'CLIENTES'
+      Align = alLeft
       ParentFont = False
       Font.Color = clGray
       Font.Height = -27
@@ -38,6 +39,8 @@ object FrameListCliente: TFrameListCliente
       ParentColor = False
       Color = 8750469
       TabOrder = 1
+      ExplicitLeft = 3
+      ExplicitTop = -4
     end
   end
   object UniContainerPanel1: TUniContainerPanel
@@ -55,8 +58,8 @@ object FrameListCliente: TFrameListCliente
     object UniLabel1: TUniLabel
       Left = 12
       Top = 8
-      Width = 97
-      Height = 23
+      Width = 91
+      Height = 25
       Hint = ''
       Margins.Top = 30
       Alignment = taCenter
@@ -72,8 +75,8 @@ object FrameListCliente: TFrameListCliente
     object UniLabel3: TUniLabel
       Left = 110
       Top = 12
-      Width = 66
-      Height = 19
+      Width = 63
+      Height = 21
       Hint = ''
       Margins.Top = 30
       Alignment = taCenter
@@ -86,34 +89,9 @@ object FrameListCliente: TFrameListCliente
       TabOrder = 2
     end
   end
-  object UniContainerPanel5: TUniContainerPanel
-    Left = 0
-    Top = 79
-    Width = 1244
-    Height = 9
-    Hint = ''
-    ParentColor = False
-    Align = alTop
-    TabOrder = 4
-    LayoutAttribs.Align = 'stretch'
-  end
-  object UniContainerPanel6: TUniContainerPanel
-    Left = 0
-    Top = 88
-    Width = 1244
-    Height = 66
-    Hint = ''
-    ParentColor = False
-    Color = clWhite
-    Align = alTop
-    TabOrder = 5
-    Layout = 'vbox'
-    ExplicitLeft = -3
-    ExplicitTop = 85
-  end
   object UniContainerPanel2: TUniContainerPanel
     Left = 0
-    Top = 154
+    Top = 79
     Width = 1244
     Height = 59
     Hint = ''
@@ -122,6 +100,7 @@ object FrameListCliente: TFrameListCliente
     Align = alTop
     TabOrder = 2
     LayoutConfig.Width = '100%'
+    ExplicitTop = 154
     DesignSize = (
       1244
       59)
@@ -210,21 +189,22 @@ object FrameListCliente: TFrameListCliente
   end
   object UniContainerPanel3: TUniContainerPanel
     Left = 0
-    Top = 213
+    Top = 138
     Width = 1244
-    Height = 595
+    Height = 670
     Hint = ''
     ParentColor = False
     Align = alClient
     TabOrder = 3
+    ExplicitTop = 213
+    ExplicitHeight = 595
     object UniDBGrid1: TUniDBGrid
       Left = 0
       Top = 0
       Width = 1244
-      Height = 595
+      Height = 670
       Hint = ''
       InputRTL = False
-      DataSource = DataSource1
       Options = [dgTitles]
       WebOptions.AppendPosition = tpCurrentRow
       Grouping.ShowCaption = False
@@ -348,7 +328,7 @@ object FrameListCliente: TFrameListCliente
   end
   object UniImageList1: TUniImageList
     Left = 320
-    Top = 304
+    Top = 280
     Bitmap = {
       494C010104001800040010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000002000000001002000000000000020
@@ -620,220 +600,6 @@ object FrameListCliente: TFrameListCliente
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000}
-  end
-  object DataSource1: TDataSource
-    DataSet = qryListCliente
-    Left = 552
-    Top = 320
-  end
-  object qryListCliente: TFDQuery
-    Active = True
-    Connection = UniMainModule.FDConnection1
-    Transaction = UniMainModule.FDTransaction1
-    UpdateTransaction = UniMainModule.FDTransaction1
-    SQL.Strings = (
-      'select * from clientes')
-    Left = 224
-    Top = 264
-    object qryListClienteid: TFDAutoIncField
-      FieldName = 'id'
-      Origin = 'id'
-      ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
-    end
-    object qryListClientecodigo: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'codigo'
-      Origin = 'codigo'
-      Size = 16
-    end
-    object qryListClienteempresa: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'empresa'
-      Origin = 'empresa'
-      Size = 11
-    end
-    object qryListClientenome: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'nome'
-      Origin = 'nome'
-      Size = 160
-    end
-    object qryListClientelogin: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'login'
-      Origin = 'login'
-      Size = 60
-    end
-    object qryListClientesenha: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'senha'
-      Origin = 'senha'
-      Size = 60
-    end
-    object qryListClientecpf: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'cpf'
-      Origin = 'cpf'
-      Size = 60
-    end
-    object qryListClienterg: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'rg'
-      Origin = 'rg'
-      Size = 60
-    end
-    object qryListClientetel: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'tel'
-      Origin = 'tel'
-      Size = 60
-    end
-    object qryListClientecel: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'cel'
-      Origin = 'cel'
-      Size = 60
-    end
-    object qryListClienteemail: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'email'
-      Origin = 'email'
-      Size = 255
-    end
-    object qryListClientepai: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'pai'
-      Origin = 'pai'
-      Size = 60
-    end
-    object qryListClientemae: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'mae'
-      Origin = 'mae'
-      Size = 60
-    end
-    object qryListClientenascimento: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'nascimento'
-      Origin = 'nascimento'
-      Size = 60
-    end
-    object qryListClienteestadocivil: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'estadocivil'
-      Origin = 'estadocivil'
-      Size = 60
-    end
-    object qryListClientenaturalidade: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'naturalidade'
-      Origin = 'naturalidade'
-      Size = 100
-    end
-    object qryListClientedataentrada: TDateField
-      AutoGenerateValue = arDefault
-      FieldName = 'dataentrada'
-      Origin = 'dataentrada'
-    end
-    object qryListClientevctocontrato: TDateField
-      AutoGenerateValue = arDefault
-      FieldName = 'vctocontrato'
-      Origin = 'vctocontrato'
-    end
-    object qryListClienteendereco: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'endereco'
-      Origin = 'endereco'
-      Size = 160
-    end
-    object qryListClientenumero: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'numero'
-      Origin = 'numero'
-      Size = 11
-    end
-    object qryListClientereferencia: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'referencia'
-      Origin = 'referencia'
-      Size = 200
-    end
-    object qryListClientecomplemento: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'complemento'
-      Origin = 'complemento'
-      Size = 60
-    end
-    object qryListClientebairro: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'bairro'
-      Origin = 'bairro'
-      Size = 60
-    end
-    object qryListClientecidade: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'cidade'
-      Origin = 'cidade'
-      Size = 60
-    end
-    object qryListClienteestado: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'estado'
-      Origin = 'estado'
-      Size = 60
-    end
-    object qryListClientecep: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'cep'
-      Origin = 'cep'
-      Size = 36
-    end
-    object qryListClientenf: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'nf'
-      Origin = 'nf'
-      Size = 2
-    end
-    object qryListClientecfop: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'cfop'
-      Origin = 'cfop'
-      Size = 10
-    end
-    object qryListClientetipoassinante: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'tipoassinante'
-      Origin = 'tipoassinante'
-      Size = 2
-    end
-    object qryListClientetipoutilizacao: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'tipoutilizacao'
-      Origin = 'tipoutilizacao'
-      Size = 2
-    end
-    object qryListClientegrupo: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'grupo'
-      Origin = 'grupo'
-      Size = 60
-    end
-    object qryListClientestatus: TStringField
-      AutoGenerateValue = arDefault
-      FieldName = 'status'
-      Origin = '`status`'
-      OnGetText = qryListClientestatusGetText
-      Size = 2
-    end
-    object qryListClienteacao: TStringField
-      FieldKind = fkCalculated
-      FieldName = 'acao'
-      Origin = 'acao'
-      OnGetText = qryListClienteacaoGetText
-      Size = 60
-      Calculated = True
-    end
   end
   object ActionList1: TActionList
     Left = 368

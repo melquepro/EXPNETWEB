@@ -38,41 +38,6 @@ type
     UniButton1: TUniButton;
     UniMenuButton1: TUniMenuButton;
     UniComboBox1: TUniComboBox;
-    DataSource1: TDataSource;
-    qryListForn: TFDQuery;
-    qryListFornid: TFDAutoIncField;
-    qryListForncodigo: TStringField;
-    qryListFornempresa: TStringField;
-    qryListFornnome: TStringField;
-    qryListFornlogin: TStringField;
-    qryListFornsenha: TStringField;
-    qryListForncpf: TStringField;
-    qryListFornrg: TStringField;
-    qryListForntel: TStringField;
-    qryListForncel: TStringField;
-    qryListFornemail: TStringField;
-    qryListFornpai: TStringField;
-    qryListFornmae: TStringField;
-    qryListFornnascimento: TStringField;
-    qryListFornestadocivil: TStringField;
-    qryListFornnaturalidade: TStringField;
-    qryListForndataentrada: TDateField;
-    qryListFornvctocontrato: TDateField;
-    qryListFornendereco: TStringField;
-    qryListFornnumero: TStringField;
-    qryListFornreferencia: TStringField;
-    qryListForncomplemento: TStringField;
-    qryListFornbairro: TStringField;
-    qryListForncidade: TStringField;
-    qryListFornestado: TStringField;
-    qryListForncep: TStringField;
-    qryListFornnf: TStringField;
-    qryListForncfop: TStringField;
-    qryListForntipoassinante: TStringField;
-    qryListForntipoutilizacao: TStringField;
-    qryListForngrupo: TStringField;
-    qryListFornstatus: TStringField;
-    qryListFornacao: TStringField;
     UniContainerPanel3: TUniContainerPanel;
     IdUnixTime1: TIdUnixTime;
     UniContainerPanel5: TUniContainerPanel;
@@ -157,12 +122,13 @@ begin
   FDMemTable1.AppendRecord([1, '<i class="fas fa-frown-o fa-4x" style=color:red></i>']);
   FDMemTable1.AppendRecord([2, '<i class="fas fa-meh fa-4x" style=color:orange></i>']);
   FDMemTable1.AppendRecord([3, '<i class="fas fa-smile fa-4x" style=color:green></i>']);
-  }
+
 if qryListForn.FieldByName('status').AsString = 'S' then //for rows
 begin
   Text :=  '<span class="badge bg-success">ATIVO</span>';
 
 
   end;
+end;}
 end;
 end.

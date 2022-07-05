@@ -27,19 +27,45 @@
 { line-height: 30px;  color: #595959;} 
 
 /*Menu Expandidos*/
-.x-treelist-nav .x-treelist-item-expanded { background-color: White !important;}
+.x-treelist-nav .x-treelist-item-expanded {
+ background-color: White !important;
+ }
 
 /*Menu Selecionado*/
-.x-treelist-nav .x-treelist-item-selected > .x-treelist-row::before { background-color: #F1F1F1 !important;}
+.x-treelist-nav .x-treelist-item-selected > .x-treelist-row::before { background-color: #778088 !important;}
 
 /*Passa o mouse*/
-.x-treelist-nav .x-treelist-row-over{background-color: #F5F4F4 !important;}
+.x-treelist-row-over, 
+.x-treelist-nav .x-treelist-item-selected > .x-treelist-row{
+  background-color: #F5F4F4 !important;
+  
+}
+/*Passa o mouse 2*/
+.x-treelist-item-text:hover, 
+.x-treelist-nav .x-treelist-item-text:active 
+.x-treelist-nav .x-treelist-item-selected > .x-treelist-row{
+color: #535557 !important;  /*<= use a cor desejada aqui */
 
-.x-treelist-nav::-webkit-scrollbar { width: 7px;  height:7px;  background:#d6d9db;}
+  
+  }
+/*Opções do Hold Overlay*/
+#holdon-overlay {
+  opacity: .7 !important;
+}      
 
-.x-treelist-nav::-webkit-scrollbar-track {background: RGB(205,205,205);}
+.x-treelist-nav::-webkit-scrollbar {
+ width: 7px;  height:7px;  background:#302f2e;
+ }
 
-.x-treelist-nav::-webkit-scrollbar-thumb {border-radius: 7px;height:7px;background:#778088;}
+.x-treelist-nav::-webkit-scrollbar-track {
+background: RGB(205,205,205);
+}
+
+.x-treelist-nav::-webkit-scrollbar-thumb {
+border-radius: 7px;
+height:7px;
+background:#778088;
+}
 
 
 .x-treelist-nav
@@ -48,7 +74,7 @@ overflow-y: auto !important;
 overflow-x:hidden;
 }
 .x-treelist::-webkit-scrollbar{
-width : 12px;
+width : 10px;
 }
 .x-treelist::-webkit-scrollbar-thumb{
 -webkit-border-radius: 10px;

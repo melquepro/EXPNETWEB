@@ -15,7 +15,8 @@ uses
   Main in 'Main.pas' {MainForm: TUniForm},
   Frame.ListCliente in 'Modulos\Frames\Frame.ListCliente.pas' {FrameListCliente: TUniFrame},
   Frame.ListForn in 'Modulos\Frames\Frame.ListForn.pas' {FrameListForn: TUniFrame},
-  uCadClientes in 'Modulos\Cadastros\uCadClientes.pas' {frmCadCliente: TUniForm};
+  uCadClientes in 'Modulos\Cadastros\uCadClientes.pas' {frmCadCliente: TUniForm},
+  Frame.Modulo.EXPNET in 'Modulos\Frames\Frame.Modulo.EXPNET.pas' {UniFrame1: TUniFrame};
 
 {$R *.res}
 

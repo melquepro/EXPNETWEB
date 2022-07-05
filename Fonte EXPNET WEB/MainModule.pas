@@ -8,13 +8,11 @@ uses
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.MySQL,
   FireDAC.Phys.MySQLDef, FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS,
   FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
-  FireDAC.Comp.Client;
+  FireDAC.Comp.Client, System.ImageList, Vcl.ImgList, uniImageList,
+  uniGUIBaseClasses;
 
 type
   TUniMainModule = class(TUniGUIMainModule)
-    FDConnection1: TFDConnection;
-    FDTransaction1: TFDTransaction;
-    FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink;
   private
     { Private declarations }
   public
