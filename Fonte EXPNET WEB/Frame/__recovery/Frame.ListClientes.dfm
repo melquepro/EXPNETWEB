@@ -1,0 +1,152 @@
+object frmListClientes: TfrmListClientes
+  Left = 0
+  Top = 0
+  Width = 1067
+  Height = 778
+  Color = 16053492
+  TabOrder = 0
+  ParentColor = False
+  ParentBackground = False
+  object ContainerPanel: TUniContainerPanel
+    AlignWithMargins = True
+    Left = 265
+    Top = 3
+    Width = 799
+    Height = 772
+    Hint = ''
+    ParentColor = False
+    Color = clWhite
+    Align = alClient
+    AlignmentControl = uniAlignmentClient
+    ParentAlignmentControl = False
+    TabOrder = 0
+    ExplicitLeft = 536
+    ExplicitTop = 408
+    ExplicitWidth = 256
+    ExplicitHeight = 128
+    object pnl1: TUniPanel
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Width = 793
+      Height = 54
+      Hint = ''
+      Align = alTop
+      TabOrder = 1
+      ToolButtons = <
+        item
+          ButtonId = 0
+          IconCls = 'add'
+          Hint = 'www'
+        end>
+      BorderStyle = ubsNone
+      Caption = 'pnlTop'
+      Color = clWhite
+      object btn1: TUniFSButton
+        Left = 957
+        Top = 20
+        Width = 68
+        Height = 34
+        Hint = ''
+        StyleButton = GoogleBlue3
+        CaptionIconFont = '<i class="fas fa-filter fa-10x"></i>'
+        BadgeText.Text = '10'
+        BadgeText.TextColor = '#FFFFFF'
+        BadgeText.TextSize = 10
+        BadgeText.TextStyle = 'bold'
+        BadgeText.BackgroundColor = '#D50000'
+        Caption = 'Filtro'
+        ParentFont = False
+        Font.Color = clWhite
+        Font.Height = -13
+        TabOrder = 1
+        Scale = bbs48x48
+      end
+    end
+    object pnl2: TUniPanel
+      AlignWithMargins = True
+      Left = 3
+      Top = 736
+      Width = 793
+      Height = 33
+      Hint = ''
+      Align = alBottom
+      TabOrder = 2
+      Caption = 'pnlBottom'
+      Color = clWhite
+      ParentAlignmentControl = False
+      ExplicitTop = 742
+      ExplicitWidth = 1061
+      object UniFSButton1: TUniFSButton
+        Left = 13
+        Top = -1
+        Width = 188
+        Height = 34
+        Hint = ''
+        StyleButton = GoogleBlue3
+        BadgeText.Text = '0'
+        BadgeText.TextColor = '#FFFFFF'
+        BadgeText.TextSize = 10
+        BadgeText.TextStyle = 'bold'
+        BadgeText.BackgroundColor = '#D50000'
+        Caption = 'Nova Despesa'
+        ParentFont = False
+        Font.Color = clWhite
+        Font.Height = -13
+        TabOrder = 1
+      end
+    end
+  end
+  object ContainerBorda: TUniContainerPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 256
+    Height = 772
+    Hint = ''
+    ParentColor = False
+    Color = 16053492
+    Align = alLeft
+    TabOrder = 1
+    ExplicitLeft = 16
+    ExplicitTop = 320
+    ExplicitHeight = 128
+    object pnlBorda: TUniPanel
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Width = 250
+      Height = 766
+      Hint = ''
+      Align = alClient
+      TabOrder = 1
+      BorderStyle = ubsNone
+      Caption = 'pnlBorda'
+      Color = clWhite
+      ExplicitLeft = -38
+      ExplicitWidth = 294
+      ExplicitHeight = 772
+      object UniFSButton2: TUniFSButton
+        AlignWithMargins = True
+        Left = 957
+        Top = 20
+        Width = 68
+        Height = 34
+        Hint = ''
+        StyleButton = GoogleBlue3
+        CaptionIconFont = '<i class="fas fa-filter fa-10x"></i>'
+        BadgeText.Text = '10'
+        BadgeText.TextColor = '#FFFFFF'
+        BadgeText.TextSize = 10
+        BadgeText.TextStyle = 'bold'
+        BadgeText.BackgroundColor = '#D50000'
+        Caption = 'Filtro'
+        ParentFont = False
+        Font.Color = clWhite
+        Font.Height = -13
+        TabOrder = 1
+        Scale = bbs48x48
+      end
+    end
+  end
+end

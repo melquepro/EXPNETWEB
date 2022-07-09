@@ -5,38 +5,31 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics,
   Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
-  uniGUIClasses, uniGUIForm, uniLabel, uniEdit, Vcl.Imaging.pngimage, uniImage,
-  uniGUIBaseClasses, uniPanel;
+  uniGUIClasses, uniGUIRegClasses, uniGUIForm;
 
 type
-  TUniForm1 = class(TUniForm)
-    UniPanel1: TUniPanel;
-    UniPanel2: TUniPanel;
-    UniPanel3: TUniPanel;
-    UniImage1: TUniImage;
-    UniImage2: TUniImage;
-    UniEdit1: TUniEdit;
-    UniEdit2: TUniEdit;
-    UniLabel1: TUniLabel;
-    UniLabel2: TUniLabel;
+  TUniLoginForm1 = class(TUniLoginForm)
   private
     { Private declarations }
   public
     { Public declarations }
   end;
 
-function UniForm1: TUniForm1;
+function UniLoginForm1: TUniLoginForm1;
 
 implementation
 
 {$R *.dfm}
 
 uses
-  MainModule, uniGUIApplication;
+  uniGUIVars, MainModule, uniGUIApplication;
 
-function UniForm1: TUniForm1;
+function UniLoginForm1: TUniLoginForm1;
 begin
-  Result := TUniForm1(UniMainModule.GetFormInstance(TUniForm1));
+  Result := TUniLoginForm1(UniMainModule.GetFormInstance(TUniLoginForm1));
 end;
+
+initialization
+  RegisterAppFormClass(TUniLoginForm1);
 
 end.

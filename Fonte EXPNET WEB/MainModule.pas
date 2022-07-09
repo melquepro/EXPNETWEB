@@ -3,16 +3,13 @@ unit MainModule;
 interface
 
 uses
-  uniGUIMainModule, SysUtils, Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
-  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
-  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.MySQL,
-  FireDAC.Phys.MySQLDef, FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS,
-  FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
-  FireDAC.Comp.Client, System.ImageList, Vcl.ImgList, uniImageList,
-  uniGUIBaseClasses;
+  uniGUIMainModule, SysUtils, Classes, uniGUIBaseClasses, uniGUIClasses,
+  UniFSTheme;
 
 type
   TUniMainModule = class(TUniGUIMainModule)
+    FSTheme: TUniFSTheme;
+    procedure UniGUIMainModuleCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,6 +28,11 @@ uses
 function UniMainModule: TUniMainModule;
 begin
   Result := TUniMainModule(UniApplication.UniMainModule)
+end;
+
+procedure TUniMainModule.UniGUIMainModuleCreate(Sender: TObject);
+begin
+  FSTheme.Aplly;
 end;
 
 initialization

@@ -4,126 +4,152 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics,
-  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,uniGUIFrame,
-  uniGUIClasses, uniGUIRegClasses, uniGUIForm, uniSweetAlert, uniSplitter,
-  uniTreeView, uniPanel, uniPageControl, uniGUIBaseClasses, Vcl.Menus,
-  uniMainMenu, uniImageList, System.ImageList, Vcl.ImgList, uniLabel,
-  Vcl.Imaging.pngimage, uniImage, uniTreeMenu, System.Actions, Vcl.ActnList,
-   Vcl.ActnMan, Vcl.PlatformDefaultStyleActnCtrls, uniHTMLFrame,
-  uniSyntaxEditorBase, uniSyntaxEditor, uniButton, uniEdit, Vcl.StdCtrls,
-  uniScrollBox, Vcl.Imaging.jpeg, Frame.Modulo.EXPNET;
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIRegClasses, uniGUIForm, uniImage, uniLabel, uniButton,
+  uniBitBtn, UniFSButton, uniGUIBaseClasses, uniPanel, uniTreeView, uniTreeMenu,
+  uniPageControl, UniFSConfirm, UniFSToast, uniTimer, UniFSPopup, uniGUIFrame,
+  Frame.Dashboard;
+
 
 type
   TMainForm = class(TUniForm)
-    uMenuTree: TUniMenuItems;
-    Estoque1: TUniMenuItem;
-    Servidor1: TUniMenuItem;
-    UniContainerPanel1: TUniContainerPanel;
-    UniContainerPanel2: TUniContainerPanel;
-    UniPageControl1: TUniPageControl;
-    UniSweetAlert1: TUniSweetAlert;
-    UniScrollBox1: TUniScrollBox;
-    Clientes1: TUniMenuItem;
-    UniContainerPanel3: TUniContainerPanel;
-    UniContainerPanel4: TUniContainerPanel;
-    UniContainerPanel5: TUniContainerPanel;
-    UniTreeMenu1: TUniTreeMenu;
-    UniNativeImageList1: TUniNativeImageList;
-    UniImage1: TUniImage;
-    UniFrame11: TUniFrame1;
-    procedure Funcionarios2Click(Sender: TObject);
-    procedure UniPageControl1Change(Sender: TObject);
+    pnlMenuPrincipal: TUniPanel;
+    btnSair: TUniFSButton;
+    lblFalconFinancas: TUniLabel;
+    btnAlertas: TUniFSButton;
+    btnAtualizacoes: TUniFSButton;
+    btnMenu: TUniFSButton;
+    lblUsuarioConectado: TUniLabel;
+    lblEmpresa: TUniLabel;
+    btnMinhaConta: TUniFSButton;
+    btnSugestoes: TUniFSButton;
+    ContainerPanel: TUniContainerPanel;
+    pnlBorder: TUniPanel;
+    menAcesso: TUniTreeMenu;
+    pnlMenuTop: TUniPanel;
+    pgcControl: TUniPageControl;
+    Confirm: TUniFSConfirm;
+    tmrLoad: TUniTimer;
+    PopupAtualizacoes: TUniFSPopup;
+    UniTabSheet1: TUniTabSheet;
+    FrameDashboard1: TFrameDashboard;
 
-   procedure NovaAba(nomeFormFrame: TFrame; descFormFrame: string; Fechar: Boolean);
-   procedure TabSheetClose(Sender: TObject; var AllowClose: Boolean);
+    procedure btnMenuClick(Sender: TObject);
+    procedure tmrLoadTimer(Sender: TObject);
+    procedure UniFormCreate(Sender: TObject);
+    procedure menAcessoClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
   private
     { Private declarations }
-
-    // NovaAba(TFrame(TFrameListCliente),'CLIENTES',True);
-
+    procedure CarregaAtualizacoes();
   public
     { Public declarations }
-
   end;
 
 function MainForm: TMainForm;
-
-
 
 implementation
 
 {$R *.dfm}
 
 uses
-  uniGUIVars, uniGUIApplication,MainModule, Frame.ListCliente, Frame.ListForn;
-
-
-
-procedure TMainForm.Funcionarios2Click(Sender: TObject);
-begin
- ///   NovaAba(TFrame(TFrameFuncionario),'Lista de Funcionarios',True);
-end;
-
-procedure TMainForm.NovaAba(nomeFormFrame: TFrame; descFormFrame: string; Fechar: Boolean);
-var
-    TabSheet      :TUniTabSheet;
-    FCurrentFrame :TUniFrame;
-    I             :Integer;
-begin
-      UniPageControl1.Visible := True;
-     // Verificando se a tela já está aberto e redireciona a ela
-      for I := 0 to UniPageControl1.PageCount - 1 do
-        with UniPageControl1 do
-          if Pages[I].Caption = descFormFrame  then
-            begin
-              UniPageControl1.ActivePageIndex := I;
-              Exit;
-            end;
-      TabSheet              := TUniTabSheet.Create(Self);
-      TabSheet.PageControl  := UniPageControl1;
-      TabSheet.Caption      := descFormFrame;
-      TabSheet.ImageIndex   := I;
-      TabSheet.Closable     := Fechar;
-      FCurrentFrame:= TUniFrameClass(nomeFormFrame).Create(Self);
-      with FCurrentFrame do
-        begin
-          Align               := alClient;
-          Parent              := TabSheet;
-        end;
-      Refresh;
-      UniPageControl1.ActivePage := TabSheet;
-end;
-
-
-procedure TMainForm.TabSheetClose(Sender: TObject; var AllowClose: Boolean);
-var
-  N : TUniTreeNode;
-begin
-  N := (Sender as TUniTabSheet).Data;
-  if N is TUniTreeNode then
-    (N as TUniTreeNode).Data := nil;
-
-  if UniPageControl1.PageCount = 1 then
-    UniTreeMenu1.Selected := nil;
-
-end;
-
-procedure TMainForm.UniPageControl1Change(Sender: TObject);
-var
-  T : TUniTabSheet;
-  N : TUniTreeNode;
-begin
-  T := UniPageControl1.ActivePage;
-  if Assigned(T) then
-  begin
-    N := T.Data;
-    UniTreeMenu1.Selected := N;
-  end;
-end;
+  uniGUIVars, MainModule, uniGUIApplication, uDmAcessos, uDmImagens,
+  uniMainMenu, FS.Abas, uFrmLogin, uDmToast;
 
 function MainForm: TMainForm;
 begin
   Result := TMainForm(UniMainModule.GetFormInstance(TMainForm));
+end;
+
+procedure TMainForm.btnMenuClick(Sender: TObject);
+begin
+  ContainerPanel.Visible := not(ContainerPanel.Visible);
+end;
+
+procedure TMainForm.btnSairClick(Sender: TObject);
+begin
+  UniApplication.Restart;
+end;
+
+procedure TMainForm.CarregaAtualizacoes;
+var
+  SB: TStringBuilder;
+begin
+  SB := TStringBuilder.Create;
+  try
+    SB.Append('<a class=''fs-group-item''><i class=''far fa-smile fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-sync fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-puzzle-piece fa-lg text-red''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-sync fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-sync fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-puzzle-piece fa-lg text-red''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-sync fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-sync fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-puzzle-piece fa-lg text-red''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''far fa-thumbs-up fa-lg text-purple''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+
+    PopupAtualizacoes.SetHtml(SB.ToString);
+  finally
+    FreeAndNil(SB);
+  end;
+end;
+
+procedure TMainForm.menAcessoClick(Sender: TObject);
+var
+  Nd : TUniTreeNode;
+  MenItens: TUniMenuItems;
+  vI: Integer;
+  vII: Integer;
+begin
+  Nd := menAcesso.Selected;
+
+  if not(Nd.Enabled) then
+    Exit;
+
+  if not(Nd.HasChildren) then
+  begin
+    MenItens := dmAcessos.MenAcessos;
+
+    for vI := 0 to MenItens.Items.Count -1 do
+    begin
+      if Nd.Text = MenItens.Items[vI].Caption then
+      begin
+        dmAcessos.AbreTela(MenItens.Items[vI], pgcControl);
+        Exit;
+      end;
+
+      for vII := 0 to MenItens.Items[vI].Count -1 do
+      begin
+        if MenItens.Items[vI].Items[vII].Caption = dmAcessos.actFecharTodasAbas.Caption then
+        begin
+          TAbas.FecharTodas(pgcControl);
+          dmAcessos.AbreTela(dmAcessos.actGrfTelaPrincipal,pgcControl);
+
+          Break
+        end;
+        if Nd.Text = MenItens.Items[vI].Items[vII].Caption then
+        begin
+          dmAcessos.AbreTela(MenItens.Items[vI].Items[vII], pgcControl);
+          Exit;
+        end;
+      end;
+    end;
+
+  end;
+end;
+
+procedure TMainForm.tmrLoadTimer(Sender: TObject);
+begin
+//  menAcesso.Items.Item[1].Expand(false);
+
+  dmToast.Toast.Info('Este projeto está incluso dentro do pacote UniFalcon','',TToastPosition.bottomRight);
+// dmAcessos.AbreTela(dmAcessos.actListClientes, pgcControl);
+end;
+
+procedure TMainForm.UniFormCreate(Sender: TObject);
+begin
+  CarregaAtualizacoes();
+  tmrLoad.Enabled := True;
 end;
 
 initialization

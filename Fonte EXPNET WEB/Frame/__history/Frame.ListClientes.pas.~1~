@@ -1,0 +1,27 @@
+unit Frame.ListClientes;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIFrame;
+
+type
+  TFrameListClientes = class(TUniFrame)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+
+
+
+initialization
+  RegisterClass(TFrameListClientes);
+
+end.

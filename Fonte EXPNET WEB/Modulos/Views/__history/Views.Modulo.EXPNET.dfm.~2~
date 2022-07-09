@@ -1,0 +1,76 @@
+object FrmModulos: TFrmModulos
+  Left = 0
+  Top = 0
+  ClientHeight = 546
+  ClientWidth = 544
+  Caption = 'FrmModulos'
+  OldCreateOrder = False
+  MonitoredKeys.Keys = <>
+  TextHeight = 15
+  object UniContainerPanel3: TUniContainerPanel
+    Left = 0
+    Top = 0
+    Width = 545
+    Height = 546
+    Hint = ''
+    ParentColor = False
+    Align = alLeft
+    TabOrder = 0
+    ScrollDirection = sdVertical
+    Layout = 'vbox'
+    object UniContainerPanel1: TUniContainerPanel
+      Left = 0
+      Top = 0
+      Width = 545
+      Height = 49
+      Hint = ''
+      ParentColor = False
+      Color = 14079702
+      Align = alTop
+      TabOrder = 1
+      ExplicitLeft = 3
+      object UniLabel1: TUniLabel
+        Left = 9
+        Top = 12
+        Width = 92
+        Height = 21
+        Hint = ''
+        Caption = 'CADASTROS'
+        ParentFont = False
+        Font.Charset = ANSI_CHARSET
+        Font.Color = 3618615
+        Font.Height = -16
+        Font.Name = 'Segoe UI Semibold'
+        Font.Style = [fsBold]
+        TabOrder = 1
+      end
+    end
+    object UniContainerPanel2: TUniContainerPanel
+      Left = 0
+      Top = 169
+      Width = 2
+      Height = 377
+      Hint = ''
+      ParentColor = False
+      Color = 14079702
+      Align = alLeft
+      TabOrder = 2
+      ExplicitTop = 104
+      ExplicitHeight = 442
+    end
+    object UniTreeMenu1: TUniTreeMenu
+      Left = 0
+      Top = 49
+      Width = 545
+      Height = 120
+      Hint = ''
+      Align = alTop
+      Items.FontData = {0100000000}
+      ScreenMask.Message = 'Aguarde!'
+      ScreenMask.Target = Owner
+      ScreenMask.Opacity = 1.000000000000000000
+      Animation = False
+      ExpanderOnly = False
+    end
+  end
+end

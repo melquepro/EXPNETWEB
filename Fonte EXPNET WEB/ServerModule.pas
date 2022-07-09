@@ -38,10 +38,11 @@ end;
 
 procedure TUniServerModule.UniGUIServerModuleCreate(Sender: TObject);
 begin
-      MimeTable.AddMimeType('woff', 'application/font', False);
-      MimeTable.AddMimeType('woff2', 'application/font', False);
-      MimeTable.AddMimeType('ttf', 'application/font', False);
-
+  {Em modo de desenvolvimento}
+  {$IFNDEF DEBUG}
+  Self.UniRoot := 'c:\unigui\[uni]\';
+  Self.ExtRoot := 'c:\unigui\[ext]\';
+  {$ENDIF}
 end;
 
 initialization

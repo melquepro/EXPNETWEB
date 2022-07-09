@@ -1,0 +1,57 @@
+unit Views.Modulo.EXPNET;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIForm, Vcl.Menus, uniMainMenu, uniLabel,
+  uniGUIBaseClasses, uniPanel, uniTreeView, uniTreeMenu, uniImageList;
+
+type
+  TFrmModulos = class(TUniForm)
+    UniContainerPanel1: TUniContainerPanel;
+    UniLabel1: TUniLabel;
+    UniContainerPanel2: TUniContainerPanel;
+    UniTreeMenu1: TUniTreeMenu;
+    UniContainerPanel3: TUniContainerPanel;
+    UniNativeImageList1: TUniNativeImageList;
+    uMenuTree: TUniMenuItems;
+    Clientes1: TUniMenuItem;
+    Estoque1: TUniMenuItem;
+    Servidor1: TUniMenuItem;
+    procedure UniFormShow(Sender: TObject);
+    procedure Clientes1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+function FrmModulos: TFrmModulos;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  MainModule, uniGUIApplication, uCadClientes;
+
+function FrmModulos: TFrmModulos;
+begin
+  Result := TFrmModulos(UniMainModule.GetFormInstance(TFrmModulos));
+end;
+
+procedure TFrmModulos.Clientes1Click(Sender: TObject);
+begin
+frmCadCliente.Show;
+Close;
+end;
+
+procedure TFrmModulos.UniFormShow(Sender: TObject);
+begin
+//Left:=0;
+//  Top:=Screen.WorkAreaHeight - (Height + 120);
+end;
+
+end.
