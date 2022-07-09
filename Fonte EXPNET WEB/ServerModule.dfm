@@ -1,7 +1,7 @@
 object UniServerModule: TUniServerModule
   OnCreate = UniGUIServerModuleCreate
   TempFolder = 'temp\'
-  Title = 'Theme Crystal'
+  Title = 'EXPNET Live'
   Favicon.Data = {
     0000010006000000000001002000555300006600000080800000010020002808
     0100BB530000404000000100200028420000E35B01003030000001002000A825
@@ -3799,6 +3799,6 @@ object UniServerModule: TUniServerModule
   SSL.SSLOptions.VerifyDepth = 0
   ConnectionFailureRecovery.ErrorMessage = 'Connection Error'
   ConnectionFailureRecovery.RetryMessage = 'Retrying...'
-  Height = 150
-  Width = 215
+  Height = 319
+  Width = 477
 end

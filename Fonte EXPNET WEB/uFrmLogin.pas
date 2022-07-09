@@ -42,7 +42,7 @@ implementation
 {$R *.dfm}
 
 uses
-  MainModule, uniGUIApplication, uDmToast;
+  MainModule, uniGUIApplication, uToast;
 
 function frmLogin: TfrmLogin;
 begin
@@ -51,7 +51,7 @@ end;
 
 procedure TfrmLogin.btnConectarClick(Sender: TObject);
 begin
-  dmToast.Toast.Success('Usuário conectado com sucesso','');
+  //.Toast.Success('Usuário conectado com sucesso','');
   Self.Close;
 end;
 

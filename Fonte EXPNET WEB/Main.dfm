@@ -316,16 +316,12 @@ object MainForm: TMainForm
         ScreenMask.Enabled = True
         ScreenMask.WaitData = True
         ScreenMask.Message = 'Processando...'
-        Images = dmImagens.imglFA
-        SourceMenu = dmAcessos.MenAcessos
+        Images = DMListIcones.imgl20
+        SourceMenu = DMAcesso.MenuAcesso
         MicroWidth = 85
         ExpanderFirst = True
         ExpanderOnly = False
         OnClick = menAcessoClick
-        ExplicitLeft = 1
-        ExplicitTop = 191
-        ExplicitWidth = 250
-        ExplicitHeight = 691
       end
       object pnlMenuTop: TUniPanel
         AlignWithMargins = True
@@ -337,9 +333,7 @@ object MainForm: TMainForm
         Align = alTop
         TabOrder = 1
         Caption = ''
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 250
+        Color = 16053492
       end
     end
   end
@@ -349,11 +343,15 @@ object MainForm: TMainForm
     Width = 881
     Height = 848
     Hint = ''
+    ShowHint = True
+    ParentShowHint = False
     ActivePage = UniTabSheet1
+    TabBarVisible = False
     Align = alClient
     TabOrder = 2
     object UniTabSheet1: TUniTabSheet
       Hint = ''
+      ShowHint = True
       Caption = 'Dashboard'
       inline FrameDashboard1: TFrameDashboard
         Left = 0
@@ -362,60 +360,128 @@ object MainForm: TMainForm
         Height = 820
         Align = alClient
         Anchors = [akLeft, akTop, akRight, akBottom]
+        ShowHint = True
         TabOrder = 0
         Background.Picture.Data = {00}
-        ExplicitLeft = -279
-        ExplicitTop = -83
+        ExplicitWidth = 873
+        ExplicitHeight = 820
         inherited scrPrincipal: TUniScrollBox
           AlignWithMargins = True
           Left = 3
           Top = 3
           Width = 867
           Height = 814
-          ExplicitWidth = 873
-          ExplicitHeight = 820
+          ShowHint = True
+          ExplicitLeft = 3
+          ExplicitTop = 3
+          ExplicitWidth = 867
+          ExplicitHeight = 814
           inherited pnlPrincipal: TUniPanel
             Left = 0
             Top = 0
             Width = 865
             Height = 812
+            ShowHint = True
             Align = alClient
             ParentAlignmentControl = False
+            ExplicitLeft = 0
+            ExplicitTop = 0
+            ExplicitWidth = 865
+            ExplicitHeight = 812
             inherited pnlGraficos2: TUniPanel
               Width = 865
+              ShowHint = True
+              ExplicitWidth = 865
               inherited pnlReceitaDespesa: TUniPanel
                 Width = 859
+                ShowHint = True
+                ExplicitWidth = 859
                 inherited pnlGrf1: TUniPanel
                   Width = 857
+                  ShowHint = True
+                  ExplicitWidth = 857
                   inherited HighCharts1: TUniFSHighCharts
                     Width = 855
+                    ShowHint = True
+                    ExplicitWidth = 855
                   end
                   inherited UniPanel1: TUniPanel
                     Width = 855
+                    ShowHint = True
+                    ExplicitWidth = 855
+                    inherited UniLabel1: TUniLabel
+                      ShowHint = True
+                    end
                     inherited UniFSButton3: TUniFSButton
                       Left = 826
+                      ExplicitLeft = 826
                     end
                   end
                 end
               end
               inherited pnl1: TUniPanel
                 Width = 865
+                ShowHint = True
+                ExplicitWidth = 865
               end
             end
             inherited pnlGraficos1: TUniPanel
               Width = 865
+              ShowHint = True
+              ExplicitWidth = 865
               inherited pnlReceitaDetalhada: TUniPanel
                 Left = 360
+                ShowHint = True
+                ExplicitLeft = 360
+                inherited pnlGrf7: TUniPanel
+                  ShowHint = True
+                  inherited dbgReceita: TUniDBGrid
+                    ShowHint = True
+                  end
+                  inherited pnlTopDetailReceita: TUniPanel
+                    ShowHint = True
+                    inherited lblGrfDetalheRecMes: TUniLabel
+                      ShowHint = True
+                    end
+                  end
+                  inherited HighCharts3: TUniFSHighCharts
+                    ShowHint = True
+                  end
+                end
+              end
+              inherited pnlDespesaDetalhada: TUniPanel
+                ShowHint = True
+                inherited pnlGrf6: TUniPanel
+                  ShowHint = True
+                  inherited dbgDespesa: TUniDBGrid
+                    ShowHint = True
+                  end
+                  inherited pnlTopDetailDespesa: TUniPanel
+                    ShowHint = True
+                    inherited lblGrfDetalheCapMes: TUniLabel
+                      ShowHint = True
+                    end
+                  end
+                  inherited HighCharts2: TUniFSHighCharts
+                    ShowHint = True
+                  end
+                end
               end
               inherited pnl3: TUniPanel
                 Width = 865
+                ShowHint = True
+                ExplicitWidth = 865
               end
             end
             inherited pnlDiv3: TUniPanel
               Width = 865
+              ShowHint = True
+              ExplicitWidth = 865
             end
             inherited pnlDiv4: TUniPanel
               Width = 865
+              ShowHint = True
+              ExplicitWidth = 865
             end
           end
         end

@@ -1,15 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2022/07/08 19:39:54.000.201,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETLive.dproj=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\ThemeCrystal.dproj</Transaction>
-    <Transaction>2022/07/08 20:56:33.000.915,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\frm\uFrmDashboard.dfm=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.Dashboard.dfm</Transaction>
-    <Transaction>2022/07/08 20:56:33.000.915,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\frm\uFrmDashboard.pas=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.Dashboard.pas</Transaction>
-    <Transaction>2022/07/08 20:58:16.026,=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.Dashboard.pas</Transaction>
-    <Transaction>2022/07/08 20:59:05.986,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.Dashboard.pas=</Transaction>
-    <Transaction>2022/07/08 20:59:32.150,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\frm\uFrmCapLancamento.pas=</Transaction>
-    <Transaction>2022/07/08 21:01:23.491,=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.Dashboard.pas</Transaction>
-    <Transaction>2022/07/08 21:50:29.821,=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Unit1.pas</Transaction>
-    <Transaction>2022/07/08 21:53:12.730,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.ListClientes.pas=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Unit1.pas</Transaction>
-    <Transaction>2022/07/08 21:53:12.730,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.ListClientes.dfm=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Unit1.dfm</Transaction>
+    <Transaction>2022/07/08 19:39:54.000.201,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\ThemeCrystal.dproj=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETLive.dproj</Transaction>
+    <Transaction>2022/07/08 20:56:33.000.915,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.Dashboard.dfm=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\frm\uFrmDashboard.dfm</Transaction>
+    <Transaction>2022/07/08 20:56:33.000.915,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.Dashboard.pas=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\frm\uFrmDashboard.pas</Transaction>
+    <Transaction>2022/07/08 20:58:16.000.026,=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.Dashboard.pas</Transaction>
+    <Transaction>2022/07/08 20:59:05.000.986,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.Dashboard.pas=</Transaction>
+    <Transaction>2022/07/08 20:59:32.000.150,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\frm\uFrmCapLancamento.pas=</Transaction>
+    <Transaction>2022/07/08 21:01:23.000.491,=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.Dashboard.pas</Transaction>
+    <Transaction>2022/07/08 21:50:29.000.821,=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Unit1.pas</Transaction>
+    <Transaction>2022/07/08 21:53:12.000.730,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Unit1.dfm=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.ListClientes.dfm</Transaction>
+    <Transaction>2022/07/08 21:53:12.000.730,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Unit1.pas=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\Frame\Frame.ListClientes.pas</Transaction>
+    <Transaction>2022/07/09 14:56:31.265,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Frame\Frame.ListClientes.pas=</Transaction>
+    <Transaction>2022/07/09 14:56:31.295,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Frame\Frame.Dashboard.pas=</Transaction>
+    <Transaction>2022/07/09 14:58:55.804,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\Frame.Dashboard.pas</Transaction>
+    <Transaction>2022/07/09 14:59:16.420,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\Classes\FS.Abas.pas</Transaction>
+    <Transaction>2022/07/09 14:59:41.404,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCapLancamento.pas</Transaction>
+    <Transaction>2022/07/09 14:59:41.466,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmDashboard.pas</Transaction>
+    <Transaction>2022/07/09 14:59:41.564,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmFinCapPainelPagamento.pas</Transaction>
+    <Transaction>2022/07/09 14:59:41.617,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmFinCrePainelRecebimento.pas</Transaction>
+    <Transaction>2022/07/09 14:59:54.958,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uDmAcessos.pas</Transaction>
+    <Transaction>2022/07/09 14:59:55.068,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uDmImagens.pas</Transaction>
+    <Transaction>2022/07/09 14:59:55.146,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uDmToast.pas</Transaction>
+    <Transaction>2022/07/09 15:03:13.127,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uMenuAcesso.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uDmAcessos.pas</Transaction>
+    <Transaction>2022/07/09 15:03:13.127,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uMenuAcesso.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uDmAcessos.dfm</Transaction>
+    <Transaction>2022/07/09 15:05:01.466,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uListImagens.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uDmImagens.dfm</Transaction>
+    <Transaction>2022/07/09 15:05:01.466,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uListImagens.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uDmImagens.pas</Transaction>
+    <Transaction>2022/07/09 15:05:12.713,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uToast.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uDmToast.pas</Transaction>
+    <Transaction>2022/07/09 15:05:12.713,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uToast.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\ViewMenu\uDmToast.dfm</Transaction>
+    <Transaction>2022/07/09 15:14:57.931,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
+    <Transaction>2022/07/09 15:16:17.791,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uListClientes.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
+    <Transaction>2022/07/09 15:16:17.791,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uListClientes.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

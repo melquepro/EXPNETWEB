@@ -1,0 +1,158 @@
+unit Main;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIRegClasses, uniGUIForm, uniImage, uniLabel, uniButton,
+  uniBitBtn, UniFSButton, uniGUIBaseClasses, uniPanel, uniTreeView, uniTreeMenu,
+  uniPageControl, UniFSConfirm, UniFSToast, uniTimer, UniFSPopup, uniGUIFrame,
+  Frame.Dashboard;
+
+
+type
+  TMainForm = class(TUniForm)
+    pnlMenuPrincipal: TUniPanel;
+    btnSair: TUniFSButton;
+    lblFalconFinancas: TUniLabel;
+    btnAlertas: TUniFSButton;
+    btnAtualizacoes: TUniFSButton;
+    btnMenu: TUniFSButton;
+    lblUsuarioConectado: TUniLabel;
+    lblEmpresa: TUniLabel;
+    btnMinhaConta: TUniFSButton;
+    btnSugestoes: TUniFSButton;
+    ContainerPanel: TUniContainerPanel;
+    pnlBorder: TUniPanel;
+    menAcesso: TUniTreeMenu;
+    pnlMenuTop: TUniPanel;
+    pgcControl: TUniPageControl;
+    Confirm: TUniFSConfirm;
+    tmrLoad: TUniTimer;
+    PopupAtualizacoes: TUniFSPopup;
+    UniTabSheet1: TUniTabSheet;
+    FrameDashboard1: TFrameDashboard;
+
+    procedure btnMenuClick(Sender: TObject);
+    procedure tmrLoadTimer(Sender: TObject);
+    procedure UniFormCreate(Sender: TObject);
+    procedure menAcessoClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
+  private
+    { Private declarations }
+    procedure CarregaAtualizacoes();
+  public
+    { Public declarations }
+  end;
+
+function MainForm: TMainForm;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  uniGUIVars, MainModule, uniGUIApplication, uDmAcessos, uDmImagens,
+  uniMainMenu, FS.Abas, uFrmLogin, uDmToast;
+
+function MainForm: TMainForm;
+begin
+  Result := TMainForm(UniMainModule.GetFormInstance(TMainForm));
+end;
+
+procedure TMainForm.btnMenuClick(Sender: TObject);
+begin
+  ContainerPanel.Visible := not(ContainerPanel.Visible);
+end;
+
+procedure TMainForm.btnSairClick(Sender: TObject);
+begin
+  UniApplication.Restart;
+end;
+
+procedure TMainForm.CarregaAtualizacoes;
+var
+  SB: TStringBuilder;
+begin
+  SB := TStringBuilder.Create;
+  try
+    SB.Append('<a class=''fs-group-item''><i class=''far fa-smile fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-sync fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-puzzle-piece fa-lg text-red''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-sync fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-sync fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-puzzle-piece fa-lg text-red''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-sync fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-sync fa-lg text-green''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''fas fa-puzzle-piece fa-lg text-red''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+    SB.Append('<a class=''fs-group-item''><i class=''far fa-thumbs-up fa-lg text-purple''></i>&nbsp; 05/05/2020 - Foi adicionado um novo recurso na plataforma </a>');
+
+    PopupAtualizacoes.SetHtml(SB.ToString);
+  finally
+    FreeAndNil(SB);
+  end;
+end;
+
+procedure TMainForm.menAcessoClick(Sender: TObject);
+var
+  Nd : TUniTreeNode;
+  MenItens: TUniMenuItems;
+  vI: Integer;
+  vII: Integer;
+begin
+  Nd := menAcesso.Selected;
+
+  if not(Nd.Enabled) then
+    Exit;
+
+  if not(Nd.HasChildren) then
+  begin
+    MenItens := dmAcessos.MenAcessos;
+
+    for vI := 0 to MenItens.Items.Count -1 do
+    begin
+      if Nd.Text = MenItens.Items[vI].Caption then
+      begin
+        dmAcessos.AbreTela(MenItens.Items[vI], pgcControl);
+        Exit;
+      end;
+
+      for vII := 0 to MenItens.Items[vI].Count -1 do
+      begin
+        if MenItens.Items[vI].Items[vII].Caption = dmAcessos.actFecharTodasAbas.Caption then
+        begin
+          TAbas.FecharTodas(pgcControl);
+          dmAcessos.AbreTela(dmAcessos.actGrfTelaPrincipal,pgcControl);
+
+          Break
+        end;
+        if Nd.Text = MenItens.Items[vI].Items[vII].Caption then
+        begin
+          dmAcessos.AbreTela(MenItens.Items[vI].Items[vII], pgcControl);
+          Exit;
+        end;
+      end;
+    end;
+
+  end;
+end;
+
+procedure TMainForm.tmrLoadTimer(Sender: TObject);
+begin
+//  menAcesso.Items.Item[1].Expand(false);
+
+  dmToast.Toast.Info('Este projeto está incluso dentro do pacote UniFalcon','',TToastPosition.bottomRight);
+// dmAcessos.AbreTela(dmAcessos.actListClientes, pgcControl);
+end;
+
+procedure TMainForm.UniFormCreate(Sender: TObject);
+begin
+  CarregaAtualizacoes();
+  tmrLoad.Enabled := True;
+end;
+
+initialization
+  RegisterAppFormClass(TMainForm);
+
+end.

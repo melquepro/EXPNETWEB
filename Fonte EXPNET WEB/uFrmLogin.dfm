@@ -29,6 +29,9 @@ object frmLogin: TfrmLogin
     object TabLogin: TUniTabSheet
       Hint = ''
       Caption = 'TabLogin'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 256
       ExplicitHeight = 391
       object lblTituloSistema: TUniLabel
         Left = 54
@@ -42,7 +45,7 @@ object frmLogin: TfrmLogin
         Font.Color = 13075991
         Font.Height = -29
         Font.Name = 'Roboto'
-        TabOrder = 4
+        TabOrder = 3
       end
       object lblSubTitulo: TUniLabel
         Left = 90
@@ -72,7 +75,7 @@ object frmLogin: TfrmLogin
         Width = 1
         Height = 256
         Hint = ''
-        TabOrder = 1
+        TabOrder = 0
         Caption = 'pnlSep'
         Color = clGrayText
       end
@@ -83,7 +86,7 @@ object frmLogin: TfrmLogin
         Height = 236
         Hint = ''
         Visible = False
-        TabOrder = 2
+        TabOrder = 1
         BorderStyle = ubsNone
         Caption = ''
         Color = clWhite
@@ -149,7 +152,7 @@ object frmLogin: TfrmLogin
         Width = 345
         Height = 236
         Hint = ''
-        TabOrder = 3
+        TabOrder = 2
         BorderStyle = ubsNone
         Caption = ''
         Color = clWhite

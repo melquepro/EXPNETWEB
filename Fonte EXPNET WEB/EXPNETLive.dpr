@@ -21,14 +21,16 @@ uses
   MainModule in 'MainModule.pas' {UniMainModule: TUniGUIMainModule},
   Main in 'Main.pas' {MainForm: TUniForm},
   uFrmLogin in 'uFrmLogin.pas' {frmLogin: TUniForm},
-  uDmAcessos in 'dm\uDmAcessos.pas' {dmAcessos: TDataModule},
-  uDmImagens in 'dm\uDmImagens.pas' {dmImagens: TDataModule},
-  FS.Abas in 'classes\FS.Abas.pas',
-  uDmToast in 'dm\uDmToast.pas' {dmToast: TDataModule},
-  uFrmFinCapPainelPagamento in 'frm\uFrmFinCapPainelPagamento.pas' {frmFinCapPainelPagamento: TUniFrame},
-  uFrmFinCrePainelRecebimento in 'frm\uFrmFinCrePainelRecebimento.pas' {frmFinCrePainelRecebimento: TUniFrame},
-  Frame.Dashboard in 'Frame\Frame.Dashboard.pas' {FrameDashboard: TUniFrame},
-  Frame.ListClientes in 'Frame\Frame.ListClientes.pas' {frmListClientes: TUniFrame};
+  Frame.Dashboard in 'Modulos\Frame\Frame.Dashboard.pas' {FrameDashboard: TUniFrame},
+  FS.Abas in 'Modulos\Classes\FS.Abas.pas',
+  uFrmCapLancamento in 'Modulos\View\uFrmCapLancamento.pas' {frmCapLancamento: TUniForm},
+  uFrmDashboard in 'Modulos\View\uFrmDashboard.pas' {frmDashboard: TUniFrame},
+  uFrmFinCapPainelPagamento in 'Modulos\View\uFrmFinCapPainelPagamento.pas' {frmFinCapPainelPagamento: TUniFrame},
+  uFrmFinCrePainelRecebimento in 'Modulos\View\uFrmFinCrePainelRecebimento.pas' {frmFinCrePainelRecebimento: TUniFrame},
+  uMenuAcesso in 'Modulos\ViewMenu\uMenuAcesso.pas' {DMAcesso: TDataModule},
+  uListImagens in 'Modulos\ViewMenu\uListImagens.pas' {DMListIcones: TDataModule},
+  uToast in 'Modulos\ViewMenu\uToast.pas' {dmToast: TDataModule},
+  uListClientes in 'Modulos\View\uListClientes.pas' {frmListClientes: TUniFrame};
 
 {$R *.res}
 

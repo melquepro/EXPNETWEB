@@ -1,0 +1,35 @@
+unit uListImagens;
+
+interface
+
+uses
+  SysUtils, Classes, uniGUIBaseClasses, uniGUIClasses, uniImageList;
+
+type
+  TIcones = class(TDataModule)
+    imglFA: TUniNativeImageList;
+    imgl20: TUniNativeImageList;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+function Icones: TIcones;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  UniGUIVars, uniGUIMainModule, MainModule;
+
+function Icones: TIcones;
+begin
+  Result := TIcones(UniMainModule.GetModuleInstance(TIcones));
+end;
+
+initialization
+  RegisterModuleClass(TIcones);
+
+end.

@@ -53,8 +53,8 @@ implementation
 {$R *.dfm}
 
 uses
-  uniGUIVars, MainModule, uniGUIApplication, uDmAcessos, uDmImagens,
-  uniMainMenu, FS.Abas, uFrmLogin, uDmToast;
+  uniGUIVars, MainModule, uniGUIApplication,
+  uniMainMenu, FS.Abas, uFrmLogin, uListImagens, uMenuAcesso, uToast;
 
 function MainForm: TMainForm;
 begin
@@ -108,28 +108,28 @@ begin
 
   if not(Nd.HasChildren) then
   begin
-    MenItens := dmAcessos.MenAcessos;
+    MenItens := DMAcesso.MenuAcesso;
 
     for vI := 0 to MenItens.Items.Count -1 do
     begin
       if Nd.Text = MenItens.Items[vI].Caption then
       begin
-        dmAcessos.AbreTela(MenItens.Items[vI], pgcControl);
+        DMAcesso.AbreTela(MenItens.Items[vI], pgcControl);
         Exit;
       end;
 
       for vII := 0 to MenItens.Items[vI].Count -1 do
       begin
-        if MenItens.Items[vI].Items[vII].Caption = dmAcessos.actFecharTodasAbas.Caption then
+        if MenItens.Items[vI].Items[vII].Caption = DMAcesso.actFecharTodasAbas.Caption then
         begin
           TAbas.FecharTodas(pgcControl);
-          dmAcessos.AbreTela(dmAcessos.actGrfTelaPrincipal,pgcControl);
+          DMAcesso.AbreTela(DMAcesso.actGrfTelaPrincipal,pgcControl);
 
           Break
         end;
         if Nd.Text = MenItens.Items[vI].Items[vII].Caption then
         begin
-          dmAcessos.AbreTela(MenItens.Items[vI].Items[vII], pgcControl);
+          DMAcesso.AbreTela(MenItens.Items[vI].Items[vII], pgcControl);
           Exit;
         end;
       end;
