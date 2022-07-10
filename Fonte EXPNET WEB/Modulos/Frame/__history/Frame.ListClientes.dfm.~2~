@@ -1,0 +1,381 @@
+object FrameListClientes: TFrameListClientes
+  Left = 0
+  Top = 0
+  Width = 817
+  Height = 777
+  ShowHint = True
+  ParentShowHint = False
+  TabOrder = 0
+  object UniContainerPanel1: TUniContainerPanel
+    Left = 256
+    Top = 0
+    Width = 561
+    Height = 777
+    Hint = ''
+    ShowHint = True
+    ParentColor = False
+    Color = 16053492
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 0
+    ExplicitWidth = 817
+    ExplicitHeight = 566
+    DesignSize = (
+      561
+      777)
+    object UniPanel3: TUniPanel
+      AlignWithMargins = True
+      Left = 3
+      Top = 66
+      Width = 555
+      Height = 39
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      TabOrder = 1
+      BorderStyle = ubsNone
+      Caption = ''
+      ExplicitWidth = 811
+      DesignSize = (
+        555
+        39)
+      object btnFiltro: TUniFSButton
+        Left = 392
+        Top = 3
+        Width = 34
+        Height = 28
+        Hint = ''
+        ShowHint = True
+        StyleButton = GoogleBlue
+        CaptionIconFont = '<i class="fas fa-filter"></i>'
+        BadgeText.Text = '0'
+        BadgeText.TextColor = '#FFFFFF'
+        BadgeText.TextSize = 10
+        BadgeText.TextStyle = 'bold'
+        BadgeText.BackgroundColor = '#D50000'
+        Caption = ''
+        TabOrder = 1
+      end
+      object cmbSearch: TUniComboBox
+        Left = 3
+        Top = 5
+        Width = 383
+        Height = 28
+        Hint = ''
+        ShowHint = True
+        Text = ''
+        ParentFont = False
+        Font.Height = -13
+        TabOrder = 2
+        ClientEvents.ExtEvents.Strings = (
+          
+            'beforerender=function beforerender(sender, eOpts)'#13#10'{'#13#10'  //event:' +
+            ' sender.allowBlank=false;'#13#10'  event: sender.emptyText='#39'Pesquisar.' +
+            '..'#39';'#13#10'}')
+        Triggers = <
+          item
+            ButtonId = 0
+            IconCls = 'x-form-search-trigger'
+          end>
+        IconItems = <>
+      end
+      object btnImprimir: TUniFSButton
+        Left = 492
+        Top = 5
+        Width = 40
+        Height = 28
+        Hint = 'Imprimir / Exportar'
+        ShowHint = True
+        StyleButton = Purple
+        CaptionIconFont = '<i class="fas fa-print"></i>'
+        BadgeText.Text = '0'
+        BadgeText.TextColor = '#FFFFFF'
+        BadgeText.TextSize = 10
+        BadgeText.TextStyle = 'bold'
+        BadgeText.BackgroundColor = '#D50000'
+        Caption = ''
+        Anchors = [akTop, akRight]
+        TabOrder = 3
+        ExplicitLeft = 748
+      end
+    end
+    object dbg1: TUniDBGrid
+      Left = 0
+      Top = 108
+      Width = 561
+      Height = 669
+      Hint = ''
+      ShowHint = True
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgRowSelect, dgCheckSelect, dgCheckSelectCheckOnly, dgConfirmDelete, dgAutoRefreshRow]
+      LoadMask.Message = 'Carregando dados...'
+      Images = DMListIcones.imglFA
+      EmptyText = 'Sem nenhum cliente cadastrado.'
+      ForceFit = True
+      LayoutConfig.Padding = '0 10 0 10'
+      Align = alClient
+      TabOrder = 2
+      Columns = <
+        item
+          FieldName = 'Ativo'
+          Title.Alignment = taCenter
+          Title.Caption = '<i class="fa fa-lg fa-chevron-down"></i>'
+          Width = 56
+          Visible = False
+        end
+        item
+          FieldName = 'Documento'
+          Title.Caption = 'CPF/CNPJ'
+          Width = 89
+        end
+        item
+          FieldName = 'Descricao'
+          Title.Caption = 'Nome'
+          Width = 238
+        end
+        item
+          FieldName = 'Fornecedor'
+          Title.Caption = 'Fantasia'
+          Width = 266
+        end
+        item
+          FieldName = 'Vencimento'
+          Title.Caption = 'Contato'
+          Width = 112
+        end
+        item
+          FieldName = 'Pago'
+          Title.Caption = 'Cidade'
+          Width = 79
+        end
+        item
+          FieldName = 'Valor'
+          Title.Caption = 'Status'
+          Width = 88
+        end
+        item
+          FieldName = 'Editar'
+          Title.Alignment = taCenter
+          Title.Caption = '<i class="fa fa-lg fa-chevron-down"></i>'
+          Width = 44
+          Alignment = taCenter
+        end
+        item
+          FieldName = 'Excluir'
+          Title.Alignment = taCenter
+          Title.Caption = '<i class="fa fa-lg fa-chevron-down"></i>'
+          Width = 48
+          Alignment = taCenter
+        end>
+    end
+    object UniPanel4: TUniPanel
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Width = 555
+      Height = 57
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      TabOrder = 3
+      BorderStyle = ubsNone
+      Caption = ''
+      Color = clWhite
+      ExplicitWidth = 811
+      object UniLabel1: TUniLabel
+        Left = 65
+        Top = 6
+        Width = 112
+        Height = 13
+        Hint = ''
+        ShowHint = True
+        Caption = 'EXPLIVE / CADASTROS'
+        ParentFont = False
+        Font.Color = 10651736
+        TabOrder = 1
+      end
+      object UniLabel2: TUniLabel
+        Left = 62
+        Top = 21
+        Width = 214
+        Height = 30
+        Hint = ''
+        ShowHint = True
+        Caption = 'PESSOAS - COMPLETO'
+        ParentFont = False
+        Font.Charset = ANSI_CHARSET
+        Font.Color = 10651736
+        Font.Height = -21
+        Font.Name = 'Segoe UI Semibold'
+        Font.Style = [fsBold]
+        TabOrder = 2
+      end
+    end
+    object btnNovo: TUniFSButton
+      Left = 448
+      Top = 71
+      Width = 40
+      Height = 28
+      Hint = 'Inserir novo Cliente'
+      ShowHint = True
+      StyleButton = GoogleBlue
+      CaptionIconFont = '<i class="fas fa-plus"></i>'
+      BadgeText.Text = '0'
+      BadgeText.TextColor = '#FFFFFF'
+      BadgeText.TextSize = 10
+      BadgeText.TextStyle = 'bold'
+      BadgeText.BackgroundColor = '#D50000'
+      Caption = ''
+      Anchors = [akTop, akRight]
+      ParentFont = False
+      Font.Height = -16
+      TabOrder = 4
+      ExplicitLeft = 704
+    end
+  end
+  object UniContainerPanel2: TUniContainerPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 250
+    Height = 771
+    Hint = ''
+    ShowHint = True
+    ParentColor = False
+    Align = alLeft
+    TabOrder = 1
+    ExplicitLeft = 11
+    ExplicitTop = -77
+    object pnlCliBloqueado: TUniPanel
+      Left = 0
+      Top = 298
+      Width = 250
+      Height = 97
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      ParentFont = False
+      Font.Charset = ANSI_CHARSET
+      TabOrder = 1
+      BorderStyle = ubsNone
+      Caption = ''
+      ExplicitLeft = 3
+      ExplicitTop = 315
+    end
+    object pnlCliInativo: TUniPanel
+      Left = 0
+      Top = 397
+      Width = 250
+      Height = 97
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      TabOrder = 2
+      BorderStyle = ubsNone
+      Caption = ''
+      ExplicitTop = 8
+    end
+    object pnlCliAtivo: TUniPanel
+      Left = 0
+      Top = 199
+      Width = 250
+      Height = 97
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      TabOrder = 3
+      BorderStyle = ubsNone
+      Caption = ''
+      ExplicitTop = 8
+    end
+    object pnlCliAtivoPJ: TUniPanel
+      Left = 0
+      Top = 100
+      Width = 250
+      Height = 97
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      TabOrder = 4
+      BorderStyle = ubsNone
+      Caption = ''
+      ExplicitTop = 8
+    end
+    object pnlCliAtivoPF: TUniPanel
+      Left = 0
+      Top = 0
+      Width = 250
+      Height = 97
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      TabOrder = 5
+      BorderStyle = ubsNone
+      Caption = ''
+      LayoutConfig.Cls = 'list-group'
+      ExplicitTop = 8
+    end
+    object UniSplitter1: TUniSplitter
+      Left = 0
+      Top = 494
+      Width = 250
+      Height = 2
+      Cursor = crVSplit
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      ParentColor = False
+      Color = 16053492
+      ExplicitTop = 497
+    end
+    object UniSplitter2: TUniSplitter
+      Left = 0
+      Top = 395
+      Width = 250
+      Height = 2
+      Cursor = crVSplit
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      ParentColor = False
+      Color = 16053492
+      ExplicitTop = 397
+    end
+    object UniSplitter3: TUniSplitter
+      Left = 0
+      Top = 296
+      Width = 250
+      Height = 2
+      Cursor = crVSplit
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      ParentColor = False
+      Color = 16053492
+      ExplicitTop = 297
+    end
+    object UniSplitter4: TUniSplitter
+      Left = 0
+      Top = 197
+      Width = 250
+      Height = 2
+      Cursor = crVSplit
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      ParentColor = False
+      Color = 16053492
+    end
+    object UniSplitter5: TUniSplitter
+      Left = 0
+      Top = 97
+      Width = 250
+      Height = 3
+      Cursor = crVSplit
+      Hint = ''
+      ShowHint = True
+      Align = alTop
+      ParentColor = False
+      Color = 16053492
+    end
+  end
+end

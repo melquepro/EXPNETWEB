@@ -33,6 +33,7 @@ uses
 
 { TAbas }
 
+
 class procedure TAbas.FecharTodas(PageControl: TUniPageControl);
 var
   I : Integer;

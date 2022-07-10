@@ -30,7 +30,9 @@ uses
   uMenuAcesso in 'Modulos\ViewMenu\uMenuAcesso.pas' {DMAcesso: TDataModule},
   uListImagens in 'Modulos\ViewMenu\uListImagens.pas' {DMListIcones: TDataModule},
   uToast in 'Modulos\ViewMenu\uToast.pas' {dmToast: TDataModule},
-  uListClientes in 'Modulos\View\uListClientes.pas' {frmListClientes: TUniFrame};
+  Frame.ListClientes in 'Modulos\Frame\Frame.ListClientes.pas' {FrameListClientes: TUniFrame},
+  Frame.CadClientes in 'Modulos\Frame\Frame.CadClientes.pas' {FrameCadClientes: TUniFrame},
+  Frame.PageControl in 'Modulos\Classes\Frame.PageControl.pas';
 
 {$R *.res}
 
@@ -49,7 +51,7 @@ begin
   {$IFDEF UNIGUI_VCL}
     Application.Initialize;
     TUniServerModule.Create(Application);
-    Application.Title := 'Theme Crystal - Falcon Sistemas';
+    Application.Title := 'EXPNET Live - EXPNET Sistemas';
     Application.Run;
   {$ENDIF}
 

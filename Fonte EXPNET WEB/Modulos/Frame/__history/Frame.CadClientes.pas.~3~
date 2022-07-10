@@ -1,0 +1,28 @@
+unit Frame.CadClientes;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIFrame, uniGUIBaseClasses, uniPanel;
+
+type
+  TFrameCadClientes = class(TUniFrame)
+    UniContainerPanel1: TUniContainerPanel;
+    UniContainerPanel2: TUniContainerPanel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+
+uses uMenuAcesso;
+
+initialization
+RegisterClass(TFrameCadClientes);
+end.

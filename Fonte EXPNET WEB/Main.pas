@@ -33,6 +33,7 @@ type
     PopupAtualizacoes: TUniFSPopup;
     UniTabSheet1: TUniTabSheet;
     FrameDashboard1: TFrameDashboard;
+    UniButton1: TUniButton;
 
     procedure btnMenuClick(Sender: TObject);
     procedure tmrLoadTimer(Sender: TObject);
@@ -54,7 +55,8 @@ implementation
 
 uses
   uniGUIVars, MainModule, uniGUIApplication,
-  uniMainMenu, FS.Abas, uFrmLogin, uListImagens, uMenuAcesso, uToast;
+  uniMainMenu, FS.Abas, uFrmLogin, uListImagens, uMenuAcesso, uToast,
+  Frame.CadClientes;
 
 function MainForm: TMainForm;
 begin
@@ -109,7 +111,7 @@ begin
   if not(Nd.HasChildren) then
   begin
     MenItens := DMAcesso.MenuAcesso;
-
+    //MenItens := DMAcesso.MenuFrame;
     for vI := 0 to MenItens.Items.Count -1 do
     begin
       if Nd.Text = MenItens.Items[vI].Caption then
@@ -143,7 +145,7 @@ begin
 //  menAcesso.Items.Item[1].Expand(false);
 
   dmToast.Toast.Info('Este projeto está incluso dentro do pacote UniFalcon','',TToastPosition.bottomRight);
-// dmAcessos.AbreTela(dmAcessos.actListClientes, pgcControl);
+//dmAcessos.AbreTela(dmAcessos.actListClientes, pgcControl);
 end;
 
 procedure TMainForm.UniFormCreate(Sender: TObject);
