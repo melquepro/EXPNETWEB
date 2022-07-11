@@ -1,7 +1,0 @@
-object FrameCadCliente: TFrameCadCliente
-  Left = 0
-  Top = 0
-  Width = 1010
-  Height = 596
-  TabOrder = 0
-end

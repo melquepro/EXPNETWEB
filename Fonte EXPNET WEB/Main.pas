@@ -8,7 +8,7 @@ uses
   uniGUIClasses, uniGUIRegClasses, uniGUIForm, uniImage, uniLabel, uniButton,
   uniBitBtn, UniFSButton, uniGUIBaseClasses, uniPanel, uniTreeView, uniTreeMenu,
   uniPageControl, UniFSConfirm, UniFSToast, uniTimer, UniFSPopup, uniGUIFrame,
-  Frame.Dashboard;
+  Frame.Dashboard, Frame.PageControl;
 
 
 type
@@ -40,6 +40,7 @@ type
     procedure UniFormCreate(Sender: TObject);
     procedure menAcessoClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
+    procedure UniButton1Click(Sender: TObject);
   private
     { Private declarations }
     procedure CarregaAtualizacoes();
@@ -56,7 +57,7 @@ implementation
 uses
   uniGUIVars, MainModule, uniGUIApplication,
   uniMainMenu, FS.Abas, uFrmLogin, uListImagens, uMenuAcesso, uToast,
-  Frame.CadClientes;
+  Frame.CadClientes, uFrmCapLancamento;
 
 function MainForm: TMainForm;
 begin
@@ -148,10 +149,17 @@ begin
 //dmAcessos.AbreTela(dmAcessos.actListClientes, pgcControl);
 end;
 
+procedure TMainForm.UniButton1Click(Sender: TObject);
+begin
+PControl.NovaAba(TFrame(TFrameCadClientes),'Cadastro de Cliente','CadClientes');
+
+end;
+
 procedure TMainForm.UniFormCreate(Sender: TObject);
 begin
   CarregaAtualizacoes();
   tmrLoad.Enabled := True;
+  PControl := TPageControl.Init(pgcControl);
 end;
 
 initialization

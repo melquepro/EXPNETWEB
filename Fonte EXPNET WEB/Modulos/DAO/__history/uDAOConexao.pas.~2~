@@ -1,0 +1,33 @@
+unit uDAOConexao;
+
+interface
+
+uses
+  SysUtils, Classes, uniGUIBaseClasses, uniGUIClasses, UniFSToast;
+
+type
+  TDAOConexao = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+function DAOConexao: TDAOConexao;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  UniGUIVars, uniGUIMainModule, MainModule;
+
+function DAOConexao: TDAOConexao;
+begin
+  Result := TDAOConexao(UniMainModule.GetModuleInstance(TDAOConexao));
+end;
+
+initialization
+  RegisterModuleClass(TDAOConexao);
+
+end.

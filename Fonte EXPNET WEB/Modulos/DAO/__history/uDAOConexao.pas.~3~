@@ -1,0 +1,97 @@
+unit uDAOConexao;
+
+interface
+
+uses
+  SysUtils, Classes, uniGUIBaseClasses, uniGUIClasses, UniFSToast,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf,
+  FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async,
+  FireDAC.Phys, FireDAC.Phys.MySQL, FireDAC.Phys.MySQLDef, FireDAC.Stan.Param,
+  FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.VCLUI.Wait,
+  FireDAC.VCLUI.Error, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.UI,
+  FireDAC.Comp.Client;
+
+type
+  TDAOConexao = class(TDataModule)
+    Database: TFDConnection;
+    Transaction: TFDTransaction;
+    qryClientes: TFDQuery;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    FDGUIxErrorDialog1: TFDGUIxErrorDialog;
+    MySQLDriver: TFDPhysMySQLDriverLink;
+    qryClientesID: TFDAutoIncField;
+    qryClientesPESSOA: TStringField;
+    qryClientesIDEMPRESA: TStringField;
+    qryClientesNOME: TStringField;
+    qryClientesFANTASIA: TStringField;
+    qryClientesSENHA: TStringField;
+    qryClientesCPF_CNPJ: TStringField;
+    qryClientesRG_IE: TStringField;
+    qryClientesINSC_MUNICIPAL: TStringField;
+    qryClientesENDERECO: TStringField;
+    qryClientesNUMERO: TStringField;
+    qryClientesBAIRRO: TStringField;
+    qryClientesCOMPLEMENTO: TStringField;
+    qryClientesCIDADE: TStringField;
+    qryClientesESTADO: TStringField;
+    qryClientesTELEFONE: TStringField;
+    qryClientesCELULAR: TStringField;
+    qryClientesEMAIL: TStringField;
+    qryClientesPAI: TStringField;
+    qryClientesMAE: TStringField;
+    qryClientesDT_CADASTRO: TDateField;
+    qryClientesDT_NASC: TDateField;
+    qryClientesESTADOCIVIL: TStringField;
+    qryClientesNATURALIDADE: TStringField;
+    qryClientesCEP: TStringField;
+    qryClientesREFERENCIA: TStringField;
+    qryClientesLOGIN: TStringField;
+    qryClientesSEXO: TStringField;
+    qryClientesCONTATO: TStringField;
+    qryClientesREPRESENTANTE: TStringField;
+    qryClientesCARGO: TStringField;
+    qryClientesTIPO_ASSINANTE: TStringField;
+    qryClientesSTATUS: TStringField;
+    qryClientesOBSERVACOES: TStringField;
+    qryClientesALERTA: TStringField;
+    qryClientesCPF_REPRE: TStringField;
+    qryClientesRG_REPRE: TStringField;
+    qryClientesCFOP: TStringField;
+    qryClientesDESCONTO: TFMTBCDField;
+    qryClientesACRESCIMO: TFMTBCDField;
+    qryClientesCO_ENDERECO: TStringField;
+    qryClientesCO_BAIRRO: TStringField;
+    qryClientesCO_NUMERO: TStringField;
+    qryClientesCO_CIDADE: TStringField;
+    qryClientesCO_ESTADO: TStringField;
+    qryClientesCO_COMPLEMENTO: TStringField;
+    qryClientesCO_CEP: TStringField;
+    qryClientesCO_TEL: TStringField;
+    qryClientesCO_CEL: TStringField;
+    qryClientesCO_EMAIL: TStringField;
+    qryClientesCO_MODALIDADE: TStringField;
+    qryClientesGERAR_COBRANCA: TStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+function DAOConexao: TDAOConexao;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  UniGUIVars, uniGUIMainModule, MainModule;
+
+function DAOConexao: TDAOConexao;
+begin
+  Result := TDAOConexao(UniMainModule.GetModuleInstance(TDAOConexao));
+end;
+
+initialization
+  RegisterModuleClass(TDAOConexao);
+
+end.

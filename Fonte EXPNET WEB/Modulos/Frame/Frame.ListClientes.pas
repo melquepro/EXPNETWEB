@@ -56,6 +56,7 @@ type
     UniLabel11: TUniLabel;
     UniLabel12: TUniLabel;
     UniImage6: TUniImage;
+    UniSplitter6: TUniSplitter;
     procedure btnFiltroClick(Sender: TObject);
     procedure UniFrameCreate(Sender: TObject);
   private
