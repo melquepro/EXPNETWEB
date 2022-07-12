@@ -609,7 +609,7 @@ object FrameListClientes: TFrameListClientes
           Height = 28
           Hint = ''
           ShowHint = True
-          StyleButton = GoogleBlue
+          StyleButton = Default
           CaptionIconFont = '<i class="fas fa-filter"></i>'
           BadgeText.Text = '0'
           BadgeText.TextColor = '#FFFFFF'
@@ -644,14 +644,14 @@ object FrameListClientes: TFrameListClientes
           IconItems = <>
         end
         object btnImprimir: TUniFSButton
-          Left = 750
+          Left = 808
           Top = 5
-          Width = 95
+          Width = 37
           Height = 28
           Hint = 'Imprimir / Exportar'
           ShowHint = True
-          StyleButton = Purple
-          CaptionIconFont = '<i class="fas fa-print"> Op'#231#245'es</i>'
+          StyleButton = Default
+          CaptionIconFont = '<i class="fas fa-print"> </i>'
           BadgeText.Text = '0'
           BadgeText.TextColor = '#FFFFFF'
           BadgeText.TextSize = 10
@@ -662,14 +662,14 @@ object FrameListClientes: TFrameListClientes
           TabOrder = 3
         end
         object btnNovo: TUniFSButton
-          Left = 644
+          Left = 757
           Top = 5
-          Width = 100
+          Width = 36
           Height = 28
           Hint = 'Inserir novo Cliente'
           ShowHint = True
-          StyleButton = GoogleBlue
-          CaptionIconFont = '<i class="fas fa-plus"> Novo Cliente</i>'
+          StyleButton = Default
+          CaptionIconFont = '<i class="fas fa-plus"></i>'
           BadgeText.Text = '0'
           BadgeText.TextColor = '#FFFFFF'
           BadgeText.TextSize = 10

@@ -1,184 +1,61 @@
 object FrameCadClientes: TFrameCadClientes
   Left = 0
   Top = 0
-  Width = 1227
+  Width = 1002
   Height = 962
   TabOrder = 0
   object UniContainerPanel2: TUniContainerPanel
     AlignWithMargins = True
     Left = 270
     Top = 3
-    Width = 954
+    Width = 729
     Height = 956
     Hint = ''
     ParentColor = False
     Align = alClient
     ScreenMask.ShowMessage = False
     TabOrder = 0
-    ExplicitWidth = 867
-    ExplicitHeight = 749
-    object UniPanel1: TUniPanel
-      Left = 0
-      Top = 0
-      Width = 954
-      Height = 57
-      Hint = ''
-      Align = alTop
-      TabOrder = 1
-      Caption = ''
-      Color = clWhite
-      ExplicitWidth = 827
-      object UniLabel2: TUniLabel
-        Left = 62
-        Top = 21
-        Width = 124
-        Height = 30
-        Hint = ''
-        ShowHint = True
-        ParentShowHint = False
-        Caption = 'Novo Cliente'
-        ParentFont = False
-        Font.Charset = ANSI_CHARSET
-        Font.Color = 6829373
-        Font.Height = -21
-        Font.Name = 'Segoe UI Semibold'
-        Font.Style = [fsBold]
-        TabOrder = 1
-      end
-      object UniImage6: TUniImage
-        Left = 14
-        Top = 6
-        Width = 32
-        Height = 32
-        Hint = ''
-        ShowHint = True
-        ParentShowHint = False
-        AutoSize = True
-        Picture.Data = {
-          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000200000
-          00200806000000737A7AF400000006624B474400FF00FF00FFA0BDA793000004
-          DD4944415478DAC5576D6C1445189E99BDD6B4458CD4D42BE20FB046E3C5AAE9
-          EED5D2EBB586400469082145217E36E56EAF68A47F5452139A4830D21890A8DD
-          9E8D3685E88F62AB41C02FB0F4AE2D777B8D112969880434864AA3184C0835ED
-          CDF8ECB53D6BD9DDEE411327D9CCEEBC33EFFBBC9FF32E25FFF3A0996C2E2909
-          64E530A9920AE2155414602E30D60525A354D05142794CCA2B3CD1D3D33431AF
-          00CA95AD1E4693AF1241D6E2F336CCA70923BF12212E8105059702ACDD0D9A07
-          CF1580392424FE5624D67AE6A600943FF2E262E69AD885D7A7F1C405A1EDE36C
-          FCF358ACED92D9FE2AA5DECD055F07AECF0B4214D8A68370D118190C8F640CA0
-          BC34F428E3A21B8C7EC7AEEDD1B8F64526EEF229C16A307F13226E8775D64712
-          5ADC31800A59DD00CA011CEC96168CD5F6F4B48F4DD3962F570B5CE334C08958
-          85C36E2C313C438CB09D27F4F7F5997CCACA1A725C13631FC112EB10279BA144
-          F79C002A957A8513DE0BE1FB80FA352C89343025B80247BAF0BAD004F7189885
-          9944F6F49CD42ECC9451A1847683CD56C1684534D632680920E543C21378EDEF
-          D5B527670AAF2A09DC9164EC276204A1FDB82849A47C36089F123A4889509259
-          44EEEFD7464D0154286A18122B72FFBE2A7F7D6AFFD59934BF576D1282EC7018
-          02ED115D7BE13FCA79EA172473938344B0E391444BE83A00A95423C91FB8A0D5
-          7D8996A3D7C585A27E8B69854300E700A068F6A2CFABAE45EDF88C30513C9DA2
-          F45F01C10F916645515DF39B71048053981E7408E03200E45BF0E9C37406F42D
-          69001E4F4DF6A2DC7CC32FDB4068373BE85782DF03E0C30E018C80CF6233824F
-          566B51BA9AA53CF79D46C54C01A894832B39A547B2A9E43E167FEF0F73006A17
-          E263BD43007D00E0332318692C8D938B00B1AA37AE1DA753E6DF8E82FE14D2EE
-          212B8E7E59DD895C6E74265FEC8DE8AD0D5654C83B8D0ADE11896BBB2701C8A1
-          7D088C7BB0F084F5A11002533CEE443C981E451AAFB15446518F7042CE22DEB6
-          4D02F0AA9D82D32BD1444B9D3500B51F53994317F4C305E556449F1C6A63542C
-          04C88D532E500F62FA733A32CD51875E1744BCE1CC03B411B9BECB310098E41D
-          F8B7C8CE05353535D2C8F945DF504A1FB3952DC477854B2FAFECECEC4C5A5BD3
-          70271F36E2C47110A680CAC13582D2C3B60088581DD55BBFB4DBE353D41FD133
-          74C04ACD74D2246A15D2E218E17C89DDDD9D022BAB1F23CA365948FF044A6CB6
-          3B5F555AB724C95DBF08CEFDD1C170944E9BF7B70BF986E046C4C107760CA6FA
-          8401331A67B4AC2FD672D256016F5085B5774474F75D843471C7A5386DBE9280
-          8F3216B1B0800F16E8B30560568A8DE1F7D62D15C2358C2B7353AFDEDA657638
-          65A99FF39B21C8B4C8A052BE1DD5DDAF189A99D111EC1BB1A703D7F5FDD3D7B5
-          A3EBD8E8052624FA2C022780CFFBEC34C4F961DC78E16C2675CC2CEB735EC7A9
-          4DB31A12F8BB9472F112366DC0DA2D24B361B4719F4E7556BAA386C418E9968C
-          8873207B32146A31E810F82D9BB3254BFB4A5683284CDAFC084F8F80598659B7
-          E5DEC0738C486D286DAE9B539E4E082E6AA3096DBF29D9EEAC4F695846C9B543
-          787DE0C6848B214AB2AA7BE3EF9EB7DCE2844FA51C5ACD29DF8B08BF971ABF62
-          3643A47E15C959707E1977CB577362CC44A1E2E267F26ECDCED9422933EEFA42
-          A45BEAFF0012FF82E411687C38E9CA0D0F0CECB9E6D8483764DA791CFF00D64A
-          1F3FDEEC2C560000000049454E44AE426082}
-      end
-      object UniLabel1: TUniLabel
-        Left = 65
-        Top = 6
-        Width = 41
-        Height = 13
-        Hint = ''
-        ShowHint = True
-        ParentShowHint = False
-        Caption = 'CLIENTE'
-        ParentFont = False
-        Font.Color = 6829373
-        TabOrder = 3
-      end
-    end
-    object UniSplitter1: TUniSplitter
-      Left = 0
-      Top = 57
-      Width = 954
-      Height = 3
-      Cursor = crDefault
-      Hint = ''
-      Enabled = False
-      Align = alTop
-      ParentColor = False
-      Color = 16053492
-      ExplicitWidth = 827
-    end
+    ExplicitWidth = 954
     object pgCadClientes: TUniPageControl
       Left = 0
-      Top = 60
-      Width = 954
-      Height = 896
+      Top = 0
+      Width = 729
+      Height = 907
       Hint = ''
-      ActivePage = tbPessoaFisica
+      ActivePage = tbDetalhes
       Align = alClient
       LayoutConfig.Width = '100%'
-      TabOrder = 3
-      ExplicitWidth = 855
-      ExplicitHeight = 689
-      object tbPessoaFisica: TUniTabSheet
+      TabOrder = 1
+      ExplicitLeft = 3
+      ExplicitTop = 63
+      ExplicitWidth = 954
+      ExplicitHeight = 896
+      object tbDetalhes: TUniTabSheet
         AlignWithMargins = True
         Hint = ''
-        Caption = 'tbPessoaFisica'
+        Caption = 'tbDetalhes'
         AutoScroll = True
-        ExplicitHeight = 729
-        ScrollHeight = 49
-        object UniPanel4: TUniPanel
-          AlignWithMargins = True
-          Left = 3
-          Top = 816
-          Width = 940
-          Height = 49
-          Hint = ''
-          Align = alBottom
-          TabOrder = 0
-          Caption = 'UniPanel4'
-          Color = 16053492
-          ExplicitLeft = 0
-          ExplicitTop = 680
-          ExplicitWidth = 946
-        end
+        ExplicitWidth = 733
+        ExplicitHeight = 925
+        ScrollHeight = 60
         object UniScrollBox1: TUniScrollBox
           AlignWithMargins = True
           Left = 3
-          Top = 3
-          Width = 940
-          Height = 807
+          Top = 63
+          Width = 715
+          Height = 813
           Hint = ''
           Align = alClient
-          TabOrder = 1
+          TabOrder = 0
           ScrollDirection = sdVertical
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 946
-          ExplicitHeight = 813
-          ScrollHeight = 1290
+          ExplicitWidth = 940
+          ExplicitHeight = 747
+          ScrollHeight = 1332
           object pnlEndereco: TUniPanel
             AlignWithMargins = True
             Left = 3
-            Top = 400
-            Width = 915
+            Top = 448
+            Width = 690
             Height = 370
             Hint = ''
             Align = alTop
@@ -194,6 +71,7 @@ object FrameCadClientes: TFrameCadClientes
             LayoutAttribs.Padding = '0 0 0 30'
             LayoutConfig.Cls = 'noPanel'
             LayoutConfig.Padding = '0 0 0 30'
+            ExplicitTop = 442
             object UniLabel6: TUniLabel
               Left = 53
               Top = 100
@@ -339,9 +217,9 @@ object FrameCadClientes: TFrameCadClientes
               TabOrder = 16
             end
             object UniDBEdit10: TUniDBEdit
-              Left = 326
+              Left = 336
               Top = 205
-              Width = 316
+              Width = 306
               Height = 22
               Hint = ''
               TabOrder = 17
@@ -369,13 +247,13 @@ object FrameCadClientes: TFrameCadClientes
               Width = 23
               Height = 13
               Hint = ''
-              Caption = 'Pais:'
+              Caption = 'Pa'#237's:'
               TabOrder = 20
             end
             object UniDBEdit12: TUniDBEdit
-              Left = 398
+              Left = 406
               Top = 245
-              Width = 244
+              Width = 236
               Height = 22
               Hint = ''
               TabOrder = 21
@@ -453,7 +331,7 @@ object FrameCadClientes: TFrameCadClientes
               TabOrder = 28
             end
             object UniContainerPanel13: TUniContainerPanel
-              Left = 317
+              Left = 327
               Top = 207
               Width = 5
               Height = 22
@@ -464,7 +342,7 @@ object FrameCadClientes: TFrameCadClientes
               TabOrder = 29
             end
             object UniContainerPanel14: TUniContainerPanel
-              Left = 389
+              Left = 397
               Top = 244
               Width = 5
               Height = 22
@@ -474,12 +352,79 @@ object FrameCadClientes: TFrameCadClientes
               ScreenMask.ShowMessage = False
               TabOrder = 30
             end
+            object btnBuscaCEP: TUniFSButton
+              Left = 264
+              Top = 12
+              Width = 44
+              Height = 33
+              Hint = ''
+              StyleButton = Transparent
+              BadgeText.Text = '0'
+              BadgeText.TextColor = '#FFFFFF'
+              BadgeText.TextSize = 10
+              BadgeText.TextStyle = 'bold'
+              BadgeText.BackgroundColor = '#D50000'
+              Glyph.Data = {
+                0E060000424D0E06000000000000360000002800000016000000160000000100
+                180000000000D8050000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBF9FAFFFFFFFFFFFFFFFFFF
+                0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCEBEC1835960F1EDEDFFFF
+                FFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCAB8BB6A373F68353D7E
+                535AFBF9FAFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCEBEC16B394168353D
+                69363EC0ABAEFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FBF9FAD2C3C5BDA6AABAA2A6C8B5B8F2EEEEFFFFFFFFFFFFDED3D46A373F6835
+                3D6A3840CAB8BBFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFBFA
+                FAB8A0A473434B68353D68353D68353D68353D6A373F9E7D82EEE8E9B79FA268
+                353D6A373FC7B4B7FFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFF6
+                F2F38C656B68353D6F3E45A38388C2ADB1C3AEB1B1979B7C505768353D724249
+                74454CB89FA3DFD4D6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+                FEFEFE95717768353D8D666CEFEAEAFFFFFFFFFFFFFFFFFFFFFFFFFBFAFAAF94
+                9869363E73434BEFEAEAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF
+                FFFFFFFFCDBCBE68353D875E65FAF8F8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFB1979B68353D9D7B81FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                0000FFFFFFFFFFFF8C656B68353DDFD4D6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFCFBFB7C4F5669373FF1EDEDFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFF0000FFFFFFFAF8F86A373F7F545BFFFFFFFFFFFFFBFAFAFFFFFFFFFF
+                FFFBFAFAFFFFFFFDFCFCFEFEFEFFFFFFB0959968353DCBB9BCFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFF0000FFFFFFEBE4E568353D967278FFFFFFCCBBBE6D3B43E4
+                DBDCA78A8E794B52FDFCFC81575E9C7A7FFFFFFFC7B4B768353DB9A2A5FFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFEFEAEA68353D916C71FFFFFFE4DBDC
+                9C7A7FF3EEEFCBBABDA78A8EFFFFFFB09599C3AFB2FFFFFFC2ADB168353DBEA9
+                ACFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFDFDFD71414873444BFDFC
+                FCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA1818668
+                353DD6C8CAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF9D7C8168
+                353DC5B1B4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0EAEB
+                6E3D45714148FBF9FAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+                E4DBDC69373F714148E5DCDEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAF8
+                F88D666C68353DB69DA1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF
+                FFFFFFFFFFFFFFB79FA368353D73434BC9B6B9FDFCFCFFFFFFFFFFFFFFFFFFE0
+                D5D789616868353D8C656BFBF9FAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                0000FFFFFFFFFFFFFFFFFFFFFFFFBAA3A76A384068353D73444B906A70906B71
+                80555B68353D68353D967278F6F3F4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE8E0E1A181867141486835
+                3D68353D6A373F8F696FD0C0C3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC
+                FBFBEFEAEAECE6E7F8F6F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000}
+              Caption = ''
+              TabOrder = 31
+              Images = imgMenu
+              ImageIndex = 5
+            end
           end
           object pnlParametro: TUniPanel
             AlignWithMargins = True
             Left = 3
-            Top = 209
-            Width = 915
+            Top = 257
+            Width = 690
             Height = 185
             Hint = ''
             BodyRTL = False
@@ -498,9 +443,10 @@ object FrameCadClientes: TFrameCadClientes
             LayoutAttribs.Padding = '0 0 0 30'
             LayoutConfig.Cls = 'noPanel'
             LayoutConfig.Padding = '0 0 0 30'
+            ExplicitTop = 251
             object UniDBCheckBox1: TUniDBCheckBox
               Left = 23
-              Top = 40
+              Top = 18
               Width = 97
               Height = 17
               Hint = ''
@@ -511,7 +457,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBCheckBox2: TUniDBCheckBox
               Left = 23
-              Top = 71
+              Top = 49
               Width = 97
               Height = 17
               Hint = ''
@@ -522,7 +468,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBCheckBox3: TUniDBCheckBox
               Left = 23
-              Top = 135
+              Top = 113
               Width = 97
               Height = 17
               Hint = ''
@@ -533,7 +479,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBCheckBox4: TUniDBCheckBox
               Left = 23
-              Top = 104
+              Top = 82
               Width = 97
               Height = 17
               Hint = ''
@@ -544,7 +490,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBCheckBox5: TUniDBCheckBox
               Left = 295
-              Top = 135
+              Top = 113
               Width = 202
               Height = 17
               Hint = ''
@@ -555,7 +501,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBCheckBox6: TUniDBCheckBox
               Left = 295
-              Top = 104
+              Top = 82
               Width = 146
               Height = 17
               Hint = ''
@@ -566,7 +512,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBCheckBox7: TUniDBCheckBox
               Left = 295
-              Top = 71
+              Top = 49
               Width = 97
               Height = 17
               Hint = ''
@@ -577,7 +523,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBCheckBox8: TUniDBCheckBox
               Left = 295
-              Top = 40
+              Top = 18
               Width = 250
               Height = 17
               Hint = ''
@@ -587,144 +533,15 @@ object FrameCadClientes: TFrameCadClientes
               Color = clBtnFace
             end
           end
-          object UniContainerPanel5: TUniContainerPanel
-            Left = 0
-            Top = 0
-            Width = 921
-            Height = 206
-            Hint = ''
-            ParentColor = False
-            Color = clWhite
-            Align = alTop
-            ParentAlignmentControl = False
-            TabOrder = 2
-            AlwaysOnTop = True
-            object UniLabel5: TUniLabel
-              Left = 24
-              Top = 176
-              Width = 50
-              Height = 13
-              Hint = ''
-              Caption = 'CPF/CNPJ:'
-              TabOrder = 1
-            end
-            object UniContainerPanel3: TUniContainerPanel
-              Left = 106
-              Top = 171
-              Width = 5
-              Height = 22
-              Hint = ''
-              ParentColor = False
-              Color = 57825
-              ScreenMask.ShowMessage = False
-              TabOrder = 2
-            end
-            object UniLabel4: TUniLabel
-              Left = 31
-              Top = 143
-              Width = 43
-              Height = 13
-              Hint = ''
-              Caption = 'Apelido:'
-              TabOrder = 3
-            end
-            object UniLabel3: TUniLabel
-              Left = 41
-              Top = 111
-              Width = 33
-              Height = 13
-              Hint = ''
-              Caption = 'Nome:'
-              TabOrder = 4
-            end
-            object UniContainerPanel1: TUniContainerPanel
-              Left = 106
-              Top = 107
-              Width = 5
-              Height = 22
-              Hint = ''
-              ParentColor = False
-              Color = 57825
-              ScreenMask.ShowMessage = False
-              TabOrder = 5
-            end
-            object UniDBEdit1: TUniDBEdit
-              Left = 115
-              Top = 107
-              Width = 516
-              Height = 22
-              Hint = ''
-              TabOrder = 6
-            end
-            object UniDBEdit2: TUniDBEdit
-              Left = 115
-              Top = 140
-              Width = 516
-              Height = 22
-              Hint = ''
-              TabOrder = 7
-            end
-            object UniDBEdit3: TUniDBEdit
-              Left = 115
-              Top = 173
-              Width = 516
-              Height = 22
-              Hint = ''
-              TabOrder = 8
-            end
-            object rgPessoa: TUniDBRadioGroup
-              Left = 111
-              Top = 21
-              Width = 297
-              Height = 62
-              Hint = ''
-              DataField = 'PESSOA'
-              DataSource = dsCliente
-              Caption = 'Pessoa'
-              ParentFont = False
-              Font.Color = 6829373
-              TabOrder = 9
-              Items.Strings = (
-                'F'#237'sica'
-                'Jur'#237'dica'
-                'Estrangeiro')
-              Columns = 3
-              Values.Strings = (
-                'Pessoa F'#237'sica'
-                'Pessoa Jur'#237'dica')
-            end
-            object UniGroupBox1: TUniGroupBox
-              Left = 424
-              Top = 21
-              Width = 185
-              Height = 62
-              Hint = ''
-              Caption = 'Situa'#231#227'o Cadastral'
-              TabOrder = 10
-              object cbAtivo: TUniDBComboBox
-                Left = 11
-                Top = 21
-                Width = 166
-                Hint = ''
-                Style = csDropDownList
-                Items.Strings = (
-                  'Ativo'
-                  'Inativo')
-                ItemIndex = 0
-                TabOrder = 1
-                IconItems = <>
-              end
-            end
-          end
           object pnlComplementar: TUniPanel
             AlignWithMargins = True
             Left = 3
-            Top = 1036
-            Width = 915
+            Top = 1084
+            Width = 690
             Height = 254
             Hint = ''
             Align = alTop
-            TabOrder = 3
+            TabOrder = 2
             BorderStyle = ubsNone
             TitleVisible = True
             Title = 'Outros detalhes'
@@ -736,6 +553,7 @@ object FrameCadClientes: TFrameCadClientes
             LayoutAttribs.Padding = '0 0 0 30'
             LayoutConfig.Cls = 'noPanel'
             LayoutConfig.Padding = '0 0 0 30'
+            ExplicitTop = 1078
             object UniLabel16: TUniLabel
               Left = 43
               Top = 100
@@ -805,15 +623,15 @@ object FrameCadClientes: TFrameCadClientes
               TabOrder = 8
             end
           end
-          object UniPanel2: TUniPanel
+          object pnlComunDigital: TUniPanel
             AlignWithMargins = True
             Left = 3
-            Top = 776
-            Width = 915
+            Top = 824
+            Width = 690
             Height = 254
             Hint = ''
             Align = alTop
-            TabOrder = 4
+            TabOrder = 3
             BorderStyle = ubsNone
             TitleVisible = True
             Title = 'Comunica'#231#227'o Digital'
@@ -825,6 +643,7 @@ object FrameCadClientes: TFrameCadClientes
             LayoutAttribs.Padding = '0 0 0 30'
             LayoutConfig.Cls = 'noPanel'
             LayoutConfig.Padding = '0 0 0 30'
+            ExplicitTop = 818
             object UniLabel20: TUniLabel
               Left = 62
               Top = 100
@@ -911,44 +730,1935 @@ object FrameCadClientes: TFrameCadClientes
               TabOrder = 10
             end
           end
+          object pnlDadosGerais: TUniPanel
+            AlignWithMargins = True
+            Left = 3
+            Top = 3
+            Width = 690
+            Height = 248
+            Hint = ''
+            Align = alTop
+            TabOrder = 4
+            BorderStyle = ubsNone
+            Caption = ''
+            ParentAlignmentControl = False
+            Layout = 'fit'
+            ExplicitLeft = 0
+            ExplicitTop = 0
+            ExplicitWidth = 696
+            object rgPessoa: TUniDBRadioGroup
+              Left = 111
+              Top = 21
+              Width = 297
+              Height = 62
+              Hint = ''
+              DataField = 'PESSOA'
+              DataSource = dsCliente
+              Caption = 'Pessoa'
+              ParentFont = False
+              Font.Color = 6829373
+              TabOrder = 1
+              Items.Strings = (
+                'F'#237'sica'
+                'Jur'#237'dica'
+                'Estrangeiro')
+              Columns = 3
+              Values.Strings = (
+                'Pessoa F'#237'sica'
+                'Pessoa Jur'#237'dica')
+            end
+            object UniContainerPanel1: TUniContainerPanel
+              Left = 106
+              Top = 139
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 2
+            end
+            object UniContainerPanel3: TUniContainerPanel
+              Left = 106
+              Top = 203
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 3
+            end
+            object UniDBDateTimePicker4: TUniDBDateTimePicker
+              Left = 526
+              Top = 101
+              Width = 105
+              Hint = ''
+              Enabled = False
+              DateTime = 44754.000000000000000000
+              DateFormat = 'dd/MM/yyyy'
+              TimeFormat = 'HH:mm:ss'
+              TabOrder = 4
+            end
+            object UniDBEdit1: TUniDBEdit
+              Left = 115
+              Top = 139
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 5
+            end
+            object UniDBEdit2: TUniDBEdit
+              Left = 115
+              Top = 172
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 6
+            end
+            object UniDBEdit3: TUniDBEdit
+              Left = 115
+              Top = 205
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 7
+            end
+            object UniDBEdit34: TUniDBEdit
+              Left = 115
+              Top = 101
+              Width = 87
+              Height = 22
+              Hint = ''
+              RTL = True
+              ParentRTL = False
+              Enabled = False
+              TabOrder = 8
+              ReadOnly = True
+            end
+            object UniGroupBox1: TUniGroupBox
+              Left = 424
+              Top = 21
+              Width = 185
+              Height = 62
+              Hint = ''
+              Caption = 'Situa'#231#227'o Cadastral'
+              TabOrder = 9
+              object cbAtivo: TUniDBComboBox
+                Left = 11
+                Top = 21
+                Width = 166
+                Height = 23
+                Hint = ''
+                Style = csDropDownList
+                Items.Strings = (
+                  'Ativo'
+                  'Inativo')
+                ItemIndex = 0
+                TabOrder = 1
+                IconItems = <>
+              end
+            end
+            object UniLabel3: TUniLabel
+              Left = 41
+              Top = 143
+              Width = 33
+              Height = 13
+              Hint = ''
+              Caption = 'Nome:'
+              TabOrder = 10
+            end
+            object UniLabel4: TUniLabel
+              Left = 31
+              Top = 175
+              Width = 43
+              Height = 13
+              Hint = ''
+              Caption = 'Apelido:'
+              TabOrder = 11
+            end
+            object UniLabel47: TUniLabel
+              Left = 41
+              Top = 108
+              Width = 38
+              Height = 13
+              Hint = ''
+              Caption = 'C'#243'digo'
+              TabOrder = 12
+            end
+            object UniLabel48: TUniLabel
+              Left = 467
+              Top = 108
+              Width = 46
+              Height = 13
+              Hint = ''
+              Caption = 'Cadastro'
+              TabOrder = 13
+            end
+            object UniLabel5: TUniLabel
+              Left = 24
+              Top = 208
+              Width = 50
+              Height = 13
+              Hint = ''
+              Caption = 'CPF/CNPJ:'
+              TabOrder = 14
+            end
+          end
+        end
+        object UniPanel1: TUniPanel
+          Left = 0
+          Top = 0
+          Width = 721
+          Height = 57
+          Hint = ''
+          Align = alTop
+          TabOrder = 1
+          Caption = ''
+          Color = clWhite
+          ExplicitLeft = -1
+          ExplicitTop = 48
+          ExplicitWidth = 733
+          object UniLabel2: TUniLabel
+            Left = 62
+            Top = 21
+            Width = 124
+            Height = 30
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'Novo Cliente'
+            ParentFont = False
+            Font.Charset = ANSI_CHARSET
+            Font.Color = 6829373
+            Font.Height = -21
+            Font.Name = 'Segoe UI Semibold'
+            Font.Style = [fsBold]
+            TabOrder = 1
+          end
+          object UniImage6: TUniImage
+            Left = 14
+            Top = 6
+            Width = 32
+            Height = 32
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            AutoSize = True
+            Picture.Data = {
+              0954506E67496D61676589504E470D0A1A0A0000000D49484452000000200000
+              00200806000000737A7AF400000006624B474400FF00FF00FFA0BDA793000004
+              DD4944415478DAC5576D6C1445189E99BDD6B4458CD4D42BE20FB046E3C5AAE9
+              EED5D2EBB586400469082145217E36E56EAF68A47F5452139A4830D21890A8DD
+              9E8D3685E88F62AB41C02FB0F4AE2D777B8D112969880434864AA3184C0835ED
+              CDF8ECB53D6BD9DDEE411327D9CCEEBC33EFFBBC9FF32E25FFF3A0996C2E2909
+              64E530A9920AE2155414602E30D60525A354D05142794CCA2B3CD1D3D33431AF
+              00CA95AD1E4693AF1241D6E2F336CCA70923BF12212E8105059702ACDD0D9A07
+              CF1580392424FE5624D67AE6A600943FF2E262E69AD885D7A7F1C405A1EDE36C
+              FCF358ACED92D9FE2AA5DECD055F07AECF0B4214D8A68370D118190C8F640CA0
+              BC34F428E3A21B8C7EC7AEEDD1B8F64526EEF229C16A307F13226E8775D64712
+              5ADC31800A59DD00CA011CEC96168CD5F6F4B48F4DD3962F570B5CE334C08958
+              85C36E2C313C438CB09D27F4F7F5997CCACA1A725C13631FC112EB10279BA144
+              F79C002A957A8513DE0BE1FB80FA352C89343025B80247BAF0BAD004F7189885
+              9944F6F49CD42ECC9451A1847683CD56C1684534D632680920E543C21378EDEF
+              D5B527670AAF2A09DC9164EC276204A1FDB82849A47C36089F123A4889509259
+              44EEEFD7464D0154286A18122B72FFBE2A7F7D6AFFD59934BF576D1282EC7018
+              02ED115D7BE13FCA79EA172473938344B0E391444BE83A00A95423C91FB8A0D5
+              7D8996A3D7C585A27E8B69854300E700A068F6A2CFABAE45EDF88C30513C9DA2
+              F45F01C10F916645515DF39B71048053981E7408E03200E45BF0E9C37406F42D
+              69001E4F4DF6A2DC7CC32FDB4068373BE85782DF03E0C30E018C80CF6233824F
+              566B51BA9AA53CF79D46C54C01A894832B39A547B2A9E43E167FEF0F73006A17
+              E263BD43007D00E0332318692C8D938B00B1AA37AE1DA753E6DF8E82FE14D2EE
+              212B8E7E59DD895C6E74265FEC8DE8AD0D5654C83B8D0ADE11896BBB2701C8A1
+              7D088C7BB0F084F5A11002533CEE443C981E451AAFB15446518F7042CE22DEB6
+              4D02F0AA9D82D32BD1444B9D3500B51F53994317F4C305E556449F1C6A63542C
+              04C88D532E500F62FA733A32CD51875E1744BCE1CC03B411B9BECB310098E41D
+              F8B7C8CE05353535D2C8F945DF504A1FB3952DC477854B2FAFECECEC4C5A5BD3
+              70271F36E2C47110A680CAC13582D2C3B60088581DD55BBFB4DBE353D41FD133
+              74C04ACD74D2246A15D2E218E17C89DDDD9D022BAB1F23CA365948FF044A6CB6
+              3B5F555AB724C95DBF08CEFDD1C170944E9BF7B70BF986E046C4C107760CA6FA
+              8401331A67B4AC2FD672D256016F5085B5774474F75D843471C7A5386DBE9280
+              8F3216B1B0800F16E8B30560568A8DE1F7D62D15C2358C2B7353AFDEDA657638
+              65A99FF39B21C8B4C8A052BE1DD5DDAF189A99D111EC1BB1A703D7F5FDD3D7B5
+              A3EBD8E8052624FA2C022780CFFBEC34C4F961DC78E16C2675CC2CEB735EC7A9
+              4DB31A12F8BB9472F112366DC0DA2D24B361B4719F4E7556BAA386C418E9968C
+              8873207B32146A31E810F82D9BB3254BFB4A5683284CDAFC084F8F80598659B7
+              E5DEC0738C486D286DAE9B539E4E082E6AA3096DBF29D9EEAC4F695846C9B543
+              787DE0C6848B214AB2AA7BE3EF9EB7DCE2844FA51C5ACD29DF8B08BF971ABF62
+              3643A47E15C959707E1977CB577362CC44A1E2E267F26ECDCED9422933EEFA42
+              A45BEAFF0012FF82E411687C38E9CA0D0F0CECB9E6D8483764DA791CFF00D64A
+              1F3FDEEC2C560000000049454E44AE426082}
+          end
+          object UniLabel1: TUniLabel
+            Left = 65
+            Top = 6
+            Width = 41
+            Height = 13
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'CLIENTE'
+            ParentFont = False
+            Font.Color = 6829373
+            TabOrder = 3
+          end
+        end
+        object UniSplitter1: TUniSplitter
+          Left = 0
+          Top = 57
+          Width = 721
+          Height = 3
+          Cursor = crDefault
+          Hint = ''
+          Enabled = False
+          Align = alTop
+          ParentColor = False
+          Color = 16053492
+          ExplicitLeft = -1
+          ExplicitTop = 60
+          ExplicitWidth = 733
         end
       end
-      object tbCrediario: TUniTabSheet
+      object tbPessoaFisica: TUniTabSheet
         Hint = ''
-        Caption = 'tbCrediario'
+        Caption = 'tbPessoaFisica'
         AutoScroll = True
-        ExplicitWidth = 844
-        ExplicitHeight = 661
+        ExplicitWidth = 946
+        ExplicitHeight = 868
+        object UniScrollBox2: TUniScrollBox
+          Left = 0
+          Top = 0
+          Width = 721
+          Height = 879
+          Hint = ''
+          Align = alClient
+          Color = clWhite
+          TabOrder = 0
+          ScrollDirection = sdVertical
+          ExplicitLeft = 424
+          ExplicitTop = 288
+          ExplicitWidth = 256
+          ExplicitHeight = 256
+          ScrollHeight = 476
+          object UniContainerPanel15: TUniContainerPanel
+            Left = 0
+            Top = 0
+            Width = 719
+            Height = 288
+            Hint = ''
+            ParentColor = False
+            Align = alTop
+            TabOrder = 0
+            ExplicitWidth = 944
+            object UniLabel19: TUniLabel
+              Left = 17
+              Top = 33
+              Width = 97
+              Height = 13
+              Hint = ''
+              Caption = 'Registro Geral (RG)'
+              TabOrder = 1
+            end
+            object UniDBEdit14: TUniDBEdit
+              Left = 132
+              Top = 27
+              Width = 133
+              Height = 22
+              Hint = ''
+              TabOrder = 2
+            end
+            object UniLabel26: TUniLabel
+              Left = 57
+              Top = 71
+              Width = 57
+              Height = 13
+              Hint = ''
+              Caption = 'Emissor RG'
+              TabOrder = 3
+            end
+            object UniDBEdit17: TUniDBEdit
+              Left = 132
+              Top = 68
+              Width = 133
+              Height = 22
+              Hint = ''
+              TabOrder = 4
+            end
+            object UniLabel27: TUniLabel
+              Left = 274
+              Top = 31
+              Width = 41
+              Height = 13
+              Hint = ''
+              Caption = 'Emiss'#227'o'
+              TabOrder = 5
+            end
+            object UniLabel28: TUniLabel
+              Left = 55
+              Top = 110
+              Width = 59
+              Height = 13
+              Hint = ''
+              Caption = 'Estado Civil'
+              TabOrder = 6
+            end
+            object UniLabel29: TUniLabel
+              Left = 291
+              Top = 71
+              Width = 24
+              Height = 13
+              Hint = ''
+              Caption = 'Sexo'
+              TabOrder = 7
+            end
+            object UniLabel30: TUniLabel
+              Left = 54
+              Top = 143
+              Width = 60
+              Height = 13
+              Hint = ''
+              Caption = 'Nascimento'
+              TabOrder = 8
+            end
+            object UniDBEdit27: TUniDBEdit
+              Left = 132
+              Top = 171
+              Width = 245
+              Height = 22
+              Hint = ''
+              TabOrder = 9
+            end
+            object UniDBEdit28: TUniDBEdit
+              Left = 132
+              Top = 205
+              Width = 306
+              Height = 22
+              Hint = ''
+              TabOrder = 10
+            end
+            object UniLabel32: TUniLabel
+              Left = 43
+              Top = 245
+              Width = 71
+              Height = 13
+              Hint = ''
+              Caption = 'Nome da M'#226'e'
+              TabOrder = 11
+            end
+            object UniDBEdit29: TUniDBEdit
+              Left = 132
+              Top = 241
+              Width = 306
+              Height = 22
+              Hint = ''
+              TabOrder = 12
+            end
+            object UniLabel33: TUniLabel
+              Left = 445
+              Top = 209
+              Width = 62
+              Height = 13
+              Hint = ''
+              Caption = 'Renda atual'
+              TabOrder = 13
+            end
+            object UniDBEdit30: TUniDBEdit
+              Left = 522
+              Top = 205
+              Width = 103
+              Height = 22
+              Hint = ''
+              TabOrder = 14
+            end
+            object UniLabel34: TUniLabel
+              Left = 446
+              Top = 245
+              Width = 66
+              Height = 13
+              Hint = ''
+              Caption = 'End. Corresp'
+              TabOrder = 15
+            end
+            object UniDBDateTimePicker1: TUniDBDateTimePicker
+              Left = 329
+              Top = 27
+              Width = 126
+              Hint = ''
+              DateTime = 44754.000000000000000000
+              DateFormat = 'dd/MM/yyyy'
+              TimeFormat = 'HH:mm:ss'
+              TabOrder = 16
+            end
+            object UniDBComboBox1: TUniDBComboBox
+              Left = 132
+              Top = 108
+              Width = 133
+              Hint = ''
+              Items.Strings = (
+                'Amasiado'
+                'Casado'#11
+                'Divorciado'
+                'Solteiro'#11
+                'Viuvo')
+              ItemIndex = 0
+              TabOrder = 17
+              IconItems = <>
+            end
+            object UniDBComboBox2: TUniDBComboBox
+              Left = 329
+              Top = 66
+              Width = 126
+              Hint = ''
+              Items.Strings = (
+                '<em branco>'
+                'Masculino'
+                'Feminino'#11
+                'Outro')
+              ItemIndex = 0
+              TabOrder = 18
+              IconItems = <>
+            end
+            object UniDBDateTimePicker2: TUniDBDateTimePicker
+              Left = 132
+              Top = 139
+              Width = 133
+              Hint = ''
+              DateTime = 44754.000000000000000000
+              DateFormat = 'dd/MM/yyyy'
+              TimeFormat = 'HH:mm:ss'
+              TabOrder = 19
+            end
+            object UniLabel35: TUniLabel
+              Left = 15
+              Top = 174
+              Width = 99
+              Height = 13
+              Hint = ''
+              Caption = 'Cidade Nascimento'
+              TabOrder = 20
+            end
+            object UniLabel31: TUniLabel
+              Left = 47
+              Top = 207
+              Width = 65
+              Height = 13
+              Hint = ''
+              Caption = 'Nome do Pai'
+              TabOrder = 21
+            end
+            object UniDBComboBox3: TUniDBComboBox
+              Left = 522
+              Top = 241
+              Width = 103
+              Hint = ''
+              Items.Strings = (
+                'Comercial'
+                'Residencial')
+              TabOrder = 22
+              IconItems = <>
+            end
+          end
+          object pnlDadosProfi: TUniPanel
+            AlignWithMargins = True
+            Left = 3
+            Top = 291
+            Width = 713
+            Height = 185
+            Hint = ''
+            BodyRTL = False
+            Align = alTop
+            ParentFont = False
+            TabOrder = 1
+            BorderStyle = ubsNone
+            TitleVisible = True
+            Title = 'Dados Profissionais'
+            Caption = ''
+            Collapsible = True
+            Color = clWhite
+            ParentAlignmentControl = False
+            Layout = 'fit'
+            LayoutAttribs.Padding = '0 0 0 30'
+            LayoutConfig.Cls = 'noPanel'
+            LayoutConfig.Padding = '0 0 0 30'
+            ExplicitTop = 169
+            ExplicitWidth = 702
+            object UniLabel36: TUniLabel
+              Left = 61
+              Top = 53
+              Width = 47
+              Height = 13
+              Hint = ''
+              Caption = 'Profiss'#227'o'
+              TabOrder = 1
+            end
+            object UniLabel37: TUniLabel
+              Left = 65
+              Top = 17
+              Width = 43
+              Height = 13
+              Hint = ''
+              Caption = 'Empresa'
+              TabOrder = 2
+            end
+            object UniDBEdit25: TUniDBEdit
+              Left = 131
+              Top = 16
+              Width = 306
+              Height = 22
+              Hint = ''
+              TabOrder = 3
+            end
+            object UniDBComboBox4: TUniDBComboBox
+              Left = 133
+              Top = 52
+              Width = 304
+              Hint = ''
+              Items.Strings = (
+                'Comercial'
+                'Residencial')
+              TabOrder = 4
+              IconItems = <>
+            end
+            object UniLabel38: TUniLabel
+              Left = 466
+              Top = 53
+              Width = 49
+              Height = 13
+              Hint = ''
+              Caption = 'Admiss'#227'o'
+              TabOrder = 5
+            end
+            object UniLabel39: TUniLabel
+              Left = 447
+              Top = 17
+              Width = 79
+              Height = 13
+              Hint = ''
+              Caption = 'Fone Comercial'
+              TabOrder = 6
+            end
+            object UniDBEdit31: TUniDBEdit
+              Left = 131
+              Top = 85
+              Width = 306
+              Height = 22
+              Hint = ''
+              TabOrder = 7
+            end
+            object UniLabel40: TUniLabel
+              Left = 31
+              Top = 89
+              Width = 76
+              Height = 13
+              Hint = ''
+              Caption = 'End. Comercial'
+              TabOrder = 8
+            end
+            object UniDBDateTimePicker3: TUniDBDateTimePicker
+              Left = 542
+              Top = 49
+              Width = 120
+              Hint = ''
+              DateTime = 44754.000000000000000000
+              DateFormat = 'dd/MM/yyyy'
+              TimeFormat = 'HH:mm:ss'
+              TabOrder = 9
+            end
+            object UniDBEdit24: TUniDBEdit
+              Left = 542
+              Top = 12
+              Width = 123
+              Height = 22
+              Hint = ''
+              TabOrder = 10
+            end
+            object UniLabel41: TUniLabel
+              Left = 447
+              Top = 90
+              Width = 79
+              Height = 13
+              Hint = ''
+              Caption = 'Fone Comercial'
+              TabOrder = 11
+            end
+            object UniDBEdit26: TUniDBEdit
+              Left = 542
+              Top = 85
+              Width = 123
+              Height = 22
+              Hint = ''
+              TabOrder = 12
+            end
+          end
+        end
       end
-      object tbLocalEntrega: TUniTabSheet
+      object tbTributacao: TUniTabSheet
         Hint = ''
-        Caption = 'tbLocalEntrega'
-        ExplicitWidth = 819
-        ExplicitHeight = 616
+        Caption = 'tbTributacao'
+        ExplicitWidth = 946
+        ExplicitHeight = 868
+        object UniSplitter4: TUniSplitter
+          Left = 0
+          Top = 57
+          Width = 721
+          Height = 3
+          Cursor = crVSplit
+          Hint = ''
+          Enabled = False
+          Align = alTop
+          ParentColor = False
+          Color = 16053492
+          ExplicitWidth = 733
+        end
+        object UniPanel5: TUniPanel
+          Left = 0
+          Top = 0
+          Width = 721
+          Height = 57
+          Hint = ''
+          Align = alTop
+          TabOrder = 1
+          Caption = ''
+          Color = clWhite
+          ExplicitTop = 8
+          ExplicitWidth = 733
+          object lblNomeCliente: TUniLabel
+            Left = 62
+            Top = 21
+            Width = 153
+            Height = 30
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'NOME  CLIENTE'
+            ParentFont = False
+            Font.Charset = ANSI_CHARSET
+            Font.Color = 6829373
+            Font.Height = -21
+            Font.Name = 'Segoe UI Semibold'
+            Font.Style = [fsBold]
+            TabOrder = 1
+          end
+          object UniImage1: TUniImage
+            Left = 14
+            Top = 6
+            Width = 42
+            Height = 42
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            AutoSize = True
+            Picture.Data = {
+              0954506E67496D61676589504E470D0A1A0A0000000D494844520000002A0000
+              002A0806000000C5C3C95B00000006624B474400FF00FF00FFA0BDA793000003
+              274944415478DAED974D68134114C76736A515F4A0082545855A15AC5EC46E52
+              A1494D5B2F55E84114EC41FC409A5DAB284AC563C0839F0852301F562F620F06
+              F420E8C10821DD52B2DB50140A05A58254504B6BF5506D9ADDE74B9A34C96E43
+              4AD8A6ABEE40C8CC7BB3FFF79B37F3261B4AFE9246571BC004FDAF411D2CE7AA
+              A0CC5858BAFFC5D8A036BE8B52E8B1D0444B38DA37616C50027EA4F95008B6EC
+              A04E1BF700BF4EE1C792B101500533CAA48996842D2BA893E5CE61C4DE62F330
+              BB372392FFEAAA803A1AF906AAC02076AB48328900614AA99C7202DD4428D4A7
+              891E0F88D693847894B283B6D9BB37C6411EC1EE9685A8707B40F45F595C44E6
+              8C12F2C45A3B7522180CCADA2CAF7CA34ED6FD82507A283D1EB4ACB5BAC2614F
+              220F14C065DD3A757C29C8150175DADC6D40986D590BECC22017D2FD19DCEDBD
+              11B1EF63EE334DB6EEDD33B3DFDE8F8E06E30557AB2B24CBF7E0B6DE2AE006DC
+              DE235824CF4AD1D60DB408240142EE0992EF62A9FABA806A21E9754CDF489652
+              F95D533BFD527DFE1CACBB132BBF832EDEA92046A49ABBEA8A2F01D4C334D926
+              EB29A3ACC9581885B403816B5941E8C1EDBD534CC9B58FAB956532AE66C0051E
+              1644DFF39241B132EB30337D9881964273960B99D25BB85787D57620D42D48DE
+              4029A0B499E5CF02033750659D1E90BA8266AE1904E8C4A12BC735816AFDF8DB
+              0C5915E65D44F4F6E72B7818A7FD6B07CEAA4E8E184AE6E62D101A1AF27DD60D
+              B4D9CEB56280379AC9943CAA94954BA158E047B18C35DBB8CBB892BC0CE3780C
+              2BBF5E37D06436D115CACDA202B46B70D8FBAA186016D4EDC7A05D6AFB80E4A3
+              BA812EC0F2FBB102AB1950E439A632148DF6FE5C2E6459418BB5F6EDE7AB7EAD
+              9FDF91B0D0AA9421214F0AB1C027C381E20B70F20CB7E6C640B16311C9F7D468
+              A08AFA79BC21027845B98D060A6A9B095A08D4D578667342A9788DCE9D6953F2
+              65223C3D3B7530F3CE68085007CB9DC6CBFDA14684C21E41F4BF350E68F63F4C
+              BE08435921EA8D99A026A809FA0F82D6A1A741E3A8242141F07E4FCDB1F34789
+              566D3CB390240846AD534F11446F30E577F01B489C1CD068008921E8F8B2408D
+              D84C5013D4E8ED0FF4176F49211778590000000049454E44AE426082}
+          end
+          object UniLabel43: TUniLabel
+            Left = 65
+            Top = 6
+            Width = 111
+            Height = 13
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'FISCAL E TRIBUTA'#199#195'O'
+            ParentFont = False
+            Font.Color = 6829373
+            TabOrder = 3
+          end
+        end
+        object UniScrollBox3: TUniScrollBox
+          Left = 0
+          Top = 60
+          Width = 721
+          Height = 819
+          Hint = ''
+          Align = alClient
+          TabOrder = 2
+          ScrollDirection = sdVertical
+          ExplicitLeft = 96
+          ExplicitTop = 137
+          ExplicitWidth = 256
+          ExplicitHeight = 256
+          ScrollHeight = 192
+          object pnlRegiTrib: TUniPanel
+            Left = 0
+            Top = 0
+            Width = 719
+            Height = 192
+            Hint = ''
+            Align = alTop
+            TabOrder = 0
+            BorderStyle = ubsNone
+            Caption = ''
+            Color = clWhite
+            ExplicitWidth = 731
+            object UniLabel42: TUniLabel
+              Left = 33
+              Top = 100
+              Width = 91
+              Height = 13
+              Hint = ''
+              Caption = 'Regime Tributario'
+              TabOrder = 1
+            end
+            object UniLabel44: TUniLabel
+              Left = 55
+              Top = 60
+              Width = 70
+              Height = 13
+              Hint = ''
+              Caption = 'Insc. Estadual'
+              TabOrder = 2
+            end
+            object UniDBEdit32: TUniDBEdit
+              Left = 162
+              Top = 57
+              Width = 146
+              Height = 22
+              Hint = ''
+              TabOrder = 3
+            end
+            object UniDBComboBox5: TUniDBComboBox
+              Left = 163
+              Top = 96
+              Width = 145
+              Hint = ''
+              Style = csDropDownList
+              Items.Strings = (
+                'Simples'
+                'Normal')
+              ItemIndex = 0
+              TabOrder = 4
+              IconItems = <>
+            end
+            object UniContainerPanel5: TUniContainerPanel
+              AlignWithMargins = True
+              Left = 3
+              Top = 3
+              Width = 713
+              Height = 24
+              Hint = ''
+              ParentColor = False
+              Color = 14079702
+              Align = alTop
+              TabOrder = 5
+              Layout = 'border'
+              ExplicitLeft = 0
+              ExplicitTop = 0
+              ExplicitWidth = 731
+              object UniLabel45: TUniLabel
+                AlignWithMargins = True
+                Left = 3
+                Top = 3
+                Width = 199
+                Height = 13
+                Hint = ''
+                Alignment = taCenter
+                Caption = 'Complementares Pessoa F'#237'sica/Jur'#237'dica'
+                Align = alLeft
+                ParentFont = False
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clBlack
+                Font.Name = 'Segoe UI Semibold'
+                Font.Style = [fsBold]
+                ParentColor = False
+                Color = 16053492
+                TabOrder = 1
+                ExplicitLeft = 11
+                ExplicitHeight = 18
+              end
+            end
+            object UniLabel46: TUniLabel
+              Left = 56
+              Top = 143
+              Width = 70
+              Height = 13
+              Hint = ''
+              Caption = 'Insc. Estadual'
+              TabOrder = 6
+            end
+            object UniDBEdit33: TUniDBEdit
+              Left = 163
+              Top = 140
+              Width = 146
+              Height = 22
+              Hint = ''
+              TabOrder = 7
+            end
+            object UniContainerPanel16: TUniContainerPanel
+              Left = 148
+              Top = 57
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 8
+            end
+            object UniContainerPanel17: TUniContainerPanel
+              Left = 148
+              Top = 97
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 9
+            end
+          end
+        end
       end
       object tbLocalCobranca: TUniTabSheet
         Hint = ''
         Caption = 'tbLocalCobranca'
-        ExplicitWidth = 819
-        ExplicitHeight = 616
+        ExplicitWidth = 946
+        ExplicitHeight = 868
+        object UniPanel6: TUniPanel
+          Left = 0
+          Top = 0
+          Width = 721
+          Height = 57
+          Hint = ''
+          Align = alTop
+          TabOrder = 0
+          Caption = ''
+          Color = clWhite
+          ExplicitTop = 8
+          ExplicitWidth = 733
+          object UniLabel51: TUniLabel
+            Left = 62
+            Top = 21
+            Width = 153
+            Height = 30
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'NOME  CLIENTE'
+            ParentFont = False
+            Font.Charset = ANSI_CHARSET
+            Font.Color = 6829373
+            Font.Height = -21
+            Font.Name = 'Segoe UI Semibold'
+            Font.Style = [fsBold]
+            TabOrder = 1
+          end
+          object UniImage3: TUniImage
+            Left = 14
+            Top = 6
+            Width = 42
+            Height = 42
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            AutoSize = True
+            Stretch = True
+            Picture.Data = {
+              0954506E67496D61676589504E470D0A1A0A0000000D494844520000002A0000
+              002A0806000000C5C3C95B00000006624B474400FF00FF00FFA0BDA793000005
+              3A4944415478DAED990F6C13551CC7DFEFAEDDBA31D4481C51B3F807F0CF8623
+              B0B583651B5589C400460D55093266B275D7892ED32C51E7E602441240B76463
+              6DB7451D18258C90108CC2A258DA09AEDD9C1961064782A87133C668A248B1BD
+              7B7EAF6BEBBA6CD8C9AEA9915FF2F27EF7BB77BDCFFBBDF77EEFF7AEC4A69055
+              79D6EBFD82B0991833E1723E4BB0E0BDBF7146A74950DE75F73947C2B65831E7
+              59EF9105A1076A56A201A790CB002C75FB1C0762402D168B38F6CDBC21A8D928
+              3EF4CA8EFA3BED79F883007909CA9F8C532BDC37C8197F18B60DB0056445C98E
+              015D69B2152B9CBBE1E8F3419D21E7D4A9A64B89705BB1513A8CEA1140D678FA
+              EDCD51BB49DACB38DB04751B4D7AA00CD5DB289D1E9FA3221190A1F7E64BC3F0
+              E2BDA22C2C727DD1762E622F32D92CC4F901A8FB63414DB672C679071E6AF578
+              1DCF250CD4248DC0730B452198E5EAEBFCFE6F50692D7176043C07931274C50A
+              E9563148A944EC81304FF281CAB27E3D23DE14D32019411559CCE5445B633959
+              53D2814E9CA39360AF815E03BD22684141F97CBD226E49255DF327DE3D3FABB6
+              1253F91D5CD1D71029A9F12111729DE0AEC930B30A5A64AA7C8138BD81D061F3
+              789D8E90CD28ED08EFD1339106EC7ADB340335E7546504D3B945D619F6477280
+              C242295308D0A3F112127E3C85C4439111D104544BF97F8216E659170802D530
+              85EFEC1D68FF36D4BEC096CB14A59618C5B59838313F09C20EF7E76D5F69065A
+              62ACAC4622ADE68A562C860ED55664AC449E48AFCEC87D9CEA9073BEAE19684E
+              8E25655EC64D66212DF3B8CBD518546D7979D6F43451588D9FD1C5C3889705C4
+              F44B475DAE77FC9A816A29FF19D012A384F3195B22060C99AE2F9B7FBD2AD0E2
+              82CA6CAE509D20F0C6C811B628CF5A4044F58CE25B4C103F32F60677BF633016
+              B42A8B29C11BDC03EDA7A77B307E50A36443D506B032B7D7DE15B6D5A3DACA66
+              2008FAB56E9F73F74CBD3E83A16F148A0B7E5CECE9B3ABBDE6AA058B499FA613
+              73E37E5950E6E2DC5B86228B712A792877D39C9EA105D8F91A957F09AABD142E
+              7DF63651A79C811BDE42087B3E29411193D72126EF827A77D8E4928362D9C9C1
+              3D17920634FCE1E353A822CA59949B51AEC30C3BF387C2970E0CB407624091CA
+              952295EBC2EEF1265CFF62A240235F4AE0D17AB7CFBE5DCDD4E474E5246CF731
+              81E778FA9CC331A0A1546E8E6C15B8D8EDF6B525E09B5314F46B548B10BA9645
+              42977AB6D7C96C3146F6987A4D57F5865992A2FCCAE3087BF763245B262FA288
+              240528D6C61AAC8D23211E628759405FE1196CF92906B4C464DBCC397F19BA3E
+              014C7E6460D5BD3EFBC7936F601BDD8834D081D09481CB31CEF833BD3EE7D128
+              2812826EDC5C9F38FFD16E8FCF5E3BD51DF3B2AA858AA8ECC36EB21C971C9D92
+              D0A9F65850CE3670031DD30CCFCFCA7130DC7925D010ACB951275F1C6B80AA6E
+              CF7E24E6777A06DA47A3A070FBBA5EAFE303AD408BF3A52D987F2DFF041A6D6F
+              94D439BB166E2DEDED77EC2318DE87E12938DAE2E9771ED40AB4C868B3222171
+              4E737A7892A9C76E921F777B3BCF8FDBA44398028F71A2277ABDF66E2C26A911
+              D4AFE15E178E18659A79D4685B8969E7827A36E317FD928FCEB55C8E76C224D5
+              21866E873A8CD2AC26D1E890EAF5DF5950BF408D00645E2EDD2ECBA1060694F7
+              10CF3E44DA12986D50812B0216877AD69A8BA2EE3A1D4A50D7F3D960EB0F6673
+              9941BE6850877AD5844702F0E646D59BEA05455C8F1FD90B35452B8F4E232730
+              8A665551FF9119BD706375E86B0C632324F03591043D0A3AEEFE8ABB888B4F33
+              752B1B4F0E341785A83BE23155C657FCE82BF03F3A603F31B1ED5F8EE80EF319
+              6D45540000000049454E44AE426082}
+          end
+          object UniLabel52: TUniLabel
+            Left = 65
+            Top = 6
+            Width = 116
+            Height = 13
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'Endere'#231'o de Cobran'#231'a'
+            ParentFont = False
+            Font.Color = 6829373
+            TabOrder = 3
+          end
+        end
+        object UniSplitter6: TUniSplitter
+          Left = 0
+          Top = 57
+          Width = 721
+          Height = 2
+          Cursor = crVSplit
+          Hint = ''
+          Enabled = False
+          Align = alTop
+          ParentColor = False
+          Color = 16053492
+          ExplicitWidth = 733
+        end
+        object UniContainerPanel18: TUniContainerPanel
+          Left = 0
+          Top = 59
+          Width = 721
+          Height = 37
+          Hint = ''
+          ParentColor = False
+          Align = alTop
+          TabOrder = 2
+          ExplicitLeft = -8
+          ExplicitTop = 167
+          ExplicitWidth = 727
+          DesignSize = (
+            721
+            37)
+          object UniFSButton1: TUniFSButton
+            Left = 120
+            Top = 0
+            Width = 40
+            Height = 37
+            Hint = ''
+            StyleButton = Transparent
+            BadgeText.Text = '0'
+            BadgeText.TextColor = '#FFFFFF'
+            BadgeText.TextSize = 10
+            BadgeText.TextStyle = 'bold'
+            BadgeText.BackgroundColor = '#D50000'
+            Glyph.Data = {
+              F6060000424DF606000000000000360000002800000018000000180000000100
+              180000000000C0060000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFEEE8E9A4868B774A5168353D774A51A6878CEEE8
+              E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D681565D68353D68
+              353D68353D68353D68353D68353DBDA6AAD7CACC71414868353D68353D9F7F84
+              68353D68353D714249D8CBCDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8359
+              5F7A4D54AE9297AE9398AE9398AE9398AE9398B79FA3EAE4E5703F4768353D68
+              353D68353DFFFFFF68353D68353D68353D714148EDE7E8FFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF69363EB2989CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA486
+              8B68353D68353D68353D68353DFFFFFF68353D68353D68353D68353DA6888DFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF784A5268353D68353D68353D68353DFFFFFF68353D68353D6835
+              3D68353D7A4D54FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFCAB8BBB9A1A4B9A1A4FDFCFC6B39419C7B80FFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFF9C7A7F6C3B42FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFF855C6268353D68353DEDE7E8784A5268353D68353D68
+              353D68353DFFFFFF68353D68353D68353D68353D7A4D54FFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA486
+              8B68353D68353D68353D68353DFFFFFF68353D68353D68353D68353DA6888DFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFEBE5E6703F4768353D68353D68353DFFFFFF68353D68353D6835
+              3D714148EDE7E8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFF82585E68353D68353D68353DC3AEB1D7CACC71414868353D68353D9E7D82
+              68353D68353D714249D8CBCDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFFC8B5B8AE9398AE9398AE9398B1969BF4F1F1EEE8E9A4
+              868B784A5272424A784A52A6878CEEE8E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3EEEFC7B5B7FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB39A9E68353DFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D681565D68353D68353D68353D68353D
+              68353D6A373FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF83595F7A4D54AE9297AE
+              9398AE9398885F6668353D99777CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6936
+              3EB2989CFFFFFFFFFFFFB1979B68353DA38388FEFDFDFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFB1979B68353DA38489FEFDFDFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EB1969B68353DA38489FEFDFD
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6936
+              3EB2989CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D8C656C68353DA4
+              858AFEFDFDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF83595F7A4D54B69DA1B9A1A4B9A1A4B9A1A4B9A1A4B9A1A46835
+              3D68353DAC8F94FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D683595F6A384068353D68353D68353D
+              68353D68353D6B39419E7D81FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+            Caption = ''
+            Align = alLeft
+            TabOrder = 1
+            ExplicitLeft = 30
+            ExplicitTop = 3
+            ExplicitHeight = 31
+          end
+          object UniFSButton2: TUniFSButton
+            Left = 0
+            Top = 0
+            Width = 40
+            Height = 37
+            Hint = ''
+            StyleButton = Transparent
+            BadgeText.Text = '0'
+            BadgeText.TextColor = '#FFFFFF'
+            BadgeText.TextSize = 10
+            BadgeText.TextStyle = 'bold'
+            BadgeText.BackgroundColor = '#D50000'
+            Glyph.Data = {
+              F6060000424DF606000000000000360000002800000018000000180000000100
+              180000000000C0060000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFEEE8E9A4868B774A5168353D774A51A6878CEEE8
+              E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D681565D68353D68
+              353D68353D68353D68353D68353DBDA6AAD7CACC71414868353D68353D9F7F84
+              68353D68353D714249D8CBCDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8359
+              5F7A4D54AE9297AE9398AE9398AE9398AE9398B79FA3EAE4E5703F4768353D68
+              353D68353DFFFFFF68353D68353D68353D714148EDE7E8FFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF69363EB2989CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA486
+              8B68353D68353D68353D68353DFFFFFF68353D68353D68353D68353DA6888DFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF784A5268353D68353D68353D68353DFFFFFF68353D68353D6835
+              3D68353D7A4D54FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFCAB8BBB9A1A4B9A1A4FDFCFC6B39419C7B80FFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFF9C7A7F6C3B42FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFF855C6268353D68353DEDE7E8784A5268353D68353D68
+              353D68353DFFFFFF68353D68353D68353D68353D7A4D54FFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA486
+              8B68353D68353D68353D68353DFFFFFF68353D68353D68353D68353DA6888DFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFEBE5E6703F4768353D68353D68353DFFFFFF68353D68353D6835
+              3D714148EDE7E8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFF82585E68353D68353D68353DC3AEB1D7CACC71414868353D68353D9E7D82
+              68353D68353D714249D8CBCDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFFC8B5B8AE9398AE9398AE9398B1969BF4F1F1EEE8E9A4
+              868B784A5272424A784A52A6878CEEE8E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3EEEFC7B5B7FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB39A9E68353DFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D681565D68353D68353D68353D68353D
+              68353D6A373FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF83595F7A4D54AE9297AE
+              9398AE9398885F6668353D99777CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6936
+              3EB2989CFFFFFFFFFFFFB1979B68353DA38388FEFDFDFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFB1979B68353DA38489FEFDFDFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EB1969B68353DA38489FEFDFD
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6936
+              3EB2989CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D8C656C68353DA4
+              858AFEFDFDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF83595F7A4D54B69DA1B9A1A4B9A1A4B9A1A4B9A1A4B9A1A46835
+              3D68353DAC8F94FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D683595F6A384068353D68353D68353D
+              68353D68353D6B39419E7D81FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+            Caption = ''
+            Align = alLeft
+            TabOrder = 2
+            ExplicitLeft = 8
+          end
+          object UniFSButton3: TUniFSButton
+            Left = 40
+            Top = 0
+            Width = 40
+            Height = 37
+            Hint = ''
+            StyleButton = Transparent
+            BadgeText.Text = '0'
+            BadgeText.TextColor = '#FFFFFF'
+            BadgeText.TextSize = 10
+            BadgeText.TextStyle = 'bold'
+            BadgeText.BackgroundColor = '#D50000'
+            Glyph.Data = {
+              F6060000424DF606000000000000360000002800000018000000180000000100
+              180000000000C0060000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFD0D0EE4747BE2323B12323B12323B12323B12323B12323B12323B123
+              23B12323B12C2CB48181D2FEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFF4949BE4040BB8A8AD58A8AD58A8AD58A8AD58A8A
+              D58A8AD58A8AD58A8AD58A8AD57373CD2323B1BABAE7FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2424B19090D8FFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFDFE2323B19292D8FFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B191
+              91D8FFFFFFD3D3EFE9E9F7FFFFFFD3D3EFE9E9F7FFFFFFD3D3EFE9E9F7FFFFFF
+              2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF23
+              23B19191D8FFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323
+              B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFF2323B1
+              9191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B191
+              91D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF
+              2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF23
+              23B19191D8FFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323
+              B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFF2323B1
+              9191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B191
+              91D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF
+              2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8686D42323B14040BB5E5EC65E5EC6
+              5E5EC65E5EC65E5EC65E5EC65E5EC65E5EC65E5EC65E5EC62323B14040BBD6D6
+              F1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7B7BD04F4FC14F
+              4FC14F4FC14444BD2323B14444BD4F4FC14F4FC12E2EB52E2EB54F4FC14F4FC1
+              4F4FC14F4FC1D3D3EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFD3D3EF2323B17B7BD09898DB9898DB4040BB65
+              65C9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFF6F6FCC2727B32323
+              B12323B14040BBC4C4EAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+            Caption = ''
+            Align = alLeft
+            TabOrder = 3
+            ExplicitLeft = 30
+            ExplicitTop = 3
+            ExplicitHeight = 31
+          end
+          object UniFSButton4: TUniFSButton
+            Left = 80
+            Top = 0
+            Width = 40
+            Height = 37
+            Hint = ''
+            StyleButton = Transparent
+            BadgeText.Text = '0'
+            BadgeText.TextColor = '#FFFFFF'
+            BadgeText.TextSize = 10
+            BadgeText.TextStyle = 'bold'
+            BadgeText.BackgroundColor = '#D50000'
+            Glyph.Data = {
+              F6060000424DF606000000000000360000002800000018000000180000000100
+              180000000000C0060000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFEEE8E9A4868B774A5168353D774A51A6878CEEE8
+              E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D681565D68353D68
+              353D68353D68353D68353D68353DBDA6AAD7CACC71414868353D68353D9F7F84
+              68353D68353D714249D8CBCDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8359
+              5F7A4D54AE9297AE9398AE9398AE9398AE9398B79FA3EAE4E5703F4768353D68
+              353D68353DFFFFFF68353D68353D68353D714148EDE7E8FFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF69363EB2989CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA486
+              8B68353D68353D68353D68353DFFFFFF68353D68353D68353D68353DA6888DFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF784A5268353D68353D68353D68353DFFFFFF68353D68353D6835
+              3D68353D7A4D54FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFCAB8BBB9A1A4B9A1A4FDFCFC6B39419C7B80FFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFF9C7A7F6C3B42FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFF855C6268353D68353DEDE7E8784A5268353D68353D68
+              353D68353DFFFFFF68353D68353D68353D68353D7A4D54FFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA486
+              8B68353D68353D68353D68353DFFFFFF68353D68353D68353D68353DA6888DFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFEBE5E6703F4768353D68353D68353DFFFFFF68353D68353D6835
+              3D714148EDE7E8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFF82585E68353D68353D68353DC3AEB1D7CACC71414868353D68353D9E7D82
+              68353D68353D714249D8CBCDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFFC8B5B8AE9398AE9398AE9398B1969BF4F1F1EEE8E9A4
+              868B784A5272424A784A52A6878CEEE8E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3EEEFC7B5B7FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB39A9E68353DFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D681565D68353D68353D68353D68353D
+              68353D6A373FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF83595F7A4D54AE9297AE
+              9398AE9398885F6668353D99777CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6936
+              3EB2989CFFFFFFFFFFFFB1979B68353DA38388FEFDFDFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFB1979B68353DA38489FEFDFDFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EB1969B68353DA38489FEFDFD
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6936
+              3EB2989CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D8C656C68353DA4
+              858AFEFDFDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF83595F7A4D54B69DA1B9A1A4B9A1A4B9A1A4B9A1A4B9A1A46835
+              3D68353DAC8F94FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D683595F6A384068353D68353D68353D
+              68353D68353D6B39419E7D81FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+            Caption = ''
+            Align = alLeft
+            TabOrder = 4
+            ExplicitLeft = 30
+            ExplicitTop = 3
+            ExplicitHeight = 31
+          end
+          object cmbSearch: TUniComboBox
+            Left = 418
+            Top = 6
+            Width = 295
+            Height = 28
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Text = ''
+            Anchors = [akLeft, akTop, akRight]
+            ParentFont = False
+            Font.Height = -13
+            TabOrder = 5
+            ClientEvents.ExtEvents.Strings = (
+              
+                'beforerender=function beforerender(sender, eOpts)'#13#10'{'#13#10'  //event:' +
+                ' sender.allowBlank=false;'#13#10'  event: sender.emptyText='#39'Pesquisar.' +
+                '..'#39';'#13#10'}')
+            Triggers = <
+              item
+                ButtonId = 0
+                IconCls = 'x-form-search-trigger'
+              end>
+            IconItems = <>
+          end
+        end
       end
       object tbDocumento: TUniTabSheet
         Hint = ''
         Caption = 'tbDocumento'
-        ExplicitWidth = 819
-        ExplicitHeight = 616
+        ExplicitWidth = 946
+        ExplicitHeight = 868
+        object UniPanel2: TUniPanel
+          Left = 0
+          Top = 0
+          Width = 721
+          Height = 57
+          Hint = ''
+          Align = alTop
+          TabOrder = 0
+          Caption = ''
+          Color = clWhite
+          ExplicitTop = 8
+          ExplicitWidth = 733
+          object UniLabel49: TUniLabel
+            Left = 62
+            Top = 21
+            Width = 192
+            Height = 30
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'Anexo de Contratos'
+            ParentFont = False
+            Font.Charset = ANSI_CHARSET
+            Font.Color = 6829373
+            Font.Height = -21
+            Font.Name = 'Segoe UI Semibold'
+            Font.Style = [fsBold]
+            TabOrder = 1
+          end
+          object UniImage2: TUniImage
+            Left = 14
+            Top = 6
+            Width = 42
+            Height = 42
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            AutoSize = True
+            Picture.Data = {
+              0954506E67496D61676589504E470D0A1A0A0000000D494844520000002A0000
+              002A0806000000C5C3C95B00000006624B474400FF00FF00FFA0BDA793000004
+              2B4944415478DAED986B6C1B45108077F692149756081108A8085548E5D1FCE0
+              E1F89A3A17371181FC805695DA864A6D55A912CE5D108FF2BB42F90BFC0054D5
+              2F8A844A118FB4FC203F90D24838778E5DFBE25642E5D1525E0A9209A5142A05
+              ECC4B7C39C132B5162B0531BD7151EE974E3D9DDB9CF7B3B33BB07EC0611B8DE
+              0075D07F932EA7F7014BE2DB9800148C7D323EE13F5F73A08AACED02C463A4DE
+              346F4A33647B8D89C0C99A01EDE838B096CF34FD44EA5AC6F04D6400E4F879FA
+              7DD591995E37F2F9BBD33501EA710DB89189715275C30C6CB16D9DB266304485
+              03BAC712C1584D802AF233F7014AE791B1A9069E6D13A209083C494DB74B16DF
+              103EE3BB5845D041AEC8533B681D76D3A0E6A5AD04B9952DACCFBCA4A9EFF0B2
+              BE08970144B865FD6F27868686AC8A81F638BDB7A4391FA6CE9DE5CECC1289E2
+              2A782A12F15FA90868A74B7D9F6EBBE99A44C03718E3931C450F058D772554C0
+              3024808F72C47BE80DBC48A6BBE93A49EB7A67D9A0941B9B2DCE7FA6AE692BCB
+              5BA3678FFC68DBE7D3D1472B9A3FC45DC644F044CE6FBBBADEB2D817A43A9810
+              EB8C6428551668C726AD9D0BB4A3769CFEB9B2D032C83DAE9422186F2A6D36D9
+              AC61B618344EE46DF4A6EC4CE14664DD918940B82CD02DB2D62910757A55A722
+              66E08915CD6011515CEA08013C0E9CF7EA71DFC8FF1BD4E9F4363A24DECB9875
+              219278EB42CD82D2FA3A4EB73D74CD80C41FD64FFBBE9A7BB8D603800729B116
+              58BB3829DD9C190887DF495711B4FF1C0D6F9D73823B7433F8B1AD7B5C2AD5FA
+              5C9D2F248252DA8688E9FFAE7AA0B2F62443F10AE5D4736BAE34ECFFF4E2E18C
+              6DDFBCF9A04312E98D857C7126AEEAF1E037F9DFF560AA83D641592E98B653ED
+              3E42EA996C83A32F167BFD2FDBFE98FCEC6D33686DA5E85E969E38871F160355
+              07B44DFD92463F68EB08D01749F887E6EC9A9F01AAFFE40FC1BA3F5F20AA9EF0
+              25211E0A27435FDB76FB5842D56A7F414884DFFF447128990CCD560DF48629A1
+              9590AA8376750D3688E9949BCAA85ED3A0F4C00FC9511FB9EB324CFF584D802A
+              8A762BCB6014808D1A89C0731E57FFD3948A3EA0AE97AD46B6311A0DFC5213A0
+              6EB77A879465DFD2366E0D35BFCCE6764ACDE468AF6E06DE23F01708FC55B215
+              3AA24C5286789432C4AFFF3968EE016DEA3E9AD1630B4E605837FDDB726D72FF
+              4B80F01AB3374BCB2535C3B38FC4E347A7AA026ACBA2C47E89651B5B8DB3872F
+              15F3B5542A0AAA38BD9BC8D1695263740A75E7ED944757AFE6D2212A8BA7C6E2
+              BECF560A690B6DB2633401EDA5046171500A1EC8A01D20B300D9563D71F4FB6B
+              815A3E9BDABD7432B0CFF54D148477150BC292BE947864F56D3A7B1F203545EB
+              D14707F39223BBF043B1856E0374DD4985F5B86106F7151F5382CC7FFFB4371D
+              BD9598CD4532BA4A889DA3C9D01F1501CDCBFC09B31B10A572E89071011CC2C5
+              02E89A41AFA7D4412B2D7F03048AB149BE837E6D0000000049454E44AE426082}
+          end
+          object UniLabel50: TUniLabel
+            Left = 65
+            Top = 6
+            Width = 87
+            Height = 13
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'Anexo/Contratos'
+            ParentFont = False
+            Font.Color = 6829373
+            TabOrder = 3
+          end
+        end
+        object UniSplitter5: TUniSplitter
+          Left = 0
+          Top = 57
+          Width = 721
+          Height = 3
+          Cursor = crVSplit
+          Hint = ''
+          Enabled = False
+          Align = alTop
+          ParentColor = False
+          Color = 16053492
+        end
+        object UniContainerPanel19: TUniContainerPanel
+          Left = 0
+          Top = 60
+          Width = 721
+          Height = 37
+          Hint = ''
+          ParentColor = False
+          Align = alTop
+          TabOrder = 2
+          ExplicitTop = 891
+          DesignSize = (
+            721
+            37)
+          object BtnNovo: TUniFSButton
+            Left = 0
+            Top = 0
+            Width = 40
+            Height = 37
+            Hint = ''
+            StyleButton = Transparent
+            BadgeText.Text = '0'
+            BadgeText.TextColor = '#FFFFFF'
+            BadgeText.TextSize = 10
+            BadgeText.TextStyle = 'bold'
+            BadgeText.BackgroundColor = '#D50000'
+            Glyph.Data = {
+              F6060000424DF606000000000000360000002800000018000000180000000100
+              180000000000C0060000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFEEE8E9A4868B774A5168353D774A51A6878CEEE8
+              E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D681565D68353D68
+              353D68353D68353D68353D68353DBDA6AAD7CACC71414868353D68353D9F7F84
+              68353D68353D714249D8CBCDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8359
+              5F7A4D54AE9297AE9398AE9398AE9398AE9398B79FA3EAE4E5703F4768353D68
+              353D68353DFFFFFF68353D68353D68353D714148EDE7E8FFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF69363EB2989CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA486
+              8B68353D68353D68353D68353DFFFFFF68353D68353D68353D68353DA6888DFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF784A5268353D68353D68353D68353DFFFFFF68353D68353D6835
+              3D68353D7A4D54FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFCAB8BBB9A1A4B9A1A4FDFCFC6B39419C7B80FFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFF9C7A7F6C3B42FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFF855C6268353D68353DEDE7E8784A5268353D68353D68
+              353D68353DFFFFFF68353D68353D68353D68353D7A4D54FFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA486
+              8B68353D68353D68353D68353DFFFFFF68353D68353D68353D68353DA6888DFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFEBE5E6703F4768353D68353D68353DFFFFFF68353D68353D6835
+              3D714148EDE7E8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFF82585E68353D68353D68353DC3AEB1D7CACC71414868353D68353D9E7D82
+              68353D68353D714249D8CBCDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFFC8B5B8AE9398AE9398AE9398B1969BF4F1F1EEE8E9A4
+              868B784A5272424A784A52A6878CEEE8E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3EEEFC7B5B7FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB39A9E68353DFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D681565D68353D68353D68353D68353D
+              68353D6A373FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6835
+              3DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF83595F7A4D54AE9297AE
+              9398AE9398885F6668353D99777CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6936
+              3EB2989CFFFFFFFFFFFFB1979B68353DA38388FEFDFDFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF68353DB39A9EFFFFFFB1979B68353DA38489FEFDFDFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF68353DB39A9EB1969B68353DA38489FEFDFD
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6936
+              3EB2989CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D8C656C68353DA4
+              858AFEFDFDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFF83595F7A4D54B69DA1B9A1A4B9A1A4B9A1A4B9A1A4B9A1A46835
+              3D68353DAC8F94FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFDFD4D683595F6A384068353D68353D68353D
+              68353D68353D6B39419E7D81FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+            Caption = ''
+            Align = alLeft
+            TabOrder = 1
+          end
+          object btnExluir: TUniFSButton
+            Left = 40
+            Top = 0
+            Width = 40
+            Height = 37
+            Hint = ''
+            StyleButton = Transparent
+            BadgeText.Text = '0'
+            BadgeText.TextColor = '#FFFFFF'
+            BadgeText.TextSize = 10
+            BadgeText.TextStyle = 'bold'
+            BadgeText.BackgroundColor = '#D50000'
+            Glyph.Data = {
+              F6060000424DF606000000000000360000002800000018000000180000000100
+              180000000000C0060000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFD0D0EE4747BE2323B12323B12323B12323B12323B12323B12323B123
+              23B12323B12C2CB48181D2FEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFF4949BE4040BB8A8AD58A8AD58A8AD58A8AD58A8A
+              D58A8AD58A8AD58A8AD58A8AD57373CD2323B1BABAE7FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2424B19090D8FFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFDFE2323B19292D8FFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B191
+              91D8FFFFFFD3D3EFE9E9F7FFFFFFD3D3EFE9E9F7FFFFFFD3D3EFE9E9F7FFFFFF
+              2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF23
+              23B19191D8FFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323
+              B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFF2323B1
+              9191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B191
+              91D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF
+              2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF23
+              23B19191D8FFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323
+              B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFF2323B1
+              9191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B191
+              91D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF2323B19191D8FFFFFF
+              2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2323B19191D8FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8686D42323B14040BB5E5EC65E5EC6
+              5E5EC65E5EC65E5EC65E5EC65E5EC65E5EC65E5EC65E5EC62323B14040BBD6D6
+              F1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7B7BD04F4FC14F
+              4FC14F4FC14444BD2323B14444BD4F4FC14F4FC12E2EB52E2EB54F4FC14F4FC1
+              4F4FC14F4FC1D3D3EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFD3D3EF2323B17B7BD09898DB9898DB4040BB65
+              65C9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFF6F6FCC2727B32323
+              B12323B14040BBC4C4EAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+            Caption = ''
+            Align = alLeft
+            TabOrder = 2
+          end
+          object btnPrint: TUniFSButton
+            Left = 80
+            Top = 0
+            Width = 40
+            Height = 37
+            Hint = ''
+            StyleButton = Transparent
+            BadgeText.Text = '0'
+            BadgeText.TextColor = '#FFFFFF'
+            BadgeText.TextSize = 10
+            BadgeText.TextStyle = 'bold'
+            BadgeText.BackgroundColor = '#D50000'
+            Glyph.Data = {
+              0E060000424D0E06000000000000360000002800000016000000160000000100
+              180000000000D8050000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+              FFFFFFFFFFFFFDFDFDF5F2F2F5F2F2F5F2F2F5F2F2F5F2F2F5F2F2F5F2F2F5F2
+              F2F5F2F2F5F2F2F5F2F2F5F2F2FDFDFDFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF
+              FFFFFFFFFFFFFFFFFFFFE7DFE0704048865D64865D64865D64865D64865D6486
+              5D64865D64865D64865D64865D64704048E7DFE0FFFFFFFFFFFFFFFFFFFFFFFF
+              0000FFFFFFFFFFFFFFFFFFFFFFFFE7DFE0926D73FFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF926D73E7DFE0FFFFFFFFFFFFFFFF
+              FFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFE7DFE0926D73FFFFFF8E686E7C50
+              577C50577C50577C50577C50577C50578E686EFFFFFF926D73E7DFE0FFFFFFFF
+              FFFFFFFFFFFFFFFF0000FFFFFFFBF9FAEBE4E5EBE4E5D6C8CA8E676EFFFFFFF0
+              EAEBEBE4E5EBE4E5EBE4E5EBE4E5EBE5E6FEFEFEFFFFFFFFFFFF8E676ED6C8CA
+              EBE4E5EBE4E5FBFAFAFFFFFF0000FCFBFB7F545B68353D68353D68353D74454C
+              FFFFFF9E7D82906B71906B71906B71906B71916C72F1ECEDFFFFFFFFFFFF7445
+              4C68353D68353D68353D80555BFCFBFB0000EDE7E868353D68353D68353D6835
+              3D74454CFFFFFFCCBBBEC3AEB1C3AEB1C3AEB1C3AEB1C3AEB1C3AEB1CFBFC1FF
+              FFFF74454C68353D68353D68353D68353DEDE7E80000EDE6E768353D68353D68
+              353D68353D74454CFFFFFFBDA7ABAE9398AE9398AE9398AE9398AE9398AE9398
+              BDA7ABFFFFFF74454C68353D68353D68353D68353DEDE6E70000EDE6E768353D
+              68353D68353D68353D714047D1C2C3D1C2C3D1C2C3D1C2C3D1C2C3D1C2C3D1C2
+              C3D1C2C3D1C2C3D1C2C371404768353D68353D68353D68353DEDE6E70000EDE6
+              E768353D68353D68353D68353D68353D68353D68353D68353D68353D68353D68
+              353D68353D68353D68353D68353D68353D68353D68353D68353D68353DEDE6E7
+              0000EDE6E768353D68353D68353D68353D68353D68353D68353D68353D68353D
+              68353D68353D68353D68353D68353D68353D68353D68353D68353D68353D6835
+              3DEDE6E70000EDE6E768353D68353D68353D68353D68353D68353D68353D6835
+              3D68353D68353D68353D68353D68353D68353D68353D68353D916C7197747968
+              353D68353DEDE6E70000EDE6E768353D68353D68353D68353D68353D68353D68
+              353D68353D68353D68353D68353D68353D68353D68353D68353D68353DD6C8CB
+              E1D7D968353D68353DEDE6E70000EDE6E768353D68353D68353D68353D68353D
+              68353D68353D68353D68353D68353D68353D68353D68353D68353D68353D6835
+              3D6D3C446F3F4668353D68353DEDE6E70000F8F5F66F3F4668353D68353D6835
+              3D68353D68353D68353D68353D68353D68353D68353D68353D68353D68353D68
+              353D68353D68353D68353D68353D703F47F8F6F70000FFFFFFE4DBDDC4B1B4C3
+              AEB1B49A9E82575DC3AEB1C3AEB1C3AEB1C3AEB1C3AEB1C3AEB1C3AEB1C3AEB1
+              C3AEB1C3AEB182575DB49A9EC3AEB1C4B1B4E5DCDEFFFFFF0000FFFFFFFFFFFF
+              FFFFFFFFFFFFE7DFE0926D73FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFF926D73E7DFE0FFFFFFFFFFFFFFFFFFFFFFFF0000FFFF
+              FFFFFFFFFFFFFFFFFFFFE7DFE0926D73FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFF926D73E7DFE0FFFFFFFFFFFFFFFFFFFFFFFF
+              0000FFFFFFFFFFFFFFFFFFFFFFFFE7DFE0926D73FFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF926D73E7DFE0FFFFFFFFFFFFFFFF
+              FFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFE7DFE0926D73FFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF926D73E7DFE0FFFFFFFF
+              FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFE7DFE073444B906B7190
+              6B71906B71906B71906B71906B71906B71906B71906B71906B7173444BE7DFE0
+              FFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFCFBFBEBE4E5
+              EBE4E5EBE4E5EBE4E5EBE4E5EBE4E5EBE4E5EBE4E5EBE4E5EBE4E5EBE4E5EBE4
+              E5FCFBFBFFFFFFFFFFFFFFFFFFFFFFFF0000}
+            Caption = ''
+            Align = alLeft
+            TabOrder = 3
+          end
+          object UniComboBox1: TUniComboBox
+            Left = 418
+            Top = 6
+            Width = 295
+            Height = 28
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Text = ''
+            Anchors = [akLeft, akTop, akRight]
+            ParentFont = False
+            Font.Height = -13
+            TabOrder = 4
+            ClientEvents.ExtEvents.Strings = (
+              
+                'beforerender=function beforerender(sender, eOpts)'#13#10'{'#13#10'  //event:' +
+                ' sender.allowBlank=false;'#13#10'  event: sender.emptyText='#39'Pesquisar.' +
+                '..'#39';'#13#10'}')
+            Triggers = <
+              item
+                ButtonId = 0
+                IconCls = 'x-form-search-trigger'
+              end>
+            IconItems = <>
+          end
+        end
+        object UniDBGrid2: TUniDBGrid
+          AlignWithMargins = True
+          Left = 3
+          Top = 100
+          Width = 715
+          Height = 776
+          Hint = ''
+          LoadMask.Message = 'Loading data...'
+          BorderStyle = ubsSingle
+          Align = alClient
+          TabOrder = 3
+          Columns = <
+            item
+              Title.Caption = 'C'#243'digo'
+              Width = 64
+            end
+            item
+              Title.Caption = 'Nome'
+              Width = 230
+            end
+            item
+              Title.Caption = 'Documento'
+              Width = 250
+            end
+            item
+              Title.Caption = 'Tipo documento'
+              Width = 130
+            end
+            item
+              Title.Caption = 'Data do Docto'
+              Width = 120
+            end
+            item
+              Title.Caption = ' '
+              Width = 64
+            end>
+        end
       end
-      object UniTabSheet3: TUniTabSheet
+    end
+    object pnlBtn: TUniPanel
+      AlignWithMargins = True
+      Left = 3
+      Top = 910
+      Width = 723
+      Height = 43
+      Hint = ''
+      Align = alBottom
+      TabOrder = 2
+      Caption = ''
+      Color = 16053492
+      ExplicitLeft = 7
+      ExplicitTop = 906
+      ExplicitWidth = 715
+      object btnSave: TUniFSButton
+        Left = 626
+        Top = 1
+        Width = 48
+        Height = 41
         Hint = ''
-        Caption = 'UniTabSheet3'
-        ExplicitWidth = 819
-        ExplicitHeight = 616
+        StyleButton = Transparent
+        BadgeText.Text = '0'
+        BadgeText.TextColor = '#FFFFFF'
+        BadgeText.TextSize = 10
+        BadgeText.TextStyle = 'bold'
+        BadgeText.BackgroundColor = '#D50000'
+        Glyph.Data = {
+          F6060000424DF606000000000000360000002800000018000000180000000100
+          180000000000C0060000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFBFAFAC2ADB1875E656C3B426C3B42875F65C3AEB1FCFBFBFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFEFEAEA855C6268353D68353D68353D68353D68353D6835
+          3D865D64F0EBECFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFBF9FA83596068353D68353D68353D7C5057
+          68353D68353D68353D68353D855C62FBFAFAFFFFFFFFFFFFFFFFFFD2C3C5774A
+          5168353D68353D68353D68353D68353DBEA8ABFFFFFFC0AAAE68353D68353D68
+          353DA18186FDFCFCA1828768353D68353D68353D68353DC1ADB0FFFFFFFFFFFF
+          FFFFFF784A5268353D68353D68353D68353D68353D68353DE5DCDEFFFFFF8A62
+          6868353D68353DA18186FEFDFDFFFFFFFEFDFDA2838868353D68353D68353D8B
+          646AFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68353D68353D6B3941
+          F8F6F7FFFFFF6F3F4668353D9D7B81FEFDFDFEFDFDC6B2B5FEFDFDFEFDFDA384
+          8968353D68353D704048FFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68
+          353D68353DB69EA1FFFFFFFFFFFF6F3E4568353D81575EF0EAEBA78A8E68353D
+          A88B8FFEFEFEFDFCFC9C7B8068353D703F47FFFFFFFFFFFFFFFFFF68353D6835
+          3D68353D68353D68353D68353DEFEAEAFFFFFFFFFFFF875E6568353D68353D6C
+          3B4268353D68353D68353DA4858AFEFEFEEBE5E66E3D45896167FFFFFFFFFFFF
+          FFFFFF68353D68353D68353D68353D68353D68353DF1EDEDFFFFFFFFFFFFBCA5
+          A968353D68353D68353D68353D68353D68353D68353D9F7F847B4E5568353DBE
+          A8ABFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68353D68353DBAA2A6
+          FFFFFFFFFFFFFAF9F983596068353D68353D68353D68353D68353D68353D6835
+          3D68353D855C62FBFAFAFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68
+          353D68353D6C3A42BBA4A8F1ECEDFFFFFFEFEAEA855C6268353D68353D68353D
+          68353D68353D68353D865D64F0EBECFFFFFFFFFFFFFFFFFFFFFFFF68353D6835
+          3D68353D68353D68353D68353D68353D68353D6D3C44D7CACCFFFFFFFBFAFAC2
+          ADB1875E6572424A72424A875F65C3AEB1FCFBFBFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFF68353D68353D68353D68353D68353D68353D68353D68353D68353D6D3B
+          43BDA7ABFDFDFDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68353D68353D68353D
+          68353D68353D68353D68353D80555CB9A1A4E1D7D9F1ECEDF3EEEFE4DBDDBEA9
+          ACFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68
+          353D68353D68353D68353D68353D68353D68353D68353D68353D68353D68353D
+          68353D68353D68353DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D6835
+          3DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68
+          353D68353D68353D68353D68353D68353DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFF68353D68353DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFF68353D68353D68353D68353D68353D68353DFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFF68353D68353DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68353DB39A
+          9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D68353DFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D68353D68353D
+          68353DB9A1A4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF794C536835
+          3D68353D68353D68353D68353D68353D68353D68353D68353D68353D68353D68
+          353D68353D68353DB9A1A4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFD2C3C57C4F5668353D68353D68353D68353D68353D68353D68353D6835
+          3D68353D68353D68353D68353DB9A1A4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+        Caption = ''
+        Align = alRight
+        TabOrder = 1
+        ExplicitLeft = 620
+        ExplicitTop = -1
       end
-      object UniTabSheet4: TUniTabSheet
+      object UniFSButton5: TUniFSButton
+        Left = 674
+        Top = 1
+        Width = 48
+        Height = 41
         Hint = ''
-        Caption = 'UniTabSheet4'
-        ExplicitWidth = 819
-        ExplicitHeight = 616
+        StyleButton = Transparent
+        BadgeText.Text = '0'
+        BadgeText.TextColor = '#FFFFFF'
+        BadgeText.TextSize = 10
+        BadgeText.TextStyle = 'bold'
+        BadgeText.BackgroundColor = '#D50000'
+        Glyph.Data = {
+          F6060000424DF606000000000000360000002800000018000000180000000100
+          180000000000C0060000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAF8F8FAF8
+          F8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBE4E5B9A1A48D676D
+          74464D68353D68353D74464D8D676DB9A2A5EBE4E5FFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6F3F4AB8F936C
+          3A4268353D68353D68353D68353D68353D68353D68353D68353D6C3A42AC9094
+          F7F4F4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEAE3
+          E482585E68353D68353D68353D68353D68353D68353D68353D68353D68353D68
+          353D68353D68353D83595FEBE4E5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFE7DFE171424968353D68353D68353D68353D68353D68353D68353D6835
+          3D68353D68353D68353D68353D68353D68353D72424AE8E0E1FFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFF6F3F47E535A68353D68353D68353D68353D68353D68353D
+          68353D68353D68353D68353D68353D68353D68353D68353D68353D68353D8055
+          5BF7F4F4FFFFFFFFFFFFFFFFFFFFFFFFAC8F9468353D68353D68353D68353D68
+          353D68353D68353D68353D68353D98757B7B4E5568353D68353D68353D68353D
+          68353D68353D68353DAD9296FFFFFFFFFFFFFFFFFFEDE7E86C3B4268353D6835
+          3D68353D68353D68353D68353D68353D68353D68353DFBFAFAF4F0F1916C7268
+          353D68353D68353D68353D68353D68353D6D3B43EEE9EAFFFFFFFFFFFFBAA2A6
+          68353D68353D68353D68353D68353D68353D68353D68353D68353D68353DFFFF
+          FFFFFFFFFDFDFDA6888D68353D68353D68353D68353D68353D68353DBBA4A8FF
+          FFFFFFFFFF8B646A68353D68353D68353D68353D68353D68353D68353D704048
+          7B4E55865D63FFFFFFFFFFFFFFFFFFFFFFFFB1969B68353D68353D68353D6835
+          3D68353D8C656BFFFFFFFFFFFF72424A68353D68353D68353D76474EE0D6D7EE
+          E9EAFBF9FAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB09599
+          68353D68353D68353D68353D73444BFFFFFFFAF8F868353D68353D68353D6835
+          3DA28388FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFF9C7A7F68353D68353D68353D69363EFAF9F9FAF9F969363E
+          68353D68353D68353DA08085FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFBFAFA8C656B68353D68353D68353D69363EFB
+          F9FAFFFFFF73434B68353D68353D68353D72424ACFBFC1E4DBDCF7F5F5FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFDFD9A787E68353D68353D6835
+          3D68353D74454CFFFFFFFFFFFF8B646A68353D68353D68353D68353D68353D68
+          353D68353D7040487B4E55865D63FFFFFFFFFFFFFFFFFFFCFBFB9E7E8368353D
+          68353D68353D68353D68353D8C656BFFFFFFFFFFFFBAA2A668353D68353D6835
+          3D68353D68353D68353D68353D68353D68353D68353DFFFFFFFFFFFFF8F5F694
+          707668353D68353D68353D68353D68353D68353DBBA4A8FFFFFFFFFFFFEDE7E8
+          6C3B4268353D68353D68353D68353D68353D68353D68353D68353D68353DFDFC
+          FCE5DCDE80555B68353D68353D68353D68353D68353D68353D6D3B43EEE9EAFF
+          FFFFFFFFFFFFFFFFAC8F9468353D68353D68353D68353D68353D68353D68353D
+          68353D68353D81575E6E3D4568353D68353D68353D68353D68353D68353D6835
+          3DAD9296FFFFFFFFFFFFFFFFFFFFFFFFF6F3F47E535A68353D68353D68353D68
+          353D68353D68353D68353D68353D68353D68353D68353D68353D68353D68353D
+          68353D68353D80555BF7F4F4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE7DFE17142
+          4968353D68353D68353D68353D68353D68353D68353D68353D68353D68353D68
+          353D68353D68353D68353D72424AE8E0E1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFE1D7D8794C5368353D68353D68353D68353D68353D68353D6835
+          3D68353D68353D68353D68353D68353D7C5057E4DBDDFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6F3F4AB8F936C3A4268353D68353D
+          68353D68353D68353D68353D68353D68353D6C3A42AC9094F7F4F4FFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEB
+          E4E5B9A1A48D676D74464D68353D68353D74464D8D676DB9A2A5EBE4E5FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAF8F8FAF8F8FFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+        Caption = ''
+        Align = alRight
+        TabOrder = 2
+        ExplicitLeft = 663
+        ExplicitTop = -2
+        ExplicitHeight = 42
       end
     end
   end
@@ -957,26 +2667,22 @@ object FrameCadClientes: TFrameCadClientes
     Top = 0
     Width = 3
     Height = 962
-    Cursor = crDefault
     Hint = ''
     Enabled = False
     Align = alLeft
     ParentColor = False
     Color = 16053492
-    ExplicitHeight = 755
   end
   object UniSplitter3: TUniSplitter
     Left = 264
     Top = 0
     Width = 3
     Height = 962
-    Cursor = crDefault
     Hint = ''
     Enabled = False
     Align = alLeft
     ParentColor = False
     Color = 16053492
-    ExplicitHeight = 755
   end
   object UniPanel3: TUniPanel
     AlignWithMargins = True
@@ -988,7 +2694,6 @@ object FrameCadClientes: TFrameCadClientes
     Align = alLeft
     TabOrder = 3
     Caption = 'UniPanel3'
-    ExplicitHeight = 749
     object tvMenu: TUniTreeView
       Left = 1
       Top = 1
@@ -1008,7 +2713,6 @@ object FrameCadClientes: TFrameCadClientes
       Draggable.Enabled = True
       SourceMenu = Opcoes
       OnLoaded = tvMenuLoaded
-      ExplicitHeight = 747
     end
   end
   object imgMenu: TUniNativeImageList

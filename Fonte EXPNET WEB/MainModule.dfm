@@ -5,7 +5,7 @@ object UniMainModule: TUniMainModule
   Height = 150
   Width = 215
   object FSTheme: TUniFSTheme
-    Style = Butterfly
+    Style = Black
     Enabled = True
     Left = 88
     Top = 48
