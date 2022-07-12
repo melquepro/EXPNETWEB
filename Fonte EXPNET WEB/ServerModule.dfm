@@ -5255,6 +5255,24 @@ object UniServerModule: TUniServerModule
   SuppressErrors = []
   Bindings = <>
   MainFormDisplayMode = mfPage
+  CustomCSS.Strings = (
+    '.noPanel .x-panel-header-title-default,'
+    '.noPanel  .x-tool-left-default'
+    '{ '
+    '    background-position:0 -180px;'
+    '    content: '#39' '#39';'
+    '    display: block;'
+    '    border-top: 1px solid transparent;'
+    '    border-bottom: 1px solid transparent;'
+    '    border-left: 2px solid currentColor;'
+    '    '
+    '    vertical-align: middle;'
+    '    margin-right: .1rem;'
+    '    font-weight: bold;'
+    '    border-radius: 1px;'
+    ''
+    '}'
+    '  ')
   SSL.SSLOptions.RootCertFile = 'root.pem'
   SSL.SSLOptions.CertFile = 'cert.pem'
   SSL.SSLOptions.KeyFile = 'key.pem'

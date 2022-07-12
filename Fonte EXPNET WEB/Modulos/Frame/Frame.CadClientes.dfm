@@ -1,29 +1,33 @@
 object FrameCadClientes: TFrameCadClientes
   Left = 0
   Top = 0
-  Width = 1100
-  Height = 755
+  Width = 1227
+  Height = 962
   TabOrder = 0
   object UniContainerPanel2: TUniContainerPanel
     AlignWithMargins = True
     Left = 270
     Top = 3
-    Width = 827
-    Height = 749
+    Width = 954
+    Height = 956
     Hint = ''
     ParentColor = False
     Align = alClient
+    ScreenMask.ShowMessage = False
     TabOrder = 0
+    ExplicitWidth = 867
+    ExplicitHeight = 749
     object UniPanel1: TUniPanel
       Left = 0
       Top = 0
-      Width = 827
+      Width = 954
       Height = 57
       Hint = ''
       Align = alTop
       TabOrder = 1
       Caption = ''
       Color = clWhite
+      ExplicitWidth = 827
       object UniLabel2: TUniLabel
         Left = 62
         Top = 21
@@ -108,250 +112,843 @@ object FrameCadClientes: TFrameCadClientes
         TabOrder = 3
       end
     end
-    object UniPanel2: TUniPanel
-      Left = 0
-      Top = 704
-      Width = 827
-      Height = 45
-      Hint = ''
-      Align = alBottom
-      TabOrder = 2
-      Caption = ''
-      Color = 16053492
-    end
     object UniSplitter1: TUniSplitter
       Left = 0
       Top = 57
-      Width = 827
+      Width = 954
       Height = 3
-      Cursor = crVSplit
+      Cursor = crDefault
       Hint = ''
+      Enabled = False
       Align = alTop
       ParentColor = False
       Color = 16053492
+      ExplicitWidth = 827
     end
     object pgCadClientes: TUniPageControl
       Left = 0
       Top = 60
-      Width = 827
-      Height = 644
+      Width = 954
+      Height = 896
       Hint = ''
-      ActivePage = tbDetalhes
-      TabBarVisible = False
+      ActivePage = tbPessoaFisica
       Align = alClient
-      TabOrder = 4
-      object tbDetalhes: TUniTabSheet
+      LayoutConfig.Width = '100%'
+      TabOrder = 3
+      ExplicitWidth = 855
+      ExplicitHeight = 689
+      object tbPessoaFisica: TUniTabSheet
         AlignWithMargins = True
         Hint = ''
-        Caption = 'Detalhes'
+        Caption = 'tbPessoaFisica'
+        AutoScroll = True
+        ExplicitHeight = 729
+        ScrollHeight = 49
+        object UniPanel4: TUniPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 816
+          Width = 940
+          Height = 49
+          Hint = ''
+          Align = alBottom
+          TabOrder = 0
+          Caption = 'UniPanel4'
+          Color = 16053492
+          ExplicitLeft = 0
+          ExplicitTop = 680
+          ExplicitWidth = 946
+        end
         object UniScrollBox1: TUniScrollBox
-          Left = 0
-          Top = 0
-          Width = 819
-          Height = 616
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 940
+          Height = 807
           Hint = ''
           Align = alClient
-          Color = clWhite
-          TabOrder = 0
+          TabOrder = 1
           ScrollDirection = sdVertical
-          ScrollHeight = 937
-          ScrollWidth = 797
-          object UniCheckBox1: TUniCheckBox
-            Left = 312
-            Top = 920
-            Width = 97
-            Height = 17
-            Hint = ''
-            Caption = 'UniCheckBox1'
-            TabOrder = 0
-          end
-          object rgPessoa: TUniDBRadioGroup
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 946
+          ExplicitHeight = 813
+          ScrollHeight = 1290
+          object pnlEndereco: TUniPanel
             AlignWithMargins = True
-            Left = 24
-            Top = 37
-            Width = 157
-            Height = 52
+            Left = 3
+            Top = 400
+            Width = 915
+            Height = 370
             Hint = ''
-            DataField = 'PESSOA'
-            DataSource = dsCliente
-            Caption = 'Pessoa'
+            Align = alTop
+            TabOrder = 0
+            BorderStyle = ubsNone
+            TitleVisible = True
+            Title = 'Endere'#231'o Principal'
+            Caption = ''
+            Collapsible = True
+            Color = clWhite
+            ParentAlignmentControl = False
+            Layout = 'fit'
+            LayoutAttribs.Padding = '0 0 0 30'
+            LayoutConfig.Cls = 'noPanel'
+            LayoutConfig.Padding = '0 0 0 30'
+            object UniLabel6: TUniLabel
+              Left = 53
+              Top = 100
+              Width = 44
+              Height = 13
+              Hint = ''
+              Caption = 'N'#250'mero:'
+              TabOrder = 1
+            end
+            object UniLabel7: TUniLabel
+              Left = 49
+              Top = 63
+              Width = 48
+              Height = 13
+              Hint = ''
+              Caption = 'Endere'#231'o'
+              TabOrder = 2
+            end
+            object UniLabel8: TUniLabel
+              Left = 75
+              Top = 23
+              Width = 22
+              Height = 13
+              Hint = ''
+              Caption = 'CEP:'
+              TabOrder = 3
+            end
+            object UniContainerPanel4: TUniContainerPanel
+              Left = 109
+              Top = 19
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 4
+            end
+            object UniContainerPanel6: TUniContainerPanel
+              Left = 109
+              Top = 95
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 5
+            end
+            object UniDBEdit4: TUniDBEdit
+              Left = 126
+              Top = 97
+              Width = 115
+              Height = 22
+              Hint = ''
+              TabOrder = 6
+            end
+            object UniDBEdit5: TUniDBEdit
+              Left = 126
+              Top = 60
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 7
+            end
+            object UniDBEdit6: TUniDBEdit
+              Left = 126
+              Top = 19
+              Width = 131
+              Height = 22
+              Hint = ''
+              TabOrder = 8
+            end
+            object UniLabel9: TUniLabel
+              Left = 22
+              Top = 136
+              Width = 75
+              Height = 13
+              Hint = ''
+              Caption = 'Complemento:'
+              TabOrder = 9
+            end
+            object UniDBEdit7: TUniDBEdit
+              Left = 126
+              Top = 133
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 10
+            end
+            object UniContainerPanel7: TUniContainerPanel
+              Left = 109
+              Top = 60
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 11
+            end
+            object UniLabel10: TUniLabel
+              Left = 64
+              Top = 172
+              Width = 33
+              Height = 13
+              Hint = ''
+              Caption = 'Bairro:'
+              TabOrder = 12
+            end
+            object UniDBEdit8: TUniDBEdit
+              Left = 126
+              Top = 169
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 13
+            end
+            object UniLabel11: TUniLabel
+              Left = 44
+              Top = 208
+              Width = 53
+              Height = 13
+              Hint = ''
+              Caption = 'C'#243'd: IBGE:'
+              TabOrder = 14
+            end
+            object UniDBEdit9: TUniDBEdit
+              Left = 126
+              Top = 205
+              Width = 143
+              Height = 22
+              Hint = ''
+              TabOrder = 15
+            end
+            object UniLabel12: TUniLabel
+              Left = 275
+              Top = 210
+              Width = 39
+              Height = 13
+              Hint = ''
+              Caption = 'Cidade:'
+              TabOrder = 16
+            end
+            object UniDBEdit10: TUniDBEdit
+              Left = 326
+              Top = 205
+              Width = 316
+              Height = 22
+              Hint = ''
+              TabOrder = 17
+            end
+            object UniLabel13: TUniLabel
+              Left = 62
+              Top = 248
+              Width = 35
+              Height = 13
+              Hint = ''
+              Caption = 'Estado'
+              TabOrder = 18
+            end
+            object UniDBEdit11: TUniDBEdit
+              Left = 126
+              Top = 245
+              Width = 219
+              Height = 22
+              Hint = ''
+              TabOrder = 19
+            end
+            object UniLabel14: TUniLabel
+              Left = 361
+              Top = 250
+              Width = 23
+              Height = 13
+              Hint = ''
+              Caption = 'Pais:'
+              TabOrder = 20
+            end
+            object UniDBEdit12: TUniDBEdit
+              Left = 398
+              Top = 245
+              Width = 244
+              Height = 22
+              Hint = ''
+              TabOrder = 21
+            end
+            object UniLabel15: TUniLabel
+              Left = 40
+              Top = 285
+              Width = 57
+              Height = 13
+              Hint = ''
+              Caption = 'Refer'#234'ncia:'
+              TabOrder = 22
+            end
+            object UniDBEdit13: TUniDBEdit
+              Left = 126
+              Top = 282
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 23
+            end
+            object UniContainerPanel8: TUniContainerPanel
+              Left = 109
+              Top = 135
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 24
+            end
+            object UniContainerPanel9: TUniContainerPanel
+              Left = 109
+              Top = 287
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 25
+            end
+            object UniContainerPanel10: TUniContainerPanel
+              Left = 109
+              Top = 247
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 26
+            end
+            object UniContainerPanel11: TUniContainerPanel
+              Left = 109
+              Top = 212
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 27
+            end
+            object UniContainerPanel12: TUniContainerPanel
+              Left = 109
+              Top = 171
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 28
+            end
+            object UniContainerPanel13: TUniContainerPanel
+              Left = 317
+              Top = 207
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 29
+            end
+            object UniContainerPanel14: TUniContainerPanel
+              Left = 389
+              Top = 244
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 30
+            end
+          end
+          object pnlParametro: TUniPanel
+            AlignWithMargins = True
+            Left = 3
+            Top = 209
+            Width = 915
+            Height = 185
+            Hint = ''
+            BodyRTL = False
+            Align = alTop
             ParentFont = False
-            Font.Color = 6829373
+            Font.Style = [fsBold]
             TabOrder = 1
-            Items.Strings = (
-              'F'#237'sica'
-              'Jur'#237'dica')
-            Columns = 2
-            Values.Strings = (
-              'Pessoa F'#237'sica'
-              'Pessoa Jur'#237'dica')
+            BorderStyle = ubsNone
+            TitleVisible = True
+            Title = 'Par'#226'metros'
+            Caption = ''
+            Collapsible = True
+            Color = clWhite
+            ParentAlignmentControl = False
+            Layout = 'fit'
+            LayoutAttribs.Padding = '0 0 0 30'
+            LayoutConfig.Cls = 'noPanel'
+            LayoutConfig.Padding = '0 0 0 30'
+            object UniDBCheckBox1: TUniDBCheckBox
+              Left = 23
+              Top = 40
+              Width = 97
+              Height = 17
+              Hint = ''
+              Caption = 'Cliente'
+              TabOrder = 1
+              ParentColor = False
+              Color = clBtnFace
+            end
+            object UniDBCheckBox2: TUniDBCheckBox
+              Left = 23
+              Top = 71
+              Width = 97
+              Height = 17
+              Hint = ''
+              Caption = 'Fornecedor'
+              TabOrder = 2
+              ParentColor = False
+              Color = clBtnFace
+            end
+            object UniDBCheckBox3: TUniDBCheckBox
+              Left = 23
+              Top = 135
+              Width = 97
+              Height = 17
+              Hint = ''
+              Caption = 'Motorista'
+              TabOrder = 3
+              ParentColor = False
+              Color = clBtnFace
+            end
+            object UniDBCheckBox4: TUniDBCheckBox
+              Left = 23
+              Top = 104
+              Width = 97
+              Height = 17
+              Hint = ''
+              Caption = 'Colaborador'
+              TabOrder = 4
+              ParentColor = False
+              Color = clBtnFace
+            end
+            object UniDBCheckBox5: TUniDBCheckBox
+              Left = 295
+              Top = 135
+              Width = 202
+              Height = 17
+              Hint = ''
+              Caption = 'Parceiros'
+              TabOrder = 5
+              ParentColor = False
+              Color = clBtnFace
+            end
+            object UniDBCheckBox6: TUniDBCheckBox
+              Left = 295
+              Top = 104
+              Width = 146
+              Height = 17
+              Hint = ''
+              Caption = 'Produtor Rural'
+              TabOrder = 6
+              ParentColor = False
+              Color = clBtnFace
+            end
+            object UniDBCheckBox7: TUniDBCheckBox
+              Left = 295
+              Top = 71
+              Width = 97
+              Height = 17
+              Hint = ''
+              Caption = 'Vendedor'
+              TabOrder = 7
+              ParentColor = False
+              Color = clBtnFace
+            end
+            object UniDBCheckBox8: TUniDBCheckBox
+              Left = 295
+              Top = 40
+              Width = 250
+              Height = 17
+              Hint = ''
+              Caption = 'Cliente/Fornecedor'
+              TabOrder = 8
+              ParentColor = False
+              Color = clBtnFace
+            end
           end
-          object UniDBEdit1: TUniDBEdit
-            Left = 99
-            Top = 100
-            Width = 516
-            Height = 22
-            Hint = ''
-            TabOrder = 2
-          end
-          object UniRadioGroup1: TUniRadioGroup
-            Left = 187
-            Top = 37
-            Width = 206
-            Height = 52
-            Hint = ''
-            Caption = 'Tipo'
-            TabOrder = 3
-          end
-          object cbTipoPessoa: TUniDBComboBox
-            Left = 195
-            Top = 56
-            Width = 183
-            Height = 23
-            Hint = ''
-            DataField = 'TIPO_ASSINANTE'
-            DataSource = dsCliente
-            Style = csDropDownList
-            Items.Strings = (
-              'Cliente'
-              'Cliente/Fornecedor'#11
-              'Colaborador'
-              'Fornecedor'
-              'Motorista'#11
-              'Vendedor'#11
-              'Transportador'
-              'Produtor Rural')
-            ItemIndex = 0
-            TabOrder = 4
-            IconItems = <>
-          end
-          object UniRadioGroup2: TUniRadioGroup
-            Left = 399
-            Top = 37
-            Width = 398
-            Height = 52
-            Hint = ''
-            Caption = 'Situa'#231#227'o Cadastral'
-            TabOrder = 5
-          end
-          object cbAtivo: TUniDBComboBox
-            Left = 408
-            Top = 56
-            Width = 89
-            Height = 23
-            Hint = ''
-            DataField = 'STATUS'
-            DataSource = dsCliente
-            Style = csDropDownList
-            Items.Strings = (
-              'Ativo'
-              'Inativo')
-            ItemIndex = 0
-            TabOrder = 6
-            IconItems = <>
-          end
-          object UniLabel3: TUniLabel
-            Left = 24
-            Top = 104
-            Width = 33
-            Height = 13
-            Hint = ''
-            Caption = 'Nome:'
-            TabOrder = 7
-          end
-          object UniContainerPanel1: TUniContainerPanel
-            Left = 82
-            Top = 100
-            Width = 6
-            Height = 22
+          object UniContainerPanel5: TUniContainerPanel
+            Left = 0
+            Top = 0
+            Width = 921
+            Height = 206
             Hint = ''
             ParentColor = False
-            Color = 57825
-            TabOrder = 8
+            Color = clWhite
+            Align = alTop
+            ParentAlignmentControl = False
+            TabOrder = 2
+            AlwaysOnTop = True
+            object UniLabel5: TUniLabel
+              Left = 24
+              Top = 176
+              Width = 50
+              Height = 13
+              Hint = ''
+              Caption = 'CPF/CNPJ:'
+              TabOrder = 1
+            end
+            object UniContainerPanel3: TUniContainerPanel
+              Left = 106
+              Top = 171
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 2
+            end
+            object UniLabel4: TUniLabel
+              Left = 31
+              Top = 143
+              Width = 43
+              Height = 13
+              Hint = ''
+              Caption = 'Apelido:'
+              TabOrder = 3
+            end
+            object UniLabel3: TUniLabel
+              Left = 41
+              Top = 111
+              Width = 33
+              Height = 13
+              Hint = ''
+              Caption = 'Nome:'
+              TabOrder = 4
+            end
+            object UniContainerPanel1: TUniContainerPanel
+              Left = 106
+              Top = 107
+              Width = 5
+              Height = 22
+              Hint = ''
+              ParentColor = False
+              Color = 57825
+              ScreenMask.ShowMessage = False
+              TabOrder = 5
+            end
+            object UniDBEdit1: TUniDBEdit
+              Left = 115
+              Top = 107
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 6
+            end
+            object UniDBEdit2: TUniDBEdit
+              Left = 115
+              Top = 140
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 7
+            end
+            object UniDBEdit3: TUniDBEdit
+              Left = 115
+              Top = 173
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 8
+            end
+            object rgPessoa: TUniDBRadioGroup
+              Left = 111
+              Top = 21
+              Width = 297
+              Height = 62
+              Hint = ''
+              DataField = 'PESSOA'
+              DataSource = dsCliente
+              Caption = 'Pessoa'
+              ParentFont = False
+              Font.Color = 6829373
+              TabOrder = 9
+              Items.Strings = (
+                'F'#237'sica'
+                'Jur'#237'dica'
+                'Estrangeiro')
+              Columns = 3
+              Values.Strings = (
+                'Pessoa F'#237'sica'
+                'Pessoa Jur'#237'dica')
+            end
+            object UniGroupBox1: TUniGroupBox
+              Left = 424
+              Top = 21
+              Width = 185
+              Height = 62
+              Hint = ''
+              Caption = 'Situa'#231#227'o Cadastral'
+              TabOrder = 10
+              object cbAtivo: TUniDBComboBox
+                Left = 11
+                Top = 21
+                Width = 166
+                Hint = ''
+                Style = csDropDownList
+                Items.Strings = (
+                  'Ativo'
+                  'Inativo')
+                ItemIndex = 0
+                TabOrder = 1
+                IconItems = <>
+              end
+            end
           end
-          object UniLabel4: TUniLabel
-            Left = 24
-            Top = 136
-            Width = 43
-            Height = 13
-            Hint = ''
-            Caption = 'Apelido:'
-            TabOrder = 9
-          end
-          object UniDBEdit2: TUniDBEdit
-            Left = 99
-            Top = 133
-            Width = 516
-            Height = 22
-            Hint = ''
-            TabOrder = 10
-          end
-          object UniDBEdit3: TUniDBEdit
-            Left = 99
-            Top = 166
-            Width = 516
-            Height = 22
-            Hint = ''
-            TabOrder = 11
-          end
-          object UniLabel5: TUniLabel
-            Left = 24
-            Top = 169
-            Width = 50
-            Height = 13
-            Hint = ''
-            Caption = 'CPF/CNPJ:'
-            TabOrder = 12
-          end
-          object UniPanel4: TUniPanel
+          object pnlComplementar: TUniPanel
             AlignWithMargins = True
-            Left = 24
-            Top = 232
-            Width = 761
-            Height = 329
+            Left = 3
+            Top = 1036
+            Width = 915
+            Height = 254
             Hint = ''
-            AutoScroll = True
-            TabOrder = 13
-            Modal = True
+            Align = alTop
+            TabOrder = 3
             BorderStyle = ubsNone
-            Title = 'Endere'#231'o'
-            Caption = 'UniPanel4'
+            TitleVisible = True
+            Title = 'Outros detalhes'
+            Caption = ''
             Collapsible = True
-            CollapseDirection = cdTop
-            Collapsed = True
-            Layout = 'hbox'
-            ScrollHeight = 329
-            ScrollWidth = 761
+            Color = clWhite
+            ParentAlignmentControl = False
+            Layout = 'fit'
+            LayoutAttribs.Padding = '0 0 0 30'
+            LayoutConfig.Cls = 'noPanel'
+            LayoutConfig.Padding = '0 0 0 30'
+            object UniLabel16: TUniLabel
+              Left = 43
+              Top = 100
+              Width = 68
+              Height = 13
+              Hint = ''
+              Caption = 'Observa'#231#245'es:'
+              TabOrder = 1
+            end
+            object UniLabel17: TUniLabel
+              Left = 49
+              Top = 63
+              Width = 61
+              Height = 13
+              Hint = ''
+              Caption = 'E-mail NF-e:'
+              TabOrder = 2
+            end
+            object UniLabel18: TUniLabel
+              Left = 55
+              Top = 23
+              Width = 56
+              Height = 13
+              Hint = ''
+              Caption = 'Longitude:'
+              TabOrder = 3
+            end
+            object UniDBEdit15: TUniDBEdit
+              Left = 126
+              Top = 60
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 4
+            end
+            object UniDBEdit16: TUniDBEdit
+              Left = 126
+              Top = 19
+              Width = 227
+              Height = 22
+              Hint = ''
+              TabOrder = 5
+            end
+            object UniLabel25: TUniLabel
+              Left = 377
+              Top = 23
+              Width = 42
+              Height = 13
+              Hint = ''
+              Caption = 'Latitude'
+              TabOrder = 6
+            end
+            object UniDBEdit23: TUniDBEdit
+              Left = 430
+              Top = 19
+              Width = 212
+              Height = 22
+              Hint = ''
+              TabOrder = 7
+            end
+            object UniDBMemo1: TUniDBMemo
+              Left = 126
+              Top = 104
+              Width = 516
+              Height = 89
+              Hint = ''
+              TabOrder = 8
+            end
+          end
+          object UniPanel2: TUniPanel
+            AlignWithMargins = True
+            Left = 3
+            Top = 776
+            Width = 915
+            Height = 254
+            Hint = ''
+            Align = alTop
+            TabOrder = 4
+            BorderStyle = ubsNone
+            TitleVisible = True
+            Title = 'Comunica'#231#227'o Digital'
+            Caption = ''
+            Collapsible = True
+            Color = clWhite
+            ParentAlignmentControl = False
+            Layout = 'fit'
+            LayoutAttribs.Padding = '0 0 0 30'
+            LayoutConfig.Cls = 'noPanel'
+            LayoutConfig.Padding = '0 0 0 30'
+            object UniLabel20: TUniLabel
+              Left = 62
+              Top = 100
+              Width = 47
+              Height = 13
+              Hint = ''
+              Caption = 'Telefone:'
+              TabOrder = 1
+            end
+            object UniLabel21: TUniLabel
+              Left = 49
+              Top = 63
+              Width = 61
+              Height = 13
+              Hint = ''
+              Caption = 'E-mail NF-e:'
+              TabOrder = 2
+            end
+            object UniLabel22: TUniLabel
+              Left = 75
+              Top = 23
+              Width = 34
+              Height = 13
+              Hint = ''
+              Caption = 'E-mail:'
+              TabOrder = 3
+            end
+            object UniDBEdit18: TUniDBEdit
+              Left = 126
+              Top = 97
+              Width = 188
+              Height = 22
+              Hint = ''
+              TabOrder = 4
+            end
+            object UniDBEdit19: TUniDBEdit
+              Left = 126
+              Top = 60
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 5
+            end
+            object UniDBEdit20: TUniDBEdit
+              Left = 126
+              Top = 19
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 6
+            end
+            object UniLabel23: TUniLabel
+              Left = 15
+              Top = 136
+              Width = 94
+              Height = 13
+              Hint = ''
+              Caption = 'Celular/WhatsApp'
+              TabOrder = 7
+            end
+            object UniDBEdit21: TUniDBEdit
+              Left = 126
+              Top = 133
+              Width = 188
+              Height = 22
+              Hint = ''
+              TabOrder = 8
+            end
+            object UniLabel24: TUniLabel
+              Left = 63
+              Top = 183
+              Width = 46
+              Height = 13
+              Hint = ''
+              Caption = 'WebSite:'
+              TabOrder = 9
+            end
+            object UniDBEdit22: TUniDBEdit
+              Left = 126
+              Top = 180
+              Width = 516
+              Height = 22
+              Hint = ''
+              TabOrder = 10
+            end
           end
         end
-      end
-      object tbPessoaFisica: TUniTabSheet
-        Hint = ''
-        Caption = 'tbPessoaFisica'
       end
       object tbCrediario: TUniTabSheet
         Hint = ''
         Caption = 'tbCrediario'
+        AutoScroll = True
+        ExplicitWidth = 844
+        ExplicitHeight = 661
       end
       object tbLocalEntrega: TUniTabSheet
         Hint = ''
         Caption = 'tbLocalEntrega'
+        ExplicitWidth = 819
+        ExplicitHeight = 616
       end
       object tbLocalCobranca: TUniTabSheet
         Hint = ''
         Caption = 'tbLocalCobranca'
+        ExplicitWidth = 819
+        ExplicitHeight = 616
       end
       object tbDocumento: TUniTabSheet
         Hint = ''
         Caption = 'tbDocumento'
+        ExplicitWidth = 819
+        ExplicitHeight = 616
       end
       object UniTabSheet3: TUniTabSheet
         Hint = ''
         Caption = 'UniTabSheet3'
+        ExplicitWidth = 819
+        ExplicitHeight = 616
       end
       object UniTabSheet4: TUniTabSheet
         Hint = ''
         Caption = 'UniTabSheet4'
+        ExplicitWidth = 819
+        ExplicitHeight = 616
       end
     end
   end
@@ -359,37 +956,44 @@ object FrameCadClientes: TFrameCadClientes
     Left = 0
     Top = 0
     Width = 3
-    Height = 755
+    Height = 962
+    Cursor = crDefault
     Hint = ''
+    Enabled = False
     Align = alLeft
     ParentColor = False
     Color = 16053492
+    ExplicitHeight = 755
   end
   object UniSplitter3: TUniSplitter
     Left = 264
     Top = 0
     Width = 3
-    Height = 755
+    Height = 962
+    Cursor = crDefault
     Hint = ''
+    Enabled = False
     Align = alLeft
     ParentColor = False
     Color = 16053492
+    ExplicitHeight = 755
   end
   object UniPanel3: TUniPanel
     AlignWithMargins = True
     Left = 6
     Top = 3
     Width = 255
-    Height = 749
+    Height = 956
     Hint = ''
     Align = alLeft
     TabOrder = 3
     Caption = 'UniPanel3'
+    ExplicitHeight = 749
     object tvMenu: TUniTreeView
       Left = 1
       Top = 1
       Width = 253
-      Height = 747
+      Height = 954
       Hint = ''
       Items.FontData = {0100000000}
       Images = imgMenu
@@ -401,12 +1005,10 @@ object FrameCadClientes: TFrameCadClientes
       TabOrder = 1
       ScreenMask.ShowMessage = False
       Color = clWhite
-      LayoutConfig.Cls = 'list-group-item'
-      LayoutConfig.Padding = '5px 0px 0px 0px'
-      LayoutConfig.Split = True
       Draggable.Enabled = True
       SourceMenu = Opcoes
       OnLoaded = tvMenuLoaded
+      ExplicitHeight = 747
     end
   end
   object imgMenu: TUniNativeImageList
@@ -576,6 +1178,7 @@ object FrameCadClientes: TFrameCadClientes
     object Detalhes1: TUniMenuItem
       Caption = 'Detalhes'
       ImageIndex = 0
+      OnClick = Detalhes1Click
     end
     object PessoaFsica1: TUniMenuItem
       Caption = 'Pessoa F'#237'sica'

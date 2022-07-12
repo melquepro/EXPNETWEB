@@ -18,6 +18,7 @@ object FrameListClientes: TFrameListClientes
     ParentColor = False
     Color = 16053492
     Align = alClient
+    ScreenMask.ShowMessage = False
     TabOrder = 0
     object UniContainerPanel2: TUniContainerPanel
       Left = 0
@@ -29,6 +30,7 @@ object FrameListClientes: TFrameListClientes
       ParentColor = False
       Color = clWhite
       Align = alLeft
+      ScreenMask.ShowMessage = False
       TabOrder = 1
       object pnlCliBloqueado: TUniPanel
         Left = 0
@@ -312,19 +314,99 @@ object FrameListClientes: TFrameListClientes
           TabOrder = 3
         end
         object UniLabel8: TUniLabel
-          Left = 81
-          Top = 7
-          Width = 75
+          Left = 61
+          Top = 6
+          Width = 106
           Height = 13
           Hint = ''
           ShowHint = True
           Alignment = taCenter
-          Caption = 'Clientes Ativos'
+          Caption = 'Clientes Desativados'
           ParentFont = False
           Font.Charset = ANSI_CHARSET
           Font.Color = 6052956
           TabOrder = 4
         end
+      end
+      object pnlCliAtivoPF: TUniPanel
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 244
+        Height = 77
+        Hint = ''
+        ShowHint = True
+        Align = alTop
+        TabOrder = 4
+        BorderStyle = ubsNone
+        Caption = ''
+        Color = clWhite
+        LayoutConfig.Cls = 'list-group'
+      end
+      object UniSplitter1: TUniSplitter
+        Left = 0
+        Top = 399
+        Width = 250
+        Height = 2
+        Cursor = crVSplit
+        Hint = ''
+        Enabled = False
+        ShowHint = True
+        Align = alTop
+        ParentColor = False
+        Color = 16053492
+      end
+      object UniSplitter2: TUniSplitter
+        Left = 0
+        Top = 320
+        Width = 250
+        Height = 2
+        Cursor = crVSplit
+        Hint = ''
+        Enabled = False
+        ShowHint = True
+        Align = alTop
+        ParentColor = False
+        Color = 16053492
+      end
+      object UniSplitter3: TUniSplitter
+        Left = 0
+        Top = 241
+        Width = 250
+        Height = 2
+        Cursor = crVSplit
+        Hint = ''
+        Enabled = False
+        ShowHint = True
+        Align = alTop
+        ParentColor = False
+        Color = 16053492
+      end
+      object UniSplitter4: TUniSplitter
+        Left = 0
+        Top = 162
+        Width = 250
+        Height = 2
+        Cursor = crVSplit
+        Hint = ''
+        Enabled = False
+        ShowHint = True
+        Align = alTop
+        ParentColor = False
+        Color = 16053492
+      end
+      object UniSplitter5: TUniSplitter
+        Left = 0
+        Top = 83
+        Width = 250
+        Height = 2
+        Cursor = crVSplit
+        Hint = ''
+        Enabled = False
+        ShowHint = True
+        Align = alTop
+        ParentColor = False
+        Color = 16053492
       end
       object pnlCliAtivoPJ: TUniPanel
         Left = 0
@@ -334,7 +416,7 @@ object FrameListClientes: TFrameListClientes
         Hint = ''
         ShowHint = True
         Align = alTop
-        TabOrder = 4
+        TabOrder = 10
         BorderStyle = ubsNone
         Caption = ''
         Color = clWhite
@@ -413,194 +495,34 @@ object FrameListClientes: TFrameListClientes
         object UniLabel6: TUniLabel
           Left = 75
           Top = 6
-          Width = 94
+          Width = 75
           Height = 13
           Hint = ''
           ShowHint = True
           Alignment = taCenter
-          Caption = 'Clientes Ativos / PJ'
+          Caption = 'Clientes Ativos'
           ParentFont = False
           Font.Charset = ANSI_CHARSET
           Font.Color = 13523726
           TabOrder = 4
         end
-      end
-      object pnlCliAtivoPF: TUniPanel
-        AlignWithMargins = True
-        Left = 3
-        Top = 3
-        Width = 244
-        Height = 77
-        Hint = ''
-        ShowHint = True
-        Align = alTop
-        TabOrder = 5
-        BorderStyle = ubsNone
-        Caption = ''
-        Color = clWhite
-        LayoutConfig.Cls = 'list-group'
-        object UniCheckBox1: TUniCheckBox
-          AlignWithMargins = True
-          Left = 3
-          Top = 3
-          Width = 238
-          Height = 17
-          Hint = ''
-          ShowHint = True
-          Caption = ''
-          Align = alTop
-          TabOrder = 1
-          ParentColor = True
-        end
-        object UniImage1: TUniImage
-          Left = 92
-          Top = 40
-          Width = 30
-          Height = 30
-          Hint = ''
-          ShowHint = True
-          AutoSize = True
-          Picture.Data = {
-            0954506E67496D61676589504E470D0A1A0A0000000D494844520000001E0000
-            001E08060000003B30AEA200000006624B474400FF00FF00FFA0BDA793000003
-            CC4944415478DAED967B6853571CC77FE7268D4E939BE92CA8633E308CCD8259
-            6E2AFA8708EA401041698DAD7954272ABE56547C3171541445A10C71FA47FFD8
-            56935B15B5450437181B0AB249696EE3A3B65015944D149FB9698B89CD3DFB1E
-            AD5D92DE46B1C826F4C025E771CFEFF3FB9DDFF7FE4E18FD478D0D8207C1FF13
-            30674EBFB69233B60203179E67784EE9A91B1BE9E4E2F43B03CB01ED207E2A4D
-            96DA606AB7AE7AEA0604B6FBB4425640C7192337A23CABABDEAF9C654D93B855
-            6ACFE36CBA3B4DE3BA8E2B77E1E0518CE7714E97891B658963C50F5F0B9683DA
-            12FC1C244E853D53877455A99403CD7E38A1E64F045F9E88787F848D23D8BFA6
-            87F08071FE755CF59EE81FEC6BB1C9B6E43DF446F41A23DA9750956F1C81E856
-            466C7F5E30F16D09D57BC011D0F6C1F0F68CA547FA70630CD5143F37057F18D4
-            DC06A7588EBD3022AE70049B17C2F3867C6083F3D28E3A6F7DCF5187B2F240C6
-            944EB5F8AA2918C739157E37E664E33044B3DEEE8F96488C9D7E4DC42588B841
-            0E440F63DFDA2C2B124D8D87952653F0C8C025B99B6C8FD1B56498FBE985B882
-            D1C59CB313F9C030E68BABCA29D9AFD562509119B06D48D788873FCC489882ED
-            4B624592645CCBB17717F9994063BD69B9BD398CB1DF9CCA55DDA55450CB752B
-            74721B33A3B3D220F1C91D616FAB2998563515C89DD215F43ECB89A41A916C76
-            54C43E6569232A7CCCC17640D28A5EE76947B4D5D8B02967BD15CEBBFB159768
-            FD1C69B7952C131FABEEBF6038845D4773B21B423A2223CB1B3FE9B6586F61C2
-            9AE538A345F18892A58FBEC5A08A4B727BEC0C8CCDCF98FD05029B27CED3198A
-            CEE606FB2DCB88C4E7C4C3DEDF5FEE6D3E87A9B91984B3BACBB390AA98911F4C
-            42DDD17558FA1E8B7F1B8CEF4CB8945AB171D4F28B8E5472583D5EF9323B60FA
-            D536B4ABF485780077DCD0964A9CED460DF81876D6C1E9237D24D1071A6A9A06
-            25D4334EE7865A2C1BEE87DD9DA2B0380B9E2DC3E5B003AF8C23F3760705664F
-            3C65ABA59345A9425F8B3D654B8ADA3E9773A944AFFBA2D1142C8A073778158C
-            2F80A735A856AB5FE65C2B45CDAD46773CBD59BB8D42B24914123140C5AB8143
-            2B507CCE3089553D8D28977BC1CE40740727B68BC4F7CBE8A6FEC851443FBB52
-            7230564D9C6F7C4360EE51E24BF06CA165E787C8CF9DE2339A8027CD18FB361E
-            F1EC65262AAE44893C04F59663F7B1B781FE0BE7E5E27280663660F45D86533E
-            86BAFA27FAD37B7562189FE31A6B7306B40B38F299030163FF79A46C964961FA
-            43809F8814BF9AF940B2D885A0302FEED08F060226712BA9CA2821B4A42D99C8
-            987FF2BEFCE71A04BF87E07F00444189DBDE0B4B820000000049454E44AE4260
-            82}
-        end
-        object UniLabel3: TUniLabel
-          Left = 69
-          Top = 12
-          Width = 97
-          Height = 13
-          Hint = ''
-          ShowHint = True
-          Alignment = taCenter
-          Caption = 'Clientes Ativos / PF'
-          ParentFont = False
-          Font.Charset = ANSI_CHARSET
-          Font.Color = 13523726
-          TabOrder = 3
-        end
-        object UniLabel4: TUniLabel
-          Left = 137
-          Top = 45
-          Width = 11
-          Height = 25
-          Hint = ''
-          ShowHint = True
-          Alignment = taRightJustify
-          Caption = '0'
-          ParentFont = False
-          Font.Color = 13523726
-          Font.Height = -19
-          Font.Style = [fsBold]
-          TabOrder = 4
-        end
-      end
-      object UniSplitter1: TUniSplitter
-        Left = 0
-        Top = 399
-        Width = 250
-        Height = 2
-        Cursor = crVSplit
-        Hint = ''
-        ShowHint = True
-        Align = alTop
-        ParentColor = False
-        Color = 16053492
-      end
-      object UniSplitter2: TUniSplitter
-        Left = 0
-        Top = 320
-        Width = 250
-        Height = 2
-        Cursor = crVSplit
-        Hint = ''
-        ShowHint = True
-        Align = alTop
-        ParentColor = False
-        Color = 16053492
-      end
-      object UniSplitter3: TUniSplitter
-        Left = 0
-        Top = 241
-        Width = 250
-        Height = 2
-        Cursor = crVSplit
-        Hint = ''
-        ShowHint = True
-        Align = alTop
-        ParentColor = False
-        Color = 16053492
-      end
-      object UniSplitter4: TUniSplitter
-        Left = 0
-        Top = 162
-        Width = 250
-        Height = 2
-        Cursor = crVSplit
-        Hint = ''
-        ShowHint = True
-        Align = alTop
-        ParentColor = False
-        Color = 16053492
-      end
-      object UniSplitter5: TUniSplitter
-        Left = 0
-        Top = 83
-        Width = 250
-        Height = 2
-        Cursor = crVSplit
-        Hint = ''
-        ShowHint = True
-        Align = alTop
-        ParentColor = False
-        Color = 16053492
       end
     end
     object UniContainerPanel3: TUniContainerPanel
-      Left = 250
+      Left = 256
       Top = 0
-      Width = 873
+      Width = 867
       Height = 771
       Hint = ''
       ShowHint = True
       ParentColor = False
       Align = alClient
+      ScreenMask.ShowMessage = False
       TabOrder = 2
       object dbg1: TUniDBGrid
         Left = 0
         Top = 102
-        Width = 873
+        Width = 867
         Height = 669
         Hint = ''
         ShowHint = True
@@ -669,7 +591,7 @@ object FrameListClientes: TFrameListClientes
         AlignWithMargins = True
         Left = 3
         Top = 60
-        Width = 867
+        Width = 861
         Height = 39
         Hint = ''
         ShowHint = True
@@ -678,7 +600,7 @@ object FrameListClientes: TFrameListClientes
         BorderStyle = ubsNone
         Caption = ''
         DesignSize = (
-          867
+          861
           39)
         object btnFiltro: TUniFSButton
           Left = 392
@@ -722,7 +644,7 @@ object FrameListClientes: TFrameListClientes
           IconItems = <>
         end
         object btnImprimir: TUniFSButton
-          Left = 756
+          Left = 750
           Top = 5
           Width = 95
           Height = 28
@@ -740,7 +662,7 @@ object FrameListClientes: TFrameListClientes
           TabOrder = 3
         end
         object btnNovo: TUniFSButton
-          Left = 650
+          Left = 644
           Top = 5
           Width = 100
           Height = 28
@@ -761,7 +683,7 @@ object FrameListClientes: TFrameListClientes
       object UniPanel4: TUniPanel
         Left = 0
         Top = 0
-        Width = 873
+        Width = 867
         Height = 57
         Hint = ''
         ShowHint = True
@@ -851,6 +773,18 @@ object FrameListClientes: TFrameListClientes
             1F3FDEEC2C560000000049454E44AE426082}
         end
       end
+    end
+    object UniSplitter7: TUniSplitter
+      Left = 250
+      Top = 0
+      Width = 6
+      Height = 771
+      Hint = ''
+      Enabled = False
+      ShowHint = True
+      Align = alLeft
+      ParentColor = False
+      Color = 16053492
     end
   end
   object UniSplitter6: TUniSplitter

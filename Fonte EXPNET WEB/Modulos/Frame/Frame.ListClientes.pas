@@ -27,7 +27,6 @@ type
     pnlCliBloqueado: TUniPanel;
     pnlCliInativo: TUniPanel;
     pnlCliAtivo: TUniPanel;
-    pnlCliAtivoPJ: TUniPanel;
     pnlCliAtivoPF: TUniPanel;
     UniSplitter1: TUniSplitter;
     UniSplitter2: TUniSplitter;
@@ -35,17 +34,9 @@ type
     UniSplitter4: TUniSplitter;
     UniSplitter5: TUniSplitter;
     UniContainerPanel3: TUniContainerPanel;
-    UniCheckBox1: TUniCheckBox;
-    UniCheckBox2: TUniCheckBox;
     UniCheckBox3: TUniCheckBox;
     UniCheckBox4: TUniCheckBox;
     UniCheckBox5: TUniCheckBox;
-    UniImage1: TUniImage;
-    UniLabel3: TUniLabel;
-    UniLabel4: TUniLabel;
-    UniImage2: TUniImage;
-    UniLabel5: TUniLabel;
-    UniLabel6: TUniLabel;
     UniImage3: TUniImage;
     UniLabel7: TUniLabel;
     UniLabel8: TUniLabel;
@@ -57,6 +48,12 @@ type
     UniLabel12: TUniLabel;
     UniImage6: TUniImage;
     UniSplitter6: TUniSplitter;
+    pnlCliAtivoPJ: TUniPanel;
+    UniCheckBox2: TUniCheckBox;
+    UniImage2: TUniImage;
+    UniLabel5: TUniLabel;
+    UniLabel6: TUniLabel;
+    UniSplitter7: TUniSplitter;
     procedure btnFiltroClick(Sender: TObject);
     procedure UniFrameCreate(Sender: TObject);
   private
