@@ -65,8 +65,8 @@ end;
 
 procedure TMainForm.btnMenuClick(Sender: TObject);
 begin
-//  ContainerPanel.Visible := not(ContainerPanel.Visible);
-  PControl.NovaAba(TFrame(TFrameCadClientes),'Cadastro de Cliente','CadClientes');
+ ContainerPanel.Visible := not(ContainerPanel.Visible);
+ // PControl.NovaAba(TFrame(TFrameCadClientes),'Cadastro de Cliente','CadClientes');
 end;
 
 procedure TMainForm.btnSairClick(Sender: TObject);

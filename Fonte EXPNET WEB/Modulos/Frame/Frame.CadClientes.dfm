@@ -1,61 +1,56 @@
 object FrameCadClientes: TFrameCadClientes
   Left = 0
   Top = 0
-  Width = 1002
+  Width = 1129
   Height = 962
+  OnCreate = UniFrameCreate
   TabOrder = 0
   object UniContainerPanel2: TUniContainerPanel
     AlignWithMargins = True
     Left = 270
     Top = 3
-    Width = 729
+    Width = 856
     Height = 956
     Hint = ''
     ParentColor = False
     Align = alClient
     ScreenMask.ShowMessage = False
     TabOrder = 0
-    ExplicitWidth = 954
+    ExplicitWidth = 729
     object pgCadClientes: TUniPageControl
       Left = 0
       Top = 0
-      Width = 729
+      Width = 856
       Height = 907
       Hint = ''
       ActivePage = tbDetalhes
+      TabBarVisible = False
       Align = alClient
       LayoutConfig.Width = '100%'
       TabOrder = 1
-      ExplicitLeft = 3
-      ExplicitTop = 63
-      ExplicitWidth = 954
-      ExplicitHeight = 896
+      ExplicitWidth = 729
       object tbDetalhes: TUniTabSheet
         AlignWithMargins = True
         Hint = ''
         Caption = 'tbDetalhes'
-        AutoScroll = True
-        ExplicitWidth = 733
-        ExplicitHeight = 925
-        ScrollHeight = 60
+        ExplicitWidth = 721
         object UniScrollBox1: TUniScrollBox
           AlignWithMargins = True
           Left = 3
           Top = 63
-          Width = 715
+          Width = 842
           Height = 813
           Hint = ''
           Align = alClient
           TabOrder = 0
           ScrollDirection = sdVertical
-          ExplicitWidth = 940
-          ExplicitHeight = 747
-          ScrollHeight = 1332
+          ExplicitWidth = 715
+          ScrollHeight = 1338
           object pnlEndereco: TUniPanel
             AlignWithMargins = True
             Left = 3
             Top = 448
-            Width = 690
+            Width = 817
             Height = 370
             Hint = ''
             Align = alTop
@@ -71,7 +66,6 @@ object FrameCadClientes: TFrameCadClientes
             LayoutAttribs.Padding = '0 0 0 30'
             LayoutConfig.Cls = 'noPanel'
             LayoutConfig.Padding = '0 0 0 30'
-            ExplicitTop = 442
             object UniLabel6: TUniLabel
               Left = 53
               Top = 100
@@ -127,6 +121,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 115
               Height = 22
               Hint = ''
+              DataField = 'numero'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 6
             end
             object UniDBEdit5: TUniDBEdit
@@ -135,6 +131,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 516
               Height = 22
               Hint = ''
+              DataField = 'endereco'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 7
             end
             object UniDBEdit6: TUniDBEdit
@@ -143,6 +141,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 131
               Height = 22
               Hint = ''
+              DataField = 'cep'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 8
             end
             object UniLabel9: TUniLabel
@@ -160,6 +160,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 516
               Height = 22
               Hint = ''
+              DataField = 'complemento'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 10
             end
             object UniContainerPanel7: TUniContainerPanel
@@ -188,6 +190,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 516
               Height = 22
               Hint = ''
+              DataField = 'bairro'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 13
             end
             object UniLabel11: TUniLabel
@@ -205,6 +209,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 143
               Height = 22
               Hint = ''
+              DataField = 'idibge'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 15
             end
             object UniLabel12: TUniLabel
@@ -222,6 +228,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 306
               Height = 22
               Hint = ''
+              DataField = 'cidade'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 17
             end
             object UniLabel13: TUniLabel
@@ -239,6 +247,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 219
               Height = 22
               Hint = ''
+              DataField = 'estado'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 19
             end
             object UniLabel14: TUniLabel
@@ -256,6 +266,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 236
               Height = 22
               Hint = ''
+              DataField = 'pais'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 21
             end
             object UniLabel15: TUniLabel
@@ -273,6 +285,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 516
               Height = 22
               Hint = ''
+              DataField = 'referencia'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 23
             end
             object UniContainerPanel8: TUniContainerPanel
@@ -424,7 +438,7 @@ object FrameCadClientes: TFrameCadClientes
             AlignWithMargins = True
             Left = 3
             Top = 257
-            Width = 690
+            Width = 817
             Height = 185
             Hint = ''
             BodyRTL = False
@@ -443,13 +457,14 @@ object FrameCadClientes: TFrameCadClientes
             LayoutAttribs.Padding = '0 0 0 30'
             LayoutConfig.Cls = 'noPanel'
             LayoutConfig.Padding = '0 0 0 30'
-            ExplicitTop = 251
             object UniDBCheckBox1: TUniDBCheckBox
               Left = 23
               Top = 18
               Width = 97
               Height = 17
               Hint = ''
+              DataField = 'tipo_cliente'
+              DataSource = DAOConexao.dsCliente
               Caption = 'Cliente'
               TabOrder = 1
               ParentColor = False
@@ -461,6 +476,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 97
               Height = 17
               Hint = ''
+              DataField = 'tipo_cliente'
+              DataSource = DAOConexao.dsCliente
               Caption = 'Fornecedor'
               TabOrder = 2
               ParentColor = False
@@ -472,6 +489,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 97
               Height = 17
               Hint = ''
+              DataField = 'tipo_cliente'
+              DataSource = DAOConexao.dsCliente
               Caption = 'Motorista'
               TabOrder = 3
               ParentColor = False
@@ -483,6 +502,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 97
               Height = 17
               Hint = ''
+              DataField = 'tipo_cliente'
+              DataSource = DAOConexao.dsCliente
               Caption = 'Colaborador'
               TabOrder = 4
               ParentColor = False
@@ -494,6 +515,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 202
               Height = 17
               Hint = ''
+              DataField = 'tipo_cliente'
+              DataSource = DAOConexao.dsCliente
               Caption = 'Parceiros'
               TabOrder = 5
               ParentColor = False
@@ -505,6 +528,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 146
               Height = 17
               Hint = ''
+              DataField = 'tipo_cliente'
+              DataSource = DAOConexao.dsCliente
               Caption = 'Produtor Rural'
               TabOrder = 6
               ParentColor = False
@@ -516,6 +541,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 97
               Height = 17
               Hint = ''
+              DataField = 'tipo_cliente'
+              DataSource = DAOConexao.dsCliente
               Caption = 'Vendedor'
               TabOrder = 7
               ParentColor = False
@@ -527,6 +554,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 250
               Height = 17
               Hint = ''
+              DataField = 'tipo_cliente'
+              DataSource = DAOConexao.dsCliente
               Caption = 'Cliente/Fornecedor'
               TabOrder = 8
               ParentColor = False
@@ -537,7 +566,7 @@ object FrameCadClientes: TFrameCadClientes
             AlignWithMargins = True
             Left = 3
             Top = 1084
-            Width = 690
+            Width = 817
             Height = 254
             Hint = ''
             Align = alTop
@@ -553,24 +582,14 @@ object FrameCadClientes: TFrameCadClientes
             LayoutAttribs.Padding = '0 0 0 30'
             LayoutConfig.Cls = 'noPanel'
             LayoutConfig.Padding = '0 0 0 30'
-            ExplicitTop = 1078
             object UniLabel16: TUniLabel
               Left = 43
-              Top = 100
+              Top = 76
               Width = 68
               Height = 13
               Hint = ''
               Caption = 'Observa'#231#245'es:'
               TabOrder = 1
-            end
-            object UniLabel17: TUniLabel
-              Left = 49
-              Top = 63
-              Width = 61
-              Height = 13
-              Hint = ''
-              Caption = 'E-mail NF-e:'
-              TabOrder = 2
             end
             object UniLabel18: TUniLabel
               Left = 55
@@ -579,15 +598,7 @@ object FrameCadClientes: TFrameCadClientes
               Height = 13
               Hint = ''
               Caption = 'Longitude:'
-              TabOrder = 3
-            end
-            object UniDBEdit15: TUniDBEdit
-              Left = 126
-              Top = 60
-              Width = 516
-              Height = 22
-              Hint = ''
-              TabOrder = 4
+              TabOrder = 2
             end
             object UniDBEdit16: TUniDBEdit
               Left = 126
@@ -595,7 +606,9 @@ object FrameCadClientes: TFrameCadClientes
               Width = 227
               Height = 22
               Hint = ''
-              TabOrder = 5
+              DataField = 'longitude'
+              DataSource = DAOConexao.dsCliente
+              TabOrder = 3
             end
             object UniLabel25: TUniLabel
               Left = 377
@@ -604,7 +617,7 @@ object FrameCadClientes: TFrameCadClientes
               Height = 13
               Hint = ''
               Caption = 'Latitude'
-              TabOrder = 6
+              TabOrder = 4
             end
             object UniDBEdit23: TUniDBEdit
               Left = 430
@@ -612,22 +625,27 @@ object FrameCadClientes: TFrameCadClientes
               Width = 212
               Height = 22
               Hint = ''
-              TabOrder = 7
+              DataField = 'latitude'
+              DataSource = DAOConexao.dsCliente
+              TabOrder = 5
             end
             object UniDBMemo1: TUniDBMemo
               Left = 126
-              Top = 104
+              Top = 80
               Width = 516
               Height = 89
               Hint = ''
-              TabOrder = 8
+              DataField = 'observacao'
+              DataSource = DAOConexao.dsCliente
+              ScrollBars = ssBoth
+              TabOrder = 6
             end
           end
           object pnlComunDigital: TUniPanel
             AlignWithMargins = True
             Left = 3
             Top = 824
-            Width = 690
+            Width = 817
             Height = 254
             Hint = ''
             Align = alTop
@@ -643,7 +661,6 @@ object FrameCadClientes: TFrameCadClientes
             LayoutAttribs.Padding = '0 0 0 30'
             LayoutConfig.Cls = 'noPanel'
             LayoutConfig.Padding = '0 0 0 30'
-            ExplicitTop = 818
             object UniLabel20: TUniLabel
               Left = 62
               Top = 100
@@ -677,6 +694,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 188
               Height = 22
               Hint = ''
+              DataField = 'telefone'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 4
             end
             object UniDBEdit19: TUniDBEdit
@@ -685,6 +704,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 516
               Height = 22
               Hint = ''
+              DataField = 'email_nfe'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 5
             end
             object UniDBEdit20: TUniDBEdit
@@ -693,6 +714,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 516
               Height = 22
               Hint = ''
+              DataField = 'email'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 6
             end
             object UniLabel23: TUniLabel
@@ -710,6 +733,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 188
               Height = 22
               Hint = ''
+              DataField = 'celular'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 8
             end
             object UniLabel24: TUniLabel
@@ -727,6 +752,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 516
               Height = 22
               Hint = ''
+              DataField = 'website'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 10
             end
           end
@@ -734,7 +761,7 @@ object FrameCadClientes: TFrameCadClientes
             AlignWithMargins = True
             Left = 3
             Top = 3
-            Width = 690
+            Width = 817
             Height = 248
             Hint = ''
             Align = alTop
@@ -743,16 +770,13 @@ object FrameCadClientes: TFrameCadClientes
             Caption = ''
             ParentAlignmentControl = False
             Layout = 'fit'
-            ExplicitLeft = 0
-            ExplicitTop = 0
-            ExplicitWidth = 696
             object rgPessoa: TUniDBRadioGroup
               Left = 111
               Top = 21
               Width = 297
               Height = 62
               Hint = ''
-              DataField = 'PESSOA'
+              DataField = 'tipo_pessoa'
               DataSource = dsCliente
               Caption = 'Pessoa'
               ParentFont = False
@@ -789,12 +813,14 @@ object FrameCadClientes: TFrameCadClientes
               ScreenMask.ShowMessage = False
               TabOrder = 3
             end
-            object UniDBDateTimePicker4: TUniDBDateTimePicker
+            object edtDataCad: TUniDBDateTimePicker
               Left = 526
               Top = 101
               Width = 105
               Hint = ''
               Enabled = False
+              DataField = 'dtcadastro'
+              DataSource = DAOConexao.dsCliente
               DateTime = 44754.000000000000000000
               DateFormat = 'dd/MM/yyyy'
               TimeFormat = 'HH:mm:ss'
@@ -806,6 +832,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 516
               Height = 22
               Hint = ''
+              DataField = 'nome'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 5
             end
             object UniDBEdit2: TUniDBEdit
@@ -814,6 +842,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 516
               Height = 22
               Hint = ''
+              DataField = 'fantasia'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 6
             end
             object UniDBEdit3: TUniDBEdit
@@ -822,6 +852,8 @@ object FrameCadClientes: TFrameCadClientes
               Width = 516
               Height = 22
               Hint = ''
+              DataField = 'cpf_cnpj'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 7
             end
             object UniDBEdit34: TUniDBEdit
@@ -833,6 +865,8 @@ object FrameCadClientes: TFrameCadClientes
               RTL = True
               ParentRTL = False
               Enabled = False
+              DataField = 'idcliente'
+              DataSource = DAOConexao.dsCliente
               TabOrder = 8
               ReadOnly = True
             end
@@ -850,11 +884,12 @@ object FrameCadClientes: TFrameCadClientes
                 Width = 166
                 Height = 23
                 Hint = ''
+                DataField = 'status'
+                DataSource = DAOConexao.dsCliente
                 Style = csDropDownList
                 Items.Strings = (
                   'Ativo'
                   'Inativo')
-                ItemIndex = 0
                 TabOrder = 1
                 IconItems = <>
               end
@@ -909,16 +944,14 @@ object FrameCadClientes: TFrameCadClientes
         object UniPanel1: TUniPanel
           Left = 0
           Top = 0
-          Width = 721
+          Width = 848
           Height = 57
           Hint = ''
           Align = alTop
           TabOrder = 1
           Caption = ''
           Color = clWhite
-          ExplicitLeft = -1
-          ExplicitTop = 48
-          ExplicitWidth = 733
+          ExplicitWidth = 721
           object UniLabel2: TUniLabel
             Left = 62
             Top = 21
@@ -1006,50 +1039,47 @@ object FrameCadClientes: TFrameCadClientes
         object UniSplitter1: TUniSplitter
           Left = 0
           Top = 57
-          Width = 721
+          Width = 848
           Height = 3
-          Cursor = crDefault
+          Cursor = crVSplit
           Hint = ''
           Enabled = False
           Align = alTop
           ParentColor = False
           Color = 16053492
-          ExplicitLeft = -1
-          ExplicitTop = 60
-          ExplicitWidth = 733
+          ExplicitWidth = 721
         end
       end
       object tbPessoaFisica: TUniTabSheet
         Hint = ''
         Caption = 'tbPessoaFisica'
         AutoScroll = True
-        ExplicitWidth = 946
-        ExplicitHeight = 868
+        ExplicitWidth = 721
+        ScrollHeight = 61
         object UniScrollBox2: TUniScrollBox
           Left = 0
-          Top = 0
-          Width = 721
-          Height = 879
+          Top = 61
+          Width = 848
+          Height = 818
           Hint = ''
           Align = alClient
           Color = clWhite
           TabOrder = 0
           ScrollDirection = sdVertical
-          ExplicitLeft = 424
-          ExplicitTop = 288
-          ExplicitWidth = 256
-          ExplicitHeight = 256
+          ExplicitTop = 0
+          ExplicitWidth = 721
+          ExplicitHeight = 879
           ScrollHeight = 476
           object UniContainerPanel15: TUniContainerPanel
             Left = 0
             Top = 0
-            Width = 719
+            Width = 846
             Height = 288
             Hint = ''
             ParentColor = False
             Align = alTop
             TabOrder = 0
-            ExplicitWidth = 944
+            ExplicitWidth = 719
             object UniLabel19: TUniLabel
               Left = 17
               Top = 33
@@ -1065,6 +1095,7 @@ object FrameCadClientes: TFrameCadClientes
               Width = 133
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 2
             end
             object UniLabel26: TUniLabel
@@ -1082,6 +1113,7 @@ object FrameCadClientes: TFrameCadClientes
               Width = 133
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 4
             end
             object UniLabel27: TUniLabel
@@ -1126,6 +1158,7 @@ object FrameCadClientes: TFrameCadClientes
               Width = 245
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 9
             end
             object UniDBEdit28: TUniDBEdit
@@ -1134,6 +1167,7 @@ object FrameCadClientes: TFrameCadClientes
               Width = 306
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 10
             end
             object UniLabel32: TUniLabel
@@ -1151,6 +1185,7 @@ object FrameCadClientes: TFrameCadClientes
               Width = 306
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 12
             end
             object UniLabel33: TUniLabel
@@ -1168,6 +1203,7 @@ object FrameCadClientes: TFrameCadClientes
               Width = 103
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 14
             end
             object UniLabel34: TUniLabel
@@ -1184,6 +1220,7 @@ object FrameCadClientes: TFrameCadClientes
               Top = 27
               Width = 126
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               DateTime = 44754.000000000000000000
               DateFormat = 'dd/MM/yyyy'
               TimeFormat = 'HH:mm:ss'
@@ -1193,7 +1230,10 @@ object FrameCadClientes: TFrameCadClientes
               Left = 132
               Top = 108
               Width = 133
+              Height = 23
               Hint = ''
+              DataSource = DAOConexao.dsCliente
+              Style = csDropDownList
               Items.Strings = (
                 'Amasiado'
                 'Casado'#11
@@ -1208,7 +1248,10 @@ object FrameCadClientes: TFrameCadClientes
               Left = 329
               Top = 66
               Width = 126
+              Height = 23
               Hint = ''
+              DataSource = DAOConexao.dsCliente
+              Style = csDropDownList
               Items.Strings = (
                 '<em branco>'
                 'Masculino'
@@ -1223,6 +1266,7 @@ object FrameCadClientes: TFrameCadClientes
               Top = 139
               Width = 133
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               DateTime = 44754.000000000000000000
               DateFormat = 'dd/MM/yyyy'
               TimeFormat = 'HH:mm:ss'
@@ -1250,10 +1294,14 @@ object FrameCadClientes: TFrameCadClientes
               Left = 522
               Top = 241
               Width = 103
+              Height = 23
               Hint = ''
+              DataSource = DAOConexao.dsCliente
+              Style = csDropDownList
               Items.Strings = (
                 'Comercial'
                 'Residencial')
+              ItemIndex = 0
               TabOrder = 22
               IconItems = <>
             end
@@ -1262,7 +1310,7 @@ object FrameCadClientes: TFrameCadClientes
             AlignWithMargins = True
             Left = 3
             Top = 291
-            Width = 713
+            Width = 840
             Height = 185
             Hint = ''
             BodyRTL = False
@@ -1280,8 +1328,7 @@ object FrameCadClientes: TFrameCadClientes
             LayoutAttribs.Padding = '0 0 0 30'
             LayoutConfig.Cls = 'noPanel'
             LayoutConfig.Padding = '0 0 0 30'
-            ExplicitTop = 169
-            ExplicitWidth = 702
+            ExplicitWidth = 713
             object UniLabel36: TUniLabel
               Left = 61
               Top = 53
@@ -1306,13 +1353,17 @@ object FrameCadClientes: TFrameCadClientes
               Width = 306
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 3
             end
             object UniDBComboBox4: TUniDBComboBox
               Left = 133
               Top = 52
               Width = 304
+              Height = 23
               Hint = ''
+              DataSource = DAOConexao.dsCliente
+              Style = csDropDownList
               Items.Strings = (
                 'Comercial'
                 'Residencial')
@@ -1343,6 +1394,7 @@ object FrameCadClientes: TFrameCadClientes
               Width = 306
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 7
             end
             object UniLabel40: TUniLabel
@@ -1359,6 +1411,7 @@ object FrameCadClientes: TFrameCadClientes
               Top = 49
               Width = 120
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               DateTime = 44754.000000000000000000
               DateFormat = 'dd/MM/yyyy'
               TimeFormat = 'HH:mm:ss'
@@ -1370,6 +1423,7 @@ object FrameCadClientes: TFrameCadClientes
               Width = 123
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 10
             end
             object UniLabel41: TUniLabel
@@ -1387,20 +1441,117 @@ object FrameCadClientes: TFrameCadClientes
               Width = 123
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 12
             end
           end
+        end
+        object UniPanel4: TUniPanel
+          Left = 0
+          Top = 0
+          Width = 848
+          Height = 57
+          Hint = ''
+          Align = alTop
+          TabOrder = 1
+          Caption = ''
+          Color = clWhite
+          ExplicitWidth = 840
+          object UniLabel17: TUniLabel
+            Left = 62
+            Top = 21
+            Width = 142
+            Height = 30
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'PESSOA F'#205'SICA'
+            ParentFont = False
+            Font.Charset = ANSI_CHARSET
+            Font.Color = 6829373
+            Font.Height = -21
+            Font.Name = 'Segoe UI Semibold'
+            Font.Style = [fsBold]
+            TabOrder = 1
+          end
+          object UniImage4: TUniImage
+            Left = 5
+            Top = 0
+            Width = 50
+            Height = 50
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            AutoSize = True
+            Picture.Data = {
+              0954506E67496D61676589504E470D0A1A0A0000000D49484452000000320000
+              003208060000001E3F88B100000006624B474400FF00FF00FFA0BDA793000003
+              934944415478DAED9A5D48544114C7E7DC552AFB8050C1278992A24FCADDBB91
+              ED6E423E44FA6405052184B45F62D843610F9508A10F8585E9EEDA07F5D0072D
+              420F5AD043D8DE55D90F11CAB58424213022D41E6A23DDBDD35949A20CDD7B67
+              D7B9C81ED89DB930F39FF9DD9D3967CEB040968901EF09644032200ACDA4B716
+              0A02ECA304B6130AF914E43850611C007A7CA1F63ECD8398444719107A05ABC6
+              059AF5D11550E1F7BBA6340962116DCDF80B9C4F4E173E104ABA64103CBDA1B6
+              886640CC06471D01DAA2A2EB0C7E6AA490FB16779083C69ADC69121FC337BC46
+              A5449C08502C055CAFB982988CB62AA0709F450380DCF505DDD55C41CC06FB43
+              543AC1A2410979E70FB9B7F20511ED01B2B0974AC6E293D1899C48C43BCD11C4
+              3682529B59757451616D4FA4FD1B4710FB28161B5975A2B2BC7A60A023CA13A4
+              178B123615FA550A79D6ABED9D1AAF253A3A319A5732CA0C622C29E60B62B05F
+              46F7D9C02442A1550ABBCE7005B1186C872940371B08392A85DD9D5C414A44E7
+              6E1D910759348092625FD8AD5A23459BDDF11C5FE92126114ABBA5B0A7823388
+              6D8824F20E160E428630B2EFE40C627F84C571469907E8B54E7205F99D4CBD60
+              D0435F41CAF0D0F8922B48C2CC464739AEF32E5593A0B4DC17F63C63193FA519
+              222EB1F7586C52D86D14975411EBD82906B1618608754AFAE026BF819B5C519F
+              B48394163B8BE23A7918ABD9497689C91476F4865D239A02499849B437A1687D
+              72ADE9753C289E4DC5B8E9B8D7025C626F92882B63051B268ABC5E6F5CAB20C9
+              668CC3B8C99982E8528004B110176C44C95B3C246ED33688C13E8CCA8B5D247C
+              C45FA450B3207ABD353B4710C6B19AB7C8D0DF63592BF3FBFB5B7E68120497D5
+              452C1A93698B31A41963C8054D8194EAAD7932E8AE51A0550ABB3E9E16627581
+              C0EDCF5C41CC7B6AF3A96EC68987BE5A7CCC55293345096D9B11E237D502A905
+              C158E1B0E069AF3A91A2E2F32AD617F2DB7EE282F3520A77FC61F72B32BBFAD2
+              02D22058C44FC728814BF89032D7F95F43F78CDF8D52B8E0098E2BA70CC4A4B7
+              EE05103AB0C7AEB402CC074ADCD09FC698136406C1C4E914264E1D58CD5A5288
+              3F169B8509B9EFA906B188B64A5C4A5EAC0A9C20E64C260047A4A0EBA9629052
+              D159102772E288BD8E33C49C4D9158F61669B0F58B22108B68AF47B7D1C47BF6
+              7F4F989EF3853C5715816094F663B19FF7E4FF311FEE95034A4126B1507D439E
+              269B409079E7B8CC3F1FB4661910ADD9B201F905DE62314249480B1F00000000
+              49454E44AE426082}
+          end
+          object UniLabel53: TUniLabel
+            Left = 65
+            Top = 6
+            Width = 78
+            Height = 13
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'DADOS GERAIS'
+            ParentFont = False
+            Font.Color = 6829373
+            TabOrder = 3
+          end
+        end
+        object UniSplitter7: TUniSplitter
+          Left = 0
+          Top = 57
+          Width = 848
+          Height = 4
+          Cursor = crVSplit
+          Hint = ''
+          Enabled = False
+          Align = alTop
+          ParentColor = False
+          Color = 16053492
         end
       end
       object tbTributacao: TUniTabSheet
         Hint = ''
         Caption = 'tbTributacao'
-        ExplicitWidth = 946
-        ExplicitHeight = 868
+        ExplicitWidth = 721
         object UniSplitter4: TUniSplitter
           Left = 0
           Top = 57
-          Width = 721
+          Width = 848
           Height = 3
           Cursor = crVSplit
           Hint = ''
@@ -1408,20 +1559,19 @@ object FrameCadClientes: TFrameCadClientes
           Align = alTop
           ParentColor = False
           Color = 16053492
-          ExplicitWidth = 733
+          ExplicitWidth = 721
         end
         object UniPanel5: TUniPanel
           Left = 0
           Top = 0
-          Width = 721
+          Width = 848
           Height = 57
           Hint = ''
           Align = alTop
           TabOrder = 1
           Caption = ''
           Color = clWhite
-          ExplicitTop = 8
-          ExplicitWidth = 733
+          ExplicitWidth = 721
           object lblNomeCliente: TUniLabel
             Left = 62
             Top = 21
@@ -1495,21 +1645,18 @@ object FrameCadClientes: TFrameCadClientes
         object UniScrollBox3: TUniScrollBox
           Left = 0
           Top = 60
-          Width = 721
+          Width = 848
           Height = 819
           Hint = ''
           Align = alClient
           TabOrder = 2
           ScrollDirection = sdVertical
-          ExplicitLeft = 96
-          ExplicitTop = 137
-          ExplicitWidth = 256
-          ExplicitHeight = 256
+          ExplicitWidth = 721
           ScrollHeight = 192
           object pnlRegiTrib: TUniPanel
             Left = 0
             Top = 0
-            Width = 719
+            Width = 846
             Height = 192
             Hint = ''
             Align = alTop
@@ -1517,7 +1664,7 @@ object FrameCadClientes: TFrameCadClientes
             BorderStyle = ubsNone
             Caption = ''
             Color = clWhite
-            ExplicitWidth = 731
+            ExplicitWidth = 719
             object UniLabel42: TUniLabel
               Left = 33
               Top = 100
@@ -1542,13 +1689,16 @@ object FrameCadClientes: TFrameCadClientes
               Width = 146
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 3
             end
             object UniDBComboBox5: TUniDBComboBox
               Left = 163
               Top = 96
               Width = 145
+              Height = 23
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               Style = csDropDownList
               Items.Strings = (
                 'Simples'
@@ -1561,7 +1711,7 @@ object FrameCadClientes: TFrameCadClientes
               AlignWithMargins = True
               Left = 3
               Top = 3
-              Width = 713
+              Width = 840
               Height = 24
               Hint = ''
               ParentColor = False
@@ -1569,9 +1719,7 @@ object FrameCadClientes: TFrameCadClientes
               Align = alTop
               TabOrder = 5
               Layout = 'border'
-              ExplicitLeft = 0
-              ExplicitTop = 0
-              ExplicitWidth = 731
+              ExplicitWidth = 713
               object UniLabel45: TUniLabel
                 AlignWithMargins = True
                 Left = 3
@@ -1590,17 +1738,15 @@ object FrameCadClientes: TFrameCadClientes
                 ParentColor = False
                 Color = 16053492
                 TabOrder = 1
-                ExplicitLeft = 11
-                ExplicitHeight = 18
               end
             end
             object UniLabel46: TUniLabel
-              Left = 56
+              Left = 49
               Top = 143
-              Width = 70
+              Width = 77
               Height = 13
               Hint = ''
-              Caption = 'Insc. Estadual'
+              Caption = 'Insc. Municipal'
               TabOrder = 6
             end
             object UniDBEdit33: TUniDBEdit
@@ -1609,6 +1755,7 @@ object FrameCadClientes: TFrameCadClientes
               Width = 146
               Height = 22
               Hint = ''
+              DataSource = DAOConexao.dsCliente
               TabOrder = 7
             end
             object UniContainerPanel16: TUniContainerPanel
@@ -1639,20 +1786,18 @@ object FrameCadClientes: TFrameCadClientes
       object tbLocalCobranca: TUniTabSheet
         Hint = ''
         Caption = 'tbLocalCobranca'
-        ExplicitWidth = 946
-        ExplicitHeight = 868
+        ExplicitWidth = 721
         object UniPanel6: TUniPanel
           Left = 0
           Top = 0
-          Width = 721
+          Width = 848
           Height = 57
           Hint = ''
           Align = alTop
           TabOrder = 0
           Caption = ''
           Color = clWhite
-          ExplicitTop = 8
-          ExplicitWidth = 733
+          ExplicitWidth = 721
           object UniLabel51: TUniLabel
             Left = 62
             Top = 21
@@ -1744,7 +1889,7 @@ object FrameCadClientes: TFrameCadClientes
         object UniSplitter6: TUniSplitter
           Left = 0
           Top = 57
-          Width = 721
+          Width = 848
           Height = 2
           Cursor = crVSplit
           Hint = ''
@@ -1752,22 +1897,20 @@ object FrameCadClientes: TFrameCadClientes
           Align = alTop
           ParentColor = False
           Color = 16053492
-          ExplicitWidth = 733
+          ExplicitWidth = 721
         end
         object UniContainerPanel18: TUniContainerPanel
           Left = 0
           Top = 59
-          Width = 721
+          Width = 848
           Height = 37
           Hint = ''
           ParentColor = False
           Align = alTop
           TabOrder = 2
-          ExplicitLeft = -8
-          ExplicitTop = 167
-          ExplicitWidth = 727
+          ExplicitWidth = 721
           DesignSize = (
-            721
+            848
             37)
           object UniFSButton1: TUniFSButton
             Left = 120
@@ -1841,9 +1984,6 @@ object FrameCadClientes: TFrameCadClientes
             Caption = ''
             Align = alLeft
             TabOrder = 1
-            ExplicitLeft = 30
-            ExplicitTop = 3
-            ExplicitHeight = 31
           end
           object UniFSButton2: TUniFSButton
             Left = 0
@@ -1917,7 +2057,6 @@ object FrameCadClientes: TFrameCadClientes
             Caption = ''
             Align = alLeft
             TabOrder = 2
-            ExplicitLeft = 8
           end
           object UniFSButton3: TUniFSButton
             Left = 40
@@ -1991,9 +2130,6 @@ object FrameCadClientes: TFrameCadClientes
             Caption = ''
             Align = alLeft
             TabOrder = 3
-            ExplicitLeft = 30
-            ExplicitTop = 3
-            ExplicitHeight = 31
           end
           object UniFSButton4: TUniFSButton
             Left = 80
@@ -2067,14 +2203,11 @@ object FrameCadClientes: TFrameCadClientes
             Caption = ''
             Align = alLeft
             TabOrder = 4
-            ExplicitLeft = 30
-            ExplicitTop = 3
-            ExplicitHeight = 31
           end
           object cmbSearch: TUniComboBox
             Left = 418
             Top = 6
-            Width = 295
+            Width = 422
             Height = 28
             Hint = ''
             ShowHint = True
@@ -2095,26 +2228,25 @@ object FrameCadClientes: TFrameCadClientes
                 IconCls = 'x-form-search-trigger'
               end>
             IconItems = <>
+            ExplicitWidth = 295
           end
         end
       end
       object tbDocumento: TUniTabSheet
         Hint = ''
         Caption = 'tbDocumento'
-        ExplicitWidth = 946
-        ExplicitHeight = 868
+        ExplicitWidth = 721
         object UniPanel2: TUniPanel
           Left = 0
           Top = 0
-          Width = 721
+          Width = 848
           Height = 57
           Hint = ''
           Align = alTop
           TabOrder = 0
           Caption = ''
           Color = clWhite
-          ExplicitTop = 8
-          ExplicitWidth = 733
+          ExplicitWidth = 721
           object UniLabel49: TUniLabel
             Left = 62
             Top = 21
@@ -2196,7 +2328,7 @@ object FrameCadClientes: TFrameCadClientes
         object UniSplitter5: TUniSplitter
           Left = 0
           Top = 57
-          Width = 721
+          Width = 848
           Height = 3
           Cursor = crVSplit
           Hint = ''
@@ -2204,19 +2336,20 @@ object FrameCadClientes: TFrameCadClientes
           Align = alTop
           ParentColor = False
           Color = 16053492
+          ExplicitWidth = 721
         end
         object UniContainerPanel19: TUniContainerPanel
           Left = 0
           Top = 60
-          Width = 721
+          Width = 848
           Height = 37
           Hint = ''
           ParentColor = False
           Align = alTop
           TabOrder = 2
-          ExplicitTop = 891
+          ExplicitWidth = 721
           DesignSize = (
-            721
+            848
             37)
           object BtnNovo: TUniFSButton
             Left = 0
@@ -2433,7 +2566,7 @@ object FrameCadClientes: TFrameCadClientes
           object UniComboBox1: TUniComboBox
             Left = 418
             Top = 6
-            Width = 295
+            Width = 422
             Height = 28
             Hint = ''
             ShowHint = True
@@ -2454,13 +2587,14 @@ object FrameCadClientes: TFrameCadClientes
                 IconCls = 'x-form-search-trigger'
               end>
             IconItems = <>
+            ExplicitWidth = 295
           end
         end
         object UniDBGrid2: TUniDBGrid
           AlignWithMargins = True
           Left = 3
           Top = 100
-          Width = 715
+          Width = 842
           Height = 776
           Hint = ''
           LoadMask.Message = 'Loading data...'
@@ -2499,18 +2633,16 @@ object FrameCadClientes: TFrameCadClientes
       AlignWithMargins = True
       Left = 3
       Top = 910
-      Width = 723
+      Width = 850
       Height = 43
       Hint = ''
       Align = alBottom
       TabOrder = 2
       Caption = ''
       Color = 16053492
-      ExplicitLeft = 7
-      ExplicitTop = 906
-      ExplicitWidth = 715
+      ExplicitWidth = 723
       object btnSave: TUniFSButton
-        Left = 626
+        Left = 753
         Top = 1
         Width = 48
         Height = 41
@@ -2581,11 +2713,11 @@ object FrameCadClientes: TFrameCadClientes
         Caption = ''
         Align = alRight
         TabOrder = 1
-        ExplicitLeft = 620
-        ExplicitTop = -1
+        OnClick = btnSaveClick
+        ExplicitLeft = 626
       end
       object UniFSButton5: TUniFSButton
-        Left = 674
+        Left = 801
         Top = 1
         Width = 48
         Height = 41
@@ -2656,9 +2788,8 @@ object FrameCadClientes: TFrameCadClientes
         Caption = ''
         Align = alRight
         TabOrder = 2
-        ExplicitLeft = 663
-        ExplicitTop = -2
-        ExplicitHeight = 42
+        Transparency = toFuchsia
+        ExplicitLeft = 674
       end
     end
   end
@@ -2887,14 +3018,17 @@ object FrameCadClientes: TFrameCadClientes
     object PessoaFsica1: TUniMenuItem
       Caption = 'Pessoa F'#237'sica'
       ImageIndex = 1
+      OnClick = PessoaFsica1Click
     end
     object LocaldeEntrega1: TUniMenuItem
       Caption = 'Local de Entrega'
       ImageIndex = 2
+      OnClick = LocaldeEntrega1Click
     end
     object LocaldeCobrana1: TUniMenuItem
       Caption = 'Local de Cobran'#231'a'
       ImageIndex = 3
+      OnClick = LocaldeCobrana1Click
     end
     object ContratosAnexos1: TUniMenuItem
       Caption = 'Contratos/Anexos'
@@ -2907,6 +3041,7 @@ object FrameCadClientes: TFrameCadClientes
     object ListagemdeClientes2: TUniMenuItem
       Caption = 'Listagem de Clientes'
       ImageIndex = 6
+      OnClick = ListagemdeClientes2Click
     end
   end
   object dsCliente: TDataSource
