@@ -11,7 +11,8 @@ uses
   UniFSButton, uniRadioGroup, uniDBRadioGroup, Data.DB, Vcl.StdCtrls,
   uniMultiItem, uniComboBox, uniDBComboBox, uniEdit, uniDBEdit, UniFSCombobox,
   uDAOConexao, uniDBCheckBox, uniGroupBox, uniListBox, uniDBListBox, uniMemo,
-  uniDBMemo, uniDateTimePicker, uniDBDateTimePicker, uniBasicGrid, uniDBGrid;
+  uniDBMemo, uniDateTimePicker, uniDBDateTimePicker, uniBasicGrid, uniDBGrid,
+  uListImagens;
 
 type
   TFrameCadClientes = class(TUniFrame)
@@ -41,7 +42,6 @@ type
     ContratosAnexos2: TUniMenuItem;
     ListagemdeClientes2: TUniMenuItem;
     dsCliente: TDataSource;
-    pnlDadosGerais: TUniContainerPanel;
     UniLabel5: TUniLabel;
     UniContainerPanel3: TUniContainerPanel;
     UniLabel4: TUniLabel;
@@ -54,7 +54,7 @@ type
     UniGroupBox1: TUniGroupBox;
     cbAtivo: TUniDBComboBox;
     pnlParametro: TUniPanel;
-    UniPanel4: TUniPanel;
+    pnlBtn: TUniPanel;
     UniDBCheckBox1: TUniDBCheckBox;
     UniDBCheckBox2: TUniDBCheckBox;
     UniDBCheckBox3: TUniDBCheckBox;
@@ -89,9 +89,7 @@ type
     UniDBEdit13: TUniDBEdit;
     pnlComplementar: TUniPanel;
     UniLabel16: TUniLabel;
-    UniLabel17: TUniLabel;
     UniLabel18: TUniLabel;
-    UniDBEdit15: TUniDBEdit;
     UniDBEdit16: TUniDBEdit;
     UniScrollBox1: TUniScrollBox;
     pnlComunDigital: TUniPanel;
@@ -173,7 +171,7 @@ type
     UniDBEdit34: TUniDBEdit;
     UniLabel47: TUniLabel;
     UniLabel48: TUniLabel;
-    UniDBDateTimePicker4: TUniDBDateTimePicker;
+    edtDataCad: TUniDBDateTimePicker;
     UniPanel2: TUniPanel;
     UniLabel49: TUniLabel;
     UniImage2: TUniImage;
@@ -187,19 +185,35 @@ type
     UniContainerPanel18: TUniContainerPanel;
     UniFSButton1: TUniFSButton;
     UniFSButton2: TUniFSButton;
-    UniDBGrid1: TUniDBGrid;
     UniFSButton3: TUniFSButton;
     UniFSButton4: TUniFSButton;
     cmbSearch: TUniComboBox;
     UniContainerPanel19: TUniContainerPanel;
-    UniFSButton5: TUniFSButton;
-    UniFSButton6: TUniFSButton;
-    UniFSButton7: TUniFSButton;
-    UniFSButton8: TUniFSButton;
+    BtnNovo: TUniFSButton;
+    btnExluir: TUniFSButton;
+    btnPrint: TUniFSButton;
     UniComboBox1: TUniComboBox;
     UniDBGrid2: TUniDBGrid;
+    pnlDadosGerais: TUniPanel;
+    btnSave: TUniFSButton;
+    UniFSButton5: TUniFSButton;
+    UniSplitter7: TUniSplitter;
+    UniPanel4: TUniPanel;
+    UniLabel17: TUniLabel;
+    UniImage4: TUniImage;
+    UniLabel53: TUniLabel;
+    FiscalTributao1: TUniMenuItem;
+    UniContainerPanel20: TUniContainerPanel;
+    UniLabel54: TUniLabel;
     procedure tvMenuLoaded(Sender: TObject);
     procedure Detalhes1Click(Sender: TObject);
+    procedure UniFrameCreate(Sender: TObject);
+    procedure btnSaveClick(Sender: TObject);
+    procedure PessoaFsica1Click(Sender: TObject);
+    procedure LocaldeEntrega1Click(Sender: TObject);
+    procedure LocaldeCobrana1Click(Sender: TObject);
+    procedure ListagemdeClientes2Click(Sender: TObject);
+    procedure FiscalTributao1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -210,16 +224,53 @@ implementation
 
 {$R *.dfm}
 
-uses uMenuAcesso;
+uses uMenuAcesso, Main;
+
+procedure TFrameCadClientes.btnSaveClick(Sender: TObject);
+begin
+ DAOConexao.qryCliente.Post;
+end;
 
 procedure TFrameCadClientes.Detalhes1Click(Sender: TObject);
 begin
-             UniApplication.Restart;
+pgCadClientes.TabIndex := 0;
+end;
+
+procedure TFrameCadClientes.FiscalTributao1Click(Sender: TObject);
+begin
+pgCadClientes.TabIndex := 2;
+end;
+
+procedure TFrameCadClientes.ListagemdeClientes2Click(Sender: TObject);
+begin
+DMAcesso.AbreTela(DMAcesso.actListClientes, MainForm.pgcControl);
+end;
+
+procedure TFrameCadClientes.LocaldeCobrana1Click(Sender: TObject);
+begin
+pgCadClientes.TabIndex := 3;
+end;
+
+procedure TFrameCadClientes.LocaldeEntrega1Click(Sender: TObject);
+begin
+pgCadClientes.TabIndex := 3;
+end;
+
+procedure TFrameCadClientes.PessoaFsica1Click(Sender: TObject);
+begin
+pgCadClientes.TabIndex := 1;
 end;
 
 procedure TFrameCadClientes.tvMenuLoaded(Sender: TObject);
 begin
   tvMenu.Selected := tvMenu.Items[0]; // Deixar o Item já selecionado no TreeView;
+end;
+
+procedure TFrameCadClientes.UniFrameCreate(Sender: TObject);
+begin
+DAOConexao.qryCliente.Edit;
+DAOConexao.qryCliente.Append;
+edtDataCad.DateTime := now;
 end;
 
 initialization

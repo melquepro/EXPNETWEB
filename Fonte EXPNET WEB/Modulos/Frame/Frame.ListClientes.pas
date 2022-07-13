@@ -9,7 +9,7 @@ uses
   UniFSButton, uniEdit, UniFSEdit, uniMultiItem, uniComboBox, UniFSCombobox,
   uniBasicGrid, uniDBGrid, uniLabel, uniTreeView, uniTreeMenu, Vcl.Menus,
   uniMainMenu, uniCheckBox, uniSplitter, Vcl.Imaging.pngimage, uniImage,
-  Frame.PageControl;
+  Frame.PageControl, uListImagens;
 
 type
   TFrameListClientes = class(TUniFrame)

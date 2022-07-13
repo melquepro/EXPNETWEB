@@ -1,0 +1,46 @@
+unit uDAOConexao;
+
+interface
+
+uses
+  SysUtils, Classes, uniGUIBaseClasses, uniGUIClasses, UniFSToast,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf,
+  FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async,
+  FireDAC.Phys, FireDAC.Phys.MySQL, FireDAC.Phys.MySQLDef, FireDAC.Stan.Param,
+  FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.VCLUI.Wait,
+  FireDAC.VCLUI.Error, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.UI,
+  FireDAC.Comp.Client;
+
+type
+  TDAOConexao = class(TDataModule)
+    Database: TFDConnection;
+    Transaction: TFDTransaction;
+    qryCliente: TFDQuery;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    FDGUIxErrorDialog1: TFDGUIxErrorDialog;
+    MySQLDriver: TFDPhysMySQLDriverLink;
+    dsCliente: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+function DAOConexao: TDAOConexao;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  UniGUIVars, uniGUIMainModule, MainModule;
+
+function DAOConexao: TDAOConexao;
+begin
+  Result := TDAOConexao(UniMainModule.GetModuleInstance(TDAOConexao));
+end;
+
+initialization
+  RegisterModuleClass(TDAOConexao);
+
+end.

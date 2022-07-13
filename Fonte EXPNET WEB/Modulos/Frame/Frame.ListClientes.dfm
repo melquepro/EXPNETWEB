@@ -605,19 +605,20 @@ object FrameListClientes: TFrameListClientes
         object btnFiltro: TUniFSButton
           Left = 392
           Top = 3
-          Width = 34
+          Width = 73
           Height = 28
           Hint = ''
           ShowHint = True
-          StyleButton = Default
-          CaptionIconFont = '<i class="fas fa-filter"></i>'
+          StyleButton = Info
           BadgeText.Text = '0'
           BadgeText.TextColor = '#FFFFFF'
           BadgeText.TextSize = 10
           BadgeText.TextStyle = 'bold'
           BadgeText.BackgroundColor = '#D50000'
-          Caption = ''
+          Caption = 'Filtro'
           TabOrder = 1
+          Images = DMListIcones.imgBtn
+          ImageIndex = 0
           OnClick = btnFiltroClick
         end
         object cmbSearch: TUniComboBox

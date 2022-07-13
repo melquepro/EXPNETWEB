@@ -11,7 +11,8 @@ uses
   UniFSButton, uniRadioGroup, uniDBRadioGroup, Data.DB, Vcl.StdCtrls,
   uniMultiItem, uniComboBox, uniDBComboBox, uniEdit, uniDBEdit, UniFSCombobox,
   uDAOConexao, uniDBCheckBox, uniGroupBox, uniListBox, uniDBListBox, uniMemo,
-  uniDBMemo, uniDateTimePicker, uniDBDateTimePicker, uniBasicGrid, uniDBGrid;
+  uniDBMemo, uniDateTimePicker, uniDBDateTimePicker, uniBasicGrid, uniDBGrid,
+  uListImagens;
 
 type
   TFrameCadClientes = class(TUniFrame)
@@ -201,14 +202,17 @@ type
     UniLabel17: TUniLabel;
     UniImage4: TUniImage;
     UniLabel53: TUniLabel;
+    FiscalTributao1: TUniMenuItem;
+    UniContainerPanel20: TUniContainerPanel;
+    UniLabel54: TUniLabel;
     procedure tvMenuLoaded(Sender: TObject);
     procedure Detalhes1Click(Sender: TObject);
     procedure UniFrameCreate(Sender: TObject);
-    procedure btnSaveClick(Sender: TObject);
     procedure PessoaFsica1Click(Sender: TObject);
     procedure LocaldeEntrega1Click(Sender: TObject);
     procedure LocaldeCobrana1Click(Sender: TObject);
     procedure ListagemdeClientes2Click(Sender: TObject);
+    procedure FiscalTributao1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -221,14 +225,14 @@ implementation
 
 uses uMenuAcesso, Main;
 
-procedure TFrameCadClientes.btnSaveClick(Sender: TObject);
-begin
- DAOConexao.qryCliente.Post;
-end;
-
 procedure TFrameCadClientes.Detalhes1Click(Sender: TObject);
 begin
 pgCadClientes.TabIndex := 0;
+end;
+
+procedure TFrameCadClientes.FiscalTributao1Click(Sender: TObject);
+begin
+pgCadClientes.TabIndex := 2;
 end;
 
 procedure TFrameCadClientes.ListagemdeClientes2Click(Sender: TObject);
@@ -243,7 +247,7 @@ end;
 
 procedure TFrameCadClientes.LocaldeEntrega1Click(Sender: TObject);
 begin
-pgCadClientes.TabIndex := 2;
+pgCadClientes.TabIndex := 3;
 end;
 
 procedure TFrameCadClientes.PessoaFsica1Click(Sender: TObject);
@@ -258,8 +262,7 @@ end;
 
 procedure TFrameCadClientes.UniFrameCreate(Sender: TObject);
 begin
-DAOConexao.qryCliente.Edit;
-DAOConexao.qryCliente.Append;
+
 edtDataCad.DateTime := now;
 end;
 

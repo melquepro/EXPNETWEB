@@ -1,0 +1,221 @@
+EXPNETLive.exe: 000001A8: 09:26:11 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000001A8: 09:26:11 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000001A8: 09:26:11 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000001A8: 09:26:11 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 000001A8: 09:26:11 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000001A8: 09:26:11 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00000C60: 09:26:28 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00001538: 09:28:35 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001538: 09:28:35 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001538: 09:28:35 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001538: 09:28:35 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001538: 09:28:35 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001538: 09:28:36 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001538: 09:28:36 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00000FB8: 09:28:37 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: VYsk1MPL3G10AC34F80 ) : Addr: $007C3B12
+EXPNETLive.exe: 00001360: 09:28:43 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00000488: 15:05:12 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00000488: 15:05:12 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00000488: 15:05:12 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00000488: 15:05:12 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00000488: 15:05:12 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00000488: 15:05:12 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00000978: 15:05:27 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: JehGzfJsWK10AC3501F ) : Addr: $007C3B12
+EXPNETLive.exe: 000001AC: 15:05:46 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00002204: 15:07:48 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00002204: 15:07:48 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00002204: 15:07:48 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00002204: 15:07:48 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00002204: 15:07:48 [TUniGUISessionManager]:Cache erase job created, Folder count: [2]
+EXPNETLive.exe: 00002204: 15:07:48 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00002204: 15:07:48 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001C7C: 15:08:23 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001C7C: 15:08:23 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001C7C: 15:08:23 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001C7C: 15:08:23 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001C7C: 15:08:23 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001C7C: 15:08:23 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001C7C: 15:08:23 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00000440: 15:08:23 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: fC26dFAxOq10AC3AC23 ) : Addr: $007C3B12
+EXPNETLive.exe: 00000E64: 15:08:29 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00001C6C: 15:09:26 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001C6C: 15:09:26 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001C6C: 15:09:26 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001C6C: 15:09:26 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001C6C: 15:09:26 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001C6C: 15:09:26 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001C6C: 15:09:26 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001694: 15:09:34 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: AQNTV6Ygx510AC3AC4B ) : Addr: $007C3B12
+EXPNETLive.exe: 00001204: 15:09:40 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00000AB8: 15:10:16 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00000AB8: 15:10:16 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00000AB8: 15:10:16 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00000AB8: 15:10:16 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00000AB8: 15:10:16 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00000AB8: 15:10:17 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00000AB8: 15:10:17 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 0000133C: 15:10:24 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00000994: 17:08:14 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00000994: 17:08:14 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00000994: 17:08:14 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00000994: 17:08:14 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00000994: 17:08:15 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00000994: 17:08:15 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001B9C: 17:08:16 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: o4VOZTEUKZ10AC3ACCF ) : Addr: $007C3B12
+EXPNETLive.exe: 00001FAC: 17:08:34 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00001AF0: 17:09:45 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001AF0: 17:09:45 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001AF0: 17:09:45 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001AF0: 17:09:45 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001AF0: 17:09:45 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001AF0: 17:09:45 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001AF0: 17:09:46 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 0000022C: 17:09:46 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: 84sPoOUxcl10AC3CCD8 ) : Addr: $007C3B12
+EXPNETLive.exe: 000023D4: 17:09:46 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: 84sPoOUxcl10AC3CCD8 ) : Addr: $007C3B12
+EXPNETLive.exe: 000006C4: 17:09:49 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: 84sPoOUxcl10AC3CCD8 ) : Addr: $007C3B12
+EXPNETLive.exe: 00001554: 17:09:50 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: 84sPoOUxcl10AC3CCD8 ) : Addr: $007C3B12
+EXPNETLive.exe: 0000071C: 17:09:50 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: 84sPoOUxcl10AC3CCD8 ) : Addr: $007C3B12
+EXPNETLive.exe: 00001B38: 17:09:58 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00001728: 17:10:51 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001728: 17:10:51 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001728: 17:10:51 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001728: 17:10:51 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001728: 17:10:51 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001728: 17:10:51 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001728: 17:10:51 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 000021B8: 17:10:53 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: ti7dxjP1wp10AC3CD3D ) : Addr: $007C3B12
+EXPNETLive.exe: 00000D3C: 17:11:00 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 0000181C: 17:11:15 [127.0.0.1]:EDatabaseError : qryCliente: Dataset not in edit or insert mode : Addr: $00651542
+EXPNETLive.exe: 000000F8: 17:11:33 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000000F8: 17:11:33 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000000F8: 17:11:33 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000000F8: 17:11:33 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 000000F8: 17:11:33 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 000000F8: 17:11:33 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000000F8: 17:11:33 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001554: 17:11:38 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: a7W26pqqIB10AC3CD85 ) : Addr: $007C3B12
+EXPNETLive.exe: 00001E10: 17:11:45 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00000A3C: 17:11:53 [127.0.0.1]:EDatabaseError : qryCliente: Dataset not in edit or insert mode : Addr: $00651542
+EXPNETLive.exe: 000009DC: 17:13:15 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000009DC: 17:13:15 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000009DC: 17:13:15 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000009DC: 17:13:15 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 000009DC: 17:13:15 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 000009DC: 17:13:16 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000009DC: 17:13:16 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001DC0: 17:13:19 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: eDVooD7EqN10AC3CDB9 ) : Addr: $007C3B12
+EXPNETLive.exe: 00002180: 17:13:31 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 000015DC: 17:13:43 [127.0.0.1]:EDatabaseError : qryCliente: Dataset not in edit or insert mode : Addr: $00651542
+EXPNETLive.exe: 000023F4: 17:15:51 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000023F4: 17:15:51 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000023F4: 17:15:51 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000023F4: 17:15:51 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 000023F4: 17:15:51 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 000023F4: 17:15:52 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000023F4: 17:15:52 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00000F24: 17:15:53 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: lnwY9MT1au10AC3CE2D ) : Addr: $007C3B12
+EXPNETLive.exe: 00000128: 17:15:59 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 0000171C: 17:16:21 [127.0.0.1]:EDatabaseError : qryCliente: Dataset not in edit or insert mode : Addr: $00651542
+EXPNETLive.exe: 00002320: 17:18:14 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00002320: 17:18:14 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00002320: 17:18:14 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00002320: 17:18:14 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00002320: 17:18:14 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00002320: 17:18:14 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00002320: 17:18:14 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001284: 17:18:19 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: JT94N6U4fR10AC3CEE0 ) : Addr: $007C3B12
+EXPNETLive.exe: 00001354: 17:18:19 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: JT94N6U4fR10AC3CEE0 ) : Addr: $007C3B12
+EXPNETLive.exe: 000000FC: 17:18:30 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 000022F0: 17:22:32 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000022F0: 17:22:32 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000022F0: 17:22:32 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000022F0: 17:22:32 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 000022F0: 17:22:32 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 000022F0: 17:22:32 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000022F0: 17:22:32 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 000015B8: 17:22:33 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: nfzAMrOKeg10AC3CF8C ) : Addr: $007C3B12
+EXPNETLive.exe: 00000DBC: 17:22:45 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00001558: 17:22:48 [HandleFileRequest[127.0.0.1]]:File not found: C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\files\icons8_cancel_subscription_16px_2.png
+EXPNETLive.exe: 00001B40: 17:25:07 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001B40: 17:25:07 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001B40: 17:25:07 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001B40: 17:25:07 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001B40: 17:25:07 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001B40: 17:25:07 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001B40: 17:25:07 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001920: 17:25:09 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: AWRefSiAVo10AC3D0AF ) : Addr: $007C3B12
+EXPNETLive.exe: 000012E4: 17:25:20 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00001734: 17:25:54 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001734: 17:25:54 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001734: 17:25:54 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001734: 17:25:54 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001734: 17:25:54 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001734: 17:25:54 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001734: 17:25:54 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001AA8: 17:26:19 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: hdZIdF2lDp10AC3D163 ) : Addr: $007C3B12
+EXPNETLive.exe: 00002160: 17:26:19 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: hdZIdF2lDp10AC3D163 ) : Addr: $007C3B12
+EXPNETLive.exe: 00001DB4: 17:26:27 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00001864: 17:26:38 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 000014FC: 17:28:00 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000014FC: 17:28:00 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000014FC: 17:28:00 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000014FC: 17:28:00 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 000014FC: 17:28:00 [TUniGUISessionManager]:Cache erase job created, Folder count: [2]
+EXPNETLive.exe: 000014FC: 17:28:00 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000014FC: 17:28:01 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001FAC: 17:28:05 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: V7FQmVPLDP10AC3D1C1 ) : Addr: $007C3B12
+EXPNETLive.exe: 000004D4: 17:28:13 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 0000178C: 17:29:34 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 0000178C: 17:29:34 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 0000178C: 17:29:34 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 0000178C: 17:29:34 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 0000178C: 17:29:34 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 0000178C: 17:29:34 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 0000178C: 17:29:34 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001D28: 17:29:37 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: mdAwu7IuxJ10AC3D22F ) : Addr: $007C3B12
+EXPNETLive.exe: 00000D60: 17:29:43 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00001A90: 17:32:44 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001A90: 17:32:44 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001A90: 17:32:44 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001A90: 17:32:44 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001A90: 17:32:44 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001A90: 17:32:44 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001A90: 17:32:45 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 0000081C: 17:32:47 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: RvTjAYrdzi10AC3D29A ) : Addr: $007C3B12
+EXPNETLive.exe: 00001C3C: 17:32:55 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00000D1C: 17:38:55 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 000021CC: 17:39:14 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000021CC: 17:39:14 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000021CC: 17:39:14 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000021CC: 17:39:14 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 000021CC: 17:39:14 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 000021CC: 17:39:14 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000021CC: 17:39:14 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 000010D4: 17:39:15 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: KHO8sAipuU10AC3D515 ) : Addr: $007C3B12
+EXPNETLive.exe: 00000DD0: 17:39:20 [qryCliente: Cannot perform this operation on a closed dataset-127.0.0.1]:EDatabaseError : qryCliente: Cannot perform this operation on a closed dataset : Addr: $00651542
+EXPNETLive.exe: 00001220: 17:39:29 [127.0.0.1]:EDatabaseError : qryCliente: Dataset not in edit or insert mode : Addr: $00651542
+EXPNETLive.exe: 000015B8: 17:39:29 [127.0.0.1]:EDatabaseError : qryCliente: Dataset not in edit or insert mode : Addr: $00651542
+EXPNETLive.exe: 000001B8: 17:52:41 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000001B8: 17:52:41 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000001B8: 17:52:41 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000001B8: 17:52:41 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 000001B8: 17:52:41 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 000001B8: 17:52:42 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000001B8: 17:52:42 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 000020F0: 17:52:46 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: 2kKs41Muyq10AC3D537 ) : Addr: $007C3B12
+EXPNETLive.exe: 00001168: 17:54:33 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001168: 17:54:33 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001168: 17:54:33 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001168: 17:54:33 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001168: 17:54:33 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001168: 17:54:33 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001168: 17:54:33 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 000015A4: 17:54:36 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: ujJmCdrNQz10AC3D8E1 ) : Addr: $007C3B12
+EXPNETLive.exe: 00000A6C: 17:59:57 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00000A6C: 17:59:57 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00000A6C: 17:59:57 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00000A6C: 17:59:57 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00000A6C: 17:59:57 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00000A6C: 17:59:57 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00000A6C: 17:59:57 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001CD0: 18:00:02 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: ESlgu2LXTc10AC3D961 ) : Addr: $007C3B12

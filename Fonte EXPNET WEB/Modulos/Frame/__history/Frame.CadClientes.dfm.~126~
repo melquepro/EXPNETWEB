@@ -24,6 +24,7 @@ object FrameCadClientes: TFrameCadClientes
       Height = 907
       Hint = ''
       ActivePage = tbDetalhes
+      TabBarVisible = False
       Align = alClient
       LayoutConfig.Width = '100%'
       TabOrder = 1
@@ -1054,17 +1055,20 @@ object FrameCadClientes: TFrameCadClientes
         Caption = 'tbPessoaFisica'
         AutoScroll = True
         ExplicitWidth = 721
+        ScrollHeight = 61
         object UniScrollBox2: TUniScrollBox
           Left = 0
-          Top = 0
+          Top = 61
           Width = 848
-          Height = 879
+          Height = 818
           Hint = ''
           Align = alClient
           Color = clWhite
           TabOrder = 0
           ScrollDirection = sdVertical
+          ExplicitTop = 0
           ExplicitWidth = 721
+          ExplicitHeight = 879
           ScrollHeight = 476
           object UniContainerPanel15: TUniContainerPanel
             Left = 0
@@ -1441,6 +1445,103 @@ object FrameCadClientes: TFrameCadClientes
               TabOrder = 12
             end
           end
+        end
+        object UniPanel4: TUniPanel
+          Left = 0
+          Top = 0
+          Width = 848
+          Height = 57
+          Hint = ''
+          Align = alTop
+          TabOrder = 1
+          Caption = ''
+          Color = clWhite
+          ExplicitWidth = 840
+          object UniLabel17: TUniLabel
+            Left = 62
+            Top = 21
+            Width = 142
+            Height = 30
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'PESSOA F'#205'SICA'
+            ParentFont = False
+            Font.Charset = ANSI_CHARSET
+            Font.Color = 6829373
+            Font.Height = -21
+            Font.Name = 'Segoe UI Semibold'
+            Font.Style = [fsBold]
+            TabOrder = 1
+          end
+          object UniImage4: TUniImage
+            Left = 5
+            Top = 0
+            Width = 50
+            Height = 50
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            AutoSize = True
+            Picture.Data = {
+              0954506E67496D61676589504E470D0A1A0A0000000D49484452000000320000
+              003208060000001E3F88B100000006624B474400FF00FF00FFA0BDA793000003
+              934944415478DAED9A5D48544114C7E7DC552AFB8050C1278992A24FCADDBB91
+              ED6E423E44FA6405052184B45F62D843610F9508A10F8585E9EEDA07F5D0072D
+              420F5AD043D8DE55D90F11CAB58424213022D41E6A23DDBDD35949A20CDD7B67
+              D7B9C81ED89DB930F39FF9DD9D3967CEB040968901EF09644032200ACDA4B716
+              0A02ECA304B6130AF914E43850611C007A7CA1F63ECD8398444719107A05ABC6
+              059AF5D11550E1F7BBA6340962116DCDF80B9C4F4E173E104ABA64103CBDA1B6
+              886640CC06471D01DAA2A2EB0C7E6AA490FB16779083C69ADC69121FC337BC46
+              A5449C08502C055CAFB982988CB62AA0709F450380DCF505DDD55C41CC06FB43
+              543AC1A2410979E70FB9B7F20511ED01B2B0974AC6E293D1899C48C43BCD11C4
+              3682529B59757451616D4FA4FD1B4710FB28161B5975A2B2BC7A60A023CA13A4
+              178B123615FA550A79D6ABED9D1AAF253A3A319A5732CA0C622C29E60B62B05F
+              46F7D9C02442A1550ABBCE7005B1186C872940371B08392A85DD9D5C414A44E7
+              6E1D910759348092625FD8AD5A23459BDDF11C5FE92126114ABBA5B0A7823388
+              6D8824F20E160E428630B2EFE40C627F84C571469907E8B54E7205F99D4CBD60
+              D0435F41CAF0D0F8922B48C2CC464739AEF32E5593A0B4DC17F63C63193FA519
+              222EB1F7586C52D86D14975411EBD82906B1618608754AFAE026BF819B5C519F
+              B48394163B8BE23A7918ABD9497689C91476F4865D239A02499849B437A1687D
+              72ADE9753C289E4DC5B8E9B8D7025C626F92882B63051B268ABC5E6F5CAB20C9
+              668CC3B8C99982E8528004B110176C44C95B3C246ED33688C13E8CCA8B5D247C
+              C45FA450B3207ABD353B4710C6B19AB7C8D0DF63592BF3FBFB5B7E68120497D5
+              452C1A93698B31A41963C8054D8194EAAD7932E8AE51A0550ABB3E9E16627581
+              C0EDCF5C41CC7B6AF3A96EC68987BE5A7CCC55293345096D9B11E237D502A905
+              C158E1B0E069AF3A91A2E2F32AD617F2DB7EE282F3520A77FC61F72B32BBFAD2
+              02D22058C44FC728814BF89032D7F95F43F78CDF8D52B8E0098E2BA70CC4A4B7
+              EE05103AB0C7AEB402CC074ADCD09FC698136406C1C4E914264E1D58CD5A5288
+              3F169B8509B9EFA906B188B64A5C4A5EAC0A9C20E64C260047A4A0EBA9629052
+              D159102772E288BD8E33C49C4D9158F61669B0F58B22108B68AF47B7D1C47BF6
+              7F4F989EF3853C5715816094F663B19FF7E4FF311FEE95034A4126B1507D439E
+              269B409079E7B8CC3F1FB4661910ADD9B201F905DE62314249480B1F00000000
+              49454E44AE426082}
+          end
+          object UniLabel53: TUniLabel
+            Left = 65
+            Top = 6
+            Width = 78
+            Height = 13
+            Hint = ''
+            ShowHint = True
+            ParentShowHint = False
+            Caption = 'DADOS GERAIS'
+            ParentFont = False
+            Font.Color = 6829373
+            TabOrder = 3
+          end
+        end
+        object UniSplitter7: TUniSplitter
+          Left = 0
+          Top = 57
+          Width = 848
+          Height = 4
+          Cursor = crVSplit
+          Hint = ''
+          Enabled = False
+          Align = alTop
+          ParentColor = False
+          Color = 16053492
         end
       end
       object tbTributacao: TUniTabSheet
@@ -2917,14 +3018,17 @@ object FrameCadClientes: TFrameCadClientes
     object PessoaFsica1: TUniMenuItem
       Caption = 'Pessoa F'#237'sica'
       ImageIndex = 1
+      OnClick = PessoaFsica1Click
     end
     object LocaldeEntrega1: TUniMenuItem
       Caption = 'Local de Entrega'
       ImageIndex = 2
+      OnClick = LocaldeEntrega1Click
     end
     object LocaldeCobrana1: TUniMenuItem
       Caption = 'Local de Cobran'#231'a'
       ImageIndex = 3
+      OnClick = LocaldeCobrana1Click
     end
     object ContratosAnexos1: TUniMenuItem
       Caption = 'Contratos/Anexos'
@@ -2937,6 +3041,7 @@ object FrameCadClientes: TFrameCadClientes
     object ListagemdeClientes2: TUniMenuItem
       Caption = 'Listagem de Clientes'
       ImageIndex = 6
+      OnClick = ListagemdeClientes2Click
     end
   end
   object dsCliente: TDataSource
