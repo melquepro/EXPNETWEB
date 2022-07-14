@@ -1431,3 +1431,4 @@ EXPNETLive.exe: 00002A80: 22:12:16 [TUniServerModule]:Start Path = H:\Projetos D
 EXPNETLive.exe: 00002A80: 22:12:16 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
 EXPNETLive.exe: 00002A80: 22:12:16 [TUniServerModule]:Starting HTTP Server on Port: 8077...
 EXPNETLive.exe: 00002A80: 22:12:16 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00002A80: 22:14:02 [Exit]:Unexpected attempt to terminate server application with Exit Code: 0

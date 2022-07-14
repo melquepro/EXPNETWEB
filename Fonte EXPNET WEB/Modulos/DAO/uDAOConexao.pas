@@ -16,7 +16,6 @@ type
     Database: TFDConnection;
     Transaction: TFDTransaction;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
-    FDGUIxErrorDialog1: TFDGUIxErrorDialog;
     MySQLDriver: TFDPhysMySQLDriverLink;
   private
     { Private declarations }

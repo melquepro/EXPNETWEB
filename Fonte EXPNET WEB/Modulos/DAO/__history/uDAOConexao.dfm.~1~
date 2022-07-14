@@ -1,4 +1,0 @@
-object DAOConexao: TDAOConexao
-  Height = 147
-  Width = 215
-end

@@ -30,10 +30,10 @@ uses
   uMenuAcesso in 'Modulos\ViewMenu\uMenuAcesso.pas' {DMAcesso: TDataModule},
   uListImagens in 'Modulos\ViewMenu\uListImagens.pas' {DMListIcones: TDataModule},
   uToast in 'Modulos\ViewMenu\uToast.pas' {dmToast: TDataModule},
-  Frame.ListClientes in 'Modulos\Frame\Frame.ListClientes.pas' {FrameListClientes: TUniFrame},
   Frame.CadClientes in 'Modulos\Frame\Frame.CadClientes.pas' {FrameCadClientes: TUniFrame},
   Frame.PageControl in 'Modulos\Classes\Frame.PageControl.pas',
-  uDAOConexao in 'Modulos\DAO\uDAOConexao.pas' {DAOConexao: TDataModule};
+  uDAOConexao in 'Modulos\DAO\uDAOConexao.pas' {DAOConexao: TDataModule},
+  Frame.ListProdutos in 'Modulos\Frame\Frame.ListProdutos.pas' {FrameListProdutos: TUniFrame};
 
 {$R *.res}
 

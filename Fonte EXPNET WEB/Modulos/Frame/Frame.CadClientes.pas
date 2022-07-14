@@ -137,7 +137,6 @@ type
     UniLabel35: TUniLabel;
     UniLabel31: TUniLabel;
     UniDBComboBox3: TUniDBComboBox;
-    btnBuscaCEP: TUniFSButton;
     pnlDadosProfi: TUniPanel;
     UniLabel36: TUniLabel;
     UniLabel37: TUniLabel;
@@ -205,6 +204,7 @@ type
     FiscalTributao1: TUniMenuItem;
     UniContainerPanel20: TUniContainerPanel;
     UniLabel54: TUniLabel;
+    btn7: TUniFSButton;
     procedure tvMenuLoaded(Sender: TObject);
     procedure Detalhes1Click(Sender: TObject);
     procedure UniFrameCreate(Sender: TObject);
