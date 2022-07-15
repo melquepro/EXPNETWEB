@@ -35,7 +35,9 @@ uses
   uDAOConexao in 'Modulos\DAO\uDAOConexao.pas' {DAOConexao: TDataModule},
   Frame.ListProdutos in 'Modulos\Frame\Frame.ListProdutos.pas' {FrameListProdutos: TUniFrame},
   uFrmCadDivisao in 'Modulos\View\uFrmCadDivisao.pas' {frmCadDivisores: TUniForm},
-  uFrmCadSecao in 'Modulos\View\uFrmCadSecao.pas' {frmCadSecao: TUniForm};
+  uFrmCadSecao in 'Modulos\View\uFrmCadSecao.pas' {frmCadSecao: TUniForm},
+  uFrmCadGrupoProduto in 'Modulos\View\uFrmCadGrupoProduto.pas' {frmGrupoProduto: TUniForm},
+  uFrmCadMarcaFabricante in 'Modulos\View\uFrmCadMarcaFabricante.pas' {frmCadMarcaFabricante: TUniForm};
 
 {$R *.res}
 

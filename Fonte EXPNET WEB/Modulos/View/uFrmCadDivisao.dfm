@@ -3,10 +3,12 @@ object frmCadDivisores: TfrmCadDivisores
   Top = 0
   ClientHeight = 254
   ClientWidth = 329
-  Caption = 'Cadastro de Divisores'
+  Caption = 'Cadastro - Divisores'
+  BorderStyle = bsSingle
   OldCreateOrder = False
-  BorderIcons = [biSystemMenu, biMinimize]
+  BorderIcons = [biSystemMenu]
   MonitoredKeys.Keys = <>
+  Movable = False
   TextHeight = 15
   object UniPanel1: TUniPanel
     Left = 0
@@ -309,7 +311,6 @@ object frmCadDivisores: TfrmCadDivisores
     end
   end
   object FDTable1: TFDTable
-    Active = True
     IndexFieldNames = 'id'
     Connection = DAOConexao.Database
     Transaction = DAOConexao.Transaction

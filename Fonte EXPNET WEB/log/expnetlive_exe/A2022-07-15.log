@@ -209,3 +209,26 @@ EXPNETLive.exe: 00001560: 11:47:23 [TUniGUISessionManager]:Cache erase job creat
 EXPNETLive.exe: 00001560: 11:47:24 [TUniServerModule]:Starting HTTP Server on Port: 8077...
 EXPNETLive.exe: 00001560: 11:47:24 [TUniServerModule]:HTTP Server Started on Port: 8077
 EXPNETLive.exe: 000024C8: 11:47:24 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: K2ZvSwuOz110AC681D0 ) : Addr: $007C3B66
+EXPNETLive.exe: 00000154: 14:36:57 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00000154: 14:36:57 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00000154: 14:36:57 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00000154: 14:36:57 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00000154: 14:36:57 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00000154: 14:36:57 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00000154: 14:36:57 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001D70: 14:41:00 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001D70: 14:41:00 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001D70: 14:41:00 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001D70: 14:41:00 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001D70: 14:41:00 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001D70: 14:41:00 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001D70: 14:41:00 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 000020CC: 14:41:02 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: c1I2PBsbi210AC6B10B ) : Addr: $007C3B66
+EXPNETLive.exe: 00000CB0: 14:43:09 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00000CB0: 14:43:09 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00000CB0: 14:43:09 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00000CB0: 14:43:09 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00000CB0: 14:43:09 [TUniGUISessionManager]:Cache erase job created, Folder count: [2]
+EXPNETLive.exe: 00000CB0: 14:43:09 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00000CB0: 14:43:09 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00000D78: 14:43:14 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: vUIbRlun1610AC6B222 ) : Addr: $007C3B66

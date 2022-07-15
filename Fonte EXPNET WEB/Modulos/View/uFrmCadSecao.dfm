@@ -1,11 +1,17 @@
 object frmCadSecao: TfrmCadSecao
   Left = 0
   Top = 0
+  VertScrollBar.Color = 14079702
+  VertScrollBar.ParentColor = False
   ClientHeight = 441
   ClientWidth = 675
   Caption = 'Cadastros - Sec'#227'o de Produtos'
+  BorderStyle = bsSingle
   OldCreateOrder = False
+  BorderIcons = [biSystemMenu]
   MonitoredKeys.Keys = <>
+  Movable = False
+  PageMode = True
   TextHeight = 15
   object UniPanel1: TUniPanel
     Left = 0
@@ -289,7 +295,7 @@ object frmCadSecao: TfrmCadSecao
         end
         item
           FieldName = 'desc'
-          Title.Caption = ' Descri'#231#227'o'
+          Title.Caption = 'Se'#231#227'o'
           Title.Font.Charset = ANSI_CHARSET
           Title.Font.Name = 'Segoe UI Semibold'
           Title.Font.Style = [fsBold]
@@ -324,7 +330,6 @@ object frmCadSecao: TfrmCadSecao
         Height = 23
         Hint = ''
         ListField = 'id;desc'
-        ListSource = frmCadDivisores.DataSource1
         KeyField = 'id'
         ListFieldIndex = 0
         ClearButton = True
@@ -364,7 +369,6 @@ object frmCadSecao: TfrmCadSecao
     object FDTable1iddivisao: TStringField
       AutoGenerateValue = arDefault
       FieldName = 'iddivisao'
-      LookupDataSet = frmCadDivisores.FDTable1
       LookupKeyFields = 'id'
       LookupResultField = 'desc'
       KeyFields = 'iddivisao'
