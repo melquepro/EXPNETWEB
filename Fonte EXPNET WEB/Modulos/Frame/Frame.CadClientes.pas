@@ -205,6 +205,8 @@ type
     UniContainerPanel20: TUniContainerPanel;
     UniLabel54: TUniLabel;
     btn7: TUniFSButton;
+    UniContainerPanel21: TUniContainerPanel;
+    UniLabel55: TUniLabel;
     procedure tvMenuLoaded(Sender: TObject);
     procedure Detalhes1Click(Sender: TObject);
     procedure UniFrameCreate(Sender: TObject);

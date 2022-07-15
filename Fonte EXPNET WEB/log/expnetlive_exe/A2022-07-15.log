@@ -232,3 +232,40 @@ EXPNETLive.exe: 00000CB0: 14:43:09 [TUniGUISessionManager]:Cache erase job creat
 EXPNETLive.exe: 00000CB0: 14:43:09 [TUniServerModule]:Starting HTTP Server on Port: 8077...
 EXPNETLive.exe: 00000CB0: 14:43:09 [TUniServerModule]:HTTP Server Started on Port: 8077
 EXPNETLive.exe: 00000D78: 14:43:14 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: vUIbRlun1610AC6B222 ) : Addr: $007C3B66
+EXPNETLive.exe: 000042DC: 20:33:34 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000042DC: 20:33:34 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000042DC: 20:33:34 [TUniServerModule]:Start Path = H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000042DC: 20:33:34 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 000042DC: 20:33:34 [TUniGUISessionManager]:Cache erase job created, Folder count: [2]
+EXPNETLive.exe: 000042DC: 20:33:34 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000042DC: 20:33:34 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00000854: 20:33:45 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 000042C8: 20:33:52 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000042C8: 20:33:52 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000042C8: 20:33:52 [TUniServerModule]:Start Path = H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000042C8: 20:33:52 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 000042C8: 20:33:52 [TUniGUISessionManager]:Cache erase job created, Folder count: [2]
+EXPNETLive.exe: 000042C8: 20:33:52 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000042C8: 20:33:52 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 000040AC: 20:33:54 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 000014A0: 20:33:55 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 00001534: 20:33:57 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 000039D0: 20:33:58 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 000037B8: 20:33:58 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 00002338: 20:33:59 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 00004054: 20:33:59 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 00003D84: 20:34:04 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00003D84: 20:34:04 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00003D84: 20:34:04 [TUniServerModule]:Start Path = H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00003D84: 20:34:04 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00003D84: 20:34:04 [TUniGUISessionManager]:Cache erase job created, Folder count: [7]
+EXPNETLive.exe: 00003D84: 20:34:04 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00003D84: 20:34:04 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00003208: 20:34:07 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 00003848: 20:34:08 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 0000295C: 20:34:08 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 00001430: 20:34:08 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 00000A54: 20:34:08 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 000042B8: 20:34:18 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 00000588: 20:34:19 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70
+EXPNETLive.exe: 00003BCC: 20:34:19 [127.0.0.1]:EMySQLNativeException : [FireDAC][Phys][MySQL] Unknown database 'experp' : Addr: $0092DE70

@@ -26,7 +26,7 @@ object FrameCadClientes: TFrameCadClientes
       Height = 909
       Hint = ''
       ShowHint = True
-      ActivePage = tbDetalhes
+      ActivePage = tbTributacao
       TabBarVisible = False
       Align = alClient
       LayoutConfig.Width = '100%'
@@ -1373,7 +1373,7 @@ object FrameCadClientes: TFrameCadClientes
             LayoutConfig.Padding = '0 0 0 30'
             object UniLabel36: TUniLabel
               Left = 61
-              Top = 53
+              Top = 77
               Width = 47
               Height = 13
               Hint = ''
@@ -1383,7 +1383,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniLabel37: TUniLabel
               Left = 65
-              Top = 17
+              Top = 41
               Width = 43
               Height = 13
               Hint = ''
@@ -1393,7 +1393,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBEdit25: TUniDBEdit
               Left = 131
-              Top = 16
+              Top = 40
               Width = 306
               Height = 22
               Hint = ''
@@ -1402,7 +1402,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBComboBox4: TUniDBComboBox
               Left = 133
-              Top = 52
+              Top = 76
               Width = 304
               Height = 23
               Hint = ''
@@ -1416,7 +1416,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniLabel38: TUniLabel
               Left = 466
-              Top = 53
+              Top = 77
               Width = 49
               Height = 13
               Hint = ''
@@ -1426,7 +1426,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniLabel39: TUniLabel
               Left = 447
-              Top = 17
+              Top = 41
               Width = 79
               Height = 13
               Hint = ''
@@ -1436,7 +1436,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBEdit31: TUniDBEdit
               Left = 131
-              Top = 85
+              Top = 109
               Width = 306
               Height = 22
               Hint = ''
@@ -1445,7 +1445,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniLabel40: TUniLabel
               Left = 31
-              Top = 89
+              Top = 113
               Width = 76
               Height = 13
               Hint = ''
@@ -1455,7 +1455,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBDateTimePicker3: TUniDBDateTimePicker
               Left = 542
-              Top = 49
+              Top = 73
               Width = 120
               Hint = ''
               ShowHint = True
@@ -1466,7 +1466,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBEdit24: TUniDBEdit
               Left = 542
-              Top = 12
+              Top = 36
               Width = 123
               Height = 22
               Hint = ''
@@ -1475,7 +1475,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniLabel41: TUniLabel
               Left = 447
-              Top = 90
+              Top = 114
               Width = 79
               Height = 13
               Hint = ''
@@ -1485,12 +1485,47 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBEdit26: TUniDBEdit
               Left = 542
-              Top = 85
+              Top = 109
               Width = 123
               Height = 22
               Hint = ''
               ShowHint = True
               TabOrder = 12
+            end
+            object UniContainerPanel21: TUniContainerPanel
+              AlignWithMargins = True
+              Left = 3
+              Top = 3
+              Width = 834
+              Height = 23
+              Hint = ''
+              ShowHint = True
+              ParentColor = False
+              Color = 14079702
+              Align = alTop
+              TabOrder = 13
+              Layout = 'border'
+              object UniLabel55: TUniLabel
+                AlignWithMargins = True
+                Left = 3
+                Top = 3
+                Width = 100
+                Height = 13
+                Hint = ''
+                ShowHint = True
+                Alignment = taCenter
+                Caption = 'Dados Profissionais'
+                Align = alLeft
+                ParentFont = False
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clBlack
+                Font.Name = 'Segoe UI Semibold'
+                Font.Style = [fsBold]
+                ParentColor = False
+                Color = 16053492
+                TabOrder = 1
+                ExplicitTop = 4
+              end
             end
           end
         end
