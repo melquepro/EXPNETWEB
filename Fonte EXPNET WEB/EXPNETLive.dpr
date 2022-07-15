@@ -33,7 +33,9 @@ uses
   Frame.CadClientes in 'Modulos\Frame\Frame.CadClientes.pas' {FrameCadClientes: TUniFrame},
   Frame.PageControl in 'Modulos\Classes\Frame.PageControl.pas',
   uDAOConexao in 'Modulos\DAO\uDAOConexao.pas' {DAOConexao: TDataModule},
-  Frame.ListProdutos in 'Modulos\Frame\Frame.ListProdutos.pas' {FrameListProdutos: TUniFrame};
+  Frame.ListProdutos in 'Modulos\Frame\Frame.ListProdutos.pas' {FrameListProdutos: TUniFrame},
+  uFrmCadDivisao in 'Modulos\View\uFrmCadDivisao.pas' {frmCadDivisores: TUniForm},
+  uFrmCadSecao in 'Modulos\View\uFrmCadSecao.pas' {frmCadSecao: TUniForm};
 
 {$R *.res}
 

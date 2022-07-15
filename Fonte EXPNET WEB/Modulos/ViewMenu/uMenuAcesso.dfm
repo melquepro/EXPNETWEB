@@ -67,6 +67,9 @@ object DMAcesso: TDMAcesso
         Caption = 'Fornecedores e Clientes'
         ImageIndex = 25
       end
+      object actDivisores: TUniMenuItem
+        Caption = 'Divisores'
+      end
     end
     object ActRelatrios1: TUniMenuItem
       Caption = 'Relat'#243'rios'

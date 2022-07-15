@@ -40,6 +40,7 @@ type
     procedure UniFormCreate(Sender: TObject);
     procedure menAcessoClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
+    procedure UniButton1Click(Sender: TObject);
   private
     { Private declarations }
     procedure CarregaAtualizacoes();
@@ -56,7 +57,7 @@ implementation
 uses
   uniGUIVars, MainModule, uniGUIApplication,
   uniMainMenu, FS.Abas, uFrmLogin, uListImagens, uMenuAcesso, uToast,
-  Frame.CadClientes, uFrmCapLancamento;
+  Frame.CadClientes, uFrmCapLancamento, uFrmCadDivisao, uFrmCadSecao;
 
 function MainForm: TMainForm;
 begin
@@ -148,6 +149,11 @@ begin
   dmToast.Toast.Info('Este projeto está incluso dentro do pacote UniFalcon','',TToastPosition.bottomRight);
 //dmAcessos.AbreTela(dmAcessos.actListClientes, pgcControl);
 PControl.NovaAba(TFrame(TFrameCadClientes),'Cadastro de Cliente','CadClientes');
+end;
+
+procedure TMainForm.UniButton1Click(Sender: TObject);
+begin
+frmCadSecao.ShowModal;
 end;
 
 procedure TMainForm.UniFormCreate(Sender: TObject);

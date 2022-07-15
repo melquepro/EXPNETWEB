@@ -38,6 +38,7 @@ type
     actFecharTodasAbas: TUniMenuItem;
     ActDashboard: TUniMenuItem;
     actListClientes: TUniMenuItem;
+    actDivisores: TUniMenuItem;
   private
     { Private declarations }
   public

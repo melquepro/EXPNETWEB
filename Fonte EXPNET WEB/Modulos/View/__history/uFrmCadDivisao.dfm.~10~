@@ -1,0 +1,173 @@
+object frmCadDivisores: TfrmCadDivisores
+  Left = 0
+  Top = 0
+  ClientHeight = 254
+  ClientWidth = 329
+  Caption = 'Cadastro de Divisores'
+  OldCreateOrder = False
+  BorderIcons = [biSystemMenu, biMinimize]
+  MonitoredKeys.Keys = <>
+  TextHeight = 15
+  object UniPanel1: TUniPanel
+    Left = 0
+    Top = 0
+    Width = 329
+    Height = 254
+    Hint = ''
+    Align = alClient
+    TabOrder = 0
+    BorderStyle = ubsNone
+    Caption = ''
+    Color = clWhite
+    ExplicitLeft = 112
+    ExplicitTop = 128
+    ExplicitWidth = 256
+    ExplicitHeight = 128
+    object UniContainerPanel1: TUniContainerPanel
+      Left = 1
+      Top = 216
+      Width = 327
+      Height = 37
+      Hint = ''
+      ParentColor = False
+      Color = 16053492
+      Align = alBottom
+      TabOrder = 1
+      ExplicitTop = 336
+      ExplicitWidth = 544
+      object BtnSalvar: TUniFSButton
+        Left = 241
+        Top = 4
+        Width = 75
+        Height = 28
+        Hint = ''
+        StyleButton = Success
+        BadgeText.Text = '0'
+        BadgeText.TextColor = '#FFFFFF'
+        BadgeText.TextSize = 10
+        BadgeText.TextStyle = 'bold'
+        BadgeText.BackgroundColor = '#D50000'
+        Caption = 'Salvar'
+        TabOrder = 1
+        OnClick = BtnSalvarClick
+      end
+    end
+    object UniContainerPanel2: TUniContainerPanel
+      Left = 1
+      Top = 1
+      Width = 327
+      Height = 32
+      Hint = ''
+      ParentColor = False
+      Align = alTop
+      TabOrder = 2
+      ExplicitTop = -2
+      object btnNovo: TUniFSButton
+        Left = 0
+        Top = 0
+        Width = 49
+        Height = 32
+        Hint = ''
+        StyleButton = GoogleBlue
+        BadgeText.Text = '0'
+        BadgeText.TextColor = '#FFFFFF'
+        BadgeText.TextSize = 10
+        BadgeText.TextStyle = 'bold'
+        BadgeText.BackgroundColor = '#D50000'
+        Caption = 'Novo'
+        Align = alLeft
+        TabOrder = 1
+        OnClick = btnNovoClick
+        ExplicitTop = -3
+      end
+      object BtnExcluir: TUniFSButton
+        Left = 49
+        Top = 0
+        Width = 49
+        Height = 32
+        Hint = ''
+        StyleButton = GoogleYellow
+        BadgeText.Text = '0'
+        BadgeText.TextColor = '#FFFFFF'
+        BadgeText.TextSize = 10
+        BadgeText.TextStyle = 'bold'
+        BadgeText.BackgroundColor = '#D50000'
+        Caption = 'Excluir'
+        Align = alLeft
+        TabOrder = 2
+        OnClick = BtnExcluirClick
+        ExplicitTop = 3
+      end
+    end
+    object UniDBGrid1: TUniDBGrid
+      AlignWithMargins = True
+      Left = 4
+      Top = 36
+      Width = 321
+      Height = 177
+      Hint = ''
+      RowEditor = True
+      TitleFont.Charset = ANSI_CHARSET
+      TitleFont.Name = 'Segoe UI Semibold'
+      TitleFont.Style = [fsBold]
+      DataSource = DataSource1
+      WebOptions.Paged = False
+      WebOptions.CustomizableCells = False
+      WebOptions.KeyNavigation = knDisabled
+      LoadMask.Message = 'Loading data...'
+      Align = alClient
+      TabOrder = 3
+      OnKeyDown = UniDBGrid1KeyDown
+      Columns = <
+        item
+          FieldName = 'id'
+          Title.Caption = 'C'#243'digo'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Name = 'Segoe UI Semibold'
+          Title.Font.Style = [fsBold]
+          Width = 64
+        end
+        item
+          FieldName = 'desc'
+          Title.Caption = ' Descri'#231#227'o'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Name = 'Segoe UI Semibold'
+          Title.Font.Style = [fsBold]
+          Width = 230
+        end
+        item
+          Title.Caption = ' '
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Name = 'Segoe UI Semibold'
+          Title.Font.Style = [fsBold]
+          Width = 15
+        end>
+    end
+  end
+  object FDTable1: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = DAOConexao.Database
+    Transaction = DAOConexao.Transaction
+    UpdateTransaction = DAOConexao.Transaction
+    TableName = 'experp.test'
+    Left = 160
+    Top = 136
+    object FDTable1id: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object FDTable1desc: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'desc'
+      Origin = '`desc`'
+      Size = 30
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = FDTable1
+    Left = 72
+    Top = 144
+  end
+end

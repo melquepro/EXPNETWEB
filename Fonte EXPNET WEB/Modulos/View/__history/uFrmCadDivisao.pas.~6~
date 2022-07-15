@@ -1,0 +1,62 @@
+unit uFrmCadDivisao;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIForm, uniButton, uniBitBtn, UniFSButton, uniBasicGrid,
+  uniDBGrid, uniPanel, uniGUIBaseClasses, uDAOConexao, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+
+type
+  TfrmCadDivisores = class(TUniForm)
+    UniPanel1: TUniPanel;
+    UniContainerPanel1: TUniContainerPanel;
+    UniContainerPanel2: TUniContainerPanel;
+    UniDBGrid1: TUniDBGrid;
+    BtnSalvar: TUniFSButton;
+    FDTable1: TFDTable;
+    FDTable1id: TFDAutoIncField;
+    FDTable1desc: TStringField;
+    DataSource1: TDataSource;
+    btnNovo: TUniFSButton;
+    BtnExcluir: TUniFSButton;
+    procedure UniDBGrid1KeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure btnNovoClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+function frmCadDivisores: TfrmCadDivisores;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  MainModule, uniGUIApplication;
+
+function frmCadDivisores: TfrmCadDivisores;
+begin
+  Result := TfrmCadDivisores(UniMainModule.GetFormInstance(TfrmCadDivisores));
+end;
+
+procedure TfrmCadDivisores.btnNovoClick(Sender: TObject);
+begin
+   FDTable1.Append;
+end;
+
+procedure TfrmCadDivisores.UniDBGrid1KeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+if key = VK_INSERT then
+FDTable1.Insert;
+end;
+
+end.

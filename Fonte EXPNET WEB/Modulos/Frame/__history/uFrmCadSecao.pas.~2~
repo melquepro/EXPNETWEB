@@ -1,0 +1,49 @@
+unit uFrmCadSecao;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIForm, uniBasicGrid, uniDBGrid, uniButton, uniBitBtn,
+  UniFSButton, uniPanel, uniGUIBaseClasses, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, uDAOConexao,
+  uFrmCadDivisao;
+
+type
+  TUniForm1 = class(TUniForm)
+    UniPanel1: TUniPanel;
+    UniContainerPanel1: TUniContainerPanel;
+    BtnSalvar: TUniFSButton;
+    UniContainerPanel2: TUniContainerPanel;
+    btnNovo: TUniFSButton;
+    BtnExcluir: TUniFSButton;
+    UniDBGrid1: TUniDBGrid;
+    DataSource1: TDataSource;
+    FDTable1: TFDTable;
+    FDTable1id: TFDAutoIncField;
+    FDTable1desc: TStringField;
+    FDTable1divisao: TIntegerField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+function UniForm1: TUniForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  MainModule, uniGUIApplication;
+
+function UniForm1: TUniForm1;
+begin
+  Result := TUniForm1(UniMainModule.GetFormInstance(TUniForm1));
+end;
+
+end.

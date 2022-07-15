@@ -1,0 +1,38 @@
+unit uFrmCadDivisao;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIForm, uniButton, uniBitBtn, UniFSButton, uniBasicGrid,
+  uniDBGrid, uniPanel, uniGUIBaseClasses;
+
+type
+  TfrmCadDivisores = class(TUniForm)
+    UniPanel1: TUniPanel;
+    UniContainerPanel1: TUniContainerPanel;
+    UniContainerPanel2: TUniContainerPanel;
+    UniDBGrid1: TUniDBGrid;
+    UniFSButton1: TUniFSButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+function frmCadDivisores: TfrmCadDivisores;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  MainModule, uniGUIApplication;
+
+function frmCadDivisores: TfrmCadDivisores;
+begin
+  Result := TfrmCadDivisores(UniMainModule.GetFormInstance(TfrmCadDivisores));
+end;
+
+end.
