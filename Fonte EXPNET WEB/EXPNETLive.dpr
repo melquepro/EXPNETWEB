@@ -37,7 +37,8 @@ uses
   uFrmCadDivisao in 'Modulos\View\uFrmCadDivisao.pas' {frmCadDivisores: TUniForm},
   uFrmCadSecao in 'Modulos\View\uFrmCadSecao.pas' {frmCadSecao: TUniForm},
   uFrmCadGrupoProduto in 'Modulos\View\uFrmCadGrupoProduto.pas' {frmGrupoProduto: TUniForm},
-  uFrmCadMarcaFabricante in 'Modulos\View\uFrmCadMarcaFabricante.pas' {frmCadMarcaFabricante: TUniForm};
+  uFrmCadMarcaFabricante in 'Modulos\View\uFrmCadMarcaFabricante.pas' {frmCadMarcaFabricante: TUniForm},
+  uFrmCadEndCobranca in 'Modulos\View\uFrmCadEndCobranca.pas' {frmCadEndCobranca: TUniForm};
 
 {$R *.res}
 

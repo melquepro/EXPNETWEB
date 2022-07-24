@@ -202,6 +202,11 @@
             <FormType>dfm</FormType>
             <DesignClass>TUniForm</DesignClass>
         </DCCReference>
+        <DCCReference Include="Modulos\View\uFrmCadEndCobranca.pas">
+            <Form>frmCadEndCobranca</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

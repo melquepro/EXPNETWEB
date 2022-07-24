@@ -30,10 +30,15 @@ uses
   uMenuAcesso in 'Modulos\ViewMenu\uMenuAcesso.pas' {DMAcesso: TDataModule},
   uListImagens in 'Modulos\ViewMenu\uListImagens.pas' {DMListIcones: TDataModule},
   uToast in 'Modulos\ViewMenu\uToast.pas' {dmToast: TDataModule},
-  Frame.ListProdutos in 'Modulos\Frame\Frame.ListProdutos.pas' {FrameListProdutos: TUniFrame},
   Frame.CadClientes in 'Modulos\Frame\Frame.CadClientes.pas' {FrameCadClientes: TUniFrame},
   Frame.PageControl in 'Modulos\Classes\Frame.PageControl.pas',
-  uDAOConexao in 'Modulos\DAO\uDAOConexao.pas' {DAOConexao: TDataModule};
+  uDAOConexao in 'Modulos\DAO\uDAOConexao.pas' {DAOConexao: TDataModule},
+  Frame.ListProdutos in 'Modulos\Frame\Frame.ListProdutos.pas' {FrameListProdutos: TUniFrame},
+  uFrmCadDivisao in 'Modulos\View\uFrmCadDivisao.pas' {frmCadDivisores: TUniForm},
+  uFrmCadSecao in 'Modulos\View\uFrmCadSecao.pas' {frmCadSecao: TUniForm},
+  uFrmCadGrupoProduto in 'Modulos\View\uFrmCadGrupoProduto.pas' {frmGrupoProduto: TUniForm},
+  uFrmCadMarcaFabricante in 'Modulos\View\uFrmCadMarcaFabricante.pas' {frmCadMarcaFabricante: TUniForm},
+  uFrmCadEndCobranca in 'Modulos\View\uFrmCadEndCobranca.pas' {UniForm1: TUniForm};
 
 {$R *.res}
 

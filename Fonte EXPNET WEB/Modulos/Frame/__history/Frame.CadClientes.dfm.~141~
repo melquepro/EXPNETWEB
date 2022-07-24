@@ -26,7 +26,7 @@ object FrameCadClientes: TFrameCadClientes
       Height = 909
       Hint = ''
       ShowHint = True
-      ActivePage = tbDetalhes
+      ActivePage = tbPessoaFisica
       TabBarVisible = False
       Align = alClient
       LayoutConfig.Width = '100%'
@@ -389,27 +389,26 @@ object FrameCadClientes: TFrameCadClientes
               ScreenMask.ShowMessage = False
               TabOrder = 30
             end
-            object btnBuscaCEP: TUniFSButton
-              Left = 263
-              Top = 3
-              Width = 139
-              Height = 51
+            object btn7: TUniFSButton
+              Left = 260
+              Top = 13
+              Width = 56
+              Height = 38
               Hint = ''
               ShowHint = True
-              StyleButton = GoogleNarrow
+              StyleButton = Transparent
               BadgeText.Text = '0'
               BadgeText.TextColor = '#FFFFFF'
               BadgeText.TextSize = 10
               BadgeText.TextStyle = 'bold'
               BadgeText.BackgroundColor = '#D50000'
-              Caption = 'Pesquisar'
+              Caption = ''
               ParentFont = False
-              Font.Color = cl3DDkShadow
+              Font.Color = clBlack
               Font.Name = 'Roboto'
               TabOrder = 31
-              ScaleButton = False
-              Images = imgMenu
-              ImageIndex = 11
+              Images = DMListIcones.imgBtn
+              ImageIndex = 0
             end
           end
           object pnlParametro: TUniPanel
@@ -779,8 +778,9 @@ object FrameCadClientes: TFrameCadClientes
                 'Estrangeiro')
               Columns = 3
               Values.Strings = (
-                'Pessoa F'#237'sica'
-                'Pessoa Jur'#237'dica')
+                '1'
+                '2'
+                '3')
             end
             object UniContainerPanel1: TUniContainerPanel
               Left = 106
@@ -1361,10 +1361,10 @@ object FrameCadClientes: TFrameCadClientes
             ParentFont = False
             TabOrder = 1
             BorderStyle = ubsNone
+            ShowCaption = False
             TitleVisible = True
             Title = 'Dados Profissionais'
             Caption = ''
-            Collapsible = True
             Color = clWhite
             ParentAlignmentControl = False
             Layout = 'fit'
@@ -1373,7 +1373,7 @@ object FrameCadClientes: TFrameCadClientes
             LayoutConfig.Padding = '0 0 0 30'
             object UniLabel36: TUniLabel
               Left = 61
-              Top = 53
+              Top = 77
               Width = 47
               Height = 13
               Hint = ''
@@ -1383,7 +1383,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniLabel37: TUniLabel
               Left = 65
-              Top = 17
+              Top = 41
               Width = 43
               Height = 13
               Hint = ''
@@ -1393,7 +1393,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBEdit25: TUniDBEdit
               Left = 131
-              Top = 16
+              Top = 40
               Width = 306
               Height = 22
               Hint = ''
@@ -1402,7 +1402,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBComboBox4: TUniDBComboBox
               Left = 133
-              Top = 52
+              Top = 76
               Width = 304
               Height = 23
               Hint = ''
@@ -1416,7 +1416,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniLabel38: TUniLabel
               Left = 466
-              Top = 53
+              Top = 77
               Width = 49
               Height = 13
               Hint = ''
@@ -1426,7 +1426,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniLabel39: TUniLabel
               Left = 447
-              Top = 17
+              Top = 41
               Width = 79
               Height = 13
               Hint = ''
@@ -1436,7 +1436,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBEdit31: TUniDBEdit
               Left = 131
-              Top = 85
+              Top = 109
               Width = 306
               Height = 22
               Hint = ''
@@ -1445,7 +1445,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniLabel40: TUniLabel
               Left = 31
-              Top = 89
+              Top = 113
               Width = 76
               Height = 13
               Hint = ''
@@ -1455,7 +1455,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBDateTimePicker3: TUniDBDateTimePicker
               Left = 542
-              Top = 49
+              Top = 73
               Width = 120
               Hint = ''
               ShowHint = True
@@ -1466,7 +1466,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBEdit24: TUniDBEdit
               Left = 542
-              Top = 12
+              Top = 36
               Width = 123
               Height = 22
               Hint = ''
@@ -1475,7 +1475,7 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniLabel41: TUniLabel
               Left = 447
-              Top = 90
+              Top = 114
               Width = 79
               Height = 13
               Hint = ''
@@ -1485,12 +1485,46 @@ object FrameCadClientes: TFrameCadClientes
             end
             object UniDBEdit26: TUniDBEdit
               Left = 542
-              Top = 85
+              Top = 109
               Width = 123
               Height = 22
               Hint = ''
               ShowHint = True
               TabOrder = 12
+            end
+            object UniContainerPanel21: TUniContainerPanel
+              AlignWithMargins = True
+              Left = 3
+              Top = 3
+              Width = 834
+              Height = 23
+              Hint = ''
+              ShowHint = True
+              ParentColor = False
+              Color = 14079702
+              Align = alTop
+              TabOrder = 13
+              Layout = 'border'
+              object UniLabel55: TUniLabel
+                AlignWithMargins = True
+                Left = 3
+                Top = 3
+                Width = 100
+                Height = 13
+                Hint = ''
+                ShowHint = True
+                Alignment = taCenter
+                Caption = 'Dados Profissionais'
+                Align = alLeft
+                ParentFont = False
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clBlack
+                Font.Name = 'Segoe UI Semibold'
+                Font.Style = [fsBold]
+                ParentColor = False
+                Color = 16053492
+                TabOrder = 1
+              end
             end
           end
         end
@@ -2715,66 +2749,11 @@ object FrameCadClientes: TFrameCadClientes
         BadgeText.TextSize = 10
         BadgeText.TextStyle = 'bold'
         BadgeText.BackgroundColor = '#D50000'
-        Glyph.Data = {
-          F6060000424DF606000000000000360000002800000018000000180000000100
-          180000000000C0060000C40E0000C40E00000000000000000000FFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFBFAFAC2ADB1875E656C3B426C3B42875F65C3AEB1FCFBFBFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFEFEAEA855C6268353D68353D68353D68353D68353D6835
-          3D865D64F0EBECFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFBF9FA83596068353D68353D68353D7C5057
-          68353D68353D68353D68353D855C62FBFAFAFFFFFFFFFFFFFFFFFFD2C3C5774A
-          5168353D68353D68353D68353D68353DBEA8ABFFFFFFC0AAAE68353D68353D68
-          353DA18186FDFCFCA1828768353D68353D68353D68353DC1ADB0FFFFFFFFFFFF
-          FFFFFF784A5268353D68353D68353D68353D68353D68353DE5DCDEFFFFFF8A62
-          6868353D68353DA18186FEFDFDFFFFFFFEFDFDA2838868353D68353D68353D8B
-          646AFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68353D68353D6B3941
-          F8F6F7FFFFFF6F3F4668353D9D7B81FEFDFDFEFDFDC6B2B5FEFDFDFEFDFDA384
-          8968353D68353D704048FFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68
-          353D68353DB69EA1FFFFFFFFFFFF6F3E4568353D81575EF0EAEBA78A8E68353D
-          A88B8FFEFEFEFDFCFC9C7B8068353D703F47FFFFFFFFFFFFFFFFFF68353D6835
-          3D68353D68353D68353D68353DEFEAEAFFFFFFFFFFFF875E6568353D68353D6C
-          3B4268353D68353D68353DA4858AFEFEFEEBE5E66E3D45896167FFFFFFFFFFFF
-          FFFFFF68353D68353D68353D68353D68353D68353DF1EDEDFFFFFFFFFFFFBCA5
-          A968353D68353D68353D68353D68353D68353D68353D9F7F847B4E5568353DBE
-          A8ABFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68353D68353DBAA2A6
-          FFFFFFFFFFFFFAF9F983596068353D68353D68353D68353D68353D68353D6835
-          3D68353D855C62FBFAFAFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68
-          353D68353D6C3A42BBA4A8F1ECEDFFFFFFEFEAEA855C6268353D68353D68353D
-          68353D68353D68353D865D64F0EBECFFFFFFFFFFFFFFFFFFFFFFFF68353D6835
-          3D68353D68353D68353D68353D68353D68353D6D3C44D7CACCFFFFFFFBFAFAC2
-          ADB1875E6572424A72424A875F65C3AEB1FCFBFBFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFF68353D68353D68353D68353D68353D68353D68353D68353D68353D6D3B
-          43BDA7ABFDFDFDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68353D68353D68353D
-          68353D68353D68353D68353D80555CB9A1A4E1D7D9F1ECEDF3EEEFE4DBDDBEA9
-          ACFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68
-          353D68353D68353D68353D68353D68353D68353D68353D68353D68353D68353D
-          68353D68353D68353DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D6835
-          3DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68
-          353D68353D68353D68353D68353D68353DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFF68353D68353DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFF68353D68353D68353D68353D68353D68353DFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFF68353D68353DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D68353D68353D68353D68353DB39A
-          9EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D68353DFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF68353D68353D68353D
-          68353DB9A1A4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF794C536835
-          3D68353D68353D68353D68353D68353D68353D68353D68353D68353D68353D68
-          353D68353D68353DB9A1A4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFD2C3C57C4F5668353D68353D68353D68353D68353D68353D68353D6835
-          3D68353D68353D68353D68353DB9A1A4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
         Caption = ''
         Align = alRight
         TabOrder = 1
+        Images = DMListIcones.imgBtn
+        ImageIndex = 1
       end
       object UniFSButton5: TUniFSButton
         Left = 801
@@ -2783,7 +2762,7 @@ object FrameCadClientes: TFrameCadClientes
         Height = 39
         Hint = 'Cancelar'
         ShowHint = True
-        StyleButton = GoogleAccent
+        StyleButton = Transparent
         BadgeText.Text = '0'
         BadgeText.TextColor = '#FFFFFF'
         BadgeText.TextSize = 10
@@ -2861,7 +2840,7 @@ object FrameCadClientes: TFrameCadClientes
     Left = 128
     Top = 392
     Images = {
-      08000000FFFFFF1F049503000089504E470D0A1A0A0000000D49484452000000
+      09000000FFFFFF1F049503000089504E470D0A1A0A0000000D49484452000000
       18000000180806000000E0773DF800000006624B474400FF00FF00FFA0BDA793
       0000034A49444154480DDD94CB6B534114C6676E6F6E45055D0A8A9B8AED4241
       5BD04D0B56C44AB17928515083F8C0456B4537FA37B8F351DD548A28EAA2D834
@@ -3033,7 +3012,43 @@ object FrameCadClientes: TFrameCadClientes
       74A978C87A0F9DB7DB75D79559ACD5E215762FDC9C55F802635AA8D7EB1791D5
       C141A180FD4ACBF38E47B2B0331CE8C734C12C7C56D5F03BCA15C8890EF91064
       541CD1432CFBA048B77ABDDE3B8ABCC5A07F30B0523AE2AF342AB59C5BE55F6D
-      7499500B83215D0000000049454E44AE426082}
+      7499500B83215D0000000049454E44AE426082FFFFFF1F048004000089504E47
+      0D0A1A0A0000000D4948445200000020000000200806000000737A7AF4000000
+      06624B474400FF00FF00FFA0BDA79300000435494441545809E5975D685C4514
+      C767669348B355AA8849A3A02FB54F7E2051A4E81A7CD198063F037D29825DF7
+      EE6E0C8DA596A2A8417C48C0FAE0C7EE7659EA435F4CA3122D5244504BA55093
+      07152A6A5B2C58375603564C95A4BB77FCCD3273BB71B37777C114C4CBF9DF73
+      E6CC3967CE9CF9B8BB42FCDF1FD94201643CFED40D1D1DFE7AAD75A79472BE54
+      2A9DC9E7F3F32DC4A8316D9880E7791B94523BB41683785F0BAA49D39895524C
+      2D2C4433FBF7BF729E764B543781919191CB96964AE3041F26623B68443F09A1
+      B7E772B9771B1956F7AF98403C1EEF6A6B6B9FC6F04EE0E834C91CA4FCC7B556
+      E7907B84F037B114FD54276A8D34FAF16C36FB1C6D531D5838D52460667EE142
+      E93321841BBCA8B5DCB9776FE66D74354153A9D495E89F2589A7E11120486237
+      494C18B9116A1220E06B041BB18E5F51D601CA4A79ADA60EF3BCF4A0947A92EE
+      35A0ECFBB22F9FCF7C8E1C4AAABA97C1373278CAEA7EF4FD727F33831B7B2A74
+      90993F8EAC414429BD075E334174CB685902BE2F76D0DB0620BD8B233687D034
+      51F62926F0BE75B8239D4EF789064F90C0D8D89862433D68EC99C90FDDDDDD07
+      8CDC2A941213CE870DFBB093EBF1208162B17823EBDD650C71FC80847C23B70A
+      AA700C9F221054F46EC3C360CB2D04974D8F3364D77FEB64CF4BEDA3226C30F1
+      24C1A71BB5F1237FF11D3E3DE03ADAA1145480F2AF7596ECE63F2ECAE211E4AB
+      994D3FDC1CB1D0B6B571FE414CA35F094105E8FC055852D75801A6B75191818B
+      6BDBA82D4C925D6C467CC559F30A43704C1289C47AA52295B5A37493947B4B98
+      63BD3EE27412E757FA3BC1E15C2EDB27429E6009CC9123EB2F8D2DFC81D1D1D1
+      75466E159148E4217CCCE0A6128790432948C058B1F6938683CB17171777C15B
+      2266DF4EF22F58A732CF3B56AECB9625C0497803CB9F8120D0335CAFF71BB959
+      30FB2CB61B81A1B7A8EA292384A1F2F170063333334BBDBDBDDCFBF231745C4C
+      E251DA276667678FD3AE4B4343431DB158ACC0F67BC21ACD2925B7106FC1B6EB
+      B26013565B2493C90982054B4035A6F9048FE7F36F7E819DB9EB61426CDDBA33
+      1A8D2EB0E6F245141B80259DE51B92B68D50B6620278482E9CDD9C8697911570
+      34C76DF90DC99D035C5CFA563AD600479C223D45DF76923E8DFF49F01227EA88
+      33F827AF9740C52E9148DFC557ED551AB783302A93D83E7E233E5F2814CEB277
+      BE6643DF641DFEA26F3315F9C4B697B1D004AC25D518BE57CAF220338BA1BB1E
+      AC2328B395DFA3FB884BEABD4C2673127D8592C9D4018421E0E84FF6C4666C3E
+      750AC79B49C0D936CD3D6F3826A5FF210E6B81A3DF7D5FDDC73E3AE61486AF4A
+      02267022317C9B52FEC7C857810AB11FCE230CB0270EC32B242BEF557AF18364
+      93EFEB4384BF0238FAAD546ABBB95078FD8C5154EF70D3FE57C19A1F65EDEF21
+      E83CB024C7DDE046B1AA15300318F0E7E6162915CBA127380D7B8CEE92C3FCD7
+      B8E483FE2706FC1B8E316EB842C609570000000049454E44AE426082}
   end
   object Opcoes: TUniMenuItems
     Images = imgMenu

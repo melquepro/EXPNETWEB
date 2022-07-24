@@ -1,0 +1,36 @@
+unit uFrmCadEndCobranca;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
+  uniGUIClasses, uniGUIForm, uniGUIBaseClasses, uniPanel, uniButton, uniBitBtn,
+  UniFSButton;
+
+type
+  TUniForm1 = class(TUniForm)
+    UniPanel1: TUniPanel;
+    UniPanel2: TUniPanel;
+    UniFSButton1: TUniFSButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+function UniForm1: TUniForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  MainModule, uniGUIApplication;
+
+function UniForm1: TUniForm1;
+begin
+  Result := TUniForm1(UniMainModule.GetFormInstance(TUniForm1));
+end;
+
+end.

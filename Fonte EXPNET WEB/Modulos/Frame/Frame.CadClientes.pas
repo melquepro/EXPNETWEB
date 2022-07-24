@@ -182,10 +182,8 @@ type
     UniLabel52: TUniLabel;
     UniSplitter6: TUniSplitter;
     UniContainerPanel18: TUniContainerPanel;
-    UniFSButton1: TUniFSButton;
     UniFSButton2: TUniFSButton;
     UniFSButton3: TUniFSButton;
-    UniFSButton4: TUniFSButton;
     cmbSearch: TUniComboBox;
     UniContainerPanel19: TUniContainerPanel;
     BtnNovo: TUniFSButton;
@@ -207,6 +205,7 @@ type
     btn7: TUniFSButton;
     UniContainerPanel21: TUniContainerPanel;
     UniLabel55: TUniLabel;
+    UniDBGrid1: TUniDBGrid;
     procedure tvMenuLoaded(Sender: TObject);
     procedure Detalhes1Click(Sender: TObject);
     procedure UniFrameCreate(Sender: TObject);
@@ -215,6 +214,7 @@ type
     procedure LocaldeCobrana1Click(Sender: TObject);
     procedure ListagemdeClientes2Click(Sender: TObject);
     procedure FiscalTributao1Click(Sender: TObject);
+    procedure UniFSButton2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -225,7 +225,7 @@ implementation
 
 {$R *.dfm}
 
-uses uMenuAcesso, Main;
+uses uMenuAcesso, Main, uFrmCadEndCobranca;
 
 procedure TFrameCadClientes.Detalhes1Click(Sender: TObject);
 begin
@@ -266,6 +266,11 @@ procedure TFrameCadClientes.UniFrameCreate(Sender: TObject);
 begin
 
 edtDataCad.DateTime := now;
+end;
+
+procedure TFrameCadClientes.UniFSButton2Click(Sender: TObject);
+begin
+FrmCadEndCobranca.ShowModal;
 end;
 
 initialization

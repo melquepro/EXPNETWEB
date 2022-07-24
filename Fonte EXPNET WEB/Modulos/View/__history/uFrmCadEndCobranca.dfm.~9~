@@ -1,0 +1,106 @@
+object frmCadEndCobranca: TfrmCadEndCobranca
+  AlignWithMargins = True
+  Left = 0
+  Top = 0
+  ClientHeight = 658
+  ClientWidth = 947
+  Caption = ''
+  BorderStyle = bsNone
+  OldCreateOrder = False
+  MonitoredKeys.Keys = <>
+  Movable = False
+  TextHeight = 15
+  object UniPanel1: TUniPanel
+    Left = 0
+    Top = 0
+    Width = 947
+    Height = 28
+    Hint = ''
+    Align = alTop
+    ParentFont = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Segoe UI Semibold'
+    Font.Style = [fsBold]
+    TabOrder = 0
+    BorderStyle = ubsNone
+    Alignment = taLeftJustify
+    Caption = '   Cadastro - Endere'#231'o de Cobran'#231'a'
+    Color = 6829373
+    object UniFSButton1: TUniFSButton
+      Left = 915
+      Top = 0
+      Width = 32
+      Height = 28
+      Hint = ''
+      StyleButton = Transparent
+      BadgeText.Text = '0'
+      BadgeText.TextColor = '#FFFFFF'
+      BadgeText.TextSize = 10
+      BadgeText.TextStyle = 'bold'
+      BadgeText.BackgroundColor = '#D50000'
+      Caption = 'X'
+      Align = alRight
+      ParentFont = False
+      Font.Color = clWhite
+      Font.Height = -21
+      Font.Style = [fsBold]
+      TabOrder = 1
+      OnClick = UniFSButton1Click
+    end
+  end
+  object pnlBtn: TUniPanel
+    Left = 0
+    Top = 617
+    Width = 947
+    Height = 41
+    Hint = ''
+    ShowHint = True
+    ParentShowHint = False
+    Align = alBottom
+    TabOrder = 1
+    BorderStyle = ubsNone
+    Caption = ''
+    Color = 16053492
+    object btnSave: TUniFSButton
+      Left = 842
+      Top = 0
+      Width = 57
+      Height = 41
+      Hint = 'Salvar registro'
+      ShowHint = True
+      StyleButton = Transparent
+      BadgeText.Text = '0'
+      BadgeText.TextColor = '#FFFFFF'
+      BadgeText.TextSize = 10
+      BadgeText.TextStyle = 'bold'
+      BadgeText.BackgroundColor = '#D50000'
+      Caption = ''
+      Align = alRight
+      TabOrder = 1
+      Images = DMListIcones.imgBtn
+      ImageIndex = 1
+    end
+    object UniFSButton5: TUniFSButton
+      Left = 899
+      Top = 0
+      Width = 48
+      Height = 41
+      Hint = 'Cancelar'
+      ShowHint = True
+      StyleButton = Transparent
+      BadgeText.Text = '0'
+      BadgeText.TextColor = '#FFFFFF'
+      BadgeText.TextSize = 10
+      BadgeText.TextStyle = 'bold'
+      BadgeText.BackgroundColor = '#D50000'
+      Caption = ''
+      Align = alRight
+      TabOrder = 2
+      Transparency = toFuchsia
+      Images = DMListIcones.imgBtn
+      ImageIndex = 3
+    end
+  end
+end

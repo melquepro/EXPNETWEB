@@ -1,0 +1,54 @@
+object UniForm1: TUniForm1
+  Left = 0
+  Top = 0
+  ClientHeight = 619
+  ClientWidth = 931
+  Caption = 'UniForm1'
+  OldCreateOrder = False
+  MonitoredKeys.Keys = <>
+  TextHeight = 15
+  object UniPanel1: TUniPanel
+    Left = 0
+    Top = 0
+    Width = 931
+    Height = 35
+    Hint = ''
+    Align = alTop
+    ParentFont = False
+    Font.Color = clWhite
+    TabOrder = 0
+    BorderStyle = ubsNone
+    Caption = ''
+    Color = 6829373
+    object UniFSButton1: TUniFSButton
+      Left = 888
+      Top = 0
+      Width = 43
+      Height = 35
+      Hint = ''
+      StyleButton = Transparent
+      BadgeText.Text = '0'
+      BadgeText.TextColor = '#FFFFFF'
+      BadgeText.TextSize = 10
+      BadgeText.TextStyle = 'bold'
+      BadgeText.BackgroundColor = '#D50000'
+      Caption = 'X'
+      Align = alRight
+      ParentFont = False
+      Font.Color = clWhite
+      Font.Height = -21
+      Font.Style = [fsBold]
+      TabOrder = 1
+    end
+  end
+  object UniPanel2: TUniPanel
+    Left = 0
+    Top = 568
+    Width = 931
+    Height = 51
+    Hint = ''
+    Align = alBottom
+    TabOrder = 1
+    Caption = ''
+  end
+end
