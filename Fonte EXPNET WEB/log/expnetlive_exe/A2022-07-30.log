@@ -85,3 +85,10 @@ EXPNETLive.exe: 00002044: 14:59:31 [TUniServerModule]:Starting HTTP Server on Po
 EXPNETLive.exe: 00002044: 14:59:31 [TUniServerModule]:HTTP Server Started on Port: 8077
 EXPNETLive.exe: 000027F8: 14:59:32 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: T3YsnoauHv10ADD959A ) : Addr: $007C3B66
 EXPNETLive.exe: 00000F78: 15:01:14 [127.0.0.1]:EAccessViolation : Access violation at address 00666540 in module 'EXPNETLive.exe'. Read of address 000000A9 : Addr: $00666540
+EXPNETLive.exe: 00001554: 15:03:51 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001554: 15:03:51 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001554: 15:03:51 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001554: 15:03:51 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001554: 15:03:51 [TUniGUISessionManager]:Cache erase job created, Folder count: [2]
+EXPNETLive.exe: 00001554: 15:03:52 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001554: 15:03:52 [TUniServerModule]:HTTP Server Started on Port: 8077
