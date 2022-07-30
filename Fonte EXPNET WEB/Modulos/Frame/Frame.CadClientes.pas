@@ -215,6 +215,7 @@ type
     procedure ListagemdeClientes2Click(Sender: TObject);
     procedure FiscalTributao1Click(Sender: TObject);
     procedure UniFSButton2Click(Sender: TObject);
+    procedure ContratosAnexos1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -226,6 +227,11 @@ implementation
 {$R *.dfm}
 
 uses uMenuAcesso, Main, uFrmCadEndCobranca;
+
+procedure TFrameCadClientes.ContratosAnexos1Click(Sender: TObject);
+begin
+pgCadClientes.TabIndex := 4;
+end;
 
 procedure TFrameCadClientes.Detalhes1Click(Sender: TObject);
 begin

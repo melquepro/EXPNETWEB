@@ -26,7 +26,7 @@ object FrameCadClientes: TFrameCadClientes
       Height = 909
       Hint = ''
       ShowHint = True
-      ActivePage = tbLocalCobranca
+      ActivePage = tbDocumento
       TabBarVisible = False
       Align = alClient
       LayoutConfig.Width = '100%'
@@ -2959,16 +2959,19 @@ object FrameCadClientes: TFrameCadClientes
     object LocaldeEntrega1: TUniMenuItem
       Caption = 'Local de Entrega'
       ImageIndex = 2
+      Visible = False
       OnClick = LocaldeEntrega1Click
     end
     object LocaldeCobrana1: TUniMenuItem
       Caption = 'Local de Cobran'#231'a'
       ImageIndex = 3
+      Visible = False
       OnClick = LocaldeCobrana1Click
     end
     object ContratosAnexos1: TUniMenuItem
       Caption = 'Contratos/Anexos'
       ImageIndex = 4
+      OnClick = ContratosAnexos1Click
     end
     object ContratosAnexos2: TUniMenuItem
       Caption = 'Log'#39's de Altera'#231#245'es'

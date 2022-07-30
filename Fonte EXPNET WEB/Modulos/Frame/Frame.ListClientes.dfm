@@ -605,20 +605,20 @@ object FrameListClientes: TFrameListClientes
         object btnFiltro: TUniFSButton
           Left = 392
           Top = 3
-          Width = 73
+          Width = 33
           Height = 28
-          Hint = ''
+          Hint = 'Filtro'
           ShowHint = True
-          StyleButton = Info
+          StyleButton = Transparent
           BadgeText.Text = '0'
-          BadgeText.TextColor = '#FFFFFF'
+          BadgeText.TextColor = '#262626'
           BadgeText.TextSize = 10
           BadgeText.TextStyle = 'bold'
           BadgeText.BackgroundColor = '#D50000'
-          Caption = 'Filtro'
+          Caption = ''
           TabOrder = 1
           Images = DMListIcones.imgBtn
-          ImageIndex = 0
+          ImageIndex = 4
           OnClick = btnFiltroClick
         end
         object cmbSearch: TUniComboBox
@@ -651,8 +651,7 @@ object FrameListClientes: TFrameListClientes
           Height = 28
           Hint = 'Imprimir / Exportar'
           ShowHint = True
-          StyleButton = Default
-          CaptionIconFont = '<i class="fas fa-print"> </i>'
+          StyleButton = Transparent
           BadgeText.Text = '0'
           BadgeText.TextColor = '#FFFFFF'
           BadgeText.TextSize = 10
@@ -661,6 +660,8 @@ object FrameListClientes: TFrameListClientes
           Caption = ''
           Anchors = [akTop, akRight]
           TabOrder = 3
+          Images = DMListIcones.imgBtn
+          ImageIndex = 6
         end
         object btnNovo: TUniFSButton
           Left = 757
@@ -669,8 +670,7 @@ object FrameListClientes: TFrameListClientes
           Height = 28
           Hint = 'Inserir novo Cliente'
           ShowHint = True
-          StyleButton = Default
-          CaptionIconFont = '<i class="fas fa-plus"></i>'
+          StyleButton = Transparent
           BadgeText.Text = '0'
           BadgeText.TextColor = '#FFFFFF'
           BadgeText.TextSize = 10
@@ -679,6 +679,8 @@ object FrameListClientes: TFrameListClientes
           Caption = ''
           Anchors = [akTop, akRight]
           TabOrder = 4
+          Images = DMListIcones.imgBtn
+          ImageIndex = 5
         end
       end
       object UniPanel4: TUniPanel

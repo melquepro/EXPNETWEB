@@ -38,7 +38,8 @@ uses
   uFrmCadSecao in 'Modulos\View\uFrmCadSecao.pas' {frmCadSecao: TUniForm},
   uFrmCadGrupoProduto in 'Modulos\View\uFrmCadGrupoProduto.pas' {frmGrupoProduto: TUniForm},
   uFrmCadMarcaFabricante in 'Modulos\View\uFrmCadMarcaFabricante.pas' {frmCadMarcaFabricante: TUniForm},
-  uFrmCadEndCobranca in 'Modulos\View\uFrmCadEndCobranca.pas' {frmCadEndCobranca: TUniForm};
+  uFrmCadEndCobranca in 'Modulos\View\uFrmCadEndCobranca.pas' {frmCadEndCobranca: TUniForm},
+  Frame.ListClientes in 'Modulos\Frame\Frame.ListClientes.pas' {FrameListClientes: TUniFrame};
 
 {$R *.res}
 
