@@ -47,8 +47,13 @@
     <Transaction>2022/07/13 20:47:39.000.996,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\Frame.ListProdutos.pas=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\Frame.ListClientes.pas</Transaction>
     <Transaction>2022/07/13 20:47:39.000.996,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\Frame.ListProdutos.dfm=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\Frame.ListClientes.dfm</Transaction>
     <Transaction>2022/07/15 09:10:20.000.887,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
+<<<<<<< Updated upstream
     <Transaction>2022/07/15 09:10:35.000.770,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadDivisao.pas</Transaction>
     <Transaction>2022/07/15 09:10:35.000.770,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadDivisao.dfm</Transaction>
+=======
+    <Transaction>2022/07/15 09:10:35.000.770,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadDivisao.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
+    <Transaction>2022/07/15 09:10:35.000.770,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadDivisao.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.dfm</Transaction>
+>>>>>>> Stashed changes
     <Transaction>2022/07/15 10:57:47.000.292,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
     <Transaction>2022/07/15 10:58:09.000.414,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\uFrmCadSecao.pas</Transaction>
     <Transaction>2022/07/15 10:58:09.000.414,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\uFrmCadSecao.dfm</Transaction>
@@ -57,6 +62,7 @@
     <Transaction>2022/07/15 11:46:38.000.792,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\uFrmCadSecao.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadSecao.pas</Transaction>
     <Transaction>2022/07/15 11:46:38.000.792,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\uFrmCadSecao.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadSecao.dfm</Transaction>
     <Transaction>2022/07/15 11:46:58.000.996,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\EXPNETLive.dproj=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\EXPNETLive.dproj</Transaction>
+<<<<<<< Updated upstream
     <Transaction>2022/07/15 11:47:15.000.658,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadSecao.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\uFrmCadSecao.pas</Transaction>
     <Transaction>2022/07/15 11:47:15.000.658,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadSecao.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\uFrmCadSecao.dfm</Transaction>
     <Transaction>2022/07/15 14:16:10.000.227,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
@@ -69,6 +75,16 @@
     <Transaction>2022/07/18 15:17:23.000.785,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadEndCobranca.pas=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
     <Transaction>2022/07/18 15:17:23.000.785,H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadEndCobranca.dfm=H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\Unit1.dfm</Transaction>
     <Transaction>2022/07/30 14:21:40.547,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\Frame.ListClientes.pas</Transaction>
+=======
+    <Transaction>2022/07/15 11:47:15.000.658,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\uFrmCadSecao.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadSecao.dfm</Transaction>
+    <Transaction>2022/07/15 11:47:15.000.658,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\Frame\uFrmCadSecao.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadSecao.pas</Transaction>
+    <Transaction>2022/07/15 14:16:10.000.227,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
+    <Transaction>2022/07/15 14:29:05.000.748,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadGrupoProduto.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
+    <Transaction>2022/07/15 14:29:05.000.748,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadGrupoProduto.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.dfm</Transaction>
+    <Transaction>2022/07/15 14:32:18.000.851,=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
+    <Transaction>2022/07/15 14:34:50.000.918,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadMarcaFabricante.pas=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
+    <Transaction>2022/07/15 14:34:50.000.918,C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\uFrmCadMarcaFabricante.dfm=C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\Unit1.dfm</Transaction>
+>>>>>>> Stashed changes
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="Modulos"/>

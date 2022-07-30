@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 EXPNETLive.exe: 00003084: 14:55:58 []:>--------------------------------------------------------------<
 EXPNETLive.exe: 00003084: 14:55:58 [TUniServerModule]:Server First Init.
 EXPNETLive.exe: 00003084: 14:55:58 [TUniServerModule]:Start Path = H:\Projetos Delphi Android\iGAT App Provedor\Fontes MK-EXPNET\Fonte EXPNET WEB\EXPNET Live\EXPNETWEB\Fonte EXPNET WEB\
@@ -135,3 +136,14 @@ EXPNETLive.exe: 00000588: 18:52:49 [TUniGUISessionManager]:Cache erase job creat
 EXPNETLive.exe: 00000588: 18:52:49 [TUniServerModule]:Starting HTTP Server on Port: 8077...
 EXPNETLive.exe: 00000588: 18:52:49 [TUniServerModule]:HTTP Server Started on Port: 8077
 EXPNETLive.exe: 00002730: 18:52:51 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: 3fWvkWg3Z910ACB8A38 ) : Addr: $007C3B66
+=======
+EXPNETLive.exe: 000026A4: 10:50:14 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000026A4: 10:50:14 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000026A4: 10:50:14 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000026A4: 10:50:14 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 000026A4: 10:50:14 [TUniGUISessionManager]:Cache erase job created, Folder count: [2]
+EXPNETLive.exe: 000026A4: 10:50:14 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000026A4: 10:50:14 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001304: 10:50:18 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: RvZzsMqrQf10ACB0740 ) : Addr: $007C3B66
+EXPNETLive.exe: 00002298: 10:50:28 [127.0.0.1]:EAccessViolation : Access violation at address 00666540 in module 'EXPNETLive.exe'. Read of address 000000A9 : Addr: $00666540
+>>>>>>> Stashed changes
