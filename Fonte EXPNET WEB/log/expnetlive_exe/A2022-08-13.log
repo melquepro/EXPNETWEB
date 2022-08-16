@@ -1,0 +1,42 @@
+EXPNETLive.exe: 000000E0: 17:20:40 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 000000E0: 17:20:40 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 000000E0: 17:20:40 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 000000E0: 17:20:40 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 000000E0: 17:20:40 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000000E0: 17:20:40 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001024: 17:21:22 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001024: 17:21:22 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001024: 17:21:22 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001024: 17:21:22 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001024: 17:21:22 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001024: 17:21:22 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 000000E0: 17:21:29 [TUniServerModule]:Shutting Down Server.
+EXPNETLive.exe: 000000E0: 17:21:29 [TUniServerModule]:Stopping HTTP Server.
+EXPNETLive.exe: 000000E0: 17:21:30 [TUniServerModule]:HTTP Server Stopped.
+EXPNETLive.exe: 000000E0: 17:21:30 [TUniGUISessionManager]:Terminating Session manager.
+EXPNETLive.exe: 000000E0: 17:21:30 [TUniGUISessionManager]:Stopping Cache Eraser...
+EXPNETLive.exe: 000000E0: 17:21:30 [TUniGUISessionManager]:Cache Eraser Stopped.
+EXPNETLive.exe: 000000E0: 17:21:30 [TUniGUISessionManager]:Destroying Worker Threads.
+EXPNETLive.exe: 000000E0: 17:21:30 [TUniGUISessionManager]:Session manager terminated.
+EXPNETLive.exe: 000000E0: 17:21:30 [TUniServerModule]:Server Shutdown Completed.
+EXPNETLive.exe: 000000E0: 17:21:30 []:<-------------------------------------------------------------->
+EXPNETLive.exe: 000000E0: 17:21:30 [Terminated]:Exit Code: 0
+EXPNETLive.exe: 00001B2C: 17:21:39 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00001B2C: 17:21:39 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00001B2C: 17:21:39 [TUniServerModule]:Start Path = C:\Users\Dev\Documents\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00001B2C: 17:21:39 [TUniServerModule]:Debug Mode = ON
+EXPNETLive.exe: 00001B2C: 17:21:39 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00001B2C: 17:21:39 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00001B2C: 17:21:39 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00002470: 17:21:42 [192.168.73.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: oK4VwAWdyb10AF31DB0 ) : Addr: $007C3B66
+EXPNETLive.exe: 00001B2C: 17:57:52 [TUniServerModule]:Shutting Down Server.
+EXPNETLive.exe: 00001B2C: 17:57:52 [TUniServerModule]:Stopping HTTP Server.
+EXPNETLive.exe: 00001B2C: 17:57:53 [TUniServerModule]:HTTP Server Stopped.
+EXPNETLive.exe: 00001B2C: 17:57:53 [TUniGUISessionManager]:Terminating Session manager.
+EXPNETLive.exe: 00001B2C: 17:57:53 [TUniGUISessionManager]:Stopping Cache Eraser...
+EXPNETLive.exe: 00001B2C: 17:57:53 [TUniGUISessionManager]:Cache Eraser Stopped.
+EXPNETLive.exe: 00001B2C: 17:57:53 [TUniGUISessionManager]:Destroying Worker Threads.
+EXPNETLive.exe: 00001B2C: 17:57:53 [TUniGUISessionManager]:Session manager terminated.
+EXPNETLive.exe: 00001B2C: 17:57:53 [TUniServerModule]:Server Shutdown Completed.
+EXPNETLive.exe: 00001B2C: 17:57:53 []:<-------------------------------------------------------------->
+EXPNETLive.exe: 00001B2C: 17:57:54 [Terminated]:Exit Code: 0

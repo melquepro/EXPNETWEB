@@ -10,6 +10,33 @@ object DMAcesso: TDMAcesso
       Caption = 'Dashboard'
       Visible = False
     end
+    object ActCadastros1: TUniMenuItem
+      Caption = 'Cadastros'
+      ImageIndex = 12
+      object actListClientes: TUniMenuItem
+        Caption = 'Clientes'
+        ImageIndex = 33
+      end
+      object actFinTrbPainelContas: TUniMenuItem
+        Caption = 'Contas'
+        ImageIndex = 31
+      end
+      object actFinCapPainelCategoriaDespesa: TUniMenuItem
+        Caption = 'Categoria de Despesa'
+        ImageIndex = 16
+      end
+      object actFinCrePainelCategoriaReceita: TUniMenuItem
+        Caption = 'Categoria de Receita'
+        ImageIndex = 16
+      end
+      object actFinCrcPainelFornecedorCliente: TUniMenuItem
+        Caption = 'Fornecedores e Clientes'
+        ImageIndex = 25
+      end
+      object actDivisores: TUniMenuItem
+        Caption = 'Divisores'
+      end
+    end
     object ActFinanceiro1: TUniMenuItem
       Caption = 'Financeiro'
       ImageIndex = 0
@@ -42,33 +69,6 @@ object DMAcesso: TDMAcesso
         Caption = 'Recibos'
         Hint = 'Recibos'
         ImageIndex = 7
-      end
-    end
-    object ActCadastros1: TUniMenuItem
-      Caption = 'Cadastros'
-      ImageIndex = 12
-      object actListClientes: TUniMenuItem
-        Caption = 'Clientes'
-        ImageIndex = 33
-      end
-      object actFinTrbPainelContas: TUniMenuItem
-        Caption = 'Contas'
-        ImageIndex = 31
-      end
-      object actFinCapPainelCategoriaDespesa: TUniMenuItem
-        Caption = 'Categoria de Despesa'
-        ImageIndex = 16
-      end
-      object actFinCrePainelCategoriaReceita: TUniMenuItem
-        Caption = 'Categoria de Receita'
-        ImageIndex = 16
-      end
-      object actFinCrcPainelFornecedorCliente: TUniMenuItem
-        Caption = 'Fornecedores e Clientes'
-        ImageIndex = 25
-      end
-      object actDivisores: TUniMenuItem
-        Caption = 'Divisores'
       end
     end
     object ActRelatrios1: TUniMenuItem
