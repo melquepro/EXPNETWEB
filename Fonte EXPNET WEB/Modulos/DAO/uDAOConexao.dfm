@@ -7,6 +7,7 @@ object DAOConexao: TDAOConexao
       'User_Name=root'
       'Password=123'
       'DriverID=MySQL')
+    Connected = True
     LoginPrompt = False
     Transaction = Transaction
     UpdateTransaction = Transaction
