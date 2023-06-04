@@ -342,7 +342,6 @@ object MainForm: TMainForm
           Hint = ''
           Caption = 'UniButton1'
           TabOrder = 1
-          OnClick = UniButton1Click
         end
       end
     end

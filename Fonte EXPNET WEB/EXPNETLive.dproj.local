@@ -1,2 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject/>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/06/02 09:37:36.797,=C:\Users\CPD\Documents\ProjetosDelphi\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
+    <Transaction>2023/06/02 09:45:08.231,C:\Users\CPD\Documents\ProjetosDelphi\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\Cadastros\View.CadCliFor.dfm=C:\Users\CPD\Documents\ProjetosDelphi\EXPNETWEB\Fonte EXPNET WEB\Unit1.dfm</Transaction>
+    <Transaction>2023/06/02 09:45:08.231,C:\Users\CPD\Documents\ProjetosDelphi\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\Cadastros\View.CadCliFor.pas=C:\Users\CPD\Documents\ProjetosDelphi\EXPNETWEB\Fonte EXPNET WEB\Unit1.pas</Transaction>
+    <Transaction>2023/06/02 09:45:26.004,C:\Users\CPD\Documents\ProjetosDelphi\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\View.CadCliFor.pas=C:\Users\CPD\Documents\ProjetosDelphi\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\Cadastros\View.CadCliFor.pas</Transaction>
+    <Transaction>2023/06/02 09:45:26.004,C:\Users\CPD\Documents\ProjetosDelphi\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\View.CadCliFor.dfm=C:\Users\CPD\Documents\ProjetosDelphi\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\Cadastros\View.CadCliFor.dfm</Transaction>
+    <Transaction>2023/06/02 11:28:23.170,C:\Users\CPD\Documents\ProjetosDelphi\EXPNETWEB\Fonte EXPNET WEB\Modulos\View\View.CadCliFor.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

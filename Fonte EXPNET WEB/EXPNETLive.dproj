@@ -241,7 +241,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="EXPNETLive.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="C:\expnetERP\EXPNETLive.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>EXPNETLive.exe</RemoteName>
                         <Overwrite>true</Overwrite>

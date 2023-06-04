@@ -1,0 +1,11 @@
+object ViewCadCliForn: TViewCadCliForn
+  Left = 0
+  Top = 0
+  ClientHeight = 519
+  ClientWidth = 720
+  Caption = 'Cadastros - Clientes e Fornecedores'
+  BorderStyle = bsDialog
+  OldCreateOrder = False
+  MonitoredKeys.Keys = <>
+  TextHeight = 15
+end

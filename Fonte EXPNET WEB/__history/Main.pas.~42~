@@ -8,7 +8,7 @@ uses
   uniGUIClasses, uniGUIRegClasses, uniGUIForm, uniImage, uniLabel, uniButton,
   uniBitBtn, UniFSButton, uniGUIBaseClasses, uniPanel, uniTreeView, uniTreeMenu,
   uniPageControl, UniFSConfirm, UniFSToast, uniTimer, UniFSPopup, uniGUIFrame,
-  Frame.Dashboard;
+  Frame.Dashboard, Frame.PageControl;
 
 
 type
@@ -33,12 +33,14 @@ type
     PopupAtualizacoes: TUniFSPopup;
     UniTabSheet1: TUniTabSheet;
     FrameDashboard1: TFrameDashboard;
+    UniButton1: TUniButton;
 
     procedure btnMenuClick(Sender: TObject);
     procedure tmrLoadTimer(Sender: TObject);
     procedure UniFormCreate(Sender: TObject);
     procedure menAcessoClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
+    procedure UniButton1Click(Sender: TObject);
   private
     { Private declarations }
     procedure CarregaAtualizacoes();
@@ -54,7 +56,9 @@ implementation
 
 uses
   uniGUIVars, MainModule, uniGUIApplication,
-  uniMainMenu, FS.Abas, uFrmLogin, uListImagens, uMenuAcesso, uToast;
+  uniMainMenu, FS.Abas, uFrmLogin, uListImagens, uMenuAcesso, uToast,
+  Frame.CadClientes, uFrmCapLancamento, uFrmCadDivisao, uFrmCadSecao,
+  View.CadCliFor;
 
 function MainForm: TMainForm;
 begin
@@ -63,7 +67,8 @@ end;
 
 procedure TMainForm.btnMenuClick(Sender: TObject);
 begin
-  ContainerPanel.Visible := not(ContainerPanel.Visible);
+ ContainerPanel.Visible := not(ContainerPanel.Visible);
+ // PControl.NovaAba(TFrame(TFrameCadClientes),'Cadastro de Cliente','CadClientes');
 end;
 
 procedure TMainForm.btnSairClick(Sender: TObject);
@@ -109,7 +114,7 @@ begin
   if not(Nd.HasChildren) then
   begin
     MenItens := DMAcesso.MenuAcesso;
-
+    //MenItens := DMAcesso.MenuFrame;
     for vI := 0 to MenItens.Items.Count -1 do
     begin
       if Nd.Text = MenItens.Items[vI].Caption then
@@ -143,13 +148,20 @@ begin
 //  menAcesso.Items.Item[1].Expand(false);
 
   dmToast.Toast.Info('Este projeto está incluso dentro do pacote UniFalcon','',TToastPosition.bottomRight);
-// dmAcessos.AbreTela(dmAcessos.actListClientes, pgcControl);
+//dmAcessos.AbreTela(dmAcessos.actListClientes, pgcControl);
+PControl.NovaAba(TFrame(TFrameCadClientes),'Cadastro de Cliente','CadClientes');
+end;
+
+procedure TMainForm.UniButton1Click(Sender: TObject);
+begin
+ViewCadCliForn.ShowModal;
 end;
 
 procedure TMainForm.UniFormCreate(Sender: TObject);
 begin
   CarregaAtualizacoes();
   tmrLoad.Enabled := True;
+  PControl := TPageControl.Init(pgcControl);
 end;
 
 initialization

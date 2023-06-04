@@ -65,11 +65,11 @@ object MainForm: TMainForm
       AlignWithMargins = True
       Left = 44
       Top = 11
-      Width = 85
+      Width = 89
       Height = 21
       Cursor = crHandPoint
       Hint = ''
-      Caption = 'EXPNETLive'
+      Caption = 'EXPNET Live'
       ParentFont = False
       Font.Charset = ANSI_CHARSET
       Font.Color = clWhite
@@ -334,6 +334,16 @@ object MainForm: TMainForm
         TabOrder = 1
         Caption = ''
         Color = 16053492
+        object UniButton1: TUniButton
+          Left = 64
+          Top = 45
+          Width = 75
+          Height = 25
+          Hint = ''
+          Caption = 'UniButton1'
+          TabOrder = 1
+          OnClick = UniButton1Click
+        end
       end
     end
   end

@@ -26,7 +26,7 @@ object FrameCadClientes: TFrameCadClientes
       Height = 909
       Hint = ''
       ShowHint = True
-      ActivePage = tbDocumento
+      ActivePage = tbDetalhes
       TabBarVisible = False
       Align = alClient
       LayoutConfig.Width = '100%'
@@ -2942,7 +2942,7 @@ object FrameCadClientes: TFrameCadClientes
     Left = 129
     Top = 450
     object Detalhes1: TUniMenuItem
-      Caption = 'Detalhes'
+      Caption = 'Detalhes Gerais'
       ImageIndex = 0
       OnClick = Detalhes1Click
     end

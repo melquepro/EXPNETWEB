@@ -26,6 +26,7 @@ object FrameListProdutos: TFrameListProdutos
       Width = 250
       Height = 771
       Hint = ''
+      Visible = False
       ShowHint = True
       ParentColor = False
       Color = clWhite
@@ -656,11 +657,11 @@ object FrameListProdutos: TFrameListProdutos
         object UniLabel2: TUniLabel
           Left = 62
           Top = 21
-          Width = 214
+          Width = 237
           Height = 30
           Hint = ''
           ShowHint = True
-          Caption = 'PESSOAS - COMPLETO'
+          Caption = 'PRODUTOS - COMPLETO'
           ParentFont = False
           Font.Charset = ANSI_CHARSET
           Font.Color = 10651736
