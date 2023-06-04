@@ -1,0 +1,54 @@
+EXPNETLive.exe: 00003720: 14:36:42 []:>--------------------------------------------------------------<
+EXPNETLive.exe: 00003720: 14:36:42 [TUniServerModule]:Server First Init.
+EXPNETLive.exe: 00003720: 14:36:42 [TUniServerModule]:Start Path = C:\Users\CPD\Documents\ProjetosDelphi\EXPNETWEB\Fonte EXPNET WEB\
+EXPNETLive.exe: 00003720: 14:36:42 [TUniGUISessionManager]:Cache erase job created, Folder count: [1]
+EXPNETLive.exe: 00003720: 14:36:42 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+EXPNETLive.exe: 00003720: 14:36:42 [TUniServerModule]:HTTP Server Started on Port: 8077
+EXPNETLive.exe: 00001D00: 14:36:48 [Requested Theme File not found:]:C:\Program Files (x86)\FMSoft\Framework\unigui\uni\css\uni-xtheme-classic.css
+EXPNETLive.exe: 00001D00: 14:36:48 []:TUniThemeProps: File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\css\uni-xtheme-classic.css
+EXPNETLive.exe: 00001D00: 14:36:48 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\css\uni-ext.css
+EXPNETLive.exe: 00000614: 14:36:48 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\classic\theme-classic\resources\theme-classic-all.css
+EXPNETLive.exe: 00001004: 14:36:48 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\packages\font-awesome-4.7.0\resources\font-awesome-all.css
+EXPNETLive.exe: 0000381C: 14:36:48 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\packages\font-awesome\resources\font-awesome-all.css
+EXPNETLive.exe: 000009E4: 14:36:48 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\css\uni-xtheme-common.css
+EXPNETLive.exe: 00003760: 14:36:48 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\ext-all.js
+EXPNETLive.exe: 000021B0: 14:36:48 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\classic\theme-classic\theme-classic.js
+EXPNETLive.exe: 0000374C: 14:36:48 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\packages\font-pictos\resources\font-pictos-all.css
+EXPNETLive.exe: 00002274: 14:36:48 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\ext-unicommon-min.js
+EXPNETLive.exe: 00002B98: 14:36:49 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\ext-sync-min.js
+EXPNETLive.exe: 00003474: 14:36:49 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\classic\locale\locale-pt.js
+EXPNETLive.exe: 00000EB8: 14:36:49 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\jQuery\jquery-1.11.2.min.js
+EXPNETLive.exe: 00003AB8: 14:36:49 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\jQuery\MaskedInput\jquery.inputmask.min.js
+EXPNETLive.exe: 00002204: 14:36:49 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\jQuery\autoNumeric\autoNumeric-1.9.35.js
+EXPNETLive.exe: 00002558: 14:36:49 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\ext-treenode-plugin.js
+EXPNETLive.exe: 00002134: 14:36:49 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\packages\ux\classic\ux.js
+EXPNETLive.exe: 000037BC: 14:36:49 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\ext-unigui-min.js
+EXPNETLive.exe: 00002658: 14:36:50 [Requested Theme File not found:]:C:\Program Files (x86)\FMSoft\Framework\unigui\uni\css\uni-xtheme-classic.css
+EXPNETLive.exe: 00002658: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\css\uni-ext.css
+EXPNETLive.exe: 00001D54: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\classic\theme-classic\resources\theme-classic-all.css
+EXPNETLive.exe: 00003288: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\packages\font-awesome-4.7.0\resources\font-awesome-all.css
+EXPNETLive.exe: 00001FEC: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\css\uni-xtheme-common.css
+EXPNETLive.exe: 000003CC: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\packages\font-awesome\resources\font-awesome-all.css
+EXPNETLive.exe: 00000258: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\ext-all.js
+EXPNETLive.exe: 00003648: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\packages\font-pictos\resources\font-pictos-all.css
+EXPNETLive.exe: 000009F4: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\classic\theme-classic\theme-classic.js
+EXPNETLive.exe: 00002994: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\ext-unicommon-min.js
+EXPNETLive.exe: 00001200: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\ext-sync-min.js
+EXPNETLive.exe: 00003B7C: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\classic\locale\locale-pt.js
+EXPNETLive.exe: 000038E4: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\jQuery\jquery-1.11.2.min.js
+EXPNETLive.exe: 00003B80: 14:36:50 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\jQuery\MaskedInput\jquery.inputmask.min.js
+EXPNETLive.exe: 00000698: 14:36:51 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\jQuery\autoNumeric\autoNumeric-1.9.35.js
+EXPNETLive.exe: 00001518: 14:36:51 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\ext-treenode-plugin.js
+EXPNETLive.exe: 000036CC: 14:36:51 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\ext-7.4.0\build\packages\ux\classic\ux.js
+EXPNETLive.exe: 000034F4: 14:36:51 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\uni\ext-unigui-min.js
+EXPNETLive.exe: 00003720: 14:37:03 [TUniServerModule]:Shutting Down Server.
+EXPNETLive.exe: 00003720: 14:37:03 [TUniServerModule]:Stopping HTTP Server.
+EXPNETLive.exe: 00003720: 14:37:04 [TUniServerModule]:HTTP Server Stopped.
+EXPNETLive.exe: 00003720: 14:37:04 [TUniGUISessionManager]:Terminating Session manager.
+EXPNETLive.exe: 00003720: 14:37:04 [TUniGUISessionManager]:Stopping Cache Eraser...
+EXPNETLive.exe: 00003720: 14:37:04 [TUniGUISessionManager]:Cache Eraser Stopped.
+EXPNETLive.exe: 00003720: 14:37:04 [TUniGUISessionManager]:Destroying Worker Threads.
+EXPNETLive.exe: 00003720: 14:37:04 [TUniGUISessionManager]:Session manager terminated.
+EXPNETLive.exe: 00003720: 14:37:04 [TUniServerModule]:Server Shutdown Completed.
+EXPNETLive.exe: 00003720: 14:37:04 []:<-------------------------------------------------------------->
+EXPNETLive.exe: 00003720: 14:37:04 [Terminated]:Exit Code: 0
